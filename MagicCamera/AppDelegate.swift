@@ -16,6 +16,18 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+        
+        let rootVC = UINavigationController()
+        let board = UIStoryboard.init(name: "HomeViewController", bundle: nil)
+        let homeVC = board.instantiateViewController(withIdentifier: "HomeViewController") as! HomeViewController
+
+        rootVC.navigationBar.isHidden = true
+        rootVC.pushViewController(homeVC, animated: false)
+        UIApplication.shared.setStatusBarHidden(true, with: UIStatusBarAnimation.none)
+        self.window = UIWindow()
+        self.window?.rootViewController = rootVC
+        self.window?.makeKeyAndVisible()
+
         return true
     }
 

@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13173"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Home View Controller-->
+        <scene sceneID="Pcj-Ab-MEK">
+            <objects>
+                <viewController storyboardIdentifier="HomeViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="cVo-HZ-aCU" customClass="HomeViewController" customModule="MagicCamera" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="LQT-G3-72D">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icon_launch" translatesAutoresizingMaskIntoConstraints="NO" id="91v-we-Cah">
+                                <rect key="frame" x="152" y="137" width="70" height="70"/>
+                                <accessibility key="accessibilityConfiguration">
+                                    <accessibilityTraits key="traits" image="YES" notEnabled="YES"/>
+                                </accessibility>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="70" id="Pe4-xE-oUY"/>
+                                    <constraint firstAttribute="width" constant="70" id="ntK-wd-dnm"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="self.layer.cornerRadius">
+                                        <integer key="value" value="8"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="self.layer.masksToBounds" value="YES"/>
+                                </userDefinedRuntimeAttributes>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3o3-cn-Oru">
+                                <rect key="frame" x="127" y="378.5" width="120" height="50"/>
+                                <color key="backgroundColor" red="1" green="0.87560439217634545" blue="0.73847979893309945" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="PhotoLibrary"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="self.layer.cornerRadius">
+                                        <integer key="value" value="25"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="self.layer.masksToBounds" value="YES"/>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="goLibrary" destination="cVo-HZ-aCU" eventType="touchUpInside" id="iyu-XU-EMx"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1Hq-9c-fMh">
+                                <rect key="frame" x="127" y="308.5" width="120" height="50"/>
+                                <color key="backgroundColor" red="0.55128971256387937" green="1" blue="0.57016689376473884" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="bnD-74-eOb"/>
+                                    <constraint firstAttribute="width" constant="120" id="nUi-B6-Ueh"/>
+                                </constraints>
+                                <state key="normal" title="Camera"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="self.layer.cornerRadius">
+                                        <integer key="value" value="25"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="self.layer.masksToBounds" value="YES"/>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="goCamera" destination="cVo-HZ-aCU" eventType="touchUpInside" id="e2m-AS-ybW"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.74509803921568629" green="1" blue="0.96862745098039216" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="91v-we-Cah" firstAttribute="centerY" secondItem="qpZ-ix-2Ul" secondAttribute="centerY" multiplier="0.5" id="032-7m-xel"/>
+                            <constraint firstItem="3o3-cn-Oru" firstAttribute="centerX" secondItem="1Hq-9c-fMh" secondAttribute="centerX" id="2Jb-Yo-Jq9"/>
+                            <constraint firstItem="3o3-cn-Oru" firstAttribute="top" secondItem="1Hq-9c-fMh" secondAttribute="bottom" constant="20" id="2sh-wk-w02"/>
+                            <constraint firstItem="1Hq-9c-fMh" firstAttribute="centerX" secondItem="qpZ-ix-2Ul" secondAttribute="centerX" id="P25-83-mQ1"/>
+                            <constraint firstItem="1Hq-9c-fMh" firstAttribute="centerY" secondItem="LQT-G3-72D" secondAttribute="centerY" id="cSn-Xa-46A"/>
+                            <constraint firstItem="3o3-cn-Oru" firstAttribute="width" secondItem="1Hq-9c-fMh" secondAttribute="width" id="fbu-91-E24"/>
+                            <constraint firstItem="91v-we-Cah" firstAttribute="centerX" secondItem="qpZ-ix-2Ul" secondAttribute="centerX" id="jGX-3e-drd"/>
+                            <constraint firstItem="3o3-cn-Oru" firstAttribute="height" secondItem="1Hq-9c-fMh" secondAttribute="height" id="ve4-rL-JP7"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="qpZ-ix-2Ul"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="zhy-Jo-9cJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="156" y="158.77061469265368"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="icon_launch" width="40" height="40"/>
+    </resources>
+</document>

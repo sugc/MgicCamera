@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+	<dict>
+		<key>themeID</key>
+		<string>cold</string>
+		<key>themeName</key>
+		<string>cold</string>
+	</dict>
+	<dict>
+		<key>themeID</key>
+		<string>light</string>
+		<key>themeName</key>
+		<string>light</string>
+	</dict>
+	<dict>
+		<key>themeID</key>
+		<string>dark</string>
+		<key>themeName</key>
+		<string>dark</string>
+	</dict>
+	<dict>
+		<key>themeID</key>
+		<string>color</string>
+		<key>themeName</key>
+		<string>color</string>
+	</dict>
+	<dict>
+		<key>themeID</key>
+		<string>B&amp;W</string>
+		<key>themeName</key>
+		<string>B&amp;W</string>
+	</dict>
+</array>
+</plist>

@@ -7,13 +7,41 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		85175742223CED48FAF874B9 /* Pods_MagicCamera.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 23FDCDBAB5AE50323292CB2F /* Pods_MagicCamera.framework */; };
+		890343E41F7419C700D1FF6A /* FilterManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 890343E31F7419C700D1FF6A /* FilterManager.swift */; };
+		8905D5BC1F7BF7EE003F4730 /* PositionMonitor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8905D5BB1F7BF7EE003F4730 /* PositionMonitor.swift */; };
+		890B99501F6D84DF00E37F9D /* FilterListViewHeader.xib in Resources */ = {isa = PBXBuildFile; fileRef = 890B994F1F6D84DF00E37F9D /* FilterListViewHeader.xib */; };
+		891C98111FA8BDFC00991E7F /* UIImage+Save.swift in Sources */ = {isa = PBXBuildFile; fileRef = 891C980D1FA8BDFB00991E7F /* UIImage+Save.swift */; };
 		896A7C7B1F66DE9700FC369B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 896A7C7A1F66DE9700FC369B /* AppDelegate.swift */; };
 		896A7C7D1F66DE9700FC369B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 896A7C7C1F66DE9700FC369B /* ViewController.swift */; };
-		896A7C801F66DE9700FC369B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 896A7C7E1F66DE9700FC369B /* Main.storyboard */; };
 		896A7C821F66DE9700FC369B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 896A7C811F66DE9700FC369B /* Assets.xcassets */; };
-		896A7C851F66DE9700FC369B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 896A7C831F66DE9700FC369B /* LaunchScreen.storyboard */; };
 		896A7C901F66DE9800FC369B /* MagicCameraTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 896A7C8F1F66DE9800FC369B /* MagicCameraTests.swift */; };
 		896A7C9B1F66DE9800FC369B /* MagicCameraUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 896A7C9A1F66DE9800FC369B /* MagicCameraUITests.swift */; };
+		896A7CB41F66E0CD00FC369B /* CameraViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 896A7CB31F66E0CD00FC369B /* CameraViewController.storyboard */; };
+		896A7CB61F66E0F200FC369B /* HomeViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 896A7CB51F66E0F200FC369B /* HomeViewController.storyboard */; };
+		896A7CC81F66E97D00FC369B /* GPUImage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 896A7CC51F66E94500FC369B /* GPUImage.framework */; };
+		896A7CCA1F66E9C000FC369B /* GPUImage.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 896A7CC51F66E94500FC369B /* GPUImage.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		8994993F1F71723D009999DA /* LookupFilter16.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8994993E1F71723D009999DA /* LookupFilter16.swift */; };
+		899499411F7172FC009999DA /* lookup16Fragment.glsl in Resources */ = {isa = PBXBuildFile; fileRef = 899499401F7172FC009999DA /* lookup16Fragment.glsl */; };
+		89A02A521F6D82910078C6D7 /* FilterListViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 89A02A511F6D82910078C6D7 /* FilterListViewCell.xib */; };
+		89C60E7D1FAE2B0200FF53E5 /* config.plist in Resources */ = {isa = PBXBuildFile; fileRef = 89C60E761FAE2B0100FF53E5 /* config.plist */; };
+		89C60E841FAE2B1C00FF53E5 /* filterResourse in Resources */ = {isa = PBXBuildFile; fileRef = 89C60E831FAE2B1C00FF53E5 /* filterResourse */; };
+		89C84ABA1F6B54DA004439DA /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89C84AB91F6B54DA004439DA /* HomeViewController.swift */; };
+		89C84ABC1F6B54EC004439DA /* CameraViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89C84ABB1F6B54EC004439DA /* CameraViewController.swift */; };
+		89C84AC01F6B5506004439DA /* SaveAndShareViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 89C84ABE1F6B5506004439DA /* SaveAndShareViewController.storyboard */; };
+		89C84AC11F6B5506004439DA /* SaveAndShareViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89C84ABF1F6B5506004439DA /* SaveAndShareViewController.swift */; };
+		89C84AC51F6B5556004439DA /* ProcessViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89C84AC41F6B5556004439DA /* ProcessViewController.swift */; };
+		89C871B91FB5EFA0003F8A9D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 89C871B81FB5EFA0003F8A9D /* LaunchScreen.storyboard */; };
+		89C8C1011F9E3DBE003F8D2D /* UIImage+CGRect.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89C8C1001F9E3DBE003F8D2D /* UIImage+CGRect.swift */; };
+		89D5E3C11F94ECCB003C51C6 /* UIImage+UItil.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89D5E3C01F94ECCB003C51C6 /* UIImage+UItil.swift */; };
+		89D9F4111F6C0A1500DB3B57 /* ProcessViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 89D9F4101F6C0A1500DB3B57 /* ProcessViewController.storyboard */; };
+		89D9F41A1F6C1BA900DB3B57 /* FilterListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89D9F4191F6C1BA900DB3B57 /* FilterListView.swift */; };
+		89D9F41C1F6C1D3200DB3B57 /* FilterListViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89D9F41B1F6C1D3200DB3B57 /* FilterListViewCell.swift */; };
+		89D9F41E1F6C1D4300DB3B57 /* FilterListViewHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89D9F41D1F6C1D4300DB3B57 /* FilterListViewHeader.swift */; };
+		89D9F4221F6C350000DB3B57 /* FilterListView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 89D9F4211F6C350000DB3B57 /* FilterListView.xib */; };
+		89E594631F9321B8007671A3 /* Vector3.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89E594621F9321B8007671A3 /* Vector3.swift */; };
+		89F9CF731F7D466800704DF6 /* CameraManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89F9CF721F7D466800704DF6 /* CameraManager.swift */; };
+		89F9CF781F7D4E9D00704DF6 /* StillCamera.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89F9CF771F7D4E9D00704DF6 /* StillCamera.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -31,15 +59,68 @@
 			remoteGlobalIDString = 896A7C761F66DE9700FC369B;
 			remoteInfo = MagicCamera;
 		};
+		896A7CC01F66E94500FC369B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 896A7CB91F66E94400FC369B /* GPUImage.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = BC6E7CAB1C39A9D8006DF678;
+			remoteInfo = GPUImage_macOS;
+		};
+		896A7CC21F66E94500FC369B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 896A7CB91F66E94400FC369B /* GPUImage.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = BC6E7CB51C39A9D8006DF678;
+			remoteInfo = GPUImageTests_macOS;
+		};
+		896A7CC41F66E94500FC369B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 896A7CB91F66E94400FC369B /* GPUImage.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = BC9E34E91E524A2200B8604F;
+			remoteInfo = GPUImage_iOS;
+		};
+		896A7CC61F66E94500FC369B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 896A7CB91F66E94400FC369B /* GPUImage.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = BC9E34F11E524A2200B8604F;
+			remoteInfo = GPUImageTests_iOS;
+		};
+		896A80381F66EBA200FC369B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 896A7CB91F66E94400FC369B /* GPUImage.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = BC9E34E81E524A2200B8604F;
+			remoteInfo = GPUImage_iOS;
+		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		896A7CC91F66E99200FC369B /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				896A7CCA1F66E9C000FC369B /* GPUImage.framework in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		01B3C3584B20A2EA7302A43C /* Pods-MagicCamera.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MagicCamera.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MagicCamera/Pods-MagicCamera.debug.xcconfig"; sourceTree = "<group>"; };
+		23FDCDBAB5AE50323292CB2F /* Pods_MagicCamera.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MagicCamera.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		890343E31F7419C700D1FF6A /* FilterManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FilterManager.swift; sourceTree = "<group>"; };
+		8905D5BB1F7BF7EE003F4730 /* PositionMonitor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PositionMonitor.swift; sourceTree = "<group>"; };
+		890B994F1F6D84DF00E37F9D /* FilterListViewHeader.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FilterListViewHeader.xib; sourceTree = "<group>"; };
+		891C980D1FA8BDFB00991E7F /* UIImage+Save.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage+Save.swift"; sourceTree = "<group>"; };
+		891C98161FA8C51000991E7F /* MagicCamera-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "MagicCamera-Bridging-Header.h"; sourceTree = "<group>"; };
 		896A7C771F66DE9700FC369B /* MagicCamera.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MagicCamera.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		896A7C7A1F66DE9700FC369B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		896A7C7C1F66DE9700FC369B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		896A7C7F1F66DE9700FC369B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		896A7C811F66DE9700FC369B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		896A7C841F66DE9700FC369B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		896A7C861F66DE9700FC369B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		896A7C8B1F66DE9800FC369B /* MagicCameraTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MagicCameraTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		896A7C8F1F66DE9800FC369B /* MagicCameraTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MagicCameraTests.swift; sourceTree = "<group>"; };
@@ -47,6 +128,31 @@
 		896A7C961F66DE9800FC369B /* MagicCameraUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MagicCameraUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		896A7C9A1F66DE9800FC369B /* MagicCameraUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MagicCameraUITests.swift; sourceTree = "<group>"; };
 		896A7C9C1F66DE9800FC369B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		896A7CB31F66E0CD00FC369B /* CameraViewController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = CameraViewController.storyboard; sourceTree = "<group>"; };
+		896A7CB51F66E0F200FC369B /* HomeViewController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = HomeViewController.storyboard; sourceTree = "<group>"; };
+		896A7CB91F66E94400FC369B /* GPUImage.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = GPUImage.xcodeproj; path = ../../../GPUImage2/framework/GPUImage.xcodeproj; sourceTree = "<group>"; };
+		8994993E1F71723D009999DA /* LookupFilter16.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LookupFilter16.swift; sourceTree = "<group>"; };
+		899499401F7172FC009999DA /* lookup16Fragment.glsl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = lookup16Fragment.glsl; sourceTree = "<group>"; };
+		89A02A511F6D82910078C6D7 /* FilterListViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FilterListViewCell.xib; sourceTree = "<group>"; };
+		89C60E761FAE2B0100FF53E5 /* config.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = config.plist; path = filterResourse/config.plist; sourceTree = "<group>"; };
+		89C60E831FAE2B1C00FF53E5 /* filterResourse */ = {isa = PBXFileReference; lastKnownFileType = folder; path = filterResourse; sourceTree = "<group>"; };
+		89C84AB91F6B54DA004439DA /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		89C84ABB1F6B54EC004439DA /* CameraViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CameraViewController.swift; sourceTree = "<group>"; };
+		89C84ABE1F6B5506004439DA /* SaveAndShareViewController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = SaveAndShareViewController.storyboard; sourceTree = "<group>"; };
+		89C84ABF1F6B5506004439DA /* SaveAndShareViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SaveAndShareViewController.swift; sourceTree = "<group>"; };
+		89C84AC41F6B5556004439DA /* ProcessViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProcessViewController.swift; sourceTree = "<group>"; };
+		89C871B81FB5EFA0003F8A9D /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
+		89C8C1001F9E3DBE003F8D2D /* UIImage+CGRect.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage+CGRect.swift"; sourceTree = "<group>"; };
+		89D5E3C01F94ECCB003C51C6 /* UIImage+UItil.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage+UItil.swift"; sourceTree = "<group>"; };
+		89D9F4101F6C0A1500DB3B57 /* ProcessViewController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = ProcessViewController.storyboard; sourceTree = "<group>"; };
+		89D9F4191F6C1BA900DB3B57 /* FilterListView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FilterListView.swift; sourceTree = "<group>"; };
+		89D9F41B1F6C1D3200DB3B57 /* FilterListViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FilterListViewCell.swift; sourceTree = "<group>"; };
+		89D9F41D1F6C1D4300DB3B57 /* FilterListViewHeader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FilterListViewHeader.swift; sourceTree = "<group>"; };
+		89D9F4211F6C350000DB3B57 /* FilterListView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FilterListView.xib; sourceTree = "<group>"; };
+		89E594621F9321B8007671A3 /* Vector3.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Vector3.swift; sourceTree = "<group>"; };
+		89F9CF721F7D466800704DF6 /* CameraManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CameraManager.swift; sourceTree = "<group>"; };
+		89F9CF771F7D4E9D00704DF6 /* StillCamera.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StillCamera.swift; sourceTree = "<group>"; };
+		AC7BC624126B2FF80E13B9E9 /* Pods-MagicCamera.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MagicCamera.release.xcconfig"; path = "Pods/Target Support Files/Pods-MagicCamera/Pods-MagicCamera.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +160,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				896A7CC81F66E97D00FC369B /* GPUImage.framework in Frameworks */,
+				85175742223CED48FAF874B9 /* Pods_MagicCamera.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -74,13 +182,51 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		204E2D43A822B18044574B3D /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				01B3C3584B20A2EA7302A43C /* Pods-MagicCamera.debug.xcconfig */,
+				AC7BC624126B2FF80E13B9E9 /* Pods-MagicCamera.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		451566A5748C0AEA10E0E92A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				23FDCDBAB5AE50323292CB2F /* Pods_MagicCamera.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		8905D5B71F7BF7D1003F4730 /* Util */ = {
+			isa = PBXGroup;
+			children = (
+				8905D5BB1F7BF7EE003F4730 /* PositionMonitor.swift */,
+				89E594621F9321B8007671A3 /* Vector3.swift */,
+			);
+			path = Util;
+			sourceTree = "<group>";
+		};
+		896A58BE1F6E27E700AEB484 /* Resourse */ = {
+			isa = PBXGroup;
+			children = (
+				89C60E831FAE2B1C00FF53E5 /* filterResourse */,
+				89C60E761FAE2B0100FF53E5 /* config.plist */,
+			);
+			path = Resourse;
+			sourceTree = "<group>";
+		};
 		896A7C6E1F66DE9700FC369B = {
 			isa = PBXGroup;
 			children = (
+				891C98161FA8C51000991E7F /* MagicCamera-Bridging-Header.h */,
 				896A7C791F66DE9700FC369B /* MagicCamera */,
 				896A7C8E1F66DE9800FC369B /* MagicCameraTests */,
 				896A7C991F66DE9800FC369B /* MagicCameraUITests */,
 				896A7C781F66DE9700FC369B /* Products */,
+				204E2D43A822B18044574B3D /* Pods */,
+				451566A5748C0AEA10E0E92A /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -97,12 +243,20 @@
 		896A7C791F66DE9700FC369B /* MagicCamera */ = {
 			isa = PBXGroup;
 			children = (
+				89C871B81FB5EFA0003F8A9D /* LaunchScreen.storyboard */,
+				89E5945E1F930F3D007671A3 /* Extension */,
+				8905D5B71F7BF7D1003F4730 /* Util */,
+				8994993D1F717213009999DA /* FilterUtil */,
+				896A7CB11F66E0A600FC369B /* Home */,
+				896A7CAF1F66E0A600FC369B /* Camera */,
+				89C84AC21F6B5518004439DA /* Process */,
+				89C84ABD1F6B5506004439DA /* SaveAndShare */,
+				896A58BE1F6E27E700AEB484 /* Resourse */,
 				896A7C7A1F66DE9700FC369B /* AppDelegate.swift */,
 				896A7C7C1F66DE9700FC369B /* ViewController.swift */,
-				896A7C7E1F66DE9700FC369B /* Main.storyboard */,
 				896A7C811F66DE9700FC369B /* Assets.xcassets */,
-				896A7C831F66DE9700FC369B /* LaunchScreen.storyboard */,
 				896A7C861F66DE9700FC369B /* Info.plist */,
+				896A7CB91F66E94400FC369B /* GPUImage.xcodeproj */,
 			);
 			path = MagicCamera;
 			sourceTree = "<group>";
@@ -125,6 +279,105 @@
 			path = MagicCameraUITests;
 			sourceTree = "<group>";
 		};
+		896A7CAF1F66E0A600FC369B /* Camera */ = {
+			isa = PBXGroup;
+			children = (
+				896A7CB01F66E0A600FC369B /* ViewController */,
+				89F9CF721F7D466800704DF6 /* CameraManager.swift */,
+			);
+			path = Camera;
+			sourceTree = "<group>";
+		};
+		896A7CB01F66E0A600FC369B /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				89C84ABB1F6B54EC004439DA /* CameraViewController.swift */,
+				896A7CB31F66E0CD00FC369B /* CameraViewController.storyboard */,
+				89F9CF771F7D4E9D00704DF6 /* StillCamera.swift */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		896A7CB11F66E0A600FC369B /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				896A7CB21F66E0A600FC369B /* ViewController */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		896A7CB21F66E0A600FC369B /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				89C84AB91F6B54DA004439DA /* HomeViewController.swift */,
+				896A7CB51F66E0F200FC369B /* HomeViewController.storyboard */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		896A7CBA1F66E94400FC369B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				896A7CC11F66E94500FC369B /* GPUImage.framework */,
+				896A7CC31F66E94500FC369B /* GPUImageTests_macOS.xctest */,
+				896A7CC51F66E94500FC369B /* GPUImage.framework */,
+				896A7CC71F66E94500FC369B /* GPUImageTests_iOS.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		8994993D1F717213009999DA /* FilterUtil */ = {
+			isa = PBXGroup;
+			children = (
+				8994993E1F71723D009999DA /* LookupFilter16.swift */,
+				899499401F7172FC009999DA /* lookup16Fragment.glsl */,
+			);
+			path = FilterUtil;
+			sourceTree = "<group>";
+		};
+		89C84ABD1F6B5506004439DA /* SaveAndShare */ = {
+			isa = PBXGroup;
+			children = (
+				89C84ABE1F6B5506004439DA /* SaveAndShareViewController.storyboard */,
+				89C84ABF1F6B5506004439DA /* SaveAndShareViewController.swift */,
+			);
+			path = SaveAndShare;
+			sourceTree = "<group>";
+		};
+		89C84AC21F6B5518004439DA /* Process */ = {
+			isa = PBXGroup;
+			children = (
+				89C84AC31F6B5518004439DA /* ViewController */,
+				890343E31F7419C700D1FF6A /* FilterManager.swift */,
+			);
+			path = Process;
+			sourceTree = "<group>";
+		};
+		89C84AC31F6B5518004439DA /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				89C84AC41F6B5556004439DA /* ProcessViewController.swift */,
+				89D9F4101F6C0A1500DB3B57 /* ProcessViewController.storyboard */,
+				89D9F4191F6C1BA900DB3B57 /* FilterListView.swift */,
+				89D9F41B1F6C1D3200DB3B57 /* FilterListViewCell.swift */,
+				89D9F41D1F6C1D4300DB3B57 /* FilterListViewHeader.swift */,
+				89D9F4211F6C350000DB3B57 /* FilterListView.xib */,
+				89A02A511F6D82910078C6D7 /* FilterListViewCell.xib */,
+				890B994F1F6D84DF00E37F9D /* FilterListViewHeader.xib */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		89E5945E1F930F3D007671A3 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				891C980D1FA8BDFB00991E7F /* UIImage+Save.swift */,
+				89D5E3C01F94ECCB003C51C6 /* UIImage+UItil.swift */,
+				89C8C1001F9E3DBE003F8D2D /* UIImage+CGRect.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -132,13 +385,19 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 896A7C9F1F66DE9800FC369B /* Build configuration list for PBXNativeTarget "MagicCamera" */;
 			buildPhases = (
+				B45B59D028A62C391C0ADA45 /* [CP] Check Pods Manifest.lock */,
 				896A7C731F66DE9700FC369B /* Sources */,
 				896A7C741F66DE9700FC369B /* Frameworks */,
 				896A7C751F66DE9700FC369B /* Resources */,
+				896A7CC91F66E99200FC369B /* CopyFiles */,
+				B153FD8D61D9853AA345B192 /* [CP] Embed Pods Frameworks */,
+				5DEE67284975489C5A4421C6 /* [CP] Copy Pods Resources */,
+				89339A961FB845160056F01B /* ShellScript */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				896A80391F66EBA200FC369B /* PBXTargetDependency */,
 			);
 			name = MagicCamera;
 			productName = MagicCamera;
@@ -221,6 +480,12 @@
 			mainGroup = 896A7C6E1F66DE9700FC369B;
 			productRefGroup = 896A7C781F66DE9700FC369B /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 896A7CBA1F66E94400FC369B /* Products */;
+					ProjectRef = 896A7CB91F66E94400FC369B /* GPUImage.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				896A7C761F66DE9700FC369B /* MagicCamera */,
@@ -230,14 +495,54 @@
 		};
 /* End PBXProject section */
 
+/* Begin PBXReferenceProxy section */
+		896A7CC11F66E94500FC369B /* GPUImage.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = GPUImage.framework;
+			remoteRef = 896A7CC01F66E94500FC369B /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		896A7CC31F66E94500FC369B /* GPUImageTests_macOS.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = GPUImageTests_macOS.xctest;
+			remoteRef = 896A7CC21F66E94500FC369B /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		896A7CC51F66E94500FC369B /* GPUImage.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = GPUImage.framework;
+			remoteRef = 896A7CC41F66E94500FC369B /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		896A7CC71F66E94500FC369B /* GPUImageTests_iOS.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = GPUImageTests_iOS.xctest;
+			remoteRef = 896A7CC61F66E94500FC369B /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
+
 /* Begin PBXResourcesBuildPhase section */
 		896A7C751F66DE9700FC369B /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				896A7C851F66DE9700FC369B /* LaunchScreen.storyboard in Resources */,
+				89C60E7D1FAE2B0200FF53E5 /* config.plist in Resources */,
+				89A02A521F6D82910078C6D7 /* FilterListViewCell.xib in Resources */,
+				89C84AC01F6B5506004439DA /* SaveAndShareViewController.storyboard in Resources */,
+				896A7CB61F66E0F200FC369B /* HomeViewController.storyboard in Resources */,
+				89D9F4111F6C0A1500DB3B57 /* ProcessViewController.storyboard in Resources */,
+				890B99501F6D84DF00E37F9D /* FilterListViewHeader.xib in Resources */,
+				89D9F4221F6C350000DB3B57 /* FilterListView.xib in Resources */,
+				89C871B91FB5EFA0003F8A9D /* LaunchScreen.storyboard in Resources */,
 				896A7C821F66DE9700FC369B /* Assets.xcassets in Resources */,
-				896A7C801F66DE9700FC369B /* Main.storyboard in Resources */,
+				896A7CB41F66E0CD00FC369B /* CameraViewController.storyboard in Resources */,
+				89C60E841FAE2B1C00FF53E5 /* filterResourse in Resources */,
+				899499411F7172FC009999DA /* lookup16Fragment.glsl in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -257,13 +562,106 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		5DEE67284975489C5A4421C6 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MagicCamera/Pods-MagicCamera-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		89339A961FB845160056F01B /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Fabric/run\" 0bd35f2f57e37f02d123c669e6cf00e9d3a6bdee f3f9fd90664babaf62c4265e11a44df3eb356cff4517c922f65eb2345d2a9605";
+		};
+		B153FD8D61D9853AA345B192 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-MagicCamera/Pods-MagicCamera-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
+				"${BUILT_PRODUCTS_DIR}/MBProgressHUD/MBProgressHUD.framework",
+				"${BUILT_PRODUCTS_DIR}/ReactiveCocoa/ReactiveCocoa.framework",
+				"${BUILT_PRODUCTS_DIR}/ReactiveSwift/ReactiveSwift.framework",
+				"${BUILT_PRODUCTS_DIR}/Result/Result.framework",
+				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MBProgressHUD.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ReactiveCocoa.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ReactiveSwift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Result.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MagicCamera/Pods-MagicCamera-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B45B59D028A62C391C0ADA45 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MagicCamera-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		896A7C731F66DE9700FC369B /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8994993F1F71723D009999DA /* LookupFilter16.swift in Sources */,
+				89D5E3C11F94ECCB003C51C6 /* UIImage+UItil.swift in Sources */,
+				89F9CF731F7D466800704DF6 /* CameraManager.swift in Sources */,
+				89D9F41C1F6C1D3200DB3B57 /* FilterListViewCell.swift in Sources */,
+				890343E41F7419C700D1FF6A /* FilterManager.swift in Sources */,
+				89C84ABA1F6B54DA004439DA /* HomeViewController.swift in Sources */,
+				89D9F41E1F6C1D4300DB3B57 /* FilterListViewHeader.swift in Sources */,
+				89C84ABC1F6B54EC004439DA /* CameraViewController.swift in Sources */,
+				89D9F41A1F6C1BA900DB3B57 /* FilterListView.swift in Sources */,
+				89C84AC51F6B5556004439DA /* ProcessViewController.swift in Sources */,
+				89C8C1011F9E3DBE003F8D2D /* UIImage+CGRect.swift in Sources */,
 				896A7C7D1F66DE9700FC369B /* ViewController.swift in Sources */,
+				8905D5BC1F7BF7EE003F4730 /* PositionMonitor.swift in Sources */,
 				896A7C7B1F66DE9700FC369B /* AppDelegate.swift in Sources */,
+				89C84AC11F6B5506004439DA /* SaveAndShareViewController.swift in Sources */,
+				89E594631F9321B8007671A3 /* Vector3.swift in Sources */,
+				891C98111FA8BDFC00991E7F /* UIImage+Save.swift in Sources */,
+				89F9CF781F7D4E9D00704DF6 /* StillCamera.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -296,26 +694,12 @@
 			target = 896A7C761F66DE9700FC369B /* MagicCamera */;
 			targetProxy = 896A7C971F66DE9800FC369B /* PBXContainerItemProxy */;
 		};
+		896A80391F66EBA200FC369B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = GPUImage_iOS;
+			targetProxy = 896A80381F66EBA200FC369B /* PBXContainerItemProxy */;
+		};
 /* End PBXTargetDependency section */
-
-/* Begin PBXVariantGroup section */
-		896A7C7E1F66DE9700FC369B /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				896A7C7F1F66DE9700FC369B /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		896A7C831F66DE9700FC369B /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				896A7C841F66DE9700FC369B /* Base */,
-			);
-			name = LaunchScreen.storyboard;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		896A7C9D1F66DE9800FC369B /* Debug */ = {
@@ -359,7 +743,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -404,7 +788,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
@@ -415,27 +799,35 @@
 		};
 		896A7CA01F66DE9800FC369B /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 01B3C3584B20A2EA7302A43C /* Pods-MagicCamera.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 4D8QBLQTY5;
 				INFOPLIST_FILE = MagicCamera/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.sugc.magicCamera.MagicCamera;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "MagicCamera-Bridging-Header.h";
 				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
 		896A7CA11F66DE9800FC369B /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = AC7BC624126B2FF80E13B9E9 /* Pods-MagicCamera.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 4D8QBLQTY5;
 				INFOPLIST_FILE = MagicCamera/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.sugc.magicCamera.MagicCamera;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "MagicCamera-Bridging-Header.h";
 				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
@@ -516,6 +908,7 @@
 				896A7CA11F66DE9800FC369B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		896A7CA21F66DE9800FC369B /* Build configuration list for PBXNativeTarget "MagicCameraTests" */ = {
 			isa = XCConfigurationList;
@@ -524,6 +917,7 @@
 				896A7CA41F66DE9800FC369B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		896A7CA51F66DE9800FC369B /* Build configuration list for PBXNativeTarget "MagicCameraUITests" */ = {
 			isa = XCConfigurationList;
@@ -532,6 +926,7 @@
 				896A7CA71F66DE9800FC369B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

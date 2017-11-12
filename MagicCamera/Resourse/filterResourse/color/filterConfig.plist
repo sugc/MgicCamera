@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+	<dict>
+		<key>filterId</key>
+		<string>0006</string>
+		<key>filterName</key>
+		<string>B&amp;W</string>
+	</dict>
+	<dict>
+		<key>filterId</key>
+		<string>0001</string>
+		<key>filterName</key>
+		<string>B&amp;W</string>
+	</dict>
+	<dict>
+		<key>filterId</key>
+		<string>0002</string>
+		<key>filterName</key>
+		<string>B&amp;W</string>
+	</dict>
+	<dict>
+		<key>filterId</key>
+		<string>0003</string>
+		<key>filterName</key>
+		<string>B&amp;W</string>
+	</dict>
+	<dict>
+		<key>filterId</key>
+		<string>0004</string>
+		<key>filterName</key>
+		<string>B&amp;W</string>
+	</dict>
+	<dict>
+		<key>filterId</key>
+		<string>0005</string>
+		<key>filterName</key>
+		<string>B&amp;W</string>
+	</dict>
+</array>
+</plist>
