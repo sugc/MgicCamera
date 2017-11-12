@@ -1692,7 +1692,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Fabric/run\" 0bd35f2f57e37f02d123c669e6cf00e9d3a6bdee f3f9fd90664babaf62c4265e11a44df3eb356cff4517c922f65eb2345d2a9605";
+			shellScript = "./Fabric.framework/run 0bd35f2f57e37f02d123c669e6cf00e9d3a6bdee f3f9fd90664babaf62c4265e11a44df3eb356cff4517c922f65eb2345d2a9605";
 		};
 		B153FD8D61D9853AA345B192 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
@@ -1909,7 +1909,7 @@
 				INFOPLIST_FILE = MagicCamera/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.sugc.magicCamera.MagicCamera;
+				PRODUCT_BUNDLE_IDENTIFIER = com.magic.cameraFun;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "MagicCamera-Bridging-Header.h";
 				SWIFT_VERSION = 3.0;
@@ -1926,7 +1926,7 @@
 				INFOPLIST_FILE = MagicCamera/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.sugc.magicCamera.MagicCamera;
+				PRODUCT_BUNDLE_IDENTIFIER = com.magic.cameraFun;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "MagicCamera-Bridging-Header.h";
 				SWIFT_VERSION = 3.0;
