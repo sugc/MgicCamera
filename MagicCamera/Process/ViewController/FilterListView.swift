@@ -48,6 +48,7 @@ class FilterListView : UIView, UICollectionViewDataSource, UICollectionViewDeleg
         selectedSection = -1
         let configPath = Bundle.main.path(forResource: "filterResourse", ofType: nil)
         filterManager = FilterManager.init(cofigPath: configPath!)
+        self.isExclusiveTouch = true
     }
     
     override func awakeFromNib() {
@@ -186,8 +187,14 @@ class FilterListView : UIView, UICollectionViewDataSource, UICollectionViewDeleg
         print("")
     }
     
+    
+    func scrollToIndexPath(path:IndexPath) {
+        
+    }
+    
     func getFilters(filterInfo:FilterInfo) -> Array<BasicOperation> {
         let image = UIImage.init(contentsOfFile: filterInfo.lookImageName)!
+//        filter = LookupFilter16()
         filter.lookupImage = PictureInput.init(image: image )
         return [filter]
     }
@@ -201,5 +208,9 @@ class FilterListView : UIView, UICollectionViewDataSource, UICollectionViewDeleg
             return [newFilter]
         }
         return []
+    }
+    
+    deinit {
+        print("filter deinit")
     }
 }

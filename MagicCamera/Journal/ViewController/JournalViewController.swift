@@ -7,8 +7,10 @@
 //
 
 import Foundation
+import GPUImage
 
-class JournalViewController : UIViewController, ConfirmTextViewDelegate {
+class JournalViewController : UIViewController, ConfirmTextViewDelegate, FilterListViewProtocol {
+    
     
     //预览宽高比
     var width : CGFloat!
@@ -121,6 +123,7 @@ class JournalViewController : UIViewController, ConfirmTextViewDelegate {
         
         
         let filterListView = FilterListView.init(frame: CGRect.init(x: 0, y: 0, width: ScreenWidth, height: 90))
+        filterListView.filterDelegate = self
         
         bottomView.addSubview(filterListView)
         self.view.backgroundColor = UIColor.color(hex: 0xb3b3b3, alpha: 1.0)
@@ -216,7 +219,7 @@ class JournalViewController : UIViewController, ConfirmTextViewDelegate {
                                             height: self.journalView.height)
         }) { (isFinish) in
             
-                    }
+        }
     }
     
     func keyBoradWillChangeFrame(notification:NSNotification) {
@@ -240,6 +243,13 @@ class JournalViewController : UIViewController, ConfirmTextViewDelegate {
         })
     }
     
+    func didbeganApplyFilter() {
+        
+    }
+    
+    func applyFilter(filters: Array<BasicOperation>) {
+        journalView.setFilter(filters: filters)
+    }
     
     deinit {
         maskView.removeGestureRecognizer(gesture)

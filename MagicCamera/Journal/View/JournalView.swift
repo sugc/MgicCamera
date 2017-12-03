@@ -318,7 +318,52 @@ class JournalView: UIView, UITextViewDelegate, TouchTextViewDelegate{
     
     func setFilter(filters:Array<BasicOperation>) {
         //
+        if selectIndex == -1 {
+            return
+        }
+        
+        let oriImage = imageArray[selectIndex]
+        if filters.count == 0 {
+            cutViewArray[selectIndex].image = oriImage;
+            return
+        }
+        
+        let toonFilter = filters.first!
+        let orient = oriImage.imageOrientation.rawValue % 4
+        var imgOrient : ImageOrientation
+        switch orient {
+        case 0:
+            imgOrient = ImageOrientation.portrait
+            break
+        case 1:
+            imgOrient = ImageOrientation.portraitUpsideDown
+            break
+        case 2:
+            imgOrient = ImageOrientation.landscapeLeft
+            break
+        case 3:
+            imgOrient = ImageOrientation.landscapeRight
+            break
+        default:
+            imgOrient = ImageOrientation.portrait
+            break
+        }
+        
+        let pictureInput = PictureInput.init(image: oriImage, smoothlyScaleOutput: false, orientation: imgOrient)
+        
+        let pictureOutput = PictureOutput()
+        pictureInput --> toonFilter --> pictureOutput
+        pictureOutput.imageAvailableCallback = {image in
+            // Do something with image
+            DispatchQueue.main.asyncAfter(deadline: .now() + 0.3) {
+                self.cutViewArray[self.selectIndex].image = image
+                
+                toonFilter.removeSourceAtIndex(0)
+                UIApplication.shared.endIgnoringInteractionEvents()
+            }
+        }
+        
+        pictureInput.processImage(synchronously:true)
         
     }
-    
 }

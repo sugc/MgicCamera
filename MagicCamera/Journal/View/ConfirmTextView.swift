@@ -8,7 +8,7 @@
 
 import Foundation
 
-protocol ConfirmTextViewDelegate {
+protocol ConfirmTextViewDelegate : NSObjectProtocol {
     
     func viewFrameChanged(finalFrame:CGRect!)
     func textChanged(text:String)
@@ -17,7 +17,7 @@ protocol ConfirmTextViewDelegate {
 class ConfirmTextView: UIView, UITextViewDelegate {
     var inputTextView: UITextView!
     var confirmButton: UIButton!
-    var delegate : ConfirmTextViewDelegate!
+    weak var delegate : ConfirmTextViewDelegate!
     
     var text: String? {
         set(text){
