@@ -12,6 +12,7 @@
 		8905D5BC1F7BF7EE003F4730 /* PositionMonitor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8905D5BB1F7BF7EE003F4730 /* PositionMonitor.swift */; };
 		890B99501F6D84DF00E37F9D /* FilterListViewHeader.xib in Resources */ = {isa = PBXBuildFile; fileRef = 890B994F1F6D84DF00E37F9D /* FilterListViewHeader.xib */; };
 		891C98111FA8BDFC00991E7F /* UIImage+Save.swift in Sources */ = {isa = PBXBuildFile; fileRef = 891C980D1FA8BDFB00991E7F /* UIImage+Save.swift */; };
+		89570B7A1FD2E93200A92942 /* FilterListView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 89570B791FD2E93200A92942 /* FilterListView.xib */; };
 		896A7C7B1F66DE9700FC369B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 896A7C7A1F66DE9700FC369B /* AppDelegate.swift */; };
 		896A7C7D1F66DE9700FC369B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 896A7C7C1F66DE9700FC369B /* ViewController.swift */; };
 		896A7C821F66DE9700FC369B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 896A7C811F66DE9700FC369B /* Assets.xcassets */; };
@@ -19,6 +20,68 @@
 		896A7C9B1F66DE9800FC369B /* MagicCameraUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 896A7C9A1F66DE9800FC369B /* MagicCameraUITests.swift */; };
 		896A7CB41F66E0CD00FC369B /* CameraViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 896A7CB31F66E0CD00FC369B /* CameraViewController.storyboard */; };
 		896A7CB61F66E0F200FC369B /* HomeViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 896A7CB51F66E0F200FC369B /* HomeViewController.storyboard */; };
+		897EBF401FCAB98D00D2AC75 /* DesignedUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 897EBF3F1FCAB98D00D2AC75 /* DesignedUtils.swift */; };
+		898FF7901FC95195001987B4 /* FilterCollectionViewHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 898FF7801FC95195001987B4 /* FilterCollectionViewHandler.swift */; };
+		898FF7911FC95195001987B4 /* JournalHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 898FF7811FC95195001987B4 /* JournalHandler.swift */; };
+		898FF7921FC95195001987B4 /* JournalModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 898FF7831FC95195001987B4 /* JournalModel.swift */; };
+		898FF7931FC95195001987B4 /* ConfirmTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 898FF7851FC95195001987B4 /* ConfirmTextView.swift */; };
+		898FF7941FC95195001987B4 /* CutView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 898FF7861FC95195001987B4 /* CutView.swift */; };
+		898FF7951FC95195001987B4 /* FilterViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 898FF7871FC95195001987B4 /* FilterViewCell.swift */; };
+		898FF7961FC95195001987B4 /* JournalView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 898FF7881FC95195001987B4 /* JournalView.swift */; };
+		898FF7971FC95195001987B4 /* TouchTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 898FF7891FC95195001987B4 /* TouchTextView.swift */; };
+		898FF7991FC95195001987B4 /* JournalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 898FF78C1FC95195001987B4 /* JournalViewController.swift */; };
+		898FF79B1FC95285001987B4 /* CGRect+String.swift in Sources */ = {isa = PBXBuildFile; fileRef = 898FF79A1FC95285001987B4 /* CGRect+String.swift */; };
+		898FF7A01FC95291001987B4 /* NSString+Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 898FF79C1FC95290001987B4 /* NSString+Utils.swift */; };
+		898FF7A11FC95291001987B4 /* UIFont+CGSize.swift in Sources */ = {isa = PBXBuildFile; fileRef = 898FF79D1FC95290001987B4 /* UIFont+CGSize.swift */; };
+		898FF7A21FC95291001987B4 /* UIColor+String.swift in Sources */ = {isa = PBXBuildFile; fileRef = 898FF79E1FC95290001987B4 /* UIColor+String.swift */; };
+		898FF7A31FC95291001987B4 /* String+Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 898FF79F1FC95291001987B4 /* String+Utils.swift */; };
+		898FF7A51FC952A6001987B4 /* UIImage+CGContext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 898FF7A41FC952A6001987B4 /* UIImage+CGContext.swift */; };
+		898FF7A81FC952AE001987B4 /* UIView+Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 898FF7A61FC952AE001987B4 /* UIView+Utils.swift */; };
+		898FF7A91FC952AE001987B4 /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 898FF7A71FC952AE001987B4 /* Utils.swift */; };
+		898FF7CD1FC9535D001987B4 /* GLFrameBuffer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 898FF7AC1FC9535D001987B4 /* GLFrameBuffer.swift */; };
+		898FF7CE1FC9535D001987B4 /* GLProgram.swift in Sources */ = {isa = PBXBuildFile; fileRef = 898FF7AD1FC9535D001987B4 /* GLProgram.swift */; };
+		898FF7CF1FC9535D001987B4 /* GLTexture.swift in Sources */ = {isa = PBXBuildFile; fileRef = 898FF7AE1FC9535D001987B4 /* GLTexture.swift */; };
+		898FF7D01FC9535D001987B4 /* BeautyGL.swift in Sources */ = {isa = PBXBuildFile; fileRef = 898FF7AF1FC9535D001987B4 /* BeautyGL.swift */; };
+		898FF7D11FC9535D001987B4 /* CGLOperater.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 898FF7B01FC9535D001987B4 /* CGLOperater.cpp */; };
+		898FF7D21FC9535D001987B4 /* File.metal in Sources */ = {isa = PBXBuildFile; fileRef = 898FF7B21FC9535D001987B4 /* File.metal */; };
+		898FF7D31FC9535D001987B4 /* BaseFilter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 898FF7B41FC9535D001987B4 /* BaseFilter.swift */; };
+		898FF7D41FC9535D001987B4 /* CommonFilter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 898FF7B51FC9535D001987B4 /* CommonFilter.swift */; };
+		898FF7D51FC9535D001987B4 /* LookUpFilter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 898FF7B61FC9535D001987B4 /* LookUpFilter.swift */; };
+		898FF7D61FC9535D001987B4 /* MixFilter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 898FF7B71FC9535D001987B4 /* MixFilter.swift */; };
+		898FF7D71FC9535D001987B4 /* PipFilter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 898FF7B81FC9535D001987B4 /* PipFilter.swift */; };
+		898FF7D81FC9535D001987B4 /* SGLLongPicFilter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 898FF7B91FC9535D001987B4 /* SGLLongPicFilter.swift */; };
+		898FF7D91FC9535D001987B4 /* CameoFragment.glsl in Resources */ = {isa = PBXBuildFile; fileRef = 898FF7BB1FC9535D001987B4 /* CameoFragment.glsl */; };
+		898FF7DA1FC9535D001987B4 /* CameoVertex.glsl in Resources */ = {isa = PBXBuildFile; fileRef = 898FF7BC1FC9535D001987B4 /* CameoVertex.glsl */; };
+		898FF7DB1FC9535D001987B4 /* CharacterFragment.glsl in Resources */ = {isa = PBXBuildFile; fileRef = 898FF7BD1FC9535D001987B4 /* CharacterFragment.glsl */; };
+		898FF7DC1FC9535D001987B4 /* Charactervertex.glsl in Resources */ = {isa = PBXBuildFile; fileRef = 898FF7BE1FC9535D001987B4 /* Charactervertex.glsl */; };
+		898FF7DD1FC9535D001987B4 /* LookupFragment.glsl in Resources */ = {isa = PBXBuildFile; fileRef = 898FF7BF1FC9535D001987B4 /* LookupFragment.glsl */; };
+		898FF7DE1FC9535D001987B4 /* LookupFragment16.glsl in Resources */ = {isa = PBXBuildFile; fileRef = 898FF7C01FC9535D001987B4 /* LookupFragment16.glsl */; };
+		898FF7DF1FC9535D001987B4 /* lookupTestF.glsl in Resources */ = {isa = PBXBuildFile; fileRef = 898FF7C11FC9535D001987B4 /* lookupTestF.glsl */; };
+		898FF7E01FC9535D001987B4 /* lookupTestV.glsl in Resources */ = {isa = PBXBuildFile; fileRef = 898FF7C21FC9535D001987B4 /* lookupTestV.glsl */; };
+		898FF7E11FC9535D001987B4 /* LookupVertex.glsl in Resources */ = {isa = PBXBuildFile; fileRef = 898FF7C31FC9535D001987B4 /* LookupVertex.glsl */; };
+		898FF7E21FC9535D001987B4 /* LookupVertex16.glsl in Resources */ = {isa = PBXBuildFile; fileRef = 898FF7C41FC9535D001987B4 /* LookupVertex16.glsl */; };
+		898FF7E31FC9535D001987B4 /* MixFragment.glsl in Resources */ = {isa = PBXBuildFile; fileRef = 898FF7C51FC9535D001987B4 /* MixFragment.glsl */; };
+		898FF7E41FC9535D001987B4 /* MixVertex.glsl in Resources */ = {isa = PBXBuildFile; fileRef = 898FF7C61FC9535D001987B4 /* MixVertex.glsl */; };
+		898FF7E51FC9535D001987B4 /* MTShaderFragment.glsl in Resources */ = {isa = PBXBuildFile; fileRef = 898FF7C71FC9535D001987B4 /* MTShaderFragment.glsl */; };
+		898FF7E61FC9535D001987B4 /* MTShaderVertex.glsl in Resources */ = {isa = PBXBuildFile; fileRef = 898FF7C81FC9535D001987B4 /* MTShaderVertex.glsl */; };
+		898FF7E71FC9535D001987B4 /* PipFragment.glsl in Resources */ = {isa = PBXBuildFile; fileRef = 898FF7C91FC9535D001987B4 /* PipFragment.glsl */; };
+		898FF7E81FC9535D001987B4 /* PipVertex.glsl in Resources */ = {isa = PBXBuildFile; fileRef = 898FF7CA1FC9535D001987B4 /* PipVertex.glsl */; };
+		898FF7E91FC9535D001987B4 /* PMixFragment.glsl in Resources */ = {isa = PBXBuildFile; fileRef = 898FF7CB1FC9535D001987B4 /* PMixFragment.glsl */; };
+		898FF7EA1FC9535D001987B4 /* PMixVertex.glsl in Resources */ = {isa = PBXBuildFile; fileRef = 898FF7CC1FC9535D001987B4 /* PMixVertex.glsl */; };
+		898FF7F31FC95849001987B4 /* M2 in Resources */ = {isa = PBXBuildFile; fileRef = 898FF7F21FC95849001987B4 /* M2 */; };
+		898FF7F81FC95A39001987B4 /* JournalTemplateViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 898FF7F61FC95A39001987B4 /* JournalTemplateViewController.swift */; };
+		898FF7F91FC95A39001987B4 /* TemplateSelectViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 898FF7F71FC95A39001987B4 /* TemplateSelectViewController.swift */; };
+		898FF8001FC95AAA001987B4 /* AutoScrollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 898FF7FB1FC95AAA001987B4 /* AutoScrollView.swift */; };
+		898FF8011FC95AAA001987B4 /* DesignedTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 898FF7FC1FC95AAA001987B4 /* DesignedTextView.swift */; };
+		898FF8021FC95AAA001987B4 /* WaterFlowLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 898FF7FE1FC95AAA001987B4 /* WaterFlowLayout.swift */; };
+		898FF8031FC95AAA001987B4 /* WaterFlowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 898FF7FF1FC95AAA001987B4 /* WaterFlowView.swift */; };
+		898FF80C1FC95B2E001987B4 /* PhotoPickerHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 898FF8051FC95B2E001987B4 /* PhotoPickerHandler.swift */; };
+		898FF80D1FC95B2E001987B4 /* PhotoUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = 898FF8061FC95B2E001987B4 /* PhotoUtil.swift */; };
+		898FF80E1FC95B2E001987B4 /* SelectViewHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 898FF8071FC95B2E001987B4 /* SelectViewHandler.swift */; };
+		898FF80F1FC95B2E001987B4 /* PhotoPickerCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 898FF8091FC95B2E001987B4 /* PhotoPickerCell.swift */; };
+		898FF8101FC95B2E001987B4 /* PhotoPickerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 898FF80B1FC95B2E001987B4 /* PhotoPickerViewController.swift */; };
+		898FF8121FC95D96001987B4 /* JigsawModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 898FF8111FC95D96001987B4 /* JigsawModel.swift */; };
+		898FF8141FC95FB1001987B4 /* M0.JPG in Resources */ = {isa = PBXBuildFile; fileRef = 898FF8131FC95FB1001987B4 /* M0.JPG */; };
 		8994993F1F71723D009999DA /* LookupFilter16.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8994993E1F71723D009999DA /* LookupFilter16.swift */; };
 		899499411F7172FC009999DA /* lookup16Fragment.glsl in Resources */ = {isa = PBXBuildFile; fileRef = 899499401F7172FC009999DA /* lookup16Fragment.glsl */; };
 		89A02A521F6D82910078C6D7 /* FilterListViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 89A02A511F6D82910078C6D7 /* FilterListViewCell.xib */; };
@@ -36,7 +99,6 @@
 		89D9F41A1F6C1BA900DB3B57 /* FilterListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89D9F4191F6C1BA900DB3B57 /* FilterListView.swift */; };
 		89D9F41C1F6C1D3200DB3B57 /* FilterListViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89D9F41B1F6C1D3200DB3B57 /* FilterListViewCell.swift */; };
 		89D9F41E1F6C1D4300DB3B57 /* FilterListViewHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89D9F41D1F6C1D4300DB3B57 /* FilterListViewHeader.swift */; };
-		89D9F4221F6C350000DB3B57 /* FilterListView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 89D9F4211F6C350000DB3B57 /* FilterListView.xib */; };
 		89E594631F9321B8007671A3 /* Vector3.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89E594621F9321B8007671A3 /* Vector3.swift */; };
 		89F9CF731F7D466800704DF6 /* CameraManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89F9CF721F7D466800704DF6 /* CameraManager.swift */; };
 		89F9CF781F7D4E9D00704DF6 /* StillCamera.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89F9CF771F7D4E9D00704DF6 /* StillCamera.swift */; };
@@ -94,34 +156,6 @@
 			remoteGlobalIDString = BC9E34F11E524A2200B8604F;
 			remoteInfo = GPUImageTests_iOS;
 		};
-		8AECCD6F1FB852B70057BA3D /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 8AECCD681FB852B70057BA3D /* GPUImage.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = BC6E7CAB1C39A9D8006DF678;
-			remoteInfo = GPUImage_macOS;
-		};
-		8AECCD711FB852B70057BA3D /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 8AECCD681FB852B70057BA3D /* GPUImage.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = BC6E7CB51C39A9D8006DF678;
-			remoteInfo = GPUImageTests_macOS;
-		};
-		8AECCD731FB852B70057BA3D /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 8AECCD681FB852B70057BA3D /* GPUImage.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = BC9E34E91E524A2200B8604F;
-			remoteInfo = GPUImage_iOS;
-		};
-		8AECCD751FB852B70057BA3D /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 8AECCD681FB852B70057BA3D /* GPUImage.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = BC9E34F11E524A2200B8604F;
-			remoteInfo = GPUImageTests_iOS;
-		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -145,6 +179,7 @@
 		890B994F1F6D84DF00E37F9D /* FilterListViewHeader.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FilterListViewHeader.xib; sourceTree = "<group>"; };
 		891C980D1FA8BDFB00991E7F /* UIImage+Save.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage+Save.swift"; sourceTree = "<group>"; };
 		891C98161FA8C51000991E7F /* MagicCamera-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "MagicCamera-Bridging-Header.h"; sourceTree = "<group>"; };
+		89570B791FD2E93200A92942 /* FilterListView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FilterListView.xib; sourceTree = "<group>"; };
 		896A7C771F66DE9700FC369B /* MagicCamera.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MagicCamera.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		896A7C7A1F66DE9700FC369B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		896A7C7C1F66DE9700FC369B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -158,6 +193,69 @@
 		896A7C9C1F66DE9800FC369B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		896A7CB31F66E0CD00FC369B /* CameraViewController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = CameraViewController.storyboard; sourceTree = "<group>"; };
 		896A7CB51F66E0F200FC369B /* HomeViewController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = HomeViewController.storyboard; sourceTree = "<group>"; };
+		897EBF3F1FCAB98D00D2AC75 /* DesignedUtils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DesignedUtils.swift; sourceTree = "<group>"; };
+		898FF7801FC95195001987B4 /* FilterCollectionViewHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FilterCollectionViewHandler.swift; sourceTree = "<group>"; };
+		898FF7811FC95195001987B4 /* JournalHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JournalHandler.swift; sourceTree = "<group>"; };
+		898FF7831FC95195001987B4 /* JournalModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JournalModel.swift; sourceTree = "<group>"; };
+		898FF7851FC95195001987B4 /* ConfirmTextView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConfirmTextView.swift; sourceTree = "<group>"; };
+		898FF7861FC95195001987B4 /* CutView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CutView.swift; sourceTree = "<group>"; };
+		898FF7871FC95195001987B4 /* FilterViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FilterViewCell.swift; sourceTree = "<group>"; };
+		898FF7881FC95195001987B4 /* JournalView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JournalView.swift; sourceTree = "<group>"; };
+		898FF7891FC95195001987B4 /* TouchTextView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TouchTextView.swift; sourceTree = "<group>"; };
+		898FF78C1FC95195001987B4 /* JournalViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JournalViewController.swift; sourceTree = "<group>"; };
+		898FF79A1FC95285001987B4 /* CGRect+String.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CGRect+String.swift"; sourceTree = "<group>"; };
+		898FF79C1FC95290001987B4 /* NSString+Utils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSString+Utils.swift"; sourceTree = "<group>"; };
+		898FF79D1FC95290001987B4 /* UIFont+CGSize.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIFont+CGSize.swift"; sourceTree = "<group>"; };
+		898FF79E1FC95290001987B4 /* UIColor+String.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIColor+String.swift"; sourceTree = "<group>"; };
+		898FF79F1FC95291001987B4 /* String+Utils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+Utils.swift"; sourceTree = "<group>"; };
+		898FF7A41FC952A6001987B4 /* UIImage+CGContext.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImage+CGContext.swift"; sourceTree = "<group>"; };
+		898FF7A61FC952AE001987B4 /* UIView+Utils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+Utils.swift"; sourceTree = "<group>"; };
+		898FF7A71FC952AE001987B4 /* Utils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Utils.swift; sourceTree = "<group>"; };
+		898FF7AC1FC9535D001987B4 /* GLFrameBuffer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GLFrameBuffer.swift; sourceTree = "<group>"; };
+		898FF7AD1FC9535D001987B4 /* GLProgram.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GLProgram.swift; sourceTree = "<group>"; };
+		898FF7AE1FC9535D001987B4 /* GLTexture.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GLTexture.swift; sourceTree = "<group>"; };
+		898FF7AF1FC9535D001987B4 /* BeautyGL.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BeautyGL.swift; sourceTree = "<group>"; };
+		898FF7B01FC9535D001987B4 /* CGLOperater.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = CGLOperater.cpp; sourceTree = "<group>"; };
+		898FF7B11FC9535D001987B4 /* CGLOperater.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = CGLOperater.hpp; sourceTree = "<group>"; };
+		898FF7B21FC9535D001987B4 /* File.metal */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.metal; path = File.metal; sourceTree = "<group>"; };
+		898FF7B41FC9535D001987B4 /* BaseFilter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseFilter.swift; sourceTree = "<group>"; };
+		898FF7B51FC9535D001987B4 /* CommonFilter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CommonFilter.swift; sourceTree = "<group>"; };
+		898FF7B61FC9535D001987B4 /* LookUpFilter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LookUpFilter.swift; sourceTree = "<group>"; };
+		898FF7B71FC9535D001987B4 /* MixFilter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MixFilter.swift; sourceTree = "<group>"; };
+		898FF7B81FC9535D001987B4 /* PipFilter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PipFilter.swift; sourceTree = "<group>"; };
+		898FF7B91FC9535D001987B4 /* SGLLongPicFilter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SGLLongPicFilter.swift; sourceTree = "<group>"; };
+		898FF7BB1FC9535D001987B4 /* CameoFragment.glsl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = CameoFragment.glsl; sourceTree = "<group>"; };
+		898FF7BC1FC9535D001987B4 /* CameoVertex.glsl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = CameoVertex.glsl; sourceTree = "<group>"; };
+		898FF7BD1FC9535D001987B4 /* CharacterFragment.glsl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = CharacterFragment.glsl; sourceTree = "<group>"; };
+		898FF7BE1FC9535D001987B4 /* Charactervertex.glsl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Charactervertex.glsl; sourceTree = "<group>"; };
+		898FF7BF1FC9535D001987B4 /* LookupFragment.glsl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LookupFragment.glsl; sourceTree = "<group>"; };
+		898FF7C01FC9535D001987B4 /* LookupFragment16.glsl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LookupFragment16.glsl; sourceTree = "<group>"; };
+		898FF7C11FC9535D001987B4 /* lookupTestF.glsl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = lookupTestF.glsl; sourceTree = "<group>"; };
+		898FF7C21FC9535D001987B4 /* lookupTestV.glsl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = lookupTestV.glsl; sourceTree = "<group>"; };
+		898FF7C31FC9535D001987B4 /* LookupVertex.glsl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LookupVertex.glsl; sourceTree = "<group>"; };
+		898FF7C41FC9535D001987B4 /* LookupVertex16.glsl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LookupVertex16.glsl; sourceTree = "<group>"; };
+		898FF7C51FC9535D001987B4 /* MixFragment.glsl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = MixFragment.glsl; sourceTree = "<group>"; };
+		898FF7C61FC9535D001987B4 /* MixVertex.glsl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = MixVertex.glsl; sourceTree = "<group>"; };
+		898FF7C71FC9535D001987B4 /* MTShaderFragment.glsl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = MTShaderFragment.glsl; sourceTree = "<group>"; };
+		898FF7C81FC9535D001987B4 /* MTShaderVertex.glsl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = MTShaderVertex.glsl; sourceTree = "<group>"; };
+		898FF7C91FC9535D001987B4 /* PipFragment.glsl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = PipFragment.glsl; sourceTree = "<group>"; };
+		898FF7CA1FC9535D001987B4 /* PipVertex.glsl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = PipVertex.glsl; sourceTree = "<group>"; };
+		898FF7CB1FC9535D001987B4 /* PMixFragment.glsl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = PMixFragment.glsl; sourceTree = "<group>"; };
+		898FF7CC1FC9535D001987B4 /* PMixVertex.glsl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = PMixVertex.glsl; sourceTree = "<group>"; };
+		898FF7F21FC95849001987B4 /* M2 */ = {isa = PBXFileReference; lastKnownFileType = folder; path = M2; sourceTree = "<group>"; };
+		898FF7F61FC95A39001987B4 /* JournalTemplateViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JournalTemplateViewController.swift; sourceTree = "<group>"; };
+		898FF7F71FC95A39001987B4 /* TemplateSelectViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TemplateSelectViewController.swift; sourceTree = "<group>"; };
+		898FF7FB1FC95AAA001987B4 /* AutoScrollView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AutoScrollView.swift; sourceTree = "<group>"; };
+		898FF7FC1FC95AAA001987B4 /* DesignedTextView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DesignedTextView.swift; sourceTree = "<group>"; };
+		898FF7FE1FC95AAA001987B4 /* WaterFlowLayout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WaterFlowLayout.swift; sourceTree = "<group>"; };
+		898FF7FF1FC95AAA001987B4 /* WaterFlowView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WaterFlowView.swift; sourceTree = "<group>"; };
+		898FF8051FC95B2E001987B4 /* PhotoPickerHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotoPickerHandler.swift; sourceTree = "<group>"; };
+		898FF8061FC95B2E001987B4 /* PhotoUtil.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotoUtil.swift; sourceTree = "<group>"; };
+		898FF8071FC95B2E001987B4 /* SelectViewHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SelectViewHandler.swift; sourceTree = "<group>"; };
+		898FF8091FC95B2E001987B4 /* PhotoPickerCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotoPickerCell.swift; sourceTree = "<group>"; };
+		898FF80B1FC95B2E001987B4 /* PhotoPickerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotoPickerViewController.swift; sourceTree = "<group>"; };
+		898FF8111FC95D96001987B4 /* JigsawModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JigsawModel.swift; sourceTree = "<group>"; };
+		898FF8131FC95FB1001987B4 /* M0.JPG */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = M0.JPG; sourceTree = "<group>"; };
 		8994993E1F71723D009999DA /* LookupFilter16.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LookupFilter16.swift; sourceTree = "<group>"; };
 		899499401F7172FC009999DA /* lookup16Fragment.glsl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = lookup16Fragment.glsl; sourceTree = "<group>"; };
 		89A02A511F6D82910078C6D7 /* FilterListViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FilterListViewCell.xib; sourceTree = "<group>"; };
@@ -175,467 +273,10 @@
 		89D9F4191F6C1BA900DB3B57 /* FilterListView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FilterListView.swift; sourceTree = "<group>"; };
 		89D9F41B1F6C1D3200DB3B57 /* FilterListViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FilterListViewCell.swift; sourceTree = "<group>"; };
 		89D9F41D1F6C1D4300DB3B57 /* FilterListViewHeader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FilterListViewHeader.swift; sourceTree = "<group>"; };
-		89D9F4211F6C350000DB3B57 /* FilterListView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FilterListView.xib; sourceTree = "<group>"; };
 		89E594621F9321B8007671A3 /* Vector3.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Vector3.swift; sourceTree = "<group>"; };
 		89F9CF721F7D466800704DF6 /* CameraManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CameraManager.swift; sourceTree = "<group>"; };
 		89F9CF771F7D4E9D00704DF6 /* StillCamera.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StillCamera.swift; sourceTree = "<group>"; };
 		8A22626C1FB85EA7004D2927 /* GPUImage.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = GPUImage.xcodeproj; path = "GPUImage2-master/framework/GPUImage.xcodeproj"; sourceTree = SOURCE_ROOT; };
-		8AECCB931FB852B70057BA3D /* compile-LinuxGL.sh */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = "compile-LinuxGL.sh"; sourceTree = "<group>"; };
-		8AECCB941FB852B70057BA3D /* LinuxCompilationGenerator.sh */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = LinuxCompilationGenerator.sh; sourceTree = "<group>"; };
-		8AECCB961FB852B70057BA3D /* RawDataInput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RawDataInput.swift; sourceTree = "<group>"; };
-		8AECCB971FB852B70057BA3D /* FramebufferCache.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FramebufferCache.swift; sourceTree = "<group>"; };
-		8AECCB981FB852B70057BA3D /* ShaderProgram.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShaderProgram.swift; sourceTree = "<group>"; };
-		8AECCB991FB852B70057BA3D /* CameraConversion.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraConversion.swift; sourceTree = "<group>"; };
-		8AECCB9A1FB852B70057BA3D /* TextureSamplingOperation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextureSamplingOperation.swift; sourceTree = "<group>"; };
-		8AECCB9B1FB852B70057BA3D /* TextureInput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextureInput.swift; sourceTree = "<group>"; };
-		8AECCB9C1FB852B70057BA3D /* ShaderUniformSettings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShaderUniformSettings.swift; sourceTree = "<group>"; };
-		8AECCB9D1FB852B70057BA3D /* TextureOutput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextureOutput.swift; sourceTree = "<group>"; };
-		8AECCB9E1FB852B70057BA3D /* Pipeline.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pipeline.swift; sourceTree = "<group>"; };
-		8AECCB9F1FB852B70057BA3D /* SerialDispatch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SerialDispatch.swift; sourceTree = "<group>"; };
-		8AECCBA11FB852B70057BA3D /* Erosion.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Erosion.swift; sourceTree = "<group>"; };
-		8AECCBA21FB852B70057BA3D /* Vibrance.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Vibrance.swift; sourceTree = "<group>"; };
-		8AECCBA31FB852B70057BA3D /* SwirlDistortion.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwirlDistortion.swift; sourceTree = "<group>"; };
-		8AECCBA41FB852B70057BA3D /* LightenBlend.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LightenBlend.swift; sourceTree = "<group>"; };
-		8AECCBA51FB852B70057BA3D /* PinchDistortion.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PinchDistortion.swift; sourceTree = "<group>"; };
-		8AECCBA61FB852B70057BA3D /* ChromaKeyBlend.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChromaKeyBlend.swift; sourceTree = "<group>"; };
-		8AECCBA71FB852B70057BA3D /* CircleGenerator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleGenerator.swift; sourceTree = "<group>"; };
-		8AECCBA81FB852B70057BA3D /* MultiplyBlend.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MultiplyBlend.swift; sourceTree = "<group>"; };
-		8AECCBA91FB852B70057BA3D /* Luminance.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Luminance.swift; sourceTree = "<group>"; };
-		8AECCBAA1FB852B70057BA3D /* LanczosResampling.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LanczosResampling.swift; sourceTree = "<group>"; };
-		8AECCBAB1FB852B70057BA3D /* HueBlend.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HueBlend.swift; sourceTree = "<group>"; };
-		8AECCBAC1FB852B70057BA3D /* AlphaBlend.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlphaBlend.swift; sourceTree = "<group>"; };
-		8AECCBAD1FB852B70057BA3D /* TiltShift.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TiltShift.swift; sourceTree = "<group>"; };
-		8AECCBAE1FB852B70057BA3D /* ShiTomasiFeatureDetector.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShiTomasiFeatureDetector.swift; sourceTree = "<group>"; };
-		8AECCBAF1FB852B70057BA3D /* WhiteBalance.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WhiteBalance.swift; sourceTree = "<group>"; };
-		8AECCBB01FB852B70057BA3D /* HighlightsAndShadows.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HighlightsAndShadows.swift; sourceTree = "<group>"; };
-		8AECCBB11FB852B70057BA3D /* LuminanceRangeReduction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LuminanceRangeReduction.swift; sourceTree = "<group>"; };
-		8AECCBB21FB852B70057BA3D /* LowPassFilter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LowPassFilter.swift; sourceTree = "<group>"; };
-		8AECCBB31FB852B70057BA3D /* HistogramEqualization.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistogramEqualization.swift; sourceTree = "<group>"; };
-		8AECCBB41FB852B70057BA3D /* BilateralBlur.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BilateralBlur.swift; sourceTree = "<group>"; };
-		8AECCBB51FB852B70057BA3D /* iOSBlur.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iOSBlur.swift; sourceTree = "<group>"; };
-		8AECCBB61FB852B70057BA3D /* Solarize.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Solarize.swift; sourceTree = "<group>"; };
-		8AECCBB71FB852B70057BA3D /* LuminanceThreshold.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LuminanceThreshold.swift; sourceTree = "<group>"; };
-		8AECCBB81FB852B70057BA3D /* CGAColorspaceFilter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CGAColorspaceFilter.swift; sourceTree = "<group>"; };
-		8AECCBB91FB852B70057BA3D /* AdaptiveThreshold.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdaptiveThreshold.swift; sourceTree = "<group>"; };
-		8AECCBBA1FB852B70057BA3D /* SphereRefraction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SphereRefraction.swift; sourceTree = "<group>"; };
-		8AECCBBB1FB852B70057BA3D /* HardLightBlend.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HardLightBlend.swift; sourceTree = "<group>"; };
-		8AECCBBC1FB852B70057BA3D /* MissEtikateFilter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MissEtikateFilter.swift; sourceTree = "<group>"; };
-		8AECCBBD1FB852B70057BA3D /* Vignette.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Vignette.swift; sourceTree = "<group>"; };
-		8AECCBBE1FB852B70057BA3D /* SaturationAdjustment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SaturationAdjustment.swift; sourceTree = "<group>"; };
-		8AECCBBF1FB852B70057BA3D /* Haze.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Haze.swift; sourceTree = "<group>"; };
-		8AECCBC01FB852B70057BA3D /* LinearBurnBlend.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LinearBurnBlend.swift; sourceTree = "<group>"; };
-		8AECCBC11FB852B70057BA3D /* AmatorkaFilter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AmatorkaFilter.swift; sourceTree = "<group>"; };
-		8AECCBC31FB852B70057BA3D /* lookup_soft_elegance_2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = lookup_soft_elegance_2.png; sourceTree = "<group>"; };
-		8AECCBC41FB852B70057BA3D /* lookup_soft_elegance_1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = lookup_soft_elegance_1.png; sourceTree = "<group>"; };
-		8AECCBC51FB852B70057BA3D /* lookup.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = lookup.png; sourceTree = "<group>"; };
-		8AECCBC61FB852B70057BA3D /* lookup_amatorka.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = lookup_amatorka.png; sourceTree = "<group>"; };
-		8AECCBC71FB852B70057BA3D /* lookup_miss_etikate.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = lookup_miss_etikate.png; sourceTree = "<group>"; };
-		8AECCBC81FB852B70057BA3D /* SketchFilter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SketchFilter.swift; sourceTree = "<group>"; };
-		8AECCBC91FB852B70057BA3D /* FalseColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FalseColor.swift; sourceTree = "<group>"; };
-		8AECCBCA1FB852B70057BA3D /* Histogram.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Histogram.swift; sourceTree = "<group>"; };
-		8AECCBCB1FB852B70057BA3D /* LineGenerator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LineGenerator.swift; sourceTree = "<group>"; };
-		8AECCBCC1FB852B70057BA3D /* DifferenceBlend.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DifferenceBlend.swift; sourceTree = "<group>"; };
-		8AECCBCD1FB852B70057BA3D /* PolkaDot.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PolkaDot.swift; sourceTree = "<group>"; };
-		8AECCBCE1FB852B70057BA3D /* ToonFilter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToonFilter.swift; sourceTree = "<group>"; };
-		8AECCBCF1FB852B70057BA3D /* LocalBinaryPattern.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalBinaryPattern.swift; sourceTree = "<group>"; };
-		8AECCBD01FB852B70057BA3D /* HueAdjustment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HueAdjustment.swift; sourceTree = "<group>"; };
-		8AECCBD11FB852B70057BA3D /* NormalBlend.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NormalBlend.swift; sourceTree = "<group>"; };
-		8AECCBD21FB852B70057BA3D /* MedianFilter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MedianFilter.swift; sourceTree = "<group>"; };
-		8AECCBD31FB852B70057BA3D /* SobelEdgeDetection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SobelEdgeDetection.swift; sourceTree = "<group>"; };
-		8AECCBD41FB852B70057BA3D /* RGBAdjustmentFilter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RGBAdjustmentFilter.swift; sourceTree = "<group>"; };
-		8AECCBD51FB852B70057BA3D /* SingleComponentGaussianBlur.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SingleComponentGaussianBlur.swift; sourceTree = "<group>"; };
-		8AECCBD61FB852B70057BA3D /* ClosingFilter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClosingFilter.swift; sourceTree = "<group>"; };
-		8AECCBD71FB852B70057BA3D /* LuminosityBlend.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LuminosityBlend.swift; sourceTree = "<group>"; };
-		8AECCBD81FB852B70057BA3D /* Crosshatch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Crosshatch.swift; sourceTree = "<group>"; };
-		8AECCBD91FB852B70057BA3D /* OpeningFilter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OpeningFilter.swift; sourceTree = "<group>"; };
-		8AECCBDA1FB852B70057BA3D /* ExposureAdjustment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExposureAdjustment.swift; sourceTree = "<group>"; };
-		8AECCBDB1FB852B70057BA3D /* PolarPixellate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PolarPixellate.swift; sourceTree = "<group>"; };
-		8AECCBDC1FB852B70057BA3D /* HarrisCornerDetector.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HarrisCornerDetector.swift; sourceTree = "<group>"; };
-		8AECCBDD1FB852B70057BA3D /* HistogramDisplay.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistogramDisplay.swift; sourceTree = "<group>"; };
-		8AECCBDE1FB852B70057BA3D /* ColorBlend.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorBlend.swift; sourceTree = "<group>"; };
-		8AECCBDF1FB852B70057BA3D /* ZoomBlur.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZoomBlur.swift; sourceTree = "<group>"; };
-		8AECCBE01FB852B70057BA3D /* ThresholdSketch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThresholdSketch.swift; sourceTree = "<group>"; };
-		8AECCBE11FB852B70057BA3D /* GlassSphereRefraction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GlassSphereRefraction.swift; sourceTree = "<group>"; };
-		8AECCBE21FB852B70057BA3D /* GaussianBlur.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GaussianBlur.swift; sourceTree = "<group>"; };
-		8AECCBE31FB852B70057BA3D /* AverageLuminanceExtractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AverageLuminanceExtractor.swift; sourceTree = "<group>"; };
-		8AECCBE41FB852B70057BA3D /* SoftElegance.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SoftElegance.swift; sourceTree = "<group>"; };
-		8AECCBE51FB852B70057BA3D /* KuwaharaRadius3Filter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KuwaharaRadius3Filter.swift; sourceTree = "<group>"; };
-		8AECCBE61FB852B70057BA3D /* MotionBlur.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MotionBlur.swift; sourceTree = "<group>"; };
-		8AECCBE71FB852B70057BA3D /* DarkenBlend.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DarkenBlend.swift; sourceTree = "<group>"; };
-		8AECCBE81FB852B70057BA3D /* ImageBuffer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageBuffer.swift; sourceTree = "<group>"; };
-		8AECCBE91FB852B70057BA3D /* HighlightAndShadowTint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HighlightAndShadowTint.swift; sourceTree = "<group>"; };
-		8AECCBEA1FB852B70057BA3D /* ScreenBlend.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScreenBlend.swift; sourceTree = "<group>"; };
-		8AECCBEB1FB852B70057BA3D /* SmoothToonFilter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SmoothToonFilter.swift; sourceTree = "<group>"; };
-		8AECCBEC1FB852B70057BA3D /* Crop.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Crop.swift; sourceTree = "<group>"; };
-		8AECCBED1FB852B70057BA3D /* GammaAdjustment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GammaAdjustment.swift; sourceTree = "<group>"; };
-		8AECCBEE1FB852B70057BA3D /* OpacityAdjustment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OpacityAdjustment.swift; sourceTree = "<group>"; };
-		8AECCBEF1FB852B70057BA3D /* MonochromeFilter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MonochromeFilter.swift; sourceTree = "<group>"; };
-		8AECCBF01FB852B70057BA3D /* SepiaToneFilter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SepiaToneFilter.swift; sourceTree = "<group>"; };
-		8AECCBF11FB852B70057BA3D /* ExclusionBlend.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExclusionBlend.swift; sourceTree = "<group>"; };
-		8AECCBF21FB852B70057BA3D /* Dilation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dilation.swift; sourceTree = "<group>"; };
-		8AECCBF31FB852B70057BA3D /* ColorBurnBlend.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorBurnBlend.swift; sourceTree = "<group>"; };
-		8AECCBF41FB852B70057BA3D /* LookupFilter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LookupFilter.swift; sourceTree = "<group>"; };
-		8AECCBF51FB852B70057BA3D /* SourceOverBlend.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SourceOverBlend.swift; sourceTree = "<group>"; };
-		8AECCBF61FB852B70057BA3D /* Posterize.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Posterize.swift; sourceTree = "<group>"; };
-		8AECCBF71FB852B70057BA3D /* Laplacian.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Laplacian.swift; sourceTree = "<group>"; };
-		8AECCBF81FB852B70057BA3D /* Halftone.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Halftone.swift; sourceTree = "<group>"; };
-		8AECCBF91FB852B70057BA3D /* DissolveBlend.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DissolveBlend.swift; sourceTree = "<group>"; };
-		8AECCBFA1FB852B70057BA3D /* BrightnessAdjustment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrightnessAdjustment.swift; sourceTree = "<group>"; };
-		8AECCBFB1FB852B70057BA3D /* SolidColorGenerator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SolidColorGenerator.swift; sourceTree = "<group>"; };
-		8AECCBFC1FB852B70057BA3D /* Pixellate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pixellate.swift; sourceTree = "<group>"; };
-		8AECCBFD1FB852B70057BA3D /* ContrastAdjustment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContrastAdjustment.swift; sourceTree = "<group>"; };
-		8AECCBFE1FB852B70057BA3D /* NobleCornerDetector.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NobleCornerDetector.swift; sourceTree = "<group>"; };
-		8AECCBFF1FB852B70057BA3D /* TransformOperation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransformOperation.swift; sourceTree = "<group>"; };
-		8AECCC001FB852B70057BA3D /* MotionDetector.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MotionDetector.swift; sourceTree = "<group>"; };
-		8AECCC021FB852B70057BA3D /* Convolution3x3_GLES.fsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = Convolution3x3_GLES.fsh; sourceTree = "<group>"; };
-		8AECCC031FB852B70057BA3D /* ColorBlend_GL.fsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = ColorBlend_GL.fsh; sourceTree = "<group>"; };
-		8AECCC041FB852B70057BA3D /* Sketch_GLES.fsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = Sketch_GLES.fsh; sourceTree = "<group>"; };
-		8AECCC051FB852B70057BA3D /* ThresholdEdgeDetection_GL.fsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = ThresholdEdgeDetection_GL.fsh; sourceTree = "<group>"; };
-		8AECCC061FB852B70057BA3D /* ThresholdedNonMaximumSuppression_GL.fsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = ThresholdedNonMaximumSuppression_GL.fsh; sourceTree = "<group>"; };
-		8AECCC071FB852B70057BA3D /* Solarize_GLES.fsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = Solarize_GLES.fsh; sourceTree = "<group>"; };
-		8AECCC081FB852B70057BA3D /* ChromaKeyBlend_GL.fsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = ChromaKeyBlend_GL.fsh; sourceTree = "<group>"; };
-		8AECCC091FB852B70057BA3D /* Swirl_GL.fsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = Swirl_GL.fsh; sourceTree = "<group>"; };
-		8AECCC0A1FB852B70057BA3D /* Pixellate_GLES.fsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = Pixellate_GLES.fsh; sourceTree = "<group>"; };
-		8AECCC0B1FB852B70057BA3D /* LightenBlend_GLES.fsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = LightenBlend_GLES.fsh; sourceTree = "<group>"; };
-		8AECCC0C1FB852B70057BA3D /* BulgeDistortion_GLES.fsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = BulgeDistortion_GLES.fsh; sourceTree = "<group>"; };
-		8AECCC0D1FB852B70057BA3D /* Kuwahara_GL.fsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = Kuwahara_GL.fsh; sourceTree = "<group>"; };
-		8AECCC0E1FB852B70057BA3D /* Dilation3_GLES.fsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = Dilation3_GLES.fsh; sourceTree = "<group>"; };
-		8AECCC0F1FB852B70057BA3D /* Dilation2_GLES.fsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = Dilation2_GLES.fsh; sourceTree = "<group>"; };
-		8AECCC101FB852B70057BA3D /* HighlightShadow_GLES.fsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = HighlightShadow_GLES.fsh; sourceTree = "<group>"; };
-		8AECCC111FB852B70057BA3D /* ShaderConverter.sh */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = ShaderConverter.sh; sourceTree = "<group>"; };
-		8AECCC121FB852B70057BA3D /* ColorLocalBinaryPattern_GLES.fsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = ColorLocalBinaryPattern_GLES.fsh; sourceTree = "<group>"; };
-		8AECCC131FB852B70057BA3D /* SoftLightBlend_GL.fsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = SoftLightBlend_GL.fsh; sourceTree = "<group>"; };
-		8AECCC141FB852B70057BA3D /* ChromaKeyBlend_GLES.fsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = ChromaKeyBlend_GLES.fsh; sourceTree = "<group>"; };
-		8AECCC151FB852B70057BA3D /* WeakPixelInclusion_GL.fsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = WeakPixelInclusion_GL.fsh; sourceTree = "<group>"; };
-		8AECCC161FB852B70057BA3D /* NormalBlend_GL.fsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = NormalBlend_GL.fsh; sourceTree = "<group>"; };
-		8AECCC171FB852B70057BA3D /* LuminanceRange_GL.fsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = LuminanceRange_GL.fsh; sourceTree = "<group>"; };
-		8AECCC181FB852B70057BA3D /* HistogramEqualizationBlue_GL.fsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = HistogramEqualizationBlue_GL.fsh; sourceTree = "<group>"; };
-		8AECCC191FB852B70057BA3D /* MotionBlur_GLES.fsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = MotionBlur_GLES.fsh; sourceTree = "<group>"; };
-		8AECCC1A1FB852B70057BA3D /* PinchDistortion_GL.fsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = PinchDistortion_GL.fsh; sourceTree = "<group>"; };
-		8AECCC1B1FB852B70057BA3D /* LuminosityBlend_GLES.fsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = LuminosityBlend_GLES.fsh; sourceTree = "<group>"; };
-		8AECCC1C1FB852B70057BA3D /* UnsharpMask_GLES.fsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = UnsharpMask_GLES.fsh; sourceTree = "<group>"; };
-		8AECCC1D1FB852B70057BA3D /* PolkaDot_GLES.fsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = PolkaDot_GLES.fsh; sourceTree = "<group>"; };
-		8AECCC1E1FB852B70057BA3D /* KuwaharaRadius3_GL.fsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = KuwaharaRadius3_GL.fsh; sourceTree = "<group>"; };
-		8AECCC1F1FB852B70057BA3D /* ThresholdSketch_GLES.fsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = ThresholdSketch_GLES.fsh; sourceTree = "<group>"; };
-		8AECCC201FB852B70057BA3D /* Contrast_GLES.fsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = Contrast_GLES.fsh; sourceTree = "<group>"; };
-		8AECCC211FB852B70057BA3D /* HistogramEqualizationLuminance_GLES.fsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = HistogramEqualizationLuminance_GLES.fsh; sourceTree = "<group>"; };
-		8AECCC221FB852B70057BA3D /* LinearBurnBlend_GLES.fsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = LinearBurnBlend_GLES.fsh; sourceTree = "<group>"; };
-		8AECCC231FB852B70057BA3D /* Erosion1_GLES.fsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = Erosion1_GLES.fsh; sourceTree = "<group>"; };
-		8AECCC241FB852B70057BA3D /* ColorInvert_GLES.fsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = ColorInvert_GLES.fsh; sourceTree = "<group>"; };
-		8AECCC251FB852B70057BA3D /* Dilation2_GL.fsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = Dilation2_GL.fsh; sourceTree = "<group>"; };
-		8AECCC261FB852B70057BA3D /* Convolution3x3_GL.fsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = Convolution3x3_GL.fsh; sourceTree = "<group>"; };
-		8AECCC271FB852B70057BA3D /* Toon_GLES.fsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = Toon_GLES.fsh; sourceTree = "<group>"; };
-		8AECCC281FB852B70057BA3D /* HistogramLuminanceSampling.vsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = HistogramLuminanceSampling.vsh; sourceTree = "<group>"; };
-		8AECCC291FB852B70057BA3D /* LinearBurnBlend_GL.fsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = LinearBurnBlend_GL.fsh; sourceTree = "<group>"; };
-		8AECCC2A1FB852B70057BA3D /* MultiplyBlend_GLES.fsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = MultiplyBlend_GLES.fsh; sourceTree = "<group>"; };
-		8AECCC2B1FB852B70057BA3D /* Opacity_GL.fsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = Opacity_GL.fsh; sourceTree = "<group>"; };
-		8AECCC2C1FB852B70057BA3D /* YUVConversionVideoRange_GLES.fsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = YUVConversionVideoRange_GLES.fsh; sourceTree = "<group>"; };
-		8AECCC2D1FB852B70057BA3D /* SaturationBlend_GL.fsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = SaturationBlend_GL.fsh; sourceTree = "<group>"; };
-		8AECCC2E1FB852B70057BA3D /* FiveInput.vsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = FiveInput.vsh; sourceTree = "<group>"; };
-		8AECCC2F1FB852B70057BA3D /* Erosion2_GL.fsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = Erosion2_GL.fsh; sourceTree = "<group>"; };
-		8AECCC301FB852B70057BA3D /* WhiteBalance_GLES.fsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = WhiteBalance_GLES.fsh; sourceTree = "<group>"; };
-		8AECCC311FB852B70057BA3D /* TwoInput.vsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = TwoInput.vsh; sourceTree = "<group>"; };
-		8AECCC321FB852B70057BA3D /* HighlightShadowTint_GL.fsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = HighlightShadowTint_GL.fsh; sourceTree = "<group>"; };
-		8AECCC331FB852B70057BA3D /* Crosshair_GL.fsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = Crosshair_GL.fsh; sourceTree = "<group>"; };
-		8AECCC341FB852B70057BA3D /* HistogramGreenSampling.vsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = HistogramGreenSampling.vsh; sourceTree = "<group>"; };
-		8AECCC351FB852B70057BA3D /* OverlayBlend_GLES.fsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = OverlayBlend_GLES.fsh; sourceTree = "<group>"; };
-		8AECCC361FB852B70057BA3D /* ColourFASTDecriptor_GL.fsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = ColourFASTDecriptor_GL.fsh; sourceTree = "<group>"; };
-		8AECCC371FB852B70057BA3D /* BilateralBlur_GLES.fsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = BilateralBlur_GLES.fsh; sourceTree = "<group>"; };
-		8AECCC381FB852B70057BA3D /* DirectionalSobelEdgeDetection_GLES.fsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = DirectionalSobelEdgeDetection_GLES.fsh; sourceTree = "<group>"; };
-		8AECCC391FB852B70057BA3D /* LuminanceThreshold_GL.fsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = LuminanceThreshold_GL.fsh; sourceTree = "<group>"; };
-		8AECCC3A1FB852B70057BA3D /* RGBAdjustment_GL.fsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = RGBAdjustment_GL.fsh; sourceTree = "<group>"; };
-		8AECCC3B1FB852B70057BA3D /* AdaptiveThreshold_GLES.fsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = AdaptiveThreshold_GLES.fsh; sourceTree = "<group>"; };
-		8AECCC3C1FB852B70057BA3D /* ThresholdEdgeDetection_GLES.fsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = ThresholdEdgeDetection_GLES.fsh; sourceTree = "<group>"; };
-		8AECCC3D1FB852B70057BA3D /* NobleCornerDetector_GL.fsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = NobleCornerDetector_GL.fsh; sourceTree = "<group>"; };
-		8AECCC3E1FB852B70057BA3D /* Crosshair.vsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = Crosshair.vsh; sourceTree = "<group>"; };
-		8AECCC3F1FB852B70057BA3D /* SourceOverBlend_GLES.fsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = SourceOverBlend_GLES.fsh; sourceTree = "<group>"; };
-		8AECCC401FB852B70057BA3D /* DirectionalNonMaximumSuppression_GLES.fsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = DirectionalNonMaximumSuppression_GLES.fsh; sourceTree = "<group>"; };
-		8AECCC411FB852B70057BA3D /* MultiplyBlend_GL.fsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = MultiplyBlend_GL.fsh; sourceTree = "<group>"; };
-		8AECCC421FB852B70057BA3D /* XYDerivative_GL.fsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = XYDerivative_GL.fsh; sourceTree = "<group>"; };
-		8AECCC431FB852B70057BA3D /* ZoomBlur_GLES.fsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = ZoomBlur_GLES.fsh; sourceTree = "<group>"; };
-		8AECCC441FB852B70057BA3D /* ThreeInput.vsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = ThreeInput.vsh; sourceTree = "<group>"; };
-		8AECCC451FB852B70057BA3D /* ScreenBlend_GLES.fsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = ScreenBlend_GLES.fsh; sourceTree = "<group>"; };
-		8AECCC461FB852B70057BA3D /* YUVConversionVideoRange_GL.fsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = YUVConversionVideoRange_GL.fsh; sourceTree = "<group>"; };
-		8AECCC471FB852B70057BA3D /* Luminance_GLES.fsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = Luminance_GLES.fsh; sourceTree = "<group>"; };
-		8AECCC481FB852B70057BA3D /* Sketch_GL.fsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = Sketch_GL.fsh; sourceTree = "<group>"; };
-		8AECCC491FB852B70057BA3D /* Vignette_GLES.fsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = Vignette_GLES.fsh; sourceTree = "<group>"; };
-		8AECCC4A1FB852B70057BA3D /* AlphaTest_GLES.fsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = AlphaTest_GLES.fsh; sourceTree = "<group>"; };
-		8AECCC4B1FB852B70057BA3D /* Posterize_GL.fsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = Posterize_GL.fsh; sourceTree = "<group>"; };
-		8AECCC4C1FB852B70057BA3D /* KuwaharaRadius3_GLES.fsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = KuwaharaRadius3_GLES.fsh; sourceTree = "<group>"; };
-		8AECCC4D1FB852B70057BA3D /* Circle.vsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = Circle.vsh; sourceTree = "<group>"; };
-		8AECCC4E1FB852B70057BA3D /* AddBlend_GLES.fsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = AddBlend_GLES.fsh; sourceTree = "<group>"; };
-		8AECCC4F1FB852B70057BA3D /* Brightness_GLES.fsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = Brightness_GLES.fsh; sourceTree = "<group>"; };
-		8AECCC501FB852B70057BA3D /* Line_GLES.fsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = Line_GLES.fsh; sourceTree = "<group>"; };
-		8AECCC511FB852B70057BA3D /* Sharpen.vsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = Sharpen.vsh; sourceTree = "<group>"; };
-		8AECCC521FB852B70057BA3D /* Passthrough_GLES.fsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = Passthrough_GLES.fsh; sourceTree = "<group>"; };
-		8AECCC531FB852B70057BA3D /* PrewittEdgeDetection_GLES.fsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = PrewittEdgeDetection_GLES.fsh; sourceTree = "<group>"; };
-		8AECCC541FB852B70057BA3D /* SphereRefraction_GL.fsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = SphereRefraction_GL.fsh; sourceTree = "<group>"; };
-		8AECCC551FB852B70057BA3D /* HardLightBlend_GLES.fsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = HardLightBlend_GLES.fsh; sourceTree = "<group>"; };
-		8AECCC561FB852B70057BA3D /* HistogramDisplay_GL.fsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = HistogramDisplay_GL.fsh; sourceTree = "<group>"; };
-		8AECCC571FB852B70057BA3D /* Solarize_GL.fsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = Solarize_GL.fsh; sourceTree = "<group>"; };
-		8AECCC581FB852B70057BA3D /* LocalBinaryPattern_GLES.fsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = LocalBinaryPattern_GLES.fsh; sourceTree = "<group>"; };
-		8AECCC591FB852B70057BA3D /* Swirl_GLES.fsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = Swirl_GLES.fsh; sourceTree = "<group>"; };
-		8AECCC5A1FB852B70057BA3D /* SobelEdgeDetection_GLES.fsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = SobelEdgeDetection_GLES.fsh; sourceTree = "<group>"; };
-		8AECCC5B1FB852B70057BA3D /* HighlightShadowTint_GLES.fsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = HighlightShadowTint_GLES.fsh; sourceTree = "<group>"; };
-		8AECCC5C1FB852B70057BA3D /* AverageLuminance_GLES.fsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = AverageLuminance_GLES.fsh; sourceTree = "<group>"; };
-		8AECCC5D1FB852B70057BA3D /* ColorMatrix_GLES.fsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = ColorMatrix_GLES.fsh; sourceTree = "<group>"; };
-		8AECCC5E1FB852B70057BA3D /* Kuwahara_GLES.fsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = Kuwahara_GLES.fsh; sourceTree = "<group>"; };
-		8AECCC5F1FB852B70057BA3D /* OneInput.vsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = OneInput.vsh; sourceTree = "<group>"; };
-		8AECCC601FB852B70057BA3D /* NobleCornerDetector_GLES.fsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = NobleCornerDetector_GLES.fsh; sourceTree = "<group>"; };
-		8AECCC611FB852B70057BA3D /* HistogramRedSampling.vsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = HistogramRedSampling.vsh; sourceTree = "<group>"; };
-		8AECCC621FB852B70057BA3D /* ColorSwizzling_GLES.fsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = ColorSwizzling_GLES.fsh; sourceTree = "<group>"; };
-		8AECCC631FB852B70057BA3D /* Crosshatch_GLES.fsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = Crosshatch_GLES.fsh; sourceTree = "<group>"; };
-		8AECCC641FB852B70057BA3D /* LanczosResampling_GL.fsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = LanczosResampling_GL.fsh; sourceTree = "<group>"; };
-		8AECCC651FB852B70057BA3D /* Dilation4_GLES.fsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = Dilation4_GLES.fsh; sourceTree = "<group>"; };
-		8AECCC661FB852B70057BA3D /* Circle_GL.fsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = Circle_GL.fsh; sourceTree = "<group>"; };
-		8AECCC671FB852B70057BA3D /* HueBlend_GLES.fsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = HueBlend_GLES.fsh; sourceTree = "<group>"; };
-		8AECCC681FB852B70057BA3D /* StretchDistortion_GL.fsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = StretchDistortion_GL.fsh; sourceTree = "<group>"; };
-		8AECCC691FB852B70057BA3D /* HighlightShadow_GL.fsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = HighlightShadow_GL.fsh; sourceTree = "<group>"; };
-		8AECCC6A1FB852B70057BA3D /* FalseColor_GL.fsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = FalseColor_GL.fsh; sourceTree = "<group>"; };
-		8AECCC6B1FB852B70057BA3D /* Toon_GL.fsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = Toon_GL.fsh; sourceTree = "<group>"; };
-		8AECCC6C1FB852B70057BA3D /* HistogramEqualizationRGB_GLES.fsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = HistogramEqualizationRGB_GLES.fsh; sourceTree = "<group>"; };
-		8AECCC6D1FB852B70057BA3D /* ChromaKey_GLES.fsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = ChromaKey_GLES.fsh; sourceTree = "<group>"; };
-		8AECCC6E1FB852B70057BA3D /* AlphaTest_GL.fsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = AlphaTest_GL.fsh; sourceTree = "<group>"; };
-		8AECCC6F1FB852B70057BA3D /* Erosion4_GL.fsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = Erosion4_GL.fsh; sourceTree = "<group>"; };
-		8AECCC701FB852B70057BA3D /* RGBAdjustment_GLES.fsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = RGBAdjustment_GLES.fsh; sourceTree = "<group>"; };
-		8AECCC711FB852B70057BA3D /* SubtractBlend_GL.fsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = SubtractBlend_GL.fsh; sourceTree = "<group>"; };
-		8AECCC721FB852B70057BA3D /* HarrisCornerDetector_GLES.fsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = HarrisCornerDetector_GLES.fsh; sourceTree = "<group>"; };
-		8AECCC731FB852B70057BA3D /* Transform.vsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = Transform.vsh; sourceTree = "<group>"; };
-		8AECCC741FB852B70057BA3D /* DissolveBlend_GL.fsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = DissolveBlend_GL.fsh; sourceTree = "<group>"; };
-		8AECCC751FB852B70057BA3D /* PolarPixellate_GLES.fsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = PolarPixellate_GLES.fsh; sourceTree = "<group>"; };
-		8AECCC761FB852B70057BA3D /* Dilation4_GL.fsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = Dilation4_GL.fsh; sourceTree = "<group>"; };
-		8AECCC771FB852B70057BA3D /* DarkenBlend_GLES.fsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = DarkenBlend_GLES.fsh; sourceTree = "<group>"; };
-		8AECCC781FB852B70057BA3D /* Levels_GL.fsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = Levels_GL.fsh; sourceTree = "<group>"; };
-		8AECCC791FB852B70057BA3D /* Erosion1_GL.fsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = Erosion1_GL.fsh; sourceTree = "<group>"; };
-		8AECCC7A1FB852B70057BA3D /* TiltShift_GL.fsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = TiltShift_GL.fsh; sourceTree = "<group>"; };
-		8AECCC7B1FB852B70057BA3D /* HistogramEqualizationRed_GL.fsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = HistogramEqualizationRed_GL.fsh; sourceTree = "<group>"; };
-		8AECCC7C1FB852B70057BA3D /* DirectionalSobelEdgeDetection_GL.fsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = DirectionalSobelEdgeDetection_GL.fsh; sourceTree = "<group>"; };
-		8AECCC7D1FB852B70057BA3D /* ErosionDilation3.vsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = ErosionDilation3.vsh; sourceTree = "<group>"; };
-		8AECCC7E1FB852B70057BA3D /* LocalBinaryPattern_GL.fsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = LocalBinaryPattern_GL.fsh; sourceTree = "<group>"; };
-		8AECCC7F1FB852B70057BA3D /* AlphaBlend_GLES.fsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = AlphaBlend_GLES.fsh; sourceTree = "<group>"; };
-		8AECCC801FB852B70057BA3D /* Hue_GL.fsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = Hue_GL.fsh; sourceTree = "<group>"; };
-		8AECCC811FB852B70057BA3D /* Halftone_GL.fsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = Halftone_GL.fsh; sourceTree = "<group>"; };
-		8AECCC821FB852B70057BA3D /* HistogramEqualizationRed_GLES.fsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = HistogramEqualizationRed_GLES.fsh; sourceTree = "<group>"; };
-		8AECCC831FB852B70057BA3D /* ColorBlend_GLES.fsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = ColorBlend_GLES.fsh; sourceTree = "<group>"; };
-		8AECCC841FB852B70057BA3D /* Laplacian_GL.fsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = Laplacian_GL.fsh; sourceTree = "<group>"; };
-		8AECCC851FB852B70057BA3D /* AddBlend_GL.fsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = AddBlend_GL.fsh; sourceTree = "<group>"; };
-		8AECCC861FB852B70057BA3D /* ScreenBlend_GL.fsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = ScreenBlend_GL.fsh; sourceTree = "<group>"; };
-		8AECCC871FB852B70057BA3D /* ExclusionBlend_GLES.fsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = ExclusionBlend_GLES.fsh; sourceTree = "<group>"; };
-		8AECCC881FB852B70057BA3D /* Dilation1_GL.fsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = Dilation1_GL.fsh; sourceTree = "<group>"; };
-		8AECCC891FB852B70057BA3D /* Median_GLES.fsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = Median_GLES.fsh; sourceTree = "<group>"; };
-		8AECCC8A1FB852B70057BA3D /* DifferenceBlend_GL.fsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = DifferenceBlend_GL.fsh; sourceTree = "<group>"; };
-		8AECCC8B1FB852B70057BA3D /* ErosionDilation2.vsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = ErosionDilation2.vsh; sourceTree = "<group>"; };
-		8AECCC8C1FB852B70057BA3D /* PinchDistortion_GLES.fsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = PinchDistortion_GLES.fsh; sourceTree = "<group>"; };
-		8AECCC8D1FB852B70057BA3D /* HistogramAccumulation_GLES.fsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = HistogramAccumulation_GLES.fsh; sourceTree = "<group>"; };
-		8AECCC8E1FB852B70057BA3D /* Halftone_GLES.fsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = Halftone_GLES.fsh; sourceTree = "<group>"; };
-		8AECCC8F1FB852B70057BA3D /* ThresholdSketch_GL.fsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = ThresholdSketch_GL.fsh; sourceTree = "<group>"; };
-		8AECCC901FB852B70057BA3D /* SphereRefraction_GLES.fsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = SphereRefraction_GLES.fsh; sourceTree = "<group>"; };
-		8AECCC911FB852B70057BA3D /* Saturation_GLES.fsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = Saturation_GLES.fsh; sourceTree = "<group>"; };
-		8AECCC921FB852B70057BA3D /* HistogramEqualizationBlue_GLES.fsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = HistogramEqualizationBlue_GLES.fsh; sourceTree = "<group>"; };
-		8AECCC931FB852B70057BA3D /* UnsharpMask_GL.fsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = UnsharpMask_GL.fsh; sourceTree = "<group>"; };
-		8AECCC941FB852B70057BA3D /* Gamma_GLES.fsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = Gamma_GLES.fsh; sourceTree = "<group>"; };
-		8AECCC951FB852B70057BA3D /* Sharpen_GL.fsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = Sharpen_GL.fsh; sourceTree = "<group>"; };
-		8AECCC961FB852B70057BA3D /* Erosion3_GLES.fsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = Erosion3_GLES.fsh; sourceTree = "<group>"; };
-		8AECCC971FB852B70057BA3D /* Erosion2_GLES.fsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = Erosion2_GLES.fsh; sourceTree = "<group>"; };
-		8AECCC981FB852B70057BA3D /* SourceOverBlend_GL.fsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = SourceOverBlend_GL.fsh; sourceTree = "<group>"; };
-		8AECCC991FB852B70057BA3D /* SoftLightBlend_GLES.fsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = SoftLightBlend_GLES.fsh; sourceTree = "<group>"; };
-		8AECCC9A1FB852B70057BA3D /* Monochrome_GLES.fsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = Monochrome_GLES.fsh; sourceTree = "<group>"; };
-		8AECCC9B1FB852B70057BA3D /* LightenBlend_GL.fsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = LightenBlend_GL.fsh; sourceTree = "<group>"; };
-		8AECCC9C1FB852B70057BA3D /* HistogramAccumulation_GL.fsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = HistogramAccumulation_GL.fsh; sourceTree = "<group>"; };
-		8AECCC9D1FB852B70057BA3D /* Saturation_GL.fsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = Saturation_GL.fsh; sourceTree = "<group>"; };
-		8AECCC9E1FB852B70057BA3D /* ErosionDilation1.vsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = ErosionDilation1.vsh; sourceTree = "<group>"; };
-		8AECCC9F1FB852B70057BA3D /* YUVConversionFullRangeUVPlanar_GLES.fsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = YUVConversionFullRangeUVPlanar_GLES.fsh; sourceTree = "<group>"; };
-		8AECCCA01FB852B70057BA3D /* ColourFASTDecriptor.vsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = ColourFASTDecriptor.vsh; sourceTree = "<group>"; };
-		8AECCCA11FB852B70057BA3D /* ColorBurnBlend_GL.fsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = ColorBurnBlend_GL.fsh; sourceTree = "<group>"; };
-		8AECCCA21FB852B70057BA3D /* ColorMatrix_GL.fsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = ColorMatrix_GL.fsh; sourceTree = "<group>"; };
-		8AECCCA31FB852B70057BA3D /* Exposure_GL.fsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = Exposure_GL.fsh; sourceTree = "<group>"; };
-		8AECCCA41FB852B70057BA3D /* NormalBlend_GLES.fsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = NormalBlend_GLES.fsh; sourceTree = "<group>"; };
-		8AECCCA51FB852B70057BA3D /* Vignette_GL.fsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = Vignette_GL.fsh; sourceTree = "<group>"; };
-		8AECCCA61FB852B70057BA3D /* HarrisCornerDetector_GL.fsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = HarrisCornerDetector_GL.fsh; sourceTree = "<group>"; };
-		8AECCCA71FB852B70057BA3D /* Luminance_GL.fsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = Luminance_GL.fsh; sourceTree = "<group>"; };
-		8AECCCA81FB852B70057BA3D /* YUVConversionFullRange_GLES.fsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = YUVConversionFullRange_GLES.fsh; sourceTree = "<group>"; };
-		8AECCCA91FB852B70057BA3D /* FourInput.vsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = FourInput.vsh; sourceTree = "<group>"; };
-		8AECCCAA1FB852B70057BA3D /* HistogramEqualizationGreen_GL.fsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = HistogramEqualizationGreen_GL.fsh; sourceTree = "<group>"; };
-		8AECCCAB1FB852B70057BA3D /* XYDerivative_GLES.fsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = XYDerivative_GLES.fsh; sourceTree = "<group>"; };
-		8AECCCAC1FB852B70057BA3D /* GlassSphere_GL.fsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = GlassSphere_GL.fsh; sourceTree = "<group>"; };
-		8AECCCAD1FB852B70057BA3D /* ErosionDilation4.vsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = ErosionDilation4.vsh; sourceTree = "<group>"; };
-		8AECCCAE1FB852B70057BA3D /* Gamma_GL.fsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = Gamma_GL.fsh; sourceTree = "<group>"; };
-		8AECCCAF1FB852B70057BA3D /* PolkaDot_GL.fsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = PolkaDot_GL.fsh; sourceTree = "<group>"; };
-		8AECCCB01FB852B70057BA3D /* ChromaKey_GL.fsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = ChromaKey_GL.fsh; sourceTree = "<group>"; };
-		8AECCCB11FB852B70057BA3D /* YUVConversionFullRangeUVPlanar_GL.fsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = YUVConversionFullRangeUVPlanar_GL.fsh; sourceTree = "<group>"; };
-		8AECCCB21FB852B70057BA3D /* Passthrough_GL.fsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = Passthrough_GL.fsh; sourceTree = "<group>"; };
-		8AECCCB31FB852B70057BA3D /* WeakPixelInclusion_GLES.fsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = WeakPixelInclusion_GLES.fsh; sourceTree = "<group>"; };
-		8AECCCB41FB852B70057BA3D /* DivideBlend_GL.fsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = DivideBlend_GL.fsh; sourceTree = "<group>"; };
-		8AECCCB51FB852B70057BA3D /* NearbyTexelSampling.vsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = NearbyTexelSampling.vsh; sourceTree = "<group>"; };
-		8AECCCB61FB852B70057BA3D /* Haze_GLES.fsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = Haze_GLES.fsh; sourceTree = "<group>"; };
-		8AECCCB71FB852B70057BA3D /* LuminanceRange_GLES.fsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = LuminanceRange_GLES.fsh; sourceTree = "<group>"; };
-		8AECCCB81FB852B70057BA3D /* Erosion3_GL.fsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = Erosion3_GL.fsh; sourceTree = "<group>"; };
-		8AECCCB91FB852B70057BA3D /* ShiTomasiFeatureDetector_GL.fsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = ShiTomasiFeatureDetector_GL.fsh; sourceTree = "<group>"; };
-		8AECCCBA1FB852B70057BA3D /* Laplacian_GLES.fsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = Laplacian_GLES.fsh; sourceTree = "<group>"; };
-		8AECCCBB1FB852B70057BA3D /* LanczosResampling.vsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = LanczosResampling.vsh; sourceTree = "<group>"; };
-		8AECCCBC1FB852B70057BA3D /* WhiteBalance_GL.fsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = WhiteBalance_GL.fsh; sourceTree = "<group>"; };
-		8AECCCBD1FB852B70057BA3D /* HistogramDisplay.vsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = HistogramDisplay.vsh; sourceTree = "<group>"; };
-		8AECCCBE1FB852B70057BA3D /* AverageColor_GL.fsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = AverageColor_GL.fsh; sourceTree = "<group>"; };
-		8AECCCBF1FB852B70057BA3D /* Pixellate_GL.fsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = Pixellate_GL.fsh; sourceTree = "<group>"; };
-		8AECCCC01FB852B70057BA3D /* MotionBlur_GL.fsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = MotionBlur_GL.fsh; sourceTree = "<group>"; };
-		8AECCCC11FB852B70057BA3D /* Dilation1_GLES.fsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = Dilation1_GLES.fsh; sourceTree = "<group>"; };
-		8AECCCC21FB852B70057BA3D /* MotionComparison_GLES.fsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = MotionComparison_GLES.fsh; sourceTree = "<group>"; };
-		8AECCCC31FB852B70057BA3D /* ColourFASTDecriptor_GLES.fsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = ColourFASTDecriptor_GLES.fsh; sourceTree = "<group>"; };
-		8AECCCC41FB852B70057BA3D /* AdaptiveThreshold_GL.fsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = AdaptiveThreshold_GL.fsh; sourceTree = "<group>"; };
-		8AECCCC51FB852B70057BA3D /* HistogramEqualizationRGB_GL.fsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = HistogramEqualizationRGB_GL.fsh; sourceTree = "<group>"; };
-		8AECCCC61FB852B70057BA3D /* Dilation3_GL.fsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = Dilation3_GL.fsh; sourceTree = "<group>"; };
-		8AECCCC71FB852B70057BA3D /* DissolveBlend_GLES.fsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = DissolveBlend_GLES.fsh; sourceTree = "<group>"; };
-		8AECCCC81FB852B70057BA3D /* SubtractBlend_GLES.fsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = SubtractBlend_GLES.fsh; sourceTree = "<group>"; };
-		8AECCCC91FB852B70057BA3D /* DirectionalNonMaximumSuppression_GL.fsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = DirectionalNonMaximumSuppression_GL.fsh; sourceTree = "<group>"; };
-		8AECCCCA1FB852B70057BA3D /* OverlayBlend_GL.fsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = OverlayBlend_GL.fsh; sourceTree = "<group>"; };
-		8AECCCCB1FB852B70057BA3D /* Brightness_GL.fsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = Brightness_GL.fsh; sourceTree = "<group>"; };
-		8AECCCCC1FB852B70057BA3D /* Vibrance_GL.fsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = Vibrance_GL.fsh; sourceTree = "<group>"; };
-		8AECCCCD1FB852B70057BA3D /* PrewittEdgeDetection_GL.fsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = PrewittEdgeDetection_GL.fsh; sourceTree = "<group>"; };
-		8AECCCCE1FB852B70057BA3D /* FalseColor_GLES.fsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = FalseColor_GLES.fsh; sourceTree = "<group>"; };
-		8AECCCCF1FB852B70057BA3D /* ThresholdedNonMaximumSuppression_GLES.fsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = ThresholdedNonMaximumSuppression_GLES.fsh; sourceTree = "<group>"; };
-		8AECCCD01FB852B70057BA3D /* ColorDodgeBlend_GL.fsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = ColorDodgeBlend_GL.fsh; sourceTree = "<group>"; };
-		8AECCCD11FB852B70057BA3D /* Crosshatch_GL.fsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = Crosshatch_GL.fsh; sourceTree = "<group>"; };
-		8AECCCD21FB852B70057BA3D /* YUVConversionFullRange_GL.fsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = YUVConversionFullRange_GL.fsh; sourceTree = "<group>"; };
-		8AECCCD31FB852B70057BA3D /* Monochrome_GL.fsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = Monochrome_GL.fsh; sourceTree = "<group>"; };
-		8AECCCD41FB852B70057BA3D /* Lookup_GL.fsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = Lookup_GL.fsh; sourceTree = "<group>"; };
-		8AECCCD51FB852B70057BA3D /* ShiTomasiFeatureDetector_GLES.fsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = ShiTomasiFeatureDetector_GLES.fsh; sourceTree = "<group>"; };
-		8AECCCD61FB852B70057BA3D /* BilateralBlur.vsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = BilateralBlur.vsh; sourceTree = "<group>"; };
-		8AECCCD71FB852B70057BA3D /* LuminosityBlend_GL.fsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = LuminosityBlend_GL.fsh; sourceTree = "<group>"; };
-		8AECCCD81FB852B70057BA3D /* PolarPixellate_GL.fsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = PolarPixellate_GL.fsh; sourceTree = "<group>"; };
-		8AECCCD91FB852B70057BA3D /* GlassSphere_GLES.fsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = GlassSphere_GLES.fsh; sourceTree = "<group>"; };
-		8AECCCDA1FB852B70057BA3D /* ColorInvert_GL.fsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = ColorInvert_GL.fsh; sourceTree = "<group>"; };
-		8AECCCDB1FB852B70057BA3D /* HardLightBlend_GL.fsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = HardLightBlend_GL.fsh; sourceTree = "<group>"; };
-		8AECCCDC1FB852B70057BA3D /* Haze_GL.fsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = Haze_GL.fsh; sourceTree = "<group>"; };
-		8AECCCDD1FB852B70057BA3D /* Sharpen_GLES.fsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = Sharpen_GLES.fsh; sourceTree = "<group>"; };
-		8AECCCDE1FB852B70057BA3D /* HistogramBlueSampling.vsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = HistogramBlueSampling.vsh; sourceTree = "<group>"; };
-		8AECCCDF1FB852B70057BA3D /* ColorBurnBlend_GLES.fsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = ColorBurnBlend_GLES.fsh; sourceTree = "<group>"; };
-		8AECCCE01FB852B70057BA3D /* HueBlend_GL.fsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = HueBlend_GL.fsh; sourceTree = "<group>"; };
-		8AECCCE11FB852B70057BA3D /* Opacity_GLES.fsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = Opacity_GLES.fsh; sourceTree = "<group>"; };
-		8AECCCE21FB852B70057BA3D /* Levels_GLES.fsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = Levels_GLES.fsh; sourceTree = "<group>"; };
-		8AECCCE31FB852B70057BA3D /* MotionBlur.vsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = MotionBlur.vsh; sourceTree = "<group>"; };
-		8AECCCE41FB852B70057BA3D /* StretchDistortion_GLES.fsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = StretchDistortion_GLES.fsh; sourceTree = "<group>"; };
-		8AECCCE51FB852B70057BA3D /* Circle_GLES.fsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = Circle_GLES.fsh; sourceTree = "<group>"; };
-		8AECCCE61FB852B70057BA3D /* ColorSwizzling_GL.fsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = ColorSwizzling_GL.fsh; sourceTree = "<group>"; };
-		8AECCCE71FB852B70057BA3D /* Vibrance_GLES.fsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = Vibrance_GLES.fsh; sourceTree = "<group>"; };
-		8AECCCE81FB852B70057BA3D /* ConvertedShaders_GLES.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConvertedShaders_GLES.swift; sourceTree = "<group>"; };
-		8AECCCE91FB852B70057BA3D /* Line_GL.fsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = Line_GL.fsh; sourceTree = "<group>"; };
-		8AECCCEA1FB852B70057BA3D /* AverageLuminance_GL.fsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = AverageLuminance_GL.fsh; sourceTree = "<group>"; };
-		8AECCCEB1FB852B70057BA3D /* SobelEdgeDetection_GL.fsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = SobelEdgeDetection_GL.fsh; sourceTree = "<group>"; };
-		8AECCCEC1FB852B70057BA3D /* LuminanceThreshold_GLES.fsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = LuminanceThreshold_GLES.fsh; sourceTree = "<group>"; };
-		8AECCCED1FB852B70057BA3D /* ConvertedShaders_GL.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConvertedShaders_GL.swift; sourceTree = "<group>"; };
-		8AECCCEE1FB852B70057BA3D /* ColorLocalBinaryPattern_GL.fsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = ColorLocalBinaryPattern_GL.fsh; sourceTree = "<group>"; };
-		8AECCCEF1FB852B70057BA3D /* BulgeDistortion_GL.fsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = BulgeDistortion_GL.fsh; sourceTree = "<group>"; };
-		8AECCCF01FB852B70057BA3D /* DarkenBlend_GL.fsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = DarkenBlend_GL.fsh; sourceTree = "<group>"; };
-		8AECCCF11FB852B70057BA3D /* SaturationBlend_GLES.fsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = SaturationBlend_GLES.fsh; sourceTree = "<group>"; };
-		8AECCCF21FB852B70057BA3D /* Line.vsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = Line.vsh; sourceTree = "<group>"; };
-		8AECCCF31FB852B70057BA3D /* AverageColor.vsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = AverageColor.vsh; sourceTree = "<group>"; };
-		8AECCCF41FB852B70057BA3D /* HistogramEqualizationLuminance_GL.fsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = HistogramEqualizationLuminance_GL.fsh; sourceTree = "<group>"; };
-		8AECCCF51FB852B70057BA3D /* Contrast_GL.fsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = Contrast_GL.fsh; sourceTree = "<group>"; };
-		8AECCCF61FB852B70057BA3D /* ColorDodgeBlend_GLES.fsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = ColorDodgeBlend_GLES.fsh; sourceTree = "<group>"; };
-		8AECCCF71FB852B70057BA3D /* CGAColorspace_GLES.fsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = CGAColorspace_GLES.fsh; sourceTree = "<group>"; };
-		8AECCCF81FB852B70057BA3D /* Median_GL.fsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = Median_GL.fsh; sourceTree = "<group>"; };
-		8AECCCF91FB852B70057BA3D /* AverageColor_GLES.fsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = AverageColor_GLES.fsh; sourceTree = "<group>"; };
-		8AECCCFA1FB852B70057BA3D /* DifferenceBlend_GLES.fsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = DifferenceBlend_GLES.fsh; sourceTree = "<group>"; };
-		8AECCCFB1FB852B70057BA3D /* Crosshair_GLES.fsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = Crosshair_GLES.fsh; sourceTree = "<group>"; };
-		8AECCCFC1FB852B70057BA3D /* HistogramEqualizationGreen_GLES.fsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = HistogramEqualizationGreen_GLES.fsh; sourceTree = "<group>"; };
-		8AECCCFD1FB852B70057BA3D /* Erosion4_GLES.fsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = Erosion4_GLES.fsh; sourceTree = "<group>"; };
-		8AECCCFE1FB852B70057BA3D /* Exposure_GLES.fsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = Exposure_GLES.fsh; sourceTree = "<group>"; };
-		8AECCCFF1FB852B70057BA3D /* HistogramDisplay_GLES.fsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = HistogramDisplay_GLES.fsh; sourceTree = "<group>"; };
-		8AECCD001FB852B70057BA3D /* Posterize_GLES.fsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = Posterize_GLES.fsh; sourceTree = "<group>"; };
-		8AECCD011FB852B70057BA3D /* DivideBlend_GLES.fsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = DivideBlend_GLES.fsh; sourceTree = "<group>"; };
-		8AECCD021FB852B70057BA3D /* Lookup_GLES.fsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = Lookup_GLES.fsh; sourceTree = "<group>"; };
-		8AECCD031FB852B70057BA3D /* MotionComparison_GL.fsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = MotionComparison_GL.fsh; sourceTree = "<group>"; };
-		8AECCD041FB852B70057BA3D /* Hue_GLES.fsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = Hue_GLES.fsh; sourceTree = "<group>"; };
-		8AECCD051FB852B70057BA3D /* AlphaBlend_GL.fsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = AlphaBlend_GL.fsh; sourceTree = "<group>"; };
-		8AECCD061FB852B70057BA3D /* ExclusionBlend_GL.fsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = ExclusionBlend_GL.fsh; sourceTree = "<group>"; };
-		8AECCD071FB852B70057BA3D /* LanczosResampling_GLES.fsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = LanczosResampling_GLES.fsh; sourceTree = "<group>"; };
-		8AECCD081FB852B70057BA3D /* CGAColorspace_GL.fsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = CGAColorspace_GL.fsh; sourceTree = "<group>"; };
-		8AECCD091FB852B70057BA3D /* ZoomBlur_GL.fsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = ZoomBlur_GL.fsh; sourceTree = "<group>"; };
-		8AECCD0A1FB852B70057BA3D /* BilateralBlur_GL.fsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = BilateralBlur_GL.fsh; sourceTree = "<group>"; };
-		8AECCD0B1FB852B70057BA3D /* TiltShift_GLES.fsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = TiltShift_GLES.fsh; sourceTree = "<group>"; };
-		8AECCD0C1FB852B70057BA3D /* LevelsAdjustment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LevelsAdjustment.swift; sourceTree = "<group>"; };
-		8AECCD0D1FB852B70057BA3D /* KuwaharaFilter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KuwaharaFilter.swift; sourceTree = "<group>"; };
-		8AECCD0E1FB852B70057BA3D /* BulgeDistortion.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BulgeDistortion.swift; sourceTree = "<group>"; };
-		8AECCD0F1FB852B70057BA3D /* AverageColorExtractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AverageColorExtractor.swift; sourceTree = "<group>"; };
-		8AECCD101FB852B70057BA3D /* ColorDodgeBlend.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorDodgeBlend.swift; sourceTree = "<group>"; };
-		8AECCD111FB852B70057BA3D /* Convolution3x3.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Convolution3x3.swift; sourceTree = "<group>"; };
-		8AECCD121FB852B70057BA3D /* AverageLuminanceThreshold.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AverageLuminanceThreshold.swift; sourceTree = "<group>"; };
-		8AECCD131FB852B70057BA3D /* HighPassFilter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HighPassFilter.swift; sourceTree = "<group>"; };
-		8AECCD141FB852B70057BA3D /* OverlayBlend.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OverlayBlend.swift; sourceTree = "<group>"; };
-		8AECCD151FB852B70057BA3D /* CrosshairGenerator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CrosshairGenerator.swift; sourceTree = "<group>"; };
-		8AECCD161FB852B70057BA3D /* ChromaKeying.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChromaKeying.swift; sourceTree = "<group>"; };
-		8AECCD171FB852B70057BA3D /* BoxBlur.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BoxBlur.swift; sourceTree = "<group>"; };
-		8AECCD181FB852B70057BA3D /* CannyEdgeDetection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CannyEdgeDetection.swift; sourceTree = "<group>"; };
-		8AECCD191FB852B70057BA3D /* ColorInversion.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorInversion.swift; sourceTree = "<group>"; };
-		8AECCD1A1FB852B70057BA3D /* EmbossFilter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmbossFilter.swift; sourceTree = "<group>"; };
-		8AECCD1B1FB852B70057BA3D /* SubtractBlend.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubtractBlend.swift; sourceTree = "<group>"; };
-		8AECCD1C1FB852B70057BA3D /* PrewittEdgeDetection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrewittEdgeDetection.swift; sourceTree = "<group>"; };
-		8AECCD1D1FB852B70057BA3D /* AddBlend.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddBlend.swift; sourceTree = "<group>"; };
-		8AECCD1E1FB852B70057BA3D /* DivideBlend.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DivideBlend.swift; sourceTree = "<group>"; };
-		8AECCD1F1FB852B70057BA3D /* ColorMatrixFilter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorMatrixFilter.swift; sourceTree = "<group>"; };
-		8AECCD201FB852B70057BA3D /* Sharpen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sharpen.swift; sourceTree = "<group>"; };
-		8AECCD211FB852B70057BA3D /* ThresholdSobelEdgeDetection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThresholdSobelEdgeDetection.swift; sourceTree = "<group>"; };
-		8AECCD221FB852B70057BA3D /* UnsharpMask.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UnsharpMask.swift; sourceTree = "<group>"; };
-		8AECCD231FB852B70057BA3D /* SoftLightBlend.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SoftLightBlend.swift; sourceTree = "<group>"; };
-		8AECCD241FB852B70057BA3D /* ColourFASTFeatureDetection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColourFASTFeatureDetection.swift; sourceTree = "<group>"; };
-		8AECCD251FB852B70057BA3D /* SaturationBlend.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SaturationBlend.swift; sourceTree = "<group>"; };
-		8AECCD261FB852B70057BA3D /* ColorLocalBinaryPattern.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorLocalBinaryPattern.swift; sourceTree = "<group>"; };
-		8AECCD271FB852B70057BA3D /* StretchDistortion.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StretchDistortion.swift; sourceTree = "<group>"; };
-		8AECCD291FB852B70057BA3D /* PictureInput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PictureInput.swift; sourceTree = "<group>"; };
-		8AECCD2A1FB852B70057BA3D /* MovieOutput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieOutput.swift; sourceTree = "<group>"; };
-		8AECCD2B1FB852B70057BA3D /* OpenGLContext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OpenGLContext.swift; sourceTree = "<group>"; };
-		8AECCD2C1FB852B70057BA3D /* RenderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RenderView.swift; sourceTree = "<group>"; };
-		8AECCD2D1FB852B70057BA3D /* MovieInput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieInput.swift; sourceTree = "<group>"; };
-		8AECCD2E1FB852B70057BA3D /* Camera.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Camera.swift; sourceTree = "<group>"; };
-		8AECCD2F1FB852B70057BA3D /* PictureOutput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PictureOutput.swift; sourceTree = "<group>"; };
-		8AECCD301FB852B70057BA3D /* GPUImage.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GPUImage.h; sourceTree = "<group>"; };
-		8AECCD311FB852B70057BA3D /* BasicOperation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BasicOperation.swift; sourceTree = "<group>"; };
-		8AECCD321FB852B70057BA3D /* Size.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Size.swift; sourceTree = "<group>"; };
-		8AECCD331FB852B70057BA3D /* OpenGLContext_Shared.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OpenGLContext_Shared.swift; sourceTree = "<group>"; };
-		8AECCD351FB852B70057BA3D /* PictureInput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PictureInput.swift; sourceTree = "<group>"; };
-		8AECCD361FB852B70057BA3D /* MovieOutput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieOutput.swift; sourceTree = "<group>"; };
-		8AECCD371FB852B70057BA3D /* OpenGLContext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OpenGLContext.swift; sourceTree = "<group>"; };
-		8AECCD381FB852B70057BA3D /* RenderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RenderView.swift; sourceTree = "<group>"; };
-		8AECCD391FB852B70057BA3D /* MovieInput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieInput.swift; sourceTree = "<group>"; };
-		8AECCD3A1FB852B70057BA3D /* Camera.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Camera.swift; sourceTree = "<group>"; };
-		8AECCD3B1FB852B70057BA3D /* PictureOutput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PictureOutput.swift; sourceTree = "<group>"; };
-		8AECCD3C1FB852B70057BA3D /* OpenGLRendering.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OpenGLRendering.swift; sourceTree = "<group>"; };
-		8AECCD3D1FB852B70057BA3D /* Timestamp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Timestamp.swift; sourceTree = "<group>"; };
-		8AECCD3E1FB852B70057BA3D /* Matrix.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Matrix.swift; sourceTree = "<group>"; };
-		8AECCD401FB852B70057BA3D /* RPiRenderWindow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RPiRenderWindow.swift; sourceTree = "<group>"; };
-		8AECCD411FB852B70057BA3D /* OpenGLContext-RPi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "OpenGLContext-RPi.swift"; sourceTree = "<group>"; };
-		8AECCD421FB852B70057BA3D /* v4lfuncs.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = v4lfuncs.c; sourceTree = "<group>"; };
-		8AECCD431FB852B70057BA3D /* GLUTRenderWindow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GLUTRenderWindow.swift; sourceTree = "<group>"; };
-		8AECCD441FB852B70057BA3D /* V4LCamera.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = V4LCamera.swift; sourceTree = "<group>"; };
-		8AECCD451FB852B70057BA3D /* OpenGLContext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OpenGLContext.swift; sourceTree = "<group>"; };
-		8AECCD461FB852B70057BA3D /* v4lfuncs.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = v4lfuncs.h; sourceTree = "<group>"; };
-		8AECCD471FB852B70057BA3D /* OperationGroup.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OperationGroup.swift; sourceTree = "<group>"; };
-		8AECCD481FB852B70057BA3D /* Framebuffer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Framebuffer.swift; sourceTree = "<group>"; };
-		8AECCD491FB852B70057BA3D /* FillMode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FillMode.swift; sourceTree = "<group>"; };
-		8AECCD4A1FB852B70057BA3D /* RawDataOutput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RawDataOutput.swift; sourceTree = "<group>"; };
-		8AECCD4B1FB852B70057BA3D /* ImageGenerator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageGenerator.swift; sourceTree = "<group>"; };
-		8AECCD4C1FB852B70057BA3D /* Position.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Position.swift; sourceTree = "<group>"; };
-		8AECCD4D1FB852B70057BA3D /* ImageOrientation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageOrientation.swift; sourceTree = "<group>"; };
-		8AECCD4E1FB852B70057BA3D /* Color.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Color.swift; sourceTree = "<group>"; };
-		8AECCD4F1FB852B70057BA3D /* TwoStageOperation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TwoStageOperation.swift; sourceTree = "<group>"; };
-		8AECCD511FB852B70057BA3D /* ShaderProgram_Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShaderProgram_Tests.swift; sourceTree = "<group>"; };
-		8AECCD521FB852B70057BA3D /* Pipeline_Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pipeline_Tests.swift; sourceTree = "<group>"; };
-		8AECCD551FB852B70057BA3D /* stubs.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = stubs.h; sourceTree = "<group>"; };
-		8AECCD561FB852B70057BA3D /* Package.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Package.swift; sourceTree = "<group>"; };
-		8AECCD571FB852B70057BA3D /* module.modulemap */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.module-map"; path = module.modulemap; sourceTree = "<group>"; };
-		8AECCD591FB852B70057BA3D /* Package.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Package.swift; sourceTree = "<group>"; };
-		8AECCD5A1FB852B70057BA3D /* module.modulemap */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.module-map"; path = module.modulemap; sourceTree = "<group>"; };
-		8AECCD5C1FB852B70057BA3D /* proto.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = proto.h; sourceTree = "<group>"; };
-		8AECCD5D1FB852B70057BA3D /* Package.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Package.swift; sourceTree = "<group>"; };
-		8AECCD5E1FB852B70057BA3D /* module.modulemap */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.module-map"; path = module.modulemap; sourceTree = "<group>"; };
-		8AECCD601FB852B70057BA3D /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
-		8AECCD611FB852B70057BA3D /* Package.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Package.swift; sourceTree = "<group>"; };
-		8AECCD621FB852B70057BA3D /* module.modulemap */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.module-map"; path = module.modulemap; sourceTree = "<group>"; };
-		8AECCD641FB852B70057BA3D /* Package.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Package.swift; sourceTree = "<group>"; };
-		8AECCD651FB852B70057BA3D /* module.modulemap */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.module-map"; path = module.modulemap; sourceTree = "<group>"; };
-		8AECCD661FB852B70057BA3D /* Package.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Package.swift; sourceTree = "<group>"; };
-		8AECCD671FB852B70057BA3D /* compile-LinuxRPi.sh */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = "compile-LinuxRPi.sh"; sourceTree = "<group>"; };
-		8AECCD681FB852B70057BA3D /* GPUImage.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; path = GPUImage.xcodeproj; sourceTree = "<group>"; };
 		AC7BC624126B2FF80E13B9E9 /* Pods-MagicCamera.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MagicCamera.release.xcconfig"; path = "Pods/Target Support Files/Pods-MagicCamera/Pods-MagicCamera.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -695,6 +336,7 @@
 		896A58BE1F6E27E700AEB484 /* Resourse */ = {
 			isa = PBXGroup;
 			children = (
+				898FF8131FC95FB1001987B4 /* M0.JPG */,
 				89C60E831FAE2B1C00FF53E5 /* filterResourse */,
 				89C60E761FAE2B0100FF53E5 /* config.plist */,
 			);
@@ -727,6 +369,12 @@
 		896A7C791F66DE9700FC369B /* MagicCamera */ = {
 			isa = PBXGroup;
 			children = (
+				898FF8041FC95B2E001987B4 /* PhotoPicker */,
+				898FF7FA1FC95AAA001987B4 /* UItilView */,
+				898FF7F41FC95A39001987B4 /* Template */,
+				898FF7F21FC95849001987B4 /* M2 */,
+				898FF7AA1FC9535D001987B4 /* GLES */,
+				898FF77E1FC95195001987B4 /* Journal */,
 				8A22626C1FB85EA7004D2927 /* GPUImage.xcodeproj */,
 				89C871B81FB5EFA0003F8A9D /* LaunchScreen.storyboard */,
 				89E5945E1F930F3D007671A3 /* Extension */,
@@ -741,7 +389,6 @@
 				896A7C7C1F66DE9700FC369B /* ViewController.swift */,
 				896A7C811F66DE9700FC369B /* Assets.xcassets */,
 				896A7C861F66DE9700FC369B /* Info.plist */,
-				8AECCB921FB852B70057BA3D /* GPUImage */,
 			);
 			path = MagicCamera;
 			sourceTree = "<group>";
@@ -800,6 +447,181 @@
 			path = ViewController;
 			sourceTree = "<group>";
 		};
+		898FF77E1FC95195001987B4 /* Journal */ = {
+			isa = PBXGroup;
+			children = (
+				898FF77F1FC95195001987B4 /* Handler */,
+				898FF7821FC95195001987B4 /* Model */,
+				898FF7841FC95195001987B4 /* View */,
+				898FF78A1FC95195001987B4 /* ViewController */,
+			);
+			path = Journal;
+			sourceTree = "<group>";
+		};
+		898FF77F1FC95195001987B4 /* Handler */ = {
+			isa = PBXGroup;
+			children = (
+				898FF7801FC95195001987B4 /* FilterCollectionViewHandler.swift */,
+				898FF7811FC95195001987B4 /* JournalHandler.swift */,
+			);
+			path = Handler;
+			sourceTree = "<group>";
+		};
+		898FF7821FC95195001987B4 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				898FF7831FC95195001987B4 /* JournalModel.swift */,
+				898FF8111FC95D96001987B4 /* JigsawModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		898FF7841FC95195001987B4 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				898FF7851FC95195001987B4 /* ConfirmTextView.swift */,
+				898FF7861FC95195001987B4 /* CutView.swift */,
+				898FF7871FC95195001987B4 /* FilterViewCell.swift */,
+				898FF7881FC95195001987B4 /* JournalView.swift */,
+				898FF7891FC95195001987B4 /* TouchTextView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		898FF78A1FC95195001987B4 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				898FF78C1FC95195001987B4 /* JournalViewController.swift */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		898FF7AA1FC9535D001987B4 /* GLES */ = {
+			isa = PBXGroup;
+			children = (
+				898FF7AB1FC9535D001987B4 /* Base */,
+				898FF7AF1FC9535D001987B4 /* BeautyGL.swift */,
+				898FF7B01FC9535D001987B4 /* CGLOperater.cpp */,
+				898FF7B11FC9535D001987B4 /* CGLOperater.hpp */,
+				898FF7B21FC9535D001987B4 /* File.metal */,
+				898FF7B31FC9535D001987B4 /* Filter */,
+				898FF7BA1FC9535D001987B4 /* Shader */,
+			);
+			path = GLES;
+			sourceTree = "<group>";
+		};
+		898FF7AB1FC9535D001987B4 /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				898FF7AC1FC9535D001987B4 /* GLFrameBuffer.swift */,
+				898FF7AD1FC9535D001987B4 /* GLProgram.swift */,
+				898FF7AE1FC9535D001987B4 /* GLTexture.swift */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		898FF7B31FC9535D001987B4 /* Filter */ = {
+			isa = PBXGroup;
+			children = (
+				898FF7B41FC9535D001987B4 /* BaseFilter.swift */,
+				898FF7B51FC9535D001987B4 /* CommonFilter.swift */,
+				898FF7B61FC9535D001987B4 /* LookUpFilter.swift */,
+				898FF7B71FC9535D001987B4 /* MixFilter.swift */,
+				898FF7B81FC9535D001987B4 /* PipFilter.swift */,
+				898FF7B91FC9535D001987B4 /* SGLLongPicFilter.swift */,
+			);
+			path = Filter;
+			sourceTree = "<group>";
+		};
+		898FF7BA1FC9535D001987B4 /* Shader */ = {
+			isa = PBXGroup;
+			children = (
+				898FF7BB1FC9535D001987B4 /* CameoFragment.glsl */,
+				898FF7BC1FC9535D001987B4 /* CameoVertex.glsl */,
+				898FF7BD1FC9535D001987B4 /* CharacterFragment.glsl */,
+				898FF7BE1FC9535D001987B4 /* Charactervertex.glsl */,
+				898FF7BF1FC9535D001987B4 /* LookupFragment.glsl */,
+				898FF7C01FC9535D001987B4 /* LookupFragment16.glsl */,
+				898FF7C11FC9535D001987B4 /* lookupTestF.glsl */,
+				898FF7C21FC9535D001987B4 /* lookupTestV.glsl */,
+				898FF7C31FC9535D001987B4 /* LookupVertex.glsl */,
+				898FF7C41FC9535D001987B4 /* LookupVertex16.glsl */,
+				898FF7C51FC9535D001987B4 /* MixFragment.glsl */,
+				898FF7C61FC9535D001987B4 /* MixVertex.glsl */,
+				898FF7C71FC9535D001987B4 /* MTShaderFragment.glsl */,
+				898FF7C81FC9535D001987B4 /* MTShaderVertex.glsl */,
+				898FF7C91FC9535D001987B4 /* PipFragment.glsl */,
+				898FF7CA1FC9535D001987B4 /* PipVertex.glsl */,
+				898FF7CB1FC9535D001987B4 /* PMixFragment.glsl */,
+				898FF7CC1FC9535D001987B4 /* PMixVertex.glsl */,
+			);
+			path = Shader;
+			sourceTree = "<group>";
+		};
+		898FF7F41FC95A39001987B4 /* Template */ = {
+			isa = PBXGroup;
+			children = (
+				898FF7F51FC95A39001987B4 /* ViewController */,
+			);
+			path = Template;
+			sourceTree = "<group>";
+		};
+		898FF7F51FC95A39001987B4 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				898FF7F61FC95A39001987B4 /* JournalTemplateViewController.swift */,
+				898FF7F71FC95A39001987B4 /* TemplateSelectViewController.swift */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		898FF7FA1FC95AAA001987B4 /* UItilView */ = {
+			isa = PBXGroup;
+			children = (
+				898FF7FB1FC95AAA001987B4 /* AutoScrollView.swift */,
+				898FF7FC1FC95AAA001987B4 /* DesignedTextView.swift */,
+				898FF7FD1FC95AAA001987B4 /* WaterFlow */,
+			);
+			path = UItilView;
+			sourceTree = "<group>";
+		};
+		898FF7FD1FC95AAA001987B4 /* WaterFlow */ = {
+			isa = PBXGroup;
+			children = (
+				898FF7FE1FC95AAA001987B4 /* WaterFlowLayout.swift */,
+				898FF7FF1FC95AAA001987B4 /* WaterFlowView.swift */,
+			);
+			path = WaterFlow;
+			sourceTree = "<group>";
+		};
+		898FF8041FC95B2E001987B4 /* PhotoPicker */ = {
+			isa = PBXGroup;
+			children = (
+				898FF8051FC95B2E001987B4 /* PhotoPickerHandler.swift */,
+				898FF8061FC95B2E001987B4 /* PhotoUtil.swift */,
+				898FF8071FC95B2E001987B4 /* SelectViewHandler.swift */,
+				898FF8081FC95B2E001987B4 /* View */,
+				898FF80A1FC95B2E001987B4 /* ViewCOntroller */,
+			);
+			path = PhotoPicker;
+			sourceTree = "<group>";
+		};
+		898FF8081FC95B2E001987B4 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				898FF8091FC95B2E001987B4 /* PhotoPickerCell.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		898FF80A1FC95B2E001987B4 /* ViewCOntroller */ = {
+			isa = PBXGroup;
+			children = (
+				898FF80B1FC95B2E001987B4 /* PhotoPickerViewController.swift */,
+			);
+			path = ViewCOntroller;
+			sourceTree = "<group>";
+		};
 		8994993D1F717213009999DA /* FilterUtil */ = {
 			isa = PBXGroup;
 			children = (
@@ -835,9 +657,9 @@
 				89D9F4191F6C1BA900DB3B57 /* FilterListView.swift */,
 				89D9F41B1F6C1D3200DB3B57 /* FilterListViewCell.swift */,
 				89D9F41D1F6C1D4300DB3B57 /* FilterListViewHeader.swift */,
-				89D9F4211F6C350000DB3B57 /* FilterListView.xib */,
 				89A02A511F6D82910078C6D7 /* FilterListViewCell.xib */,
 				890B994F1F6D84DF00E37F9D /* FilterListViewHeader.xib */,
+				89570B791FD2E93200A92942 /* FilterListView.xib */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -845,9 +667,18 @@
 		89E5945E1F930F3D007671A3 /* Extension */ = {
 			isa = PBXGroup;
 			children = (
+				898FF7A61FC952AE001987B4 /* UIView+Utils.swift */,
+				898FF7A71FC952AE001987B4 /* Utils.swift */,
+				898FF7A41FC952A6001987B4 /* UIImage+CGContext.swift */,
+				898FF79C1FC95290001987B4 /* NSString+Utils.swift */,
+				898FF79F1FC95291001987B4 /* String+Utils.swift */,
+				898FF79E1FC95290001987B4 /* UIColor+String.swift */,
+				898FF79D1FC95290001987B4 /* UIFont+CGSize.swift */,
+				898FF79A1FC95285001987B4 /* CGRect+String.swift */,
 				891C980D1FA8BDFB00991E7F /* UIImage+Save.swift */,
 				89D5E3C01F94ECCB003C51C6 /* UIImage+UItil.swift */,
 				89C8C1001F9E3DBE003F8D2D /* UIImage+CGRect.swift */,
+				897EBF3F1FCAB98D00D2AC75 /* DesignedUtils.swift */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -859,592 +690,6 @@
 				8A2262761FB85EA7004D2927 /* GPUImageTests_macOS.xctest */,
 				8A2262781FB85EA7004D2927 /* GPUImage.framework */,
 				8A22627A1FB85EA7004D2927 /* GPUImageTests_iOS.xctest */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
-		8AECCB921FB852B70057BA3D /* GPUImage */ = {
-			isa = PBXGroup;
-			children = (
-				8AECCB931FB852B70057BA3D /* compile-LinuxGL.sh */,
-				8AECCB941FB852B70057BA3D /* LinuxCompilationGenerator.sh */,
-				8AECCB951FB852B70057BA3D /* Source */,
-				8AECCD501FB852B70057BA3D /* Tests */,
-				8AECCD531FB852B70057BA3D /* Packages */,
-				8AECCD661FB852B70057BA3D /* Package.swift */,
-				8AECCD671FB852B70057BA3D /* compile-LinuxRPi.sh */,
-				8AECCD681FB852B70057BA3D /* GPUImage.xcodeproj */,
-			);
-			path = GPUImage;
-			sourceTree = "<group>";
-		};
-		8AECCB951FB852B70057BA3D /* Source */ = {
-			isa = PBXGroup;
-			children = (
-				8AECCB961FB852B70057BA3D /* RawDataInput.swift */,
-				8AECCB971FB852B70057BA3D /* FramebufferCache.swift */,
-				8AECCB981FB852B70057BA3D /* ShaderProgram.swift */,
-				8AECCB991FB852B70057BA3D /* CameraConversion.swift */,
-				8AECCB9A1FB852B70057BA3D /* TextureSamplingOperation.swift */,
-				8AECCB9B1FB852B70057BA3D /* TextureInput.swift */,
-				8AECCB9C1FB852B70057BA3D /* ShaderUniformSettings.swift */,
-				8AECCB9D1FB852B70057BA3D /* TextureOutput.swift */,
-				8AECCB9E1FB852B70057BA3D /* Pipeline.swift */,
-				8AECCB9F1FB852B70057BA3D /* SerialDispatch.swift */,
-				8AECCBA01FB852B70057BA3D /* Operations */,
-				8AECCD281FB852B70057BA3D /* iOS */,
-				8AECCD311FB852B70057BA3D /* BasicOperation.swift */,
-				8AECCD321FB852B70057BA3D /* Size.swift */,
-				8AECCD331FB852B70057BA3D /* OpenGLContext_Shared.swift */,
-				8AECCD341FB852B70057BA3D /* Mac */,
-				8AECCD3C1FB852B70057BA3D /* OpenGLRendering.swift */,
-				8AECCD3D1FB852B70057BA3D /* Timestamp.swift */,
-				8AECCD3E1FB852B70057BA3D /* Matrix.swift */,
-				8AECCD3F1FB852B70057BA3D /* Linux */,
-				8AECCD471FB852B70057BA3D /* OperationGroup.swift */,
-				8AECCD481FB852B70057BA3D /* Framebuffer.swift */,
-				8AECCD491FB852B70057BA3D /* FillMode.swift */,
-				8AECCD4A1FB852B70057BA3D /* RawDataOutput.swift */,
-				8AECCD4B1FB852B70057BA3D /* ImageGenerator.swift */,
-				8AECCD4C1FB852B70057BA3D /* Position.swift */,
-				8AECCD4D1FB852B70057BA3D /* ImageOrientation.swift */,
-				8AECCD4E1FB852B70057BA3D /* Color.swift */,
-				8AECCD4F1FB852B70057BA3D /* TwoStageOperation.swift */,
-			);
-			path = Source;
-			sourceTree = "<group>";
-		};
-		8AECCBA01FB852B70057BA3D /* Operations */ = {
-			isa = PBXGroup;
-			children = (
-				8AECCBA11FB852B70057BA3D /* Erosion.swift */,
-				8AECCBA21FB852B70057BA3D /* Vibrance.swift */,
-				8AECCBA31FB852B70057BA3D /* SwirlDistortion.swift */,
-				8AECCBA41FB852B70057BA3D /* LightenBlend.swift */,
-				8AECCBA51FB852B70057BA3D /* PinchDistortion.swift */,
-				8AECCBA61FB852B70057BA3D /* ChromaKeyBlend.swift */,
-				8AECCBA71FB852B70057BA3D /* CircleGenerator.swift */,
-				8AECCBA81FB852B70057BA3D /* MultiplyBlend.swift */,
-				8AECCBA91FB852B70057BA3D /* Luminance.swift */,
-				8AECCBAA1FB852B70057BA3D /* LanczosResampling.swift */,
-				8AECCBAB1FB852B70057BA3D /* HueBlend.swift */,
-				8AECCBAC1FB852B70057BA3D /* AlphaBlend.swift */,
-				8AECCBAD1FB852B70057BA3D /* TiltShift.swift */,
-				8AECCBAE1FB852B70057BA3D /* ShiTomasiFeatureDetector.swift */,
-				8AECCBAF1FB852B70057BA3D /* WhiteBalance.swift */,
-				8AECCBB01FB852B70057BA3D /* HighlightsAndShadows.swift */,
-				8AECCBB11FB852B70057BA3D /* LuminanceRangeReduction.swift */,
-				8AECCBB21FB852B70057BA3D /* LowPassFilter.swift */,
-				8AECCBB31FB852B70057BA3D /* HistogramEqualization.swift */,
-				8AECCBB41FB852B70057BA3D /* BilateralBlur.swift */,
-				8AECCBB51FB852B70057BA3D /* iOSBlur.swift */,
-				8AECCBB61FB852B70057BA3D /* Solarize.swift */,
-				8AECCBB71FB852B70057BA3D /* LuminanceThreshold.swift */,
-				8AECCBB81FB852B70057BA3D /* CGAColorspaceFilter.swift */,
-				8AECCBB91FB852B70057BA3D /* AdaptiveThreshold.swift */,
-				8AECCBBA1FB852B70057BA3D /* SphereRefraction.swift */,
-				8AECCBBB1FB852B70057BA3D /* HardLightBlend.swift */,
-				8AECCBBC1FB852B70057BA3D /* MissEtikateFilter.swift */,
-				8AECCBBD1FB852B70057BA3D /* Vignette.swift */,
-				8AECCBBE1FB852B70057BA3D /* SaturationAdjustment.swift */,
-				8AECCBBF1FB852B70057BA3D /* Haze.swift */,
-				8AECCBC01FB852B70057BA3D /* LinearBurnBlend.swift */,
-				8AECCBC11FB852B70057BA3D /* AmatorkaFilter.swift */,
-				8AECCBC21FB852B70057BA3D /* LookupImages */,
-				8AECCBC81FB852B70057BA3D /* SketchFilter.swift */,
-				8AECCBC91FB852B70057BA3D /* FalseColor.swift */,
-				8AECCBCA1FB852B70057BA3D /* Histogram.swift */,
-				8AECCBCB1FB852B70057BA3D /* LineGenerator.swift */,
-				8AECCBCC1FB852B70057BA3D /* DifferenceBlend.swift */,
-				8AECCBCD1FB852B70057BA3D /* PolkaDot.swift */,
-				8AECCBCE1FB852B70057BA3D /* ToonFilter.swift */,
-				8AECCBCF1FB852B70057BA3D /* LocalBinaryPattern.swift */,
-				8AECCBD01FB852B70057BA3D /* HueAdjustment.swift */,
-				8AECCBD11FB852B70057BA3D /* NormalBlend.swift */,
-				8AECCBD21FB852B70057BA3D /* MedianFilter.swift */,
-				8AECCBD31FB852B70057BA3D /* SobelEdgeDetection.swift */,
-				8AECCBD41FB852B70057BA3D /* RGBAdjustmentFilter.swift */,
-				8AECCBD51FB852B70057BA3D /* SingleComponentGaussianBlur.swift */,
-				8AECCBD61FB852B70057BA3D /* ClosingFilter.swift */,
-				8AECCBD71FB852B70057BA3D /* LuminosityBlend.swift */,
-				8AECCBD81FB852B70057BA3D /* Crosshatch.swift */,
-				8AECCBD91FB852B70057BA3D /* OpeningFilter.swift */,
-				8AECCBDA1FB852B70057BA3D /* ExposureAdjustment.swift */,
-				8AECCBDB1FB852B70057BA3D /* PolarPixellate.swift */,
-				8AECCBDC1FB852B70057BA3D /* HarrisCornerDetector.swift */,
-				8AECCBDD1FB852B70057BA3D /* HistogramDisplay.swift */,
-				8AECCBDE1FB852B70057BA3D /* ColorBlend.swift */,
-				8AECCBDF1FB852B70057BA3D /* ZoomBlur.swift */,
-				8AECCBE01FB852B70057BA3D /* ThresholdSketch.swift */,
-				8AECCBE11FB852B70057BA3D /* GlassSphereRefraction.swift */,
-				8AECCBE21FB852B70057BA3D /* GaussianBlur.swift */,
-				8AECCBE31FB852B70057BA3D /* AverageLuminanceExtractor.swift */,
-				8AECCBE41FB852B70057BA3D /* SoftElegance.swift */,
-				8AECCBE51FB852B70057BA3D /* KuwaharaRadius3Filter.swift */,
-				8AECCBE61FB852B70057BA3D /* MotionBlur.swift */,
-				8AECCBE71FB852B70057BA3D /* DarkenBlend.swift */,
-				8AECCBE81FB852B70057BA3D /* ImageBuffer.swift */,
-				8AECCBE91FB852B70057BA3D /* HighlightAndShadowTint.swift */,
-				8AECCBEA1FB852B70057BA3D /* ScreenBlend.swift */,
-				8AECCBEB1FB852B70057BA3D /* SmoothToonFilter.swift */,
-				8AECCBEC1FB852B70057BA3D /* Crop.swift */,
-				8AECCBED1FB852B70057BA3D /* GammaAdjustment.swift */,
-				8AECCBEE1FB852B70057BA3D /* OpacityAdjustment.swift */,
-				8AECCBEF1FB852B70057BA3D /* MonochromeFilter.swift */,
-				8AECCBF01FB852B70057BA3D /* SepiaToneFilter.swift */,
-				8AECCBF11FB852B70057BA3D /* ExclusionBlend.swift */,
-				8AECCBF21FB852B70057BA3D /* Dilation.swift */,
-				8AECCBF31FB852B70057BA3D /* ColorBurnBlend.swift */,
-				8AECCBF41FB852B70057BA3D /* LookupFilter.swift */,
-				8AECCBF51FB852B70057BA3D /* SourceOverBlend.swift */,
-				8AECCBF61FB852B70057BA3D /* Posterize.swift */,
-				8AECCBF71FB852B70057BA3D /* Laplacian.swift */,
-				8AECCBF81FB852B70057BA3D /* Halftone.swift */,
-				8AECCBF91FB852B70057BA3D /* DissolveBlend.swift */,
-				8AECCBFA1FB852B70057BA3D /* BrightnessAdjustment.swift */,
-				8AECCBFB1FB852B70057BA3D /* SolidColorGenerator.swift */,
-				8AECCBFC1FB852B70057BA3D /* Pixellate.swift */,
-				8AECCBFD1FB852B70057BA3D /* ContrastAdjustment.swift */,
-				8AECCBFE1FB852B70057BA3D /* NobleCornerDetector.swift */,
-				8AECCBFF1FB852B70057BA3D /* TransformOperation.swift */,
-				8AECCC001FB852B70057BA3D /* MotionDetector.swift */,
-				8AECCC011FB852B70057BA3D /* Shaders */,
-				8AECCD0C1FB852B70057BA3D /* LevelsAdjustment.swift */,
-				8AECCD0D1FB852B70057BA3D /* KuwaharaFilter.swift */,
-				8AECCD0E1FB852B70057BA3D /* BulgeDistortion.swift */,
-				8AECCD0F1FB852B70057BA3D /* AverageColorExtractor.swift */,
-				8AECCD101FB852B70057BA3D /* ColorDodgeBlend.swift */,
-				8AECCD111FB852B70057BA3D /* Convolution3x3.swift */,
-				8AECCD121FB852B70057BA3D /* AverageLuminanceThreshold.swift */,
-				8AECCD131FB852B70057BA3D /* HighPassFilter.swift */,
-				8AECCD141FB852B70057BA3D /* OverlayBlend.swift */,
-				8AECCD151FB852B70057BA3D /* CrosshairGenerator.swift */,
-				8AECCD161FB852B70057BA3D /* ChromaKeying.swift */,
-				8AECCD171FB852B70057BA3D /* BoxBlur.swift */,
-				8AECCD181FB852B70057BA3D /* CannyEdgeDetection.swift */,
-				8AECCD191FB852B70057BA3D /* ColorInversion.swift */,
-				8AECCD1A1FB852B70057BA3D /* EmbossFilter.swift */,
-				8AECCD1B1FB852B70057BA3D /* SubtractBlend.swift */,
-				8AECCD1C1FB852B70057BA3D /* PrewittEdgeDetection.swift */,
-				8AECCD1D1FB852B70057BA3D /* AddBlend.swift */,
-				8AECCD1E1FB852B70057BA3D /* DivideBlend.swift */,
-				8AECCD1F1FB852B70057BA3D /* ColorMatrixFilter.swift */,
-				8AECCD201FB852B70057BA3D /* Sharpen.swift */,
-				8AECCD211FB852B70057BA3D /* ThresholdSobelEdgeDetection.swift */,
-				8AECCD221FB852B70057BA3D /* UnsharpMask.swift */,
-				8AECCD231FB852B70057BA3D /* SoftLightBlend.swift */,
-				8AECCD241FB852B70057BA3D /* ColourFASTFeatureDetection.swift */,
-				8AECCD251FB852B70057BA3D /* SaturationBlend.swift */,
-				8AECCD261FB852B70057BA3D /* ColorLocalBinaryPattern.swift */,
-				8AECCD271FB852B70057BA3D /* StretchDistortion.swift */,
-			);
-			path = Operations;
-			sourceTree = "<group>";
-		};
-		8AECCBC21FB852B70057BA3D /* LookupImages */ = {
-			isa = PBXGroup;
-			children = (
-				8AECCBC31FB852B70057BA3D /* lookup_soft_elegance_2.png */,
-				8AECCBC41FB852B70057BA3D /* lookup_soft_elegance_1.png */,
-				8AECCBC51FB852B70057BA3D /* lookup.png */,
-				8AECCBC61FB852B70057BA3D /* lookup_amatorka.png */,
-				8AECCBC71FB852B70057BA3D /* lookup_miss_etikate.png */,
-			);
-			path = LookupImages;
-			sourceTree = "<group>";
-		};
-		8AECCC011FB852B70057BA3D /* Shaders */ = {
-			isa = PBXGroup;
-			children = (
-				8AECCC021FB852B70057BA3D /* Convolution3x3_GLES.fsh */,
-				8AECCC031FB852B70057BA3D /* ColorBlend_GL.fsh */,
-				8AECCC041FB852B70057BA3D /* Sketch_GLES.fsh */,
-				8AECCC051FB852B70057BA3D /* ThresholdEdgeDetection_GL.fsh */,
-				8AECCC061FB852B70057BA3D /* ThresholdedNonMaximumSuppression_GL.fsh */,
-				8AECCC071FB852B70057BA3D /* Solarize_GLES.fsh */,
-				8AECCC081FB852B70057BA3D /* ChromaKeyBlend_GL.fsh */,
-				8AECCC091FB852B70057BA3D /* Swirl_GL.fsh */,
-				8AECCC0A1FB852B70057BA3D /* Pixellate_GLES.fsh */,
-				8AECCC0B1FB852B70057BA3D /* LightenBlend_GLES.fsh */,
-				8AECCC0C1FB852B70057BA3D /* BulgeDistortion_GLES.fsh */,
-				8AECCC0D1FB852B70057BA3D /* Kuwahara_GL.fsh */,
-				8AECCC0E1FB852B70057BA3D /* Dilation3_GLES.fsh */,
-				8AECCC0F1FB852B70057BA3D /* Dilation2_GLES.fsh */,
-				8AECCC101FB852B70057BA3D /* HighlightShadow_GLES.fsh */,
-				8AECCC111FB852B70057BA3D /* ShaderConverter.sh */,
-				8AECCC121FB852B70057BA3D /* ColorLocalBinaryPattern_GLES.fsh */,
-				8AECCC131FB852B70057BA3D /* SoftLightBlend_GL.fsh */,
-				8AECCC141FB852B70057BA3D /* ChromaKeyBlend_GLES.fsh */,
-				8AECCC151FB852B70057BA3D /* WeakPixelInclusion_GL.fsh */,
-				8AECCC161FB852B70057BA3D /* NormalBlend_GL.fsh */,
-				8AECCC171FB852B70057BA3D /* LuminanceRange_GL.fsh */,
-				8AECCC181FB852B70057BA3D /* HistogramEqualizationBlue_GL.fsh */,
-				8AECCC191FB852B70057BA3D /* MotionBlur_GLES.fsh */,
-				8AECCC1A1FB852B70057BA3D /* PinchDistortion_GL.fsh */,
-				8AECCC1B1FB852B70057BA3D /* LuminosityBlend_GLES.fsh */,
-				8AECCC1C1FB852B70057BA3D /* UnsharpMask_GLES.fsh */,
-				8AECCC1D1FB852B70057BA3D /* PolkaDot_GLES.fsh */,
-				8AECCC1E1FB852B70057BA3D /* KuwaharaRadius3_GL.fsh */,
-				8AECCC1F1FB852B70057BA3D /* ThresholdSketch_GLES.fsh */,
-				8AECCC201FB852B70057BA3D /* Contrast_GLES.fsh */,
-				8AECCC211FB852B70057BA3D /* HistogramEqualizationLuminance_GLES.fsh */,
-				8AECCC221FB852B70057BA3D /* LinearBurnBlend_GLES.fsh */,
-				8AECCC231FB852B70057BA3D /* Erosion1_GLES.fsh */,
-				8AECCC241FB852B70057BA3D /* ColorInvert_GLES.fsh */,
-				8AECCC251FB852B70057BA3D /* Dilation2_GL.fsh */,
-				8AECCC261FB852B70057BA3D /* Convolution3x3_GL.fsh */,
-				8AECCC271FB852B70057BA3D /* Toon_GLES.fsh */,
-				8AECCC281FB852B70057BA3D /* HistogramLuminanceSampling.vsh */,
-				8AECCC291FB852B70057BA3D /* LinearBurnBlend_GL.fsh */,
-				8AECCC2A1FB852B70057BA3D /* MultiplyBlend_GLES.fsh */,
-				8AECCC2B1FB852B70057BA3D /* Opacity_GL.fsh */,
-				8AECCC2C1FB852B70057BA3D /* YUVConversionVideoRange_GLES.fsh */,
-				8AECCC2D1FB852B70057BA3D /* SaturationBlend_GL.fsh */,
-				8AECCC2E1FB852B70057BA3D /* FiveInput.vsh */,
-				8AECCC2F1FB852B70057BA3D /* Erosion2_GL.fsh */,
-				8AECCC301FB852B70057BA3D /* WhiteBalance_GLES.fsh */,
-				8AECCC311FB852B70057BA3D /* TwoInput.vsh */,
-				8AECCC321FB852B70057BA3D /* HighlightShadowTint_GL.fsh */,
-				8AECCC331FB852B70057BA3D /* Crosshair_GL.fsh */,
-				8AECCC341FB852B70057BA3D /* HistogramGreenSampling.vsh */,
-				8AECCC351FB852B70057BA3D /* OverlayBlend_GLES.fsh */,
-				8AECCC361FB852B70057BA3D /* ColourFASTDecriptor_GL.fsh */,
-				8AECCC371FB852B70057BA3D /* BilateralBlur_GLES.fsh */,
-				8AECCC381FB852B70057BA3D /* DirectionalSobelEdgeDetection_GLES.fsh */,
-				8AECCC391FB852B70057BA3D /* LuminanceThreshold_GL.fsh */,
-				8AECCC3A1FB852B70057BA3D /* RGBAdjustment_GL.fsh */,
-				8AECCC3B1FB852B70057BA3D /* AdaptiveThreshold_GLES.fsh */,
-				8AECCC3C1FB852B70057BA3D /* ThresholdEdgeDetection_GLES.fsh */,
-				8AECCC3D1FB852B70057BA3D /* NobleCornerDetector_GL.fsh */,
-				8AECCC3E1FB852B70057BA3D /* Crosshair.vsh */,
-				8AECCC3F1FB852B70057BA3D /* SourceOverBlend_GLES.fsh */,
-				8AECCC401FB852B70057BA3D /* DirectionalNonMaximumSuppression_GLES.fsh */,
-				8AECCC411FB852B70057BA3D /* MultiplyBlend_GL.fsh */,
-				8AECCC421FB852B70057BA3D /* XYDerivative_GL.fsh */,
-				8AECCC431FB852B70057BA3D /* ZoomBlur_GLES.fsh */,
-				8AECCC441FB852B70057BA3D /* ThreeInput.vsh */,
-				8AECCC451FB852B70057BA3D /* ScreenBlend_GLES.fsh */,
-				8AECCC461FB852B70057BA3D /* YUVConversionVideoRange_GL.fsh */,
-				8AECCC471FB852B70057BA3D /* Luminance_GLES.fsh */,
-				8AECCC481FB852B70057BA3D /* Sketch_GL.fsh */,
-				8AECCC491FB852B70057BA3D /* Vignette_GLES.fsh */,
-				8AECCC4A1FB852B70057BA3D /* AlphaTest_GLES.fsh */,
-				8AECCC4B1FB852B70057BA3D /* Posterize_GL.fsh */,
-				8AECCC4C1FB852B70057BA3D /* KuwaharaRadius3_GLES.fsh */,
-				8AECCC4D1FB852B70057BA3D /* Circle.vsh */,
-				8AECCC4E1FB852B70057BA3D /* AddBlend_GLES.fsh */,
-				8AECCC4F1FB852B70057BA3D /* Brightness_GLES.fsh */,
-				8AECCC501FB852B70057BA3D /* Line_GLES.fsh */,
-				8AECCC511FB852B70057BA3D /* Sharpen.vsh */,
-				8AECCC521FB852B70057BA3D /* Passthrough_GLES.fsh */,
-				8AECCC531FB852B70057BA3D /* PrewittEdgeDetection_GLES.fsh */,
-				8AECCC541FB852B70057BA3D /* SphereRefraction_GL.fsh */,
-				8AECCC551FB852B70057BA3D /* HardLightBlend_GLES.fsh */,
-				8AECCC561FB852B70057BA3D /* HistogramDisplay_GL.fsh */,
-				8AECCC571FB852B70057BA3D /* Solarize_GL.fsh */,
-				8AECCC581FB852B70057BA3D /* LocalBinaryPattern_GLES.fsh */,
-				8AECCC591FB852B70057BA3D /* Swirl_GLES.fsh */,
-				8AECCC5A1FB852B70057BA3D /* SobelEdgeDetection_GLES.fsh */,
-				8AECCC5B1FB852B70057BA3D /* HighlightShadowTint_GLES.fsh */,
-				8AECCC5C1FB852B70057BA3D /* AverageLuminance_GLES.fsh */,
-				8AECCC5D1FB852B70057BA3D /* ColorMatrix_GLES.fsh */,
-				8AECCC5E1FB852B70057BA3D /* Kuwahara_GLES.fsh */,
-				8AECCC5F1FB852B70057BA3D /* OneInput.vsh */,
-				8AECCC601FB852B70057BA3D /* NobleCornerDetector_GLES.fsh */,
-				8AECCC611FB852B70057BA3D /* HistogramRedSampling.vsh */,
-				8AECCC621FB852B70057BA3D /* ColorSwizzling_GLES.fsh */,
-				8AECCC631FB852B70057BA3D /* Crosshatch_GLES.fsh */,
-				8AECCC641FB852B70057BA3D /* LanczosResampling_GL.fsh */,
-				8AECCC651FB852B70057BA3D /* Dilation4_GLES.fsh */,
-				8AECCC661FB852B70057BA3D /* Circle_GL.fsh */,
-				8AECCC671FB852B70057BA3D /* HueBlend_GLES.fsh */,
-				8AECCC681FB852B70057BA3D /* StretchDistortion_GL.fsh */,
-				8AECCC691FB852B70057BA3D /* HighlightShadow_GL.fsh */,
-				8AECCC6A1FB852B70057BA3D /* FalseColor_GL.fsh */,
-				8AECCC6B1FB852B70057BA3D /* Toon_GL.fsh */,
-				8AECCC6C1FB852B70057BA3D /* HistogramEqualizationRGB_GLES.fsh */,
-				8AECCC6D1FB852B70057BA3D /* ChromaKey_GLES.fsh */,
-				8AECCC6E1FB852B70057BA3D /* AlphaTest_GL.fsh */,
-				8AECCC6F1FB852B70057BA3D /* Erosion4_GL.fsh */,
-				8AECCC701FB852B70057BA3D /* RGBAdjustment_GLES.fsh */,
-				8AECCC711FB852B70057BA3D /* SubtractBlend_GL.fsh */,
-				8AECCC721FB852B70057BA3D /* HarrisCornerDetector_GLES.fsh */,
-				8AECCC731FB852B70057BA3D /* Transform.vsh */,
-				8AECCC741FB852B70057BA3D /* DissolveBlend_GL.fsh */,
-				8AECCC751FB852B70057BA3D /* PolarPixellate_GLES.fsh */,
-				8AECCC761FB852B70057BA3D /* Dilation4_GL.fsh */,
-				8AECCC771FB852B70057BA3D /* DarkenBlend_GLES.fsh */,
-				8AECCC781FB852B70057BA3D /* Levels_GL.fsh */,
-				8AECCC791FB852B70057BA3D /* Erosion1_GL.fsh */,
-				8AECCC7A1FB852B70057BA3D /* TiltShift_GL.fsh */,
-				8AECCC7B1FB852B70057BA3D /* HistogramEqualizationRed_GL.fsh */,
-				8AECCC7C1FB852B70057BA3D /* DirectionalSobelEdgeDetection_GL.fsh */,
-				8AECCC7D1FB852B70057BA3D /* ErosionDilation3.vsh */,
-				8AECCC7E1FB852B70057BA3D /* LocalBinaryPattern_GL.fsh */,
-				8AECCC7F1FB852B70057BA3D /* AlphaBlend_GLES.fsh */,
-				8AECCC801FB852B70057BA3D /* Hue_GL.fsh */,
-				8AECCC811FB852B70057BA3D /* Halftone_GL.fsh */,
-				8AECCC821FB852B70057BA3D /* HistogramEqualizationRed_GLES.fsh */,
-				8AECCC831FB852B70057BA3D /* ColorBlend_GLES.fsh */,
-				8AECCC841FB852B70057BA3D /* Laplacian_GL.fsh */,
-				8AECCC851FB852B70057BA3D /* AddBlend_GL.fsh */,
-				8AECCC861FB852B70057BA3D /* ScreenBlend_GL.fsh */,
-				8AECCC871FB852B70057BA3D /* ExclusionBlend_GLES.fsh */,
-				8AECCC881FB852B70057BA3D /* Dilation1_GL.fsh */,
-				8AECCC891FB852B70057BA3D /* Median_GLES.fsh */,
-				8AECCC8A1FB852B70057BA3D /* DifferenceBlend_GL.fsh */,
-				8AECCC8B1FB852B70057BA3D /* ErosionDilation2.vsh */,
-				8AECCC8C1FB852B70057BA3D /* PinchDistortion_GLES.fsh */,
-				8AECCC8D1FB852B70057BA3D /* HistogramAccumulation_GLES.fsh */,
-				8AECCC8E1FB852B70057BA3D /* Halftone_GLES.fsh */,
-				8AECCC8F1FB852B70057BA3D /* ThresholdSketch_GL.fsh */,
-				8AECCC901FB852B70057BA3D /* SphereRefraction_GLES.fsh */,
-				8AECCC911FB852B70057BA3D /* Saturation_GLES.fsh */,
-				8AECCC921FB852B70057BA3D /* HistogramEqualizationBlue_GLES.fsh */,
-				8AECCC931FB852B70057BA3D /* UnsharpMask_GL.fsh */,
-				8AECCC941FB852B70057BA3D /* Gamma_GLES.fsh */,
-				8AECCC951FB852B70057BA3D /* Sharpen_GL.fsh */,
-				8AECCC961FB852B70057BA3D /* Erosion3_GLES.fsh */,
-				8AECCC971FB852B70057BA3D /* Erosion2_GLES.fsh */,
-				8AECCC981FB852B70057BA3D /* SourceOverBlend_GL.fsh */,
-				8AECCC991FB852B70057BA3D /* SoftLightBlend_GLES.fsh */,
-				8AECCC9A1FB852B70057BA3D /* Monochrome_GLES.fsh */,
-				8AECCC9B1FB852B70057BA3D /* LightenBlend_GL.fsh */,
-				8AECCC9C1FB852B70057BA3D /* HistogramAccumulation_GL.fsh */,
-				8AECCC9D1FB852B70057BA3D /* Saturation_GL.fsh */,
-				8AECCC9E1FB852B70057BA3D /* ErosionDilation1.vsh */,
-				8AECCC9F1FB852B70057BA3D /* YUVConversionFullRangeUVPlanar_GLES.fsh */,
-				8AECCCA01FB852B70057BA3D /* ColourFASTDecriptor.vsh */,
-				8AECCCA11FB852B70057BA3D /* ColorBurnBlend_GL.fsh */,
-				8AECCCA21FB852B70057BA3D /* ColorMatrix_GL.fsh */,
-				8AECCCA31FB852B70057BA3D /* Exposure_GL.fsh */,
-				8AECCCA41FB852B70057BA3D /* NormalBlend_GLES.fsh */,
-				8AECCCA51FB852B70057BA3D /* Vignette_GL.fsh */,
-				8AECCCA61FB852B70057BA3D /* HarrisCornerDetector_GL.fsh */,
-				8AECCCA71FB852B70057BA3D /* Luminance_GL.fsh */,
-				8AECCCA81FB852B70057BA3D /* YUVConversionFullRange_GLES.fsh */,
-				8AECCCA91FB852B70057BA3D /* FourInput.vsh */,
-				8AECCCAA1FB852B70057BA3D /* HistogramEqualizationGreen_GL.fsh */,
-				8AECCCAB1FB852B70057BA3D /* XYDerivative_GLES.fsh */,
-				8AECCCAC1FB852B70057BA3D /* GlassSphere_GL.fsh */,
-				8AECCCAD1FB852B70057BA3D /* ErosionDilation4.vsh */,
-				8AECCCAE1FB852B70057BA3D /* Gamma_GL.fsh */,
-				8AECCCAF1FB852B70057BA3D /* PolkaDot_GL.fsh */,
-				8AECCCB01FB852B70057BA3D /* ChromaKey_GL.fsh */,
-				8AECCCB11FB852B70057BA3D /* YUVConversionFullRangeUVPlanar_GL.fsh */,
-				8AECCCB21FB852B70057BA3D /* Passthrough_GL.fsh */,
-				8AECCCB31FB852B70057BA3D /* WeakPixelInclusion_GLES.fsh */,
-				8AECCCB41FB852B70057BA3D /* DivideBlend_GL.fsh */,
-				8AECCCB51FB852B70057BA3D /* NearbyTexelSampling.vsh */,
-				8AECCCB61FB852B70057BA3D /* Haze_GLES.fsh */,
-				8AECCCB71FB852B70057BA3D /* LuminanceRange_GLES.fsh */,
-				8AECCCB81FB852B70057BA3D /* Erosion3_GL.fsh */,
-				8AECCCB91FB852B70057BA3D /* ShiTomasiFeatureDetector_GL.fsh */,
-				8AECCCBA1FB852B70057BA3D /* Laplacian_GLES.fsh */,
-				8AECCCBB1FB852B70057BA3D /* LanczosResampling.vsh */,
-				8AECCCBC1FB852B70057BA3D /* WhiteBalance_GL.fsh */,
-				8AECCCBD1FB852B70057BA3D /* HistogramDisplay.vsh */,
-				8AECCCBE1FB852B70057BA3D /* AverageColor_GL.fsh */,
-				8AECCCBF1FB852B70057BA3D /* Pixellate_GL.fsh */,
-				8AECCCC01FB852B70057BA3D /* MotionBlur_GL.fsh */,
-				8AECCCC11FB852B70057BA3D /* Dilation1_GLES.fsh */,
-				8AECCCC21FB852B70057BA3D /* MotionComparison_GLES.fsh */,
-				8AECCCC31FB852B70057BA3D /* ColourFASTDecriptor_GLES.fsh */,
-				8AECCCC41FB852B70057BA3D /* AdaptiveThreshold_GL.fsh */,
-				8AECCCC51FB852B70057BA3D /* HistogramEqualizationRGB_GL.fsh */,
-				8AECCCC61FB852B70057BA3D /* Dilation3_GL.fsh */,
-				8AECCCC71FB852B70057BA3D /* DissolveBlend_GLES.fsh */,
-				8AECCCC81FB852B70057BA3D /* SubtractBlend_GLES.fsh */,
-				8AECCCC91FB852B70057BA3D /* DirectionalNonMaximumSuppression_GL.fsh */,
-				8AECCCCA1FB852B70057BA3D /* OverlayBlend_GL.fsh */,
-				8AECCCCB1FB852B70057BA3D /* Brightness_GL.fsh */,
-				8AECCCCC1FB852B70057BA3D /* Vibrance_GL.fsh */,
-				8AECCCCD1FB852B70057BA3D /* PrewittEdgeDetection_GL.fsh */,
-				8AECCCCE1FB852B70057BA3D /* FalseColor_GLES.fsh */,
-				8AECCCCF1FB852B70057BA3D /* ThresholdedNonMaximumSuppression_GLES.fsh */,
-				8AECCCD01FB852B70057BA3D /* ColorDodgeBlend_GL.fsh */,
-				8AECCCD11FB852B70057BA3D /* Crosshatch_GL.fsh */,
-				8AECCCD21FB852B70057BA3D /* YUVConversionFullRange_GL.fsh */,
-				8AECCCD31FB852B70057BA3D /* Monochrome_GL.fsh */,
-				8AECCCD41FB852B70057BA3D /* Lookup_GL.fsh */,
-				8AECCCD51FB852B70057BA3D /* ShiTomasiFeatureDetector_GLES.fsh */,
-				8AECCCD61FB852B70057BA3D /* BilateralBlur.vsh */,
-				8AECCCD71FB852B70057BA3D /* LuminosityBlend_GL.fsh */,
-				8AECCCD81FB852B70057BA3D /* PolarPixellate_GL.fsh */,
-				8AECCCD91FB852B70057BA3D /* GlassSphere_GLES.fsh */,
-				8AECCCDA1FB852B70057BA3D /* ColorInvert_GL.fsh */,
-				8AECCCDB1FB852B70057BA3D /* HardLightBlend_GL.fsh */,
-				8AECCCDC1FB852B70057BA3D /* Haze_GL.fsh */,
-				8AECCCDD1FB852B70057BA3D /* Sharpen_GLES.fsh */,
-				8AECCCDE1FB852B70057BA3D /* HistogramBlueSampling.vsh */,
-				8AECCCDF1FB852B70057BA3D /* ColorBurnBlend_GLES.fsh */,
-				8AECCCE01FB852B70057BA3D /* HueBlend_GL.fsh */,
-				8AECCCE11FB852B70057BA3D /* Opacity_GLES.fsh */,
-				8AECCCE21FB852B70057BA3D /* Levels_GLES.fsh */,
-				8AECCCE31FB852B70057BA3D /* MotionBlur.vsh */,
-				8AECCCE41FB852B70057BA3D /* StretchDistortion_GLES.fsh */,
-				8AECCCE51FB852B70057BA3D /* Circle_GLES.fsh */,
-				8AECCCE61FB852B70057BA3D /* ColorSwizzling_GL.fsh */,
-				8AECCCE71FB852B70057BA3D /* Vibrance_GLES.fsh */,
-				8AECCCE81FB852B70057BA3D /* ConvertedShaders_GLES.swift */,
-				8AECCCE91FB852B70057BA3D /* Line_GL.fsh */,
-				8AECCCEA1FB852B70057BA3D /* AverageLuminance_GL.fsh */,
-				8AECCCEB1FB852B70057BA3D /* SobelEdgeDetection_GL.fsh */,
-				8AECCCEC1FB852B70057BA3D /* LuminanceThreshold_GLES.fsh */,
-				8AECCCED1FB852B70057BA3D /* ConvertedShaders_GL.swift */,
-				8AECCCEE1FB852B70057BA3D /* ColorLocalBinaryPattern_GL.fsh */,
-				8AECCCEF1FB852B70057BA3D /* BulgeDistortion_GL.fsh */,
-				8AECCCF01FB852B70057BA3D /* DarkenBlend_GL.fsh */,
-				8AECCCF11FB852B70057BA3D /* SaturationBlend_GLES.fsh */,
-				8AECCCF21FB852B70057BA3D /* Line.vsh */,
-				8AECCCF31FB852B70057BA3D /* AverageColor.vsh */,
-				8AECCCF41FB852B70057BA3D /* HistogramEqualizationLuminance_GL.fsh */,
-				8AECCCF51FB852B70057BA3D /* Contrast_GL.fsh */,
-				8AECCCF61FB852B70057BA3D /* ColorDodgeBlend_GLES.fsh */,
-				8AECCCF71FB852B70057BA3D /* CGAColorspace_GLES.fsh */,
-				8AECCCF81FB852B70057BA3D /* Median_GL.fsh */,
-				8AECCCF91FB852B70057BA3D /* AverageColor_GLES.fsh */,
-				8AECCCFA1FB852B70057BA3D /* DifferenceBlend_GLES.fsh */,
-				8AECCCFB1FB852B70057BA3D /* Crosshair_GLES.fsh */,
-				8AECCCFC1FB852B70057BA3D /* HistogramEqualizationGreen_GLES.fsh */,
-				8AECCCFD1FB852B70057BA3D /* Erosion4_GLES.fsh */,
-				8AECCCFE1FB852B70057BA3D /* Exposure_GLES.fsh */,
-				8AECCCFF1FB852B70057BA3D /* HistogramDisplay_GLES.fsh */,
-				8AECCD001FB852B70057BA3D /* Posterize_GLES.fsh */,
-				8AECCD011FB852B70057BA3D /* DivideBlend_GLES.fsh */,
-				8AECCD021FB852B70057BA3D /* Lookup_GLES.fsh */,
-				8AECCD031FB852B70057BA3D /* MotionComparison_GL.fsh */,
-				8AECCD041FB852B70057BA3D /* Hue_GLES.fsh */,
-				8AECCD051FB852B70057BA3D /* AlphaBlend_GL.fsh */,
-				8AECCD061FB852B70057BA3D /* ExclusionBlend_GL.fsh */,
-				8AECCD071FB852B70057BA3D /* LanczosResampling_GLES.fsh */,
-				8AECCD081FB852B70057BA3D /* CGAColorspace_GL.fsh */,
-				8AECCD091FB852B70057BA3D /* ZoomBlur_GL.fsh */,
-				8AECCD0A1FB852B70057BA3D /* BilateralBlur_GL.fsh */,
-				8AECCD0B1FB852B70057BA3D /* TiltShift_GLES.fsh */,
-			);
-			path = Shaders;
-			sourceTree = "<group>";
-		};
-		8AECCD281FB852B70057BA3D /* iOS */ = {
-			isa = PBXGroup;
-			children = (
-				8AECCD291FB852B70057BA3D /* PictureInput.swift */,
-				8AECCD2A1FB852B70057BA3D /* MovieOutput.swift */,
-				8AECCD2B1FB852B70057BA3D /* OpenGLContext.swift */,
-				8AECCD2C1FB852B70057BA3D /* RenderView.swift */,
-				8AECCD2D1FB852B70057BA3D /* MovieInput.swift */,
-				8AECCD2E1FB852B70057BA3D /* Camera.swift */,
-				8AECCD2F1FB852B70057BA3D /* PictureOutput.swift */,
-				8AECCD301FB852B70057BA3D /* GPUImage.h */,
-			);
-			path = iOS;
-			sourceTree = "<group>";
-		};
-		8AECCD341FB852B70057BA3D /* Mac */ = {
-			isa = PBXGroup;
-			children = (
-				8AECCD351FB852B70057BA3D /* PictureInput.swift */,
-				8AECCD361FB852B70057BA3D /* MovieOutput.swift */,
-				8AECCD371FB852B70057BA3D /* OpenGLContext.swift */,
-				8AECCD381FB852B70057BA3D /* RenderView.swift */,
-				8AECCD391FB852B70057BA3D /* MovieInput.swift */,
-				8AECCD3A1FB852B70057BA3D /* Camera.swift */,
-				8AECCD3B1FB852B70057BA3D /* PictureOutput.swift */,
-			);
-			path = Mac;
-			sourceTree = "<group>";
-		};
-		8AECCD3F1FB852B70057BA3D /* Linux */ = {
-			isa = PBXGroup;
-			children = (
-				8AECCD401FB852B70057BA3D /* RPiRenderWindow.swift */,
-				8AECCD411FB852B70057BA3D /* OpenGLContext-RPi.swift */,
-				8AECCD421FB852B70057BA3D /* v4lfuncs.c */,
-				8AECCD431FB852B70057BA3D /* GLUTRenderWindow.swift */,
-				8AECCD441FB852B70057BA3D /* V4LCamera.swift */,
-				8AECCD451FB852B70057BA3D /* OpenGLContext.swift */,
-				8AECCD461FB852B70057BA3D /* v4lfuncs.h */,
-			);
-			path = Linux;
-			sourceTree = "<group>";
-		};
-		8AECCD501FB852B70057BA3D /* Tests */ = {
-			isa = PBXGroup;
-			children = (
-				8AECCD511FB852B70057BA3D /* ShaderProgram_Tests.swift */,
-				8AECCD521FB852B70057BA3D /* Pipeline_Tests.swift */,
-			);
-			path = Tests;
-			sourceTree = "<group>";
-		};
-		8AECCD531FB852B70057BA3D /* Packages */ = {
-			isa = PBXGroup;
-			children = (
-				8AECCD541FB852B70057BA3D /* CVideo4Linux */,
-				8AECCD581FB852B70057BA3D /* COpenGLES */,
-				8AECCD5B1FB852B70057BA3D /* COpenGL */,
-				8AECCD5F1FB852B70057BA3D /* CFreeGLUT */,
-				8AECCD631FB852B70057BA3D /* CVideoCore */,
-			);
-			path = Packages;
-			sourceTree = "<group>";
-		};
-		8AECCD541FB852B70057BA3D /* CVideo4Linux */ = {
-			isa = PBXGroup;
-			children = (
-				8AECCD551FB852B70057BA3D /* stubs.h */,
-				8AECCD561FB852B70057BA3D /* Package.swift */,
-				8AECCD571FB852B70057BA3D /* module.modulemap */,
-			);
-			path = CVideo4Linux;
-			sourceTree = "<group>";
-		};
-		8AECCD581FB852B70057BA3D /* COpenGLES */ = {
-			isa = PBXGroup;
-			children = (
-				8AECCD591FB852B70057BA3D /* Package.swift */,
-				8AECCD5A1FB852B70057BA3D /* module.modulemap */,
-			);
-			path = COpenGLES;
-			sourceTree = "<group>";
-		};
-		8AECCD5B1FB852B70057BA3D /* COpenGL */ = {
-			isa = PBXGroup;
-			children = (
-				8AECCD5C1FB852B70057BA3D /* proto.h */,
-				8AECCD5D1FB852B70057BA3D /* Package.swift */,
-				8AECCD5E1FB852B70057BA3D /* module.modulemap */,
-			);
-			path = COpenGL;
-			sourceTree = "<group>";
-		};
-		8AECCD5F1FB852B70057BA3D /* CFreeGLUT */ = {
-			isa = PBXGroup;
-			children = (
-				8AECCD601FB852B70057BA3D /* README.md */,
-				8AECCD611FB852B70057BA3D /* Package.swift */,
-				8AECCD621FB852B70057BA3D /* module.modulemap */,
-			);
-			path = CFreeGLUT;
-			sourceTree = "<group>";
-		};
-		8AECCD631FB852B70057BA3D /* CVideoCore */ = {
-			isa = PBXGroup;
-			children = (
-				8AECCD641FB852B70057BA3D /* Package.swift */,
-				8AECCD651FB852B70057BA3D /* module.modulemap */,
-			);
-			path = CVideoCore;
-			sourceTree = "<group>";
-		};
-		8AECCD691FB852B70057BA3D /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				8AECCD701FB852B70057BA3D /* GPUImage.framework */,
-				8AECCD721FB852B70057BA3D /* GPUImageTests_macOS.xctest */,
-				8AECCD741FB852B70057BA3D /* GPUImage.framework */,
-				8AECCD761FB852B70057BA3D /* GPUImageTests_iOS.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -1553,10 +798,6 @@
 			projectDirPath = "";
 			projectReferences = (
 				{
-					ProductGroup = 8AECCD691FB852B70057BA3D /* Products */;
-					ProjectRef = 8AECCD681FB852B70057BA3D /* GPUImage.xcodeproj */;
-				},
-				{
 					ProductGroup = 8A22626D1FB85EA7004D2927 /* Products */;
 					ProjectRef = 8A22626C1FB85EA7004D2927 /* GPUImage.xcodeproj */;
 				},
@@ -1599,34 +840,6 @@
 			remoteRef = 8A2262791FB85EA7004D2927 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
-		8AECCD701FB852B70057BA3D /* GPUImage.framework */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.framework;
-			path = GPUImage.framework;
-			remoteRef = 8AECCD6F1FB852B70057BA3D /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		8AECCD721FB852B70057BA3D /* GPUImageTests_macOS.xctest */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.cfbundle;
-			path = GPUImageTests_macOS.xctest;
-			remoteRef = 8AECCD711FB852B70057BA3D /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		8AECCD741FB852B70057BA3D /* GPUImage.framework */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.framework;
-			path = GPUImage.framework;
-			remoteRef = 8AECCD731FB852B70057BA3D /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		8AECCD761FB852B70057BA3D /* GPUImageTests_iOS.xctest */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.cfbundle;
-			path = GPUImageTests_iOS.xctest;
-			remoteRef = 8AECCD751FB852B70057BA3D /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
 /* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
@@ -1634,18 +847,38 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				89570B7A1FD2E93200A92942 /* FilterListView.xib in Resources */,
+				898FF7E91FC9535D001987B4 /* PMixFragment.glsl in Resources */,
+				898FF7E31FC9535D001987B4 /* MixFragment.glsl in Resources */,
+				898FF7E61FC9535D001987B4 /* MTShaderVertex.glsl in Resources */,
+				898FF7DD1FC9535D001987B4 /* LookupFragment.glsl in Resources */,
 				89C60E7D1FAE2B0200FF53E5 /* config.plist in Resources */,
+				898FF7DE1FC9535D001987B4 /* LookupFragment16.glsl in Resources */,
 				89A02A521F6D82910078C6D7 /* FilterListViewCell.xib in Resources */,
 				89C84AC01F6B5506004439DA /* SaveAndShareViewController.storyboard in Resources */,
 				896A7CB61F66E0F200FC369B /* HomeViewController.storyboard in Resources */,
+				898FF7D91FC9535D001987B4 /* CameoFragment.glsl in Resources */,
+				898FF7E81FC9535D001987B4 /* PipVertex.glsl in Resources */,
+				898FF7EA1FC9535D001987B4 /* PMixVertex.glsl in Resources */,
+				898FF7DB1FC9535D001987B4 /* CharacterFragment.glsl in Resources */,
+				898FF7E51FC9535D001987B4 /* MTShaderFragment.glsl in Resources */,
+				898FF7E11FC9535D001987B4 /* LookupVertex.glsl in Resources */,
 				89D9F4111F6C0A1500DB3B57 /* ProcessViewController.storyboard in Resources */,
+				898FF7DF1FC9535D001987B4 /* lookupTestF.glsl in Resources */,
 				890B99501F6D84DF00E37F9D /* FilterListViewHeader.xib in Resources */,
-				89D9F4221F6C350000DB3B57 /* FilterListView.xib in Resources */,
+				898FF8141FC95FB1001987B4 /* M0.JPG in Resources */,
+				898FF7E71FC9535D001987B4 /* PipFragment.glsl in Resources */,
+				898FF7E01FC9535D001987B4 /* lookupTestV.glsl in Resources */,
 				89C871B91FB5EFA0003F8A9D /* LaunchScreen.storyboard in Resources */,
 				896A7C821F66DE9700FC369B /* Assets.xcassets in Resources */,
 				896A7CB41F66E0CD00FC369B /* CameraViewController.storyboard in Resources */,
+				898FF7E41FC9535D001987B4 /* MixVertex.glsl in Resources */,
+				898FF7DA1FC9535D001987B4 /* CameoVertex.glsl in Resources */,
+				898FF7E21FC9535D001987B4 /* LookupVertex16.glsl in Resources */,
 				89C60E841FAE2B1C00FF53E5 /* filterResourse in Resources */,
 				899499411F7172FC009999DA /* lookup16Fragment.glsl in Resources */,
+				898FF7DC1FC9535D001987B4 /* Charactervertex.glsl in Resources */,
+				898FF7F31FC95849001987B4 /* M2 in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1747,23 +980,65 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				898FF7CF1FC9535D001987B4 /* GLTexture.swift in Sources */,
+				898FF7951FC95195001987B4 /* FilterViewCell.swift in Sources */,
+				898FF7CE1FC9535D001987B4 /* GLProgram.swift in Sources */,
 				8994993F1F71723D009999DA /* LookupFilter16.swift in Sources */,
+				898FF8121FC95D96001987B4 /* JigsawModel.swift in Sources */,
+				898FF7D51FC9535D001987B4 /* LookUpFilter.swift in Sources */,
+				898FF7CD1FC9535D001987B4 /* GLFrameBuffer.swift in Sources */,
+				898FF7A81FC952AE001987B4 /* UIView+Utils.swift in Sources */,
 				89D5E3C11F94ECCB003C51C6 /* UIImage+UItil.swift in Sources */,
+				898FF7F91FC95A39001987B4 /* TemplateSelectViewController.swift in Sources */,
+				898FF7D11FC9535D001987B4 /* CGLOperater.cpp in Sources */,
 				89F9CF731F7D466800704DF6 /* CameraManager.swift in Sources */,
 				89D9F41C1F6C1D3200DB3B57 /* FilterListViewCell.swift in Sources */,
+				898FF7A01FC95291001987B4 /* NSString+Utils.swift in Sources */,
+				898FF7D21FC9535D001987B4 /* File.metal in Sources */,
 				890343E41F7419C700D1FF6A /* FilterManager.swift in Sources */,
 				89C84ABA1F6B54DA004439DA /* HomeViewController.swift in Sources */,
 				89D9F41E1F6C1D4300DB3B57 /* FilterListViewHeader.swift in Sources */,
+				898FF7A51FC952A6001987B4 /* UIImage+CGContext.swift in Sources */,
+				898FF7A91FC952AE001987B4 /* Utils.swift in Sources */,
+				898FF80E1FC95B2E001987B4 /* SelectViewHandler.swift in Sources */,
 				89C84ABC1F6B54EC004439DA /* CameraViewController.swift in Sources */,
 				89D9F41A1F6C1BA900DB3B57 /* FilterListView.swift in Sources */,
+				898FF7F81FC95A39001987B4 /* JournalTemplateViewController.swift in Sources */,
+				898FF7A31FC95291001987B4 /* String+Utils.swift in Sources */,
 				89C84AC51F6B5556004439DA /* ProcessViewController.swift in Sources */,
+				897EBF401FCAB98D00D2AC75 /* DesignedUtils.swift in Sources */,
+				898FF7A11FC95291001987B4 /* UIFont+CGSize.swift in Sources */,
 				89C8C1011F9E3DBE003F8D2D /* UIImage+CGRect.swift in Sources */,
+				898FF7A21FC95291001987B4 /* UIColor+String.swift in Sources */,
+				898FF80F1FC95B2E001987B4 /* PhotoPickerCell.swift in Sources */,
+				898FF80C1FC95B2E001987B4 /* PhotoPickerHandler.swift in Sources */,
+				898FF7D41FC9535D001987B4 /* CommonFilter.swift in Sources */,
+				898FF7D61FC9535D001987B4 /* MixFilter.swift in Sources */,
+				898FF7D31FC9535D001987B4 /* BaseFilter.swift in Sources */,
+				898FF7D01FC9535D001987B4 /* BeautyGL.swift in Sources */,
+				898FF7941FC95195001987B4 /* CutView.swift in Sources */,
 				896A7C7D1F66DE9700FC369B /* ViewController.swift in Sources */,
+				898FF7931FC95195001987B4 /* ConfirmTextView.swift in Sources */,
+				898FF8001FC95AAA001987B4 /* AutoScrollView.swift in Sources */,
 				8905D5BC1F7BF7EE003F4730 /* PositionMonitor.swift in Sources */,
+				898FF8101FC95B2E001987B4 /* PhotoPickerViewController.swift in Sources */,
+				898FF7961FC95195001987B4 /* JournalView.swift in Sources */,
 				896A7C7B1F66DE9700FC369B /* AppDelegate.swift in Sources */,
 				89C84AC11F6B5506004439DA /* SaveAndShareViewController.swift in Sources */,
+				898FF7901FC95195001987B4 /* FilterCollectionViewHandler.swift in Sources */,
+				898FF79B1FC95285001987B4 /* CGRect+String.swift in Sources */,
+				898FF8021FC95AAA001987B4 /* WaterFlowLayout.swift in Sources */,
+				898FF7D71FC9535D001987B4 /* PipFilter.swift in Sources */,
+				898FF7991FC95195001987B4 /* JournalViewController.swift in Sources */,
+				898FF7911FC95195001987B4 /* JournalHandler.swift in Sources */,
+				898FF80D1FC95B2E001987B4 /* PhotoUtil.swift in Sources */,
+				898FF7D81FC9535D001987B4 /* SGLLongPicFilter.swift in Sources */,
 				89E594631F9321B8007671A3 /* Vector3.swift in Sources */,
+				898FF7921FC95195001987B4 /* JournalModel.swift in Sources */,
+				898FF8031FC95AAA001987B4 /* WaterFlowView.swift in Sources */,
+				898FF7971FC95195001987B4 /* TouchTextView.swift in Sources */,
 				891C98111FA8BDFC00991E7F /* UIImage+Save.swift in Sources */,
+				898FF8011FC95AAA001987B4 /* DesignedTextView.swift in Sources */,
 				89F9CF781F7D4E9D00704DF6 /* StillCamera.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

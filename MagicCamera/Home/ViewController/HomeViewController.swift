@@ -22,10 +22,14 @@ class HomeViewController : UIViewController,
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        UIApplication.shared.setStatusBarHidden(true, with: UIStatusBarAnimation.none)
 
     }
     
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        UIApplication.shared.setStatusBarHidden(true, with: UIStatusBarAnimation.none)
+        self.navigationController?.interactivePopGestureRecognizer?.isEnabled = false
+    }
     //相机页面
     @IBAction func goCamera() {
         let storyboard = UIStoryboard.init(name: "CameraViewController", bundle: nil)
@@ -42,6 +46,12 @@ class HomeViewController : UIViewController,
         };
     }
 
+    @IBAction func goJournalVC() {
+        let VC = JournalTemplateViewController()
+        self.navigationController?.pushViewController(VC,
+                                                      animated: false)
+    }
+    
     func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [String : Any]) {
         //
         let image = info[UIImagePickerControllerOriginalImage] as! UIImage

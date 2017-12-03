@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13173"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13527"/>
         <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -35,20 +35,6 @@
                                     <userDefinedRuntimeAttribute type="boolean" keyPath="self.layer.masksToBounds" value="YES"/>
                                 </userDefinedRuntimeAttributes>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3o3-cn-Oru">
-                                <rect key="frame" x="127" y="378.5" width="120" height="50"/>
-                                <color key="backgroundColor" red="1" green="0.87560439217634545" blue="0.73847979893309945" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <state key="normal" title="PhotoLibrary"/>
-                                <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="self.layer.cornerRadius">
-                                        <integer key="value" value="25"/>
-                                    </userDefinedRuntimeAttribute>
-                                    <userDefinedRuntimeAttribute type="boolean" keyPath="self.layer.masksToBounds" value="YES"/>
-                                </userDefinedRuntimeAttributes>
-                                <connections>
-                                    <action selector="goLibrary" destination="cVo-HZ-aCU" eventType="touchUpInside" id="iyu-XU-EMx"/>
-                                </connections>
-                            </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1Hq-9c-fMh">
                                 <rect key="frame" x="127" y="308.5" width="120" height="50"/>
                                 <color key="backgroundColor" red="0.55128971256387937" green="1" blue="0.57016689376473884" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -67,16 +53,42 @@
                                     <action selector="goCamera" destination="cVo-HZ-aCU" eventType="touchUpInside" id="e2m-AS-ybW"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3o3-cn-Oru">
+                                <rect key="frame" x="127" y="378" width="120" height="50"/>
+                                <color key="backgroundColor" red="1" green="0.87560439217634545" blue="0.73847979893309945" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="PhotoLibrary"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="self.layer.cornerRadius">
+                                        <integer key="value" value="25"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="self.layer.masksToBounds" value="YES"/>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="goLibrary" destination="cVo-HZ-aCU" eventType="touchUpInside" id="iyu-XU-EMx"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aOL-5G-OIO">
+                                <rect key="frame" x="127" y="448" width="120" height="50"/>
+                                <color key="backgroundColor" red="1" green="0.35184388657880339" blue="0.75929230720489205" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="Button"/>
+                                <connections>
+                                    <action selector="goJournalVC" destination="cVo-HZ-aCU" eventType="touchUpInside" id="yoL-EY-agZ"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="0.74509803921568629" green="1" blue="0.96862745098039216" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
                             <constraint firstItem="91v-we-Cah" firstAttribute="centerY" secondItem="qpZ-ix-2Ul" secondAttribute="centerY" multiplier="0.5" id="032-7m-xel"/>
                             <constraint firstItem="3o3-cn-Oru" firstAttribute="centerX" secondItem="1Hq-9c-fMh" secondAttribute="centerX" id="2Jb-Yo-Jq9"/>
                             <constraint firstItem="3o3-cn-Oru" firstAttribute="top" secondItem="1Hq-9c-fMh" secondAttribute="bottom" constant="20" id="2sh-wk-w02"/>
+                            <constraint firstItem="aOL-5G-OIO" firstAttribute="top" secondItem="3o3-cn-Oru" secondAttribute="bottom" constant="20" id="A11-Ik-i0m"/>
                             <constraint firstItem="1Hq-9c-fMh" firstAttribute="centerX" secondItem="qpZ-ix-2Ul" secondAttribute="centerX" id="P25-83-mQ1"/>
+                            <constraint firstItem="aOL-5G-OIO" firstAttribute="width" secondItem="1Hq-9c-fMh" secondAttribute="width" id="R8N-Pe-zfm"/>
                             <constraint firstItem="1Hq-9c-fMh" firstAttribute="centerY" secondItem="LQT-G3-72D" secondAttribute="centerY" id="cSn-Xa-46A"/>
                             <constraint firstItem="3o3-cn-Oru" firstAttribute="width" secondItem="1Hq-9c-fMh" secondAttribute="width" id="fbu-91-E24"/>
                             <constraint firstItem="91v-we-Cah" firstAttribute="centerX" secondItem="qpZ-ix-2Ul" secondAttribute="centerX" id="jGX-3e-drd"/>
+                            <constraint firstItem="aOL-5G-OIO" firstAttribute="centerX" secondItem="1Hq-9c-fMh" secondAttribute="centerX" id="jYp-WN-vOP"/>
+                            <constraint firstItem="aOL-5G-OIO" firstAttribute="height" secondItem="1Hq-9c-fMh" secondAttribute="height" id="qFX-Xn-X7F"/>
                             <constraint firstItem="3o3-cn-Oru" firstAttribute="height" secondItem="1Hq-9c-fMh" secondAttribute="height" id="ve4-rL-JP7"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="qpZ-ix-2Ul"/>

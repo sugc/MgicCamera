@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13173"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13527"/>
         <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -22,12 +22,9 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bB2-jZ-htC" customClass="FilterListView" customModule="MagicCamera" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="520.5" width="375" height="90"/>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bB2-jZ-htC" customClass="FilterListView">
+                                <rect key="frame" x="0.0" y="520.5" width="375" height="76.5"/>
                                 <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="90" id="aS6-T2-709"/>
-                                </constraints>
                             </view>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Zep-N3-dPU">
                                 <rect key="frame" x="0.0" y="20" width="375" height="500.5"/>
@@ -36,13 +33,13 @@
                                 </constraints>
                             </imageView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="aLV-aL-2eS">
-                                <rect key="frame" x="-0.5" y="610.5" width="375" height="56.5"/>
+                                <rect key="frame" x="-0.5" y="597" width="375" height="70"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PmL-IO-QwK">
-                                        <rect key="frame" x="157.5" y="-1" width="60" height="60"/>
+                                        <rect key="frame" x="162.5" y="10" width="50" height="50"/>
                                         <color key="backgroundColor" red="1" green="0.23520164827964896" blue="0.28723523704490728" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <constraints>
-                                            <constraint firstAttribute="height" constant="60" id="8Tx-au-vLP"/>
+                                            <constraint firstAttribute="height" constant="50" id="8Tx-au-vLP"/>
                                             <constraint firstAttribute="width" secondItem="PmL-IO-QwK" secondAttribute="height" id="VhN-25-EpJ"/>
                                         </constraints>
                                         <state key="normal" image="icon_process_comfirm">
@@ -50,14 +47,14 @@
                                         </state>
                                         <userDefinedRuntimeAttributes>
                                             <userDefinedRuntimeAttribute type="boolean" keyPath="self.layer.maskToBounds" value="YES"/>
-                                            <userDefinedRuntimeAttribute type="string" keyPath="self.layer.cornerRadius" value="30" localized="YES"/>
+                                            <userDefinedRuntimeAttribute type="string" keyPath="self.layer.cornerRadius" value="25" localized="YES"/>
                                         </userDefinedRuntimeAttributes>
                                         <connections>
                                             <action selector="save" destination="4n2-mh-Zu1" eventType="touchUpInside" id="gqO-tG-pE3"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Qol-G0-SCC">
-                                        <rect key="frame" x="15" y="10" width="35" height="35"/>
+                                        <rect key="frame" x="15" y="17" width="35" height="35"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="35" id="bEh-UZ-4FL"/>
                                             <constraint firstAttribute="width" constant="35" id="di3-6I-Wu0"/>
@@ -75,18 +72,19 @@
                                     <constraint firstItem="Qol-G0-SCC" firstAttribute="centerY" secondItem="aLV-aL-2eS" secondAttribute="centerY" id="KnY-vD-db1"/>
                                     <constraint firstItem="PmL-IO-QwK" firstAttribute="centerX" secondItem="aLV-aL-2eS" secondAttribute="centerX" id="TOK-Ri-ZSw"/>
                                     <constraint firstItem="Qol-G0-SCC" firstAttribute="leading" secondItem="aLV-aL-2eS" secondAttribute="leading" constant="15" id="ZSA-Zd-lMS"/>
+                                    <constraint firstAttribute="height" constant="70" id="bmA-RJ-47L"/>
                                 </constraints>
                             </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="bB2-jZ-htC" firstAttribute="bottom" secondItem="aLV-aL-2eS" secondAttribute="top" id="Tsq-vw-7kz"/>
                             <constraint firstItem="bB2-jZ-htC" firstAttribute="top" secondItem="Zep-N3-dPU" secondAttribute="bottom" id="We4-am-tz0"/>
                             <constraint firstItem="Zep-N3-dPU" firstAttribute="top" secondItem="5Gb-eF-CLL" secondAttribute="bottom" id="XLu-zs-lBM"/>
                             <constraint firstItem="EEY-fa-V2f" firstAttribute="top" secondItem="aLV-aL-2eS" secondAttribute="bottom" id="Yuo-hN-aIG"/>
                             <constraint firstItem="aLV-aL-2eS" firstAttribute="centerX" secondItem="Fhk-eY-E0z" secondAttribute="centerX" id="asA-gr-DqC"/>
                             <constraint firstItem="aLV-aL-2eS" firstAttribute="width" secondItem="Fhk-eY-E0z" secondAttribute="width" id="cYs-38-xhk"/>
                             <constraint firstItem="Zep-N3-dPU" firstAttribute="centerX" secondItem="Fhk-eY-E0z" secondAttribute="centerX" id="k0K-ro-XN4"/>
+                            <constraint firstItem="aLV-aL-2eS" firstAttribute="top" secondItem="bB2-jZ-htC" secondAttribute="bottom" id="lEC-rg-pQS"/>
                             <constraint firstItem="bB2-jZ-htC" firstAttribute="width" secondItem="Fhk-eY-E0z" secondAttribute="width" id="nTX-jW-3zO"/>
                             <constraint firstItem="Zep-N3-dPU" firstAttribute="width" secondItem="Fhk-eY-E0z" secondAttribute="width" id="qZv-7u-hlW"/>
                             <constraint firstItem="bB2-jZ-htC" firstAttribute="centerX" secondItem="Fhk-eY-E0z" secondAttribute="centerX" id="yf3-b4-J1y"/>

@@ -30,6 +30,15 @@ class FilterListView : UIView, UICollectionViewDataSource, UICollectionViewDeleg
 
     required init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
+        comonInit()
+    }
+    
+    override init(frame: CGRect) {
+        super.init(frame: frame)
+        comonInit()
+    }
+    
+    func comonInit()  {
         let bundle = Bundle.init(for: type(of: self))
         let nib = UINib(nibName: "FilterListView", bundle: bundle)
         contentView = nib.instantiate(withOwner: self, options: nil)[0] as! UIView
@@ -39,11 +48,6 @@ class FilterListView : UIView, UICollectionViewDataSource, UICollectionViewDeleg
         selectedSection = -1
         let configPath = Bundle.main.path(forResource: "filterResourse", ofType: nil)
         filterManager = FilterManager.init(cofigPath: configPath!)
-    }
-    
-    override init(frame: CGRect) {
-        super.init(frame: frame)
-        
     }
     
     override func awakeFromNib() {
