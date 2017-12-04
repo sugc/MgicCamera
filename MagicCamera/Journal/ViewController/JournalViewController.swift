@@ -248,7 +248,11 @@ class JournalViewController : UIViewController, ConfirmTextViewDelegate, FilterL
     }
     
     func applyFilter(filters: Array<BasicOperation>) {
-        journalView.setFilter(filters: filters)
+//        journalView.setFilter(filters: filters)
+    }
+    
+    func applyLookUpImage(lookUpImage: UIImage?) {
+        journalView.applyFilterWithLookUpImage(lookupImage:lookUpImage)
     }
     
     deinit {

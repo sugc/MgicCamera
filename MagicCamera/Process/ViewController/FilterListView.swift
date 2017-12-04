@@ -12,6 +12,7 @@ import GPUImage
 
 protocol FilterListViewProtocol:NSObjectProtocol {
     func applyFilter(filters:Array<BasicOperation>)
+    func applyLookUpImage(lookUpImage:UIImage?)
     func didbeganApplyFilter()
 }
 
@@ -132,6 +133,7 @@ class FilterListView : UIView, UICollectionViewDataSource, UICollectionViewDeleg
         
         var filters : Array<BasicOperation> = []
         let cell = collectionView.cellForItem(at: indexPath) as! FilterListViewCell
+        var image : UIImage? = nil
         if (lastSelectIndex == indexPath) {
             cell.isSelect = false
             lastSelectIndex = IndexPath.init(row: -1, section: -1)
@@ -141,11 +143,13 @@ class FilterListView : UIView, UICollectionViewDataSource, UICollectionViewDeleg
             cell.isSelect = true
             let filterInfo = filterManager.configArray[indexPath.section].filterInfos[indexPath.row]
             filters = getFilters(filterInfo: filterInfo)
+            image = UIImage.init(contentsOfFile: filterInfo.lookImageName)!
             lastSelectIndex = indexPath
             currentFilterInfo = filterInfo
         }
     
         //应用滤镜
+        filterDelegate?.applyLookUpImage(lookUpImage: image)
         filterDelegate?.applyFilter(filters: filters)
     }
     

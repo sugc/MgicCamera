@@ -87,6 +87,10 @@ class ProcessViewController: UIViewController,FilterListViewProtocol {
        
     }
     
+    func applyLookUpImage(lookUpImage: UIImage?) {
+        
+    }
+    
    @IBAction func goBack() -> Void {
         //
         self.navigationController?.popViewController(animated: true)

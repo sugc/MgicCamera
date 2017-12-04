@@ -329,6 +329,7 @@ class JournalView: UIView, UITextViewDelegate, TouchTextViewDelegate{
         }
         
         let toonFilter = filters.first!
+        toonFilter.removeSourceAtIndex(0)
         let orient = oriImage.imageOrientation.rawValue % 4
         var imgOrient : ImageOrientation
         switch orient {
@@ -349,21 +350,25 @@ class JournalView: UIView, UITextViewDelegate, TouchTextViewDelegate{
             break
         }
         
-        let pictureInput = PictureInput.init(image: oriImage, smoothlyScaleOutput: false, orientation: imgOrient)
-        
-        let pictureOutput = PictureOutput()
-        pictureInput --> toonFilter --> pictureOutput
-        pictureOutput.imageAvailableCallback = {image in
-            // Do something with image
-            DispatchQueue.main.asyncAfter(deadline: .now() + 0.3) {
-                self.cutViewArray[self.selectIndex].image = image
-                
-                toonFilter.removeSourceAtIndex(0)
-                UIApplication.shared.endIgnoringInteractionEvents()
-            }
-        }
-        
-        pictureInput.processImage(synchronously:true)
-        
+        let filteredImage = oriImage.filterWithOperation(toonFilter)
+        self.cutViewArray[self.selectIndex].image = filteredImage
     }
+    
+    func applyFilterWithLookUpImage(lookupImage:UIImage?) {
+        if selectIndex == -1 {
+            return
+        }
+        var saveImage = imageArray[selectIndex]
+        if lookupImage != nil {
+            let oriImage = imageArray[selectIndex]
+            let lookupFilter = LookUpFilter(lookupImage: lookupImage!)
+            lookupFilter.sourceImage = oriImage
+            lookupFilter.prepare()
+            lookupFilter.render()
+            saveImage = lookupFilter.getSaveImage()
+            
+        }
+        self.cutViewArray[self.selectIndex].image = saveImage
+    }
+    
 }

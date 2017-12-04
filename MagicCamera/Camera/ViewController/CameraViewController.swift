@@ -22,7 +22,8 @@ enum ImageRatio : Int {
 class CameraViewController : UIViewController,
                         FilterListViewProtocol,
                         UIImagePickerControllerDelegate,
-                        UINavigationControllerDelegate{
+UINavigationControllerDelegate{
+    
     // 
     var camera : StillCamera!
     var filter : BasicOperation!
@@ -226,6 +227,10 @@ class CameraViewController : UIViewController,
     //**************应用滤镜/
     func applyFilter(filters: Array<BasicOperation>) {
         camera.applyFiltersWith(filters: filters, renderView: renderView)
+    }
+    
+    func applyLookUpImage(lookUpImage: UIImage?) {
+        
     }
     
     //UIImagePickerControllerDelegate
