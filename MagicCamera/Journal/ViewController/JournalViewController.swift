@@ -9,7 +9,7 @@
 import Foundation
 import GPUImage
 
-class JournalViewController : UIViewController, ConfirmTextViewDelegate, FilterListViewProtocol {
+class JournalViewController : UIViewController, ConfirmTextViewDelegate, FilterListViewProtocol, JournalViewDelegate {
     
     
     //预览宽高比
@@ -33,6 +33,8 @@ class JournalViewController : UIViewController, ConfirmTextViewDelegate, FilterL
     var inputTextView : UITextView!
     
     var ainputTextView : ConfirmTextView!
+    
+    var filterListView : FilterListView!
     
     
     /***************************************************************/
@@ -84,6 +86,7 @@ class JournalViewController : UIViewController, ConfirmTextViewDelegate, FilterL
                                                      height: ScreenHeight - 160 - journalViewTopY))
         journalView.imageArray = imageArray
         journalView.model = model
+        journalView.delegate = self
         
         maskView = UIView.init(frame: self.view.bounds)
         maskView.isHidden = true
@@ -122,7 +125,7 @@ class JournalViewController : UIViewController, ConfirmTextViewDelegate, FilterL
         bottomView.addSubview(backBtn)
         
         
-        let filterListView = FilterListView.init(frame: CGRect.init(x: 0, y: 0, width: ScreenWidth, height: 90))
+        filterListView = FilterListView.init(frame: CGRect.init(x: 0, y: 0, width: ScreenWidth, height: 90))
         filterListView.filterDelegate = self
         
         bottomView.addSubview(filterListView)
@@ -253,6 +256,11 @@ class JournalViewController : UIViewController, ConfirmTextViewDelegate, FilterL
     
     func applyLookUpImage(lookUpImage: UIImage?) {
         journalView.applyFilterWithLookUpImage(lookupImage:lookUpImage)
+        journalView.setIndexPath(path: filterListView.lastSelectIndex)
+    }
+    
+    func selectImageAtIndex(index: Int, filterIndexPath: IndexPath!) {
+        filterListView.selectItemAtIndexPath(path: filterIndexPath!)
     }
     
     deinit {

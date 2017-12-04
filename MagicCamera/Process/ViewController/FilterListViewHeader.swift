@@ -11,7 +11,7 @@ import UIKit
 
 protocol FilterListViewHeaderDelegate : NSObjectProtocol {
     
-    func FilterListViewHeader(_ hederView: FilterListViewHeader, didSelectItemAt section: NSInteger)
+    func FilterListViewHeader(_ hederView: FilterListViewHeader?, didSelectItemAt section: NSInteger)
 }
 
 class FilterListViewHeader : UICollectionReusableView {

@@ -11,7 +11,7 @@ import GPUImage
 
 @objc protocol JournalViewDelegate : NSObjectProtocol {
     
-    @objc optional func selectImageAtIndex(index:Int, filterIndexPath:IndexPath)
+    @objc optional func selectImageAtIndex(index:Int, filterIndexPath:IndexPath!)
 }
 
 class JournalView: UIView, UITextViewDelegate, TouchTextViewDelegate{
@@ -226,11 +226,10 @@ class JournalView: UIView, UITextViewDelegate, TouchTextViewDelegate{
     
     func tap(gesture : UITapGestureRecognizer) {
         let point = gesture.location(in: self.backImageView)
-        for i in 0...(cutViewArray.count - 1) {
-            
+        for i in 0...(cutViewArray.count - 1) {  
             let cutView = cutViewArray[i]
             if cutView.isPositionInView(position: point) {
-                
+                var path : IndexPath! = IndexPath.init(row: -1, section: -1)
                 if i == selectIndex {
                     selectIndex = -1
                     masksView?.layer.borderColor = UIColor.clear.cgColor
@@ -238,7 +237,10 @@ class JournalView: UIView, UITextViewDelegate, TouchTextViewDelegate{
                     selectIndex = i
                     masksView?.layer.borderColor = UIColor.yellow.cgColor
                     masksView?.frame = cutView.frame
+                    path = filterIndexArray[i]
                 }
+                
+                delegate.selectImageAtIndex!(index: 0, filterIndexPath: path)
                 break
             }
         }
@@ -369,6 +371,13 @@ class JournalView: UIView, UITextViewDelegate, TouchTextViewDelegate{
             
         }
         self.cutViewArray[self.selectIndex].image = saveImage
+    }
+    
+    func setIndexPath(path:IndexPath!)  {
+        if selectIndex == -1 {
+            return
+        }
+        filterIndexArray[selectIndex] = path
     }
     
 }

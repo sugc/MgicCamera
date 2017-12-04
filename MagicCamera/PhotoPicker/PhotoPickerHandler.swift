@@ -11,11 +11,9 @@ import Photos
 
 
 @objc protocol photoPickerProtocol: NSObjectProtocol {
-    @objc optional  func addImage(image:UIImage)
-    @objc optional  func addImageAnotation(starRect:CGRect)
+    @objc optional func addImage(image:UIImage)
+    @objc optional func addImageAnotation(starRect:CGRect)
     @objc optional func removeImage(image:UIImage)
-    
-    
 }
 
 class PhotoPickerHandler: NSObject, UICollectionViewDelegate, UICollectionViewDataSource {

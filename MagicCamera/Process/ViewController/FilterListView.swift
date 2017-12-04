@@ -23,7 +23,7 @@ class FilterListView : UIView, UICollectionViewDataSource, UICollectionViewDeleg
     @IBOutlet var layout : UICollectionViewFlowLayout!
     weak var filterDelegate : FilterListViewProtocol?
     var filterManager : FilterManager!
-    var lastSelectIndex : IndexPath? = IndexPath.init(row: -1, section: -1)
+    var lastSelectIndex : IndexPath! = IndexPath.init(row: -1, section: -1)
     var dataArray : Array<Any>!
     var selectedSection : Int!
     var filter : LookupFilter16 = LookupFilter16.init()
@@ -132,15 +132,15 @@ class FilterListView : UIView, UICollectionViewDataSource, UICollectionViewDeleg
         lastCell?.isSelect = false
         
         var filters : Array<BasicOperation> = []
-        let cell = collectionView.cellForItem(at: indexPath) as! FilterListViewCell
+        let cell = collectionView.cellForItem(at: indexPath) as? FilterListViewCell
         var image : UIImage? = nil
         if (lastSelectIndex == indexPath) {
-            cell.isSelect = false
+            cell?.isSelect = false
             lastSelectIndex = IndexPath.init(row: -1, section: -1)
             currentFilterInfo = nil
         }else {
             filterDelegate?.didbeganApplyFilter()
-            cell.isSelect = true
+            cell?.isSelect = true
             let filterInfo = filterManager.configArray[indexPath.section].filterInfos[indexPath.row]
             filters = getFilters(filterInfo: filterInfo)
             image = UIImage.init(contentsOfFile: filterInfo.lookImageName)!
@@ -148,13 +148,13 @@ class FilterListView : UIView, UICollectionViewDataSource, UICollectionViewDeleg
             currentFilterInfo = filterInfo
         }
     
+        collectionView.scrollToItem(at: indexPath, at: UICollectionViewScrollPosition.centeredHorizontally, animated: true)
         //应用滤镜
         filterDelegate?.applyLookUpImage(lookUpImage: image)
         filterDelegate?.applyFilter(filters: filters)
     }
     
-    func FilterListViewHeader(_ hederView: FilterListViewHeader, didSelectItemAt section: NSInteger) {
-        //
+    func FilterListViewHeader(_ hederView: FilterListViewHeader?, didSelectItemAt section: NSInteger) {
         
         var isNeedInsert = true
         var array : Array<IndexPath> = []
@@ -191,11 +191,6 @@ class FilterListView : UIView, UICollectionViewDataSource, UICollectionViewDeleg
         print("")
     }
     
-    
-    func scrollToIndexPath(path:IndexPath) {
-        
-    }
-    
     func getFilters(filterInfo:FilterInfo) -> Array<BasicOperation> {
         let image = UIImage.init(contentsOfFile: filterInfo.lookImageName)!
 //        filter = LookupFilter16()
@@ -214,7 +209,30 @@ class FilterListView : UIView, UICollectionViewDataSource, UICollectionViewDeleg
         return []
     }
     
+    //
+    func selectItemAtIndexPath(path:IndexPath) {
+        
+        if path.section == -1 {
+            if selectedSection != -1 {
+                FilterListViewHeader(nil, didSelectItemAt: selectedSection)
+            }
+            return
+        }
+        
+        if path.section != selectedSection {
+            FilterListViewHeader(nil, didSelectItemAt: path.section)
+        }
+        
+        if path.section != lastSelectIndex.section ||
+           path.row != lastSelectIndex.row {
+             collectionView(listCollectionView, didSelectItemAt: path)
+        }else {
+            listCollectionView.scrollToItem(at: path, at: UICollectionViewScrollPosition.centeredHorizontally, animated: true)
+        }
+    }
+    
     deinit {
         print("filter deinit")
     }
+    
 }
