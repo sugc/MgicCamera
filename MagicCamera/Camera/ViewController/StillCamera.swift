@@ -198,7 +198,6 @@ class StillCamera {
             handler(image,error)
         }
     }
-    
 }
 
 

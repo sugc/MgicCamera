@@ -18,7 +18,7 @@ class JournalTemplateViewController : UIViewController,
     
     var collectionView : UICollectionView!
     var waterLayout : WaterFlowLayout!
-    var dataArray : Array<String> = []
+    var dataArray : Array<Dictionary<String,String>> = []
     var model : JournalModel!
     let width = (UIScreen.main.bounds.size.width - 10.0) / 2
     private var modeArray : Array<JigsawModel>!
@@ -39,27 +39,24 @@ class JournalTemplateViewController : UIViewController,
         //修改成从数据库获取
         
         //获取所有文件的路径
-        dataArray = Array.init()
-        var path = NSSearchPathForDirectoriesInDomains(FileManager.SearchPathDirectory.documentDirectory, FileManager.SearchPathDomainMask.userDomainMask, true).first
-        path = path?.appending("/journal")
+        var path = Bundle.main.path(forResource: "journalConfig", ofType: "plist");
+        dataArray = NSArray.init(contentsOfFile: path!) as! Array<Dictionary<String, String>>
         
-        let fileManager = FileManager.default
-    
-        do {
-            
-            let tempArray = try fileManager.contentsOfDirectory(atPath: path!)
-            
-            for fileName in tempArray {
-                if fileName != ".DS_Store" {
-                    let finalName = path?.appending("/").appending(fileName).appending("/template.jpg")
-                    dataArray.append(finalName!)
-                }
-            }
-        } catch  {
-
-        }
-        
-        
+//        let fileManager = FileManager.default
+//
+//        do {
+//            
+//            let tempArray = try fileManager.contentsOfDirectory(atPath: path!)
+//
+//            for fileName in tempArray {
+//                if fileName != ".DS_Store" {
+//                    let finalName = path?.appending("/").appending(fileName).appending("/template.jpg")
+//                    dataArray.append(finalName!)
+//                }
+//            }
+//        } catch  {
+//
+//        }
     }
     
     func layout() {
@@ -107,16 +104,17 @@ class JournalTemplateViewController : UIViewController,
         
 //        let path = dataArray[indexPath.row]
 //        let image = UIImage(contentsOfFile: path)
-        let image = UIImage(named: "M0.JPG")
+        
+        let dic  = dataArray[indexPath.row]
+        let image = UIImage(named:dic["TempImageName"]!)
         let ratio = (image?.size.height)! / (image?.size.width)!
         let height = width * ratio
-        
         return CGSize(width: width, height: height)
     }
     
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return 1
+        return dataArray.count
     }
     
     func numberOfSections(in collectionView: UICollectionView) -> Int {
@@ -129,7 +127,9 @@ class JournalTemplateViewController : UIViewController,
         picker.type = pickerType.selected
         picker.delegate = self;
         //获取model
-        let path = Bundle.main.path(forResource: "M2", ofType: nil)
+        let dic  = dataArray[indexPath.row]
+        let modeID = dic["ModeID"]!
+        let path = Bundle.main.path(forResource: modeID, ofType: nil)
         model = JournalModel.init(configPath: path!)
         picker.maxSelect = model.imageArray.count
         self.navigationController?.pushViewController(picker, animated: true)
@@ -142,7 +142,8 @@ class JournalTemplateViewController : UIViewController,
     
 //        let imageName = dataArray[indexPath.row]
 //        let image = UIImage(contentsOfFile: imageName)
-        let image = UIImage(named: "M0.JPG")
+        let dic  = dataArray[indexPath.row]
+        let image = UIImage(named:dic["TempImageName"]!)
         
         imageView.image = image
         cell.contentView.addSubview(imageView)

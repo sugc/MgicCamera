@@ -68,7 +68,6 @@
 		898FF7E81FC9535D001987B4 /* PipVertex.glsl in Resources */ = {isa = PBXBuildFile; fileRef = 898FF7CA1FC9535D001987B4 /* PipVertex.glsl */; };
 		898FF7E91FC9535D001987B4 /* PMixFragment.glsl in Resources */ = {isa = PBXBuildFile; fileRef = 898FF7CB1FC9535D001987B4 /* PMixFragment.glsl */; };
 		898FF7EA1FC9535D001987B4 /* PMixVertex.glsl in Resources */ = {isa = PBXBuildFile; fileRef = 898FF7CC1FC9535D001987B4 /* PMixVertex.glsl */; };
-		898FF7F31FC95849001987B4 /* M2 in Resources */ = {isa = PBXBuildFile; fileRef = 898FF7F21FC95849001987B4 /* M2 */; };
 		898FF7F81FC95A39001987B4 /* JournalTemplateViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 898FF7F61FC95A39001987B4 /* JournalTemplateViewController.swift */; };
 		898FF7F91FC95A39001987B4 /* TemplateSelectViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 898FF7F71FC95A39001987B4 /* TemplateSelectViewController.swift */; };
 		898FF8001FC95AAA001987B4 /* AutoScrollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 898FF7FB1FC95AAA001987B4 /* AutoScrollView.swift */; };
@@ -81,7 +80,6 @@
 		898FF80F1FC95B2E001987B4 /* PhotoPickerCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 898FF8091FC95B2E001987B4 /* PhotoPickerCell.swift */; };
 		898FF8101FC95B2E001987B4 /* PhotoPickerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 898FF80B1FC95B2E001987B4 /* PhotoPickerViewController.swift */; };
 		898FF8121FC95D96001987B4 /* JigsawModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 898FF8111FC95D96001987B4 /* JigsawModel.swift */; };
-		898FF8141FC95FB1001987B4 /* M0.JPG in Resources */ = {isa = PBXBuildFile; fileRef = 898FF8131FC95FB1001987B4 /* M0.JPG */; };
 		8994993F1F71723D009999DA /* LookupFilter16.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8994993E1F71723D009999DA /* LookupFilter16.swift */; };
 		899499411F7172FC009999DA /* lookup16Fragment.glsl in Resources */ = {isa = PBXBuildFile; fileRef = 899499401F7172FC009999DA /* lookup16Fragment.glsl */; };
 		89A02A521F6D82910078C6D7 /* FilterListViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 89A02A511F6D82910078C6D7 /* FilterListViewCell.xib */; };
@@ -104,6 +102,21 @@
 		89F9CF781F7D4E9D00704DF6 /* StillCamera.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89F9CF771F7D4E9D00704DF6 /* StillCamera.swift */; };
 		8A20EE201FB85F8E0083E8DC /* GPUImage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8A2262781FB85EA7004D2927 /* GPUImage.framework */; };
 		8A20EE231FB85FBB0083E8DC /* GPUImage.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 8A2262781FB85EA7004D2927 /* GPUImage.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		8A8A71961FD8266A008B214E /* journalConfig.plist in Resources */ = {isa = PBXBuildFile; fileRef = 8A8A71921FD82669008B214E /* journalConfig.plist */; };
+		8A8A71A01FD82B87008B214E /* M1.JPG in Resources */ = {isa = PBXBuildFile; fileRef = 8A8A719F1FD82B87008B214E /* M1.JPG */; };
+		8A8A71A61FD82B93008B214E /* M4.JPG in Resources */ = {isa = PBXBuildFile; fileRef = 8A8A71A21FD82B92008B214E /* M4.JPG */; };
+		8A8A71A71FD82B93008B214E /* M3.JPG in Resources */ = {isa = PBXBuildFile; fileRef = 8A8A71A31FD82B93008B214E /* M3.JPG */; };
+		8A8A71A81FD82B93008B214E /* M5.JPG in Resources */ = {isa = PBXBuildFile; fileRef = 8A8A71A41FD82B93008B214E /* M5.JPG */; };
+		8A8A71AC1FD835A5008B214E /* M2.JPG in Resources */ = {isa = PBXBuildFile; fileRef = 8A8A71AB1FD835A5008B214E /* M2.JPG */; };
+		8ABD14481FD6E05600F1AA64 /* M2 in Resources */ = {isa = PBXBuildFile; fileRef = 8ABD14471FD6E05600F1AA64 /* M2 */; };
+		8ABD14501FD6E11700F1AA64 /* M4 in Resources */ = {isa = PBXBuildFile; fileRef = 8ABD14491FD6E11700F1AA64 /* M4 */; };
+		8ABD14511FD6E11700F1AA64 /* M3 in Resources */ = {isa = PBXBuildFile; fileRef = 8ABD144A1FD6E11700F1AA64 /* M3 */; };
+		8ABD14521FD6E11700F1AA64 /* M8 in Resources */ = {isa = PBXBuildFile; fileRef = 8ABD144B1FD6E11700F1AA64 /* M8 */; };
+		8ABD14531FD6E11700F1AA64 /* M7 in Resources */ = {isa = PBXBuildFile; fileRef = 8ABD144C1FD6E11700F1AA64 /* M7 */; };
+		8ABD14541FD6E11700F1AA64 /* M9 in Resources */ = {isa = PBXBuildFile; fileRef = 8ABD144D1FD6E11700F1AA64 /* M9 */; };
+		8ABD14551FD6E11700F1AA64 /* M5 in Resources */ = {isa = PBXBuildFile; fileRef = 8ABD144E1FD6E11700F1AA64 /* M5 */; };
+		8ABD14561FD6E11700F1AA64 /* M6 in Resources */ = {isa = PBXBuildFile; fileRef = 8ABD144F1FD6E11700F1AA64 /* M6 */; };
+		8ABD14581FD6E12D00F1AA64 /* M1 in Resources */ = {isa = PBXBuildFile; fileRef = 8ABD14571FD6E12D00F1AA64 /* M1 */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -242,7 +255,6 @@
 		898FF7CA1FC9535D001987B4 /* PipVertex.glsl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = PipVertex.glsl; sourceTree = "<group>"; };
 		898FF7CB1FC9535D001987B4 /* PMixFragment.glsl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = PMixFragment.glsl; sourceTree = "<group>"; };
 		898FF7CC1FC9535D001987B4 /* PMixVertex.glsl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = PMixVertex.glsl; sourceTree = "<group>"; };
-		898FF7F21FC95849001987B4 /* M2 */ = {isa = PBXFileReference; lastKnownFileType = folder; path = M2; sourceTree = "<group>"; };
 		898FF7F61FC95A39001987B4 /* JournalTemplateViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JournalTemplateViewController.swift; sourceTree = "<group>"; };
 		898FF7F71FC95A39001987B4 /* TemplateSelectViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TemplateSelectViewController.swift; sourceTree = "<group>"; };
 		898FF7FB1FC95AAA001987B4 /* AutoScrollView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AutoScrollView.swift; sourceTree = "<group>"; };
@@ -255,7 +267,6 @@
 		898FF8091FC95B2E001987B4 /* PhotoPickerCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotoPickerCell.swift; sourceTree = "<group>"; };
 		898FF80B1FC95B2E001987B4 /* PhotoPickerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotoPickerViewController.swift; sourceTree = "<group>"; };
 		898FF8111FC95D96001987B4 /* JigsawModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JigsawModel.swift; sourceTree = "<group>"; };
-		898FF8131FC95FB1001987B4 /* M0.JPG */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = M0.JPG; sourceTree = "<group>"; };
 		8994993E1F71723D009999DA /* LookupFilter16.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LookupFilter16.swift; sourceTree = "<group>"; };
 		899499401F7172FC009999DA /* lookup16Fragment.glsl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = lookup16Fragment.glsl; sourceTree = "<group>"; };
 		89A02A511F6D82910078C6D7 /* FilterListViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FilterListViewCell.xib; sourceTree = "<group>"; };
@@ -277,6 +288,21 @@
 		89F9CF721F7D466800704DF6 /* CameraManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CameraManager.swift; sourceTree = "<group>"; };
 		89F9CF771F7D4E9D00704DF6 /* StillCamera.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StillCamera.swift; sourceTree = "<group>"; };
 		8A22626C1FB85EA7004D2927 /* GPUImage.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = GPUImage.xcodeproj; path = "GPUImage2-master/framework/GPUImage.xcodeproj"; sourceTree = SOURCE_ROOT; };
+		8A8A71921FD82669008B214E /* journalConfig.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = journalConfig.plist; sourceTree = "<group>"; };
+		8A8A719F1FD82B87008B214E /* M1.JPG */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = M1.JPG; sourceTree = "<group>"; };
+		8A8A71A21FD82B92008B214E /* M4.JPG */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = M4.JPG; sourceTree = "<group>"; };
+		8A8A71A31FD82B93008B214E /* M3.JPG */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = M3.JPG; sourceTree = "<group>"; };
+		8A8A71A41FD82B93008B214E /* M5.JPG */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = M5.JPG; sourceTree = "<group>"; };
+		8A8A71AB1FD835A5008B214E /* M2.JPG */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = M2.JPG; sourceTree = "<group>"; };
+		8ABD14471FD6E05600F1AA64 /* M2 */ = {isa = PBXFileReference; lastKnownFileType = folder; path = M2; sourceTree = "<group>"; };
+		8ABD14491FD6E11700F1AA64 /* M4 */ = {isa = PBXFileReference; lastKnownFileType = folder; path = M4; sourceTree = "<group>"; };
+		8ABD144A1FD6E11700F1AA64 /* M3 */ = {isa = PBXFileReference; lastKnownFileType = folder; path = M3; sourceTree = "<group>"; };
+		8ABD144B1FD6E11700F1AA64 /* M8 */ = {isa = PBXFileReference; lastKnownFileType = folder; path = M8; sourceTree = "<group>"; };
+		8ABD144C1FD6E11700F1AA64 /* M7 */ = {isa = PBXFileReference; lastKnownFileType = folder; path = M7; sourceTree = "<group>"; };
+		8ABD144D1FD6E11700F1AA64 /* M9 */ = {isa = PBXFileReference; lastKnownFileType = folder; path = M9; sourceTree = "<group>"; };
+		8ABD144E1FD6E11700F1AA64 /* M5 */ = {isa = PBXFileReference; lastKnownFileType = folder; path = M5; sourceTree = "<group>"; };
+		8ABD144F1FD6E11700F1AA64 /* M6 */ = {isa = PBXFileReference; lastKnownFileType = folder; path = M6; sourceTree = "<group>"; };
+		8ABD14571FD6E12D00F1AA64 /* M1 */ = {isa = PBXFileReference; lastKnownFileType = folder; path = M1; sourceTree = "<group>"; };
 		AC7BC624126B2FF80E13B9E9 /* Pods-MagicCamera.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MagicCamera.release.xcconfig"; path = "Pods/Target Support Files/Pods-MagicCamera/Pods-MagicCamera.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -336,7 +362,12 @@
 		896A58BE1F6E27E700AEB484 /* Resourse */ = {
 			isa = PBXGroup;
 			children = (
-				898FF8131FC95FB1001987B4 /* M0.JPG */,
+				8ABD143F1FD6E03000F1AA64 /* jjournalSource */,
+				8A8A719F1FD82B87008B214E /* M1.JPG */,
+				8A8A71AB1FD835A5008B214E /* M2.JPG */,
+				8A8A71A31FD82B93008B214E /* M3.JPG */,
+				8A8A71A21FD82B92008B214E /* M4.JPG */,
+				8A8A71A41FD82B93008B214E /* M5.JPG */,
 				89C60E831FAE2B1C00FF53E5 /* filterResourse */,
 				89C60E761FAE2B0100FF53E5 /* config.plist */,
 			);
@@ -372,7 +403,6 @@
 				898FF8041FC95B2E001987B4 /* PhotoPicker */,
 				898FF7FA1FC95AAA001987B4 /* UItilView */,
 				898FF7F41FC95A39001987B4 /* Template */,
-				898FF7F21FC95849001987B4 /* M2 */,
 				898FF7AA1FC9535D001987B4 /* GLES */,
 				898FF77E1FC95195001987B4 /* Journal */,
 				8A22626C1FB85EA7004D2927 /* GPUImage.xcodeproj */,
@@ -694,6 +724,23 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
+		8ABD143F1FD6E03000F1AA64 /* jjournalSource */ = {
+			isa = PBXGroup;
+			children = (
+				8A8A71921FD82669008B214E /* journalConfig.plist */,
+				8ABD14571FD6E12D00F1AA64 /* M1 */,
+				8ABD14471FD6E05600F1AA64 /* M2 */,
+				8ABD144A1FD6E11700F1AA64 /* M3 */,
+				8ABD14491FD6E11700F1AA64 /* M4 */,
+				8ABD144E1FD6E11700F1AA64 /* M5 */,
+				8ABD144F1FD6E11700F1AA64 /* M6 */,
+				8ABD144C1FD6E11700F1AA64 /* M7 */,
+				8ABD144B1FD6E11700F1AA64 /* M8 */,
+				8ABD144D1FD6E11700F1AA64 /* M9 */,
+			);
+			path = jjournalSource;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -847,38 +894,51 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8A8A71A81FD82B93008B214E /* M5.JPG in Resources */,
+				8ABD14581FD6E12D00F1AA64 /* M1 in Resources */,
 				89570B7A1FD2E93200A92942 /* FilterListView.xib in Resources */,
 				898FF7E91FC9535D001987B4 /* PMixFragment.glsl in Resources */,
+				8ABD14531FD6E11700F1AA64 /* M7 in Resources */,
+				8ABD14501FD6E11700F1AA64 /* M4 in Resources */,
+				8ABD14551FD6E11700F1AA64 /* M5 in Resources */,
 				898FF7E31FC9535D001987B4 /* MixFragment.glsl in Resources */,
 				898FF7E61FC9535D001987B4 /* MTShaderVertex.glsl in Resources */,
+				8ABD14521FD6E11700F1AA64 /* M8 in Resources */,
 				898FF7DD1FC9535D001987B4 /* LookupFragment.glsl in Resources */,
+				8ABD14481FD6E05600F1AA64 /* M2 in Resources */,
 				89C60E7D1FAE2B0200FF53E5 /* config.plist in Resources */,
 				898FF7DE1FC9535D001987B4 /* LookupFragment16.glsl in Resources */,
 				89A02A521F6D82910078C6D7 /* FilterListViewCell.xib in Resources */,
 				89C84AC01F6B5506004439DA /* SaveAndShareViewController.storyboard in Resources */,
+				8A8A71A61FD82B93008B214E /* M4.JPG in Resources */,
 				896A7CB61F66E0F200FC369B /* HomeViewController.storyboard in Resources */,
 				898FF7D91FC9535D001987B4 /* CameoFragment.glsl in Resources */,
+				8A8A71A01FD82B87008B214E /* M1.JPG in Resources */,
 				898FF7E81FC9535D001987B4 /* PipVertex.glsl in Resources */,
 				898FF7EA1FC9535D001987B4 /* PMixVertex.glsl in Resources */,
 				898FF7DB1FC9535D001987B4 /* CharacterFragment.glsl in Resources */,
 				898FF7E51FC9535D001987B4 /* MTShaderFragment.glsl in Resources */,
 				898FF7E11FC9535D001987B4 /* LookupVertex.glsl in Resources */,
 				89D9F4111F6C0A1500DB3B57 /* ProcessViewController.storyboard in Resources */,
+				8A8A71961FD8266A008B214E /* journalConfig.plist in Resources */,
+				8A8A71AC1FD835A5008B214E /* M2.JPG in Resources */,
 				898FF7DF1FC9535D001987B4 /* lookupTestF.glsl in Resources */,
 				890B99501F6D84DF00E37F9D /* FilterListViewHeader.xib in Resources */,
-				898FF8141FC95FB1001987B4 /* M0.JPG in Resources */,
+				8ABD14561FD6E11700F1AA64 /* M6 in Resources */,
 				898FF7E71FC9535D001987B4 /* PipFragment.glsl in Resources */,
 				898FF7E01FC9535D001987B4 /* lookupTestV.glsl in Resources */,
 				89C871B91FB5EFA0003F8A9D /* LaunchScreen.storyboard in Resources */,
 				896A7C821F66DE9700FC369B /* Assets.xcassets in Resources */,
 				896A7CB41F66E0CD00FC369B /* CameraViewController.storyboard in Resources */,
 				898FF7E41FC9535D001987B4 /* MixVertex.glsl in Resources */,
+				8A8A71A71FD82B93008B214E /* M3.JPG in Resources */,
+				8ABD14511FD6E11700F1AA64 /* M3 in Resources */,
 				898FF7DA1FC9535D001987B4 /* CameoVertex.glsl in Resources */,
 				898FF7E21FC9535D001987B4 /* LookupVertex16.glsl in Resources */,
 				89C60E841FAE2B1C00FF53E5 /* filterResourse in Resources */,
 				899499411F7172FC009999DA /* lookup16Fragment.glsl in Resources */,
 				898FF7DC1FC9535D001987B4 /* Charactervertex.glsl in Resources */,
-				898FF7F31FC95849001987B4 /* M2 in Resources */,
+				8ABD14541FD6E11700F1AA64 /* M9 in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

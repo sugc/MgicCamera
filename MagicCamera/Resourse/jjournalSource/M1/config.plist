@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>backColor</key>
+	<integer>16777215</integer>
+	<key>sampleImage</key>
+	<string>sampImage.jpg</string>
+	<key>finalSize</key>
+	<string>1280,1280</string>
+	<key>backImage</key>
+	<string></string>
+	<key>foreImage</key>
+	<string></string>
+	<key>decorateImageArray</key>
+	<array/>
+	<key>imageArray</key>
+	<array>
+		<string>300,100,900,1080</string>
+	</array>
+	<key>textArray</key>
+	<array>
+		<dict>
+			<key>fontAttr</key>
+			<dict/>
+			<key>maxLength</key>
+			<integer>8</integer>
+			<key>textColor</key>
+			<real>1193046</real>
+			<key>fontSize</key>
+			<integer>35</integer>
+			<key>fontName</key>
+			<string>Zapfino</string>
+			<key>content</key>
+			<string>H
+A
+P
+P
+Y</string>
+			<key>position</key>
+			<string>100,200,100,880</string>
+		</dict>
+	</array>
+</dict>
+</plist>

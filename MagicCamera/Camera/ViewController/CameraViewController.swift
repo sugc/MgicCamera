@@ -175,7 +175,6 @@ UINavigationControllerDelegate{
             case ImageRatio.Type4v3:
                 applyLayout(preViewType: ImageRatio.Type1v1)
         }
-        
     }
     
     func change(notification : NSNotification)  {
@@ -183,7 +182,6 @@ UINavigationControllerDelegate{
     }
     
     func goNext(image : UIImage!) {
-        
         var originImage = image
         if self.preViewType == ImageRatio.Type1v1 {
             originImage = image.imageWithRatio(ratio: 1)

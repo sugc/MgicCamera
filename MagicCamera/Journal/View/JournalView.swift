@@ -145,7 +145,9 @@ class JournalView: UIView, UITextViewDelegate, TouchTextViewDelegate{
     
     func layoutImageView() -> Void {
         //装饰用
-        
+        if model.decorateImageArray?.count == 0 {
+            return
+        }
         for i in 0...((model.decorateImageArray?.count)! - 1) {
             
             let decStruct = model.decorateImageArray?[i]

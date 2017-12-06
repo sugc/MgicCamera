@@ -54,7 +54,7 @@ class WaterFlowLayout: UICollectionViewLayout {
                 
             }
             
-            attr.frame = CGRect(x: (offSetC + width) * CGFloat(countN),
+            attr.frame = CGRect(x: (offSetC + size.width) * CGFloat(countN),
                                 y: bottomArray[countN],
                                 width: size.width,
                                 height: size.height);

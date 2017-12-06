@@ -72,14 +72,13 @@ class JournalViewController : UIViewController, ConfirmTextViewDelegate, FilterL
                                                             width: UIScreen.main.bounds.width,
                                                             height: 40 ))
         ainputTextView.delegate = self
-        
-        let path = Bundle.main.path(forResource: "M2", ofType: nil)
-        
-        guard path != nil else {
-            return
-        }
-        
-        let model = JournalModel.init(configPath: path!)
+//        let path = Bundle.main.path(forResource: "M5", ofType: nil)
+//        
+//        guard path != nil else {
+//            return
+//        }
+//        
+//        let model = JournalModel.init(configPath: path!)
         journalView = JournalView.init(frame: CGRect(x: 0,
                                                      y: journalViewTopY,
                                                      width: ScreenWidth,

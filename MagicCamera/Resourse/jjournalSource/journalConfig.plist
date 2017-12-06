@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+	<dict>
+		<key>ModeID</key>
+		<string>M1</string>
+		<key>TempImageName</key>
+		<string>M1.JPG</string>
+	</dict>
+	<dict>
+		<key>ModeID</key>
+		<string>M2</string>
+		<key>TempImageName</key>
+		<string>M2.JPG</string>
+	</dict>
+	<dict>
+		<key>ModeID</key>
+		<string>M3</string>
+		<key>TempImageName</key>
+		<string>M3.JPG</string>
+	</dict>
+	<dict>
+		<key>ModeID</key>
+		<string>M4</string>
+		<key>TempImageName</key>
+		<string>M4.JPG</string>
+	</dict>
+	<dict>
+		<key>ModeID</key>
+		<string>M5</string>
+		<key>TempImageName</key>
+		<string>M5.JPG</string>
+	</dict>
+</array>
+</plist>

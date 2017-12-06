@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>backColor</key>
+	<integer>16777215</integer>
+	<key>sampleImage</key>
+	<string>sampImage.jpg</string>
+	<key>finalSize</key>
+	<string>1280,1280</string>
+	<key>backImage</key>
+	<string></string>
+	<key>foreImage</key>
+	<string></string>
+	<key>decorateImageArray</key>
+	<array>
+		<dict>
+			<key>position</key>
+			<string>0.0,0.8,0.266,0.2</string>
+			<key>imageName</key>
+			<string>m2.jpg</string>
+		</dict>
+	</array>
+	<key>imageArray</key>
+	<array>
+		<string>150,0,980,1280</string>
+	</array>
+	<key>textArray</key>
+	<array/>
+</dict>
+</plist>
