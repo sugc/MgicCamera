@@ -55,19 +55,26 @@ UINavigationControllerDelegate{
                                                name: NSNotification.Name.UIDeviceOrientationDidChange,
                                                object: nil)
         renderView.fillMode = GPUImage.FillMode.stretch
-        camera = StillCamera.init(sessionPreset: AVCaptureSessionPresetPhoto)
-        camera.camera --> renderView
+        if !DEVICE_IS_SUMILATE {
+            camera = StillCamera.init(sessionPreset: AVCaptureSessionPresetPhoto)
+            camera.camera --> renderView
+        }
+        
         preViewType = ImageRatio.Type1v1
     }
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
-        camera.camera.startCapture()
+        if !DEVICE_IS_SUMILATE {
+            camera.camera.startCapture()
+        }
     }
     
     override func viewWillDisappear(_ animated: Bool) {
         super.viewWillDisappear(animated)
-        camera.camera.stopCapture()
+        if !DEVICE_IS_SUMILATE {
+            camera.camera.stopCapture()
+        }
     }
     
     //切换预览尺寸

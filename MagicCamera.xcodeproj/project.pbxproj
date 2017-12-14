@@ -102,6 +102,7 @@
 		89F9CF781F7D4E9D00704DF6 /* StillCamera.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89F9CF771F7D4E9D00704DF6 /* StillCamera.swift */; };
 		8A20EE201FB85F8E0083E8DC /* GPUImage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8A2262781FB85EA7004D2927 /* GPUImage.framework */; };
 		8A20EE231FB85FBB0083E8DC /* GPUImage.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 8A2262781FB85EA7004D2927 /* GPUImage.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		8A41D4A81FE20A1800F7D39C /* NomalDefinition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A41D4A71FE20A1800F7D39C /* NomalDefinition.swift */; };
 		8A8A71961FD8266A008B214E /* journalConfig.plist in Resources */ = {isa = PBXBuildFile; fileRef = 8A8A71921FD82669008B214E /* journalConfig.plist */; };
 		8A8A71A01FD82B87008B214E /* M1.JPG in Resources */ = {isa = PBXBuildFile; fileRef = 8A8A719F1FD82B87008B214E /* M1.JPG */; };
 		8A8A71A61FD82B93008B214E /* M4.JPG in Resources */ = {isa = PBXBuildFile; fileRef = 8A8A71A21FD82B92008B214E /* M4.JPG */; };
@@ -288,6 +289,7 @@
 		89F9CF721F7D466800704DF6 /* CameraManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CameraManager.swift; sourceTree = "<group>"; };
 		89F9CF771F7D4E9D00704DF6 /* StillCamera.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StillCamera.swift; sourceTree = "<group>"; };
 		8A22626C1FB85EA7004D2927 /* GPUImage.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = GPUImage.xcodeproj; path = "GPUImage2-master/framework/GPUImage.xcodeproj"; sourceTree = SOURCE_ROOT; };
+		8A41D4A71FE20A1800F7D39C /* NomalDefinition.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NomalDefinition.swift; sourceTree = "<group>"; };
 		8A8A71921FD82669008B214E /* journalConfig.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = journalConfig.plist; sourceTree = "<group>"; };
 		8A8A719F1FD82B87008B214E /* M1.JPG */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = M1.JPG; sourceTree = "<group>"; };
 		8A8A71A21FD82B92008B214E /* M4.JPG */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = M4.JPG; sourceTree = "<group>"; };
@@ -355,6 +357,7 @@
 			children = (
 				8905D5BB1F7BF7EE003F4730 /* PositionMonitor.swift */,
 				89E594621F9321B8007671A3 /* Vector3.swift */,
+				8A41D4A71FE20A1800F7D39C /* NomalDefinition.swift */,
 			);
 			path = Util;
 			sourceTree = "<group>";
@@ -1088,6 +1091,7 @@
 				898FF7901FC95195001987B4 /* FilterCollectionViewHandler.swift in Sources */,
 				898FF79B1FC95285001987B4 /* CGRect+String.swift in Sources */,
 				898FF8021FC95AAA001987B4 /* WaterFlowLayout.swift in Sources */,
+				8A41D4A81FE20A1800F7D39C /* NomalDefinition.swift in Sources */,
 				898FF7D71FC9535D001987B4 /* PipFilter.swift in Sources */,
 				898FF7991FC95195001987B4 /* JournalViewController.swift in Sources */,
 				898FF7911FC95195001987B4 /* JournalHandler.swift in Sources */,
