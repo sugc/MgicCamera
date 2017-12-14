@@ -29,9 +29,15 @@ class StillCamera {
         
         flashType = FlashType.Off
         position = AVCaptureDevicePosition.back
+        var cameraFacing = location
+        
+        if !StillCamera.backCameraAvailbel() {
+            cameraFacing = .frontFacing
+            position = AVCaptureDevicePosition.front
+        }
         
         do {
-             camera = try Camera.init(sessionPreset: sessionPreset, cameraDevice: cameraDevice, location: location, captureAsYUV: captureAsYUV)
+             camera = try Camera.init(sessionPreset: sessionPreset, cameraDevice: cameraDevice, location: cameraFacing, captureAsYUV: captureAsYUV)
         } catch  {
             fatalError("Could not initialize rendering pipeline: \(error)")
         }
@@ -62,33 +68,40 @@ class StillCamera {
     func reverse() {
         let inputs = camera.captureSession.inputs
         camera.stopCapture()
-        camera.captureSession.beginConfiguration()
-        for case let input as AVCaptureDeviceInput in inputs! {
-            let device = input.device
-            if device?.position == position {
-                    camera.captureSession.removeInput(input)
-            }
-        }
         
-        let newDevice : AVCaptureDevice
+        let newPosition : AVCaptureDevicePosition!
+        let newDevice : AVCaptureDevice?
         if position == AVCaptureDevicePosition.front{
             newDevice = self.device(position: AVCaptureDevicePosition.back)
-            position = AVCaptureDevicePosition.back
+            newPosition = AVCaptureDevicePosition.back
         }else {
             newDevice = self.device(position: AVCaptureDevicePosition.front)
-            position = AVCaptureDevicePosition.front
+            newPosition = AVCaptureDevicePosition.front
             
         }
         
-        let newInput : AVCaptureDeviceInput
+        let newInput : AVCaptureDeviceInput?
         do {
             newInput = try AVCaptureDeviceInput.init(device: newDevice)
         } catch  {
             fatalError("Could not initialize rendering pipeline: \(error)")
         }
         
+        guard newInput != nil else {
+            return
+        }
+        
+        camera.captureSession.beginConfiguration()
+        for case let input as AVCaptureDeviceInput in inputs! {
+            let device = input.device
+            if device?.position == position {
+                camera.captureSession.removeInput(input)
+            }
+        }
+       
         if camera.captureSession.canAddInput(newInput) {
             camera.captureSession.addInput(newInput)
+            position = newPosition
         }
         camera.captureSession.commitConfiguration()
         
@@ -120,7 +133,6 @@ class StillCamera {
         case FlashType.TorOn:
             applyFlasType(newFlashType: FlashType.Off)
             break
-
         default:
             break
         }
@@ -130,32 +142,38 @@ class StillCamera {
     
     
     func applyFlasType(newFlashType:FlashType!)  {
-        flashType = newFlashType
         
         let currentDevice = device(position: position)
-        
         do {
             try currentDevice.lockForConfiguration()
-            
             if flashType.rawValue < 3 {
-                
                 if currentDevice.torchMode == AVCaptureTorchMode.on {
                     currentDevice.torchMode = AVCaptureTorchMode.off
                 }
-                currentDevice.flashMode = AVCaptureFlashMode.init(rawValue: flashType.rawValue)!
+                if currentDevice.isFlashAvailable {
+                    currentDevice.flashMode = AVCaptureFlashMode.init(rawValue: newFlashType.rawValue)!
+                }else {
+                    return
+                }
             }else {
                 if currentDevice.torchMode == AVCaptureTorchMode.off {
-                    currentDevice.torchMode = AVCaptureTorchMode.on
+                    if currentDevice.isTorchAvailable {
+                         currentDevice.torchMode = AVCaptureTorchMode.on
+                    }else {
+                        return;
+                    }
                 }
             }
-            
             currentDevice.unlockForConfiguration()
-            
         } catch {
             fatalError()
         }
         
-        
+        flashType = newFlashType
+    }
+    
+    static func backCameraAvailbel() -> Bool {
+       return UIImagePickerController.isCameraDeviceAvailable(UIImagePickerControllerCameraDevice.rear);
     }
     
     //切换滤镜

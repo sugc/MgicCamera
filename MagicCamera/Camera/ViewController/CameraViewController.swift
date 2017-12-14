@@ -36,6 +36,7 @@ UINavigationControllerDelegate{
     @IBOutlet var renderBackView : UIView!
     @IBOutlet var rationBtn : UIButton!
     @IBOutlet var flashBtn : UIButton!
+    @IBOutlet weak var reveseBtn: UIButton!
     @IBOutlet var filterListView : FilterListView?
     @IBOutlet var renderView : RenderView!
     @IBOutlet var bottomMaskView : UIView!
@@ -61,10 +62,16 @@ UINavigationControllerDelegate{
         }
         
         preViewType = ImageRatio.Type1v1
+        
     }
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
+        
+        if !StillCamera.backCameraAvailbel() {
+            reveseBtn.isHidden = true
+        }
+        
         if !DEVICE_IS_SUMILATE {
             camera.camera.startCapture()
         }
