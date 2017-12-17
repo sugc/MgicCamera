@@ -91,6 +91,10 @@ class ProcessViewController: UIViewController,FilterListViewProtocol {
         
     }
     
+    func shoulApplyHeaderAction() -> Bool {
+        return true
+    }
+    
    @IBAction func goBack() -> Void {
         //
         self.navigationController?.popViewController(animated: true)

@@ -245,6 +245,10 @@ UINavigationControllerDelegate{
         
     }
     
+    func shoulApplyHeaderAction() -> Bool {
+        return true
+    }
+    
     //UIImagePickerControllerDelegate
     func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [String : Any]) {
         //

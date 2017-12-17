@@ -14,6 +14,7 @@ protocol FilterListViewProtocol:NSObjectProtocol {
     func applyFilter(filters:Array<BasicOperation>)
     func applyLookUpImage(lookUpImage:UIImage?)
     func didbeganApplyFilter()
+    func shoulApplyHeaderAction() -> Bool
 }
 
 class FilterListView : UIView, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout, FilterListViewHeaderDelegate {
@@ -155,6 +156,11 @@ class FilterListView : UIView, UICollectionViewDataSource, UICollectionViewDeleg
     }
     
     func FilterListViewHeader(_ hederView: FilterListViewHeader?, didSelectItemAt section: NSInteger) {
+        
+        let isNeedApply = filterDelegate!.shoulApplyHeaderAction()
+        if !isNeedApply && section != selectedSection{
+            return
+        }
         
         var isNeedInsert = true
         var array : Array<IndexPath> = []

@@ -49,6 +49,8 @@ class JournalViewController : UIViewController, ConfirmTextViewDelegate, FilterL
     
     var isShowTextView : Bool = false
     
+    var hasSelected = false  //上次选中过图片
+    
     
     let journalViewTopY : CGFloat = 0
     
@@ -197,16 +199,14 @@ class JournalViewController : UIViewController, ConfirmTextViewDelegate, FilterL
     
     func keyboardWillShow(notification:NSNotification) {
         self.maskView.isHidden = false
-       
     }
     
     func keyboardDidHide(notification:NSNotification) {
-        isShowTextView = false;
+        isShowTextView = false
     }
     
     func keyboardWillHide(notification:NSNotification) {
         self.maskView.isHidden = true
-        
         let userInfo = notification.userInfo!
         let frame = userInfo[UIKeyboardFrameEndUserInfoKey] as! CGRect
         
@@ -256,6 +256,45 @@ class JournalViewController : UIViewController, ConfirmTextViewDelegate, FilterL
     func applyLookUpImage(lookUpImage: UIImage?) {
         journalView.applyFilterWithLookUpImage(lookupImage:lookUpImage)
         journalView.setIndexPath(path: filterListView.lastSelectIndex)
+    }
+    
+    func shoulApplyHeaderAction() -> Bool {
+        
+        if journalView.selectIndex != -1 {
+            hasSelected = true
+            return true
+        }else {
+            if hasSelected {
+                hasSelected = false
+                return true
+            }
+            
+            let label = UILabel.init()
+            let font = UIFont.systemFont(ofSize: 18)
+            let frame = CGRect.init(x: (ScreenWidth - 150) / 2.0,
+                                    y: (ScreenHeight - 40) / 2.0,
+                                    width: 200,
+                                    height: 50)
+            label.frame = frame
+            label.text = "请选择一张图片"
+            label.textAlignment = NSTextAlignment.center
+            label.backgroundColor = UIColor.white
+            label.textColor = UIColor.black
+            label.font = font
+            label.layer.cornerRadius = 25;
+            label.layer.masksToBounds = true
+            self.view.addSubview(label);
+            
+            DispatchQueue.main.asyncAfter(deadline: .now() + 0.8) {
+                UIView.animate(withDuration: 0.2, animations: {
+                    label.alpha = 0;
+                }, completion: { (isFinish) in
+                    label.removeFromSuperview()
+                })
+            }
+            
+            return false
+        }
     }
     
     func selectImageAtIndex(index: Int, filterIndexPath: IndexPath!) {
