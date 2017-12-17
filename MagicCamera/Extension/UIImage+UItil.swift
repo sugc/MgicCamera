@@ -23,15 +23,15 @@ extension UIImage {
         let size = self.size
         var transform = CGAffineTransform.identity
         
-        if isFront {
-            if orientation == UIDeviceOrientation.landscapeRight ||
-                orientation == UIDeviceOrientation.landscapeLeft{
-                transform = transform.scaledBy(x: size.height, y: 0)
-            }else {
-                transform = transform.translatedBy(x: size.width, y: 0.0)
-            }
-            transform = transform.scaledBy(x: -1, y: 1)
-        }
+//        if isFront {
+//            if orientation == UIDeviceOrientation.landscapeRight ||
+//                orientation == UIDeviceOrientation.landscapeLeft{
+//                transform = transform.scaledBy(x: size.height, y: 0)
+//            }else {
+//                transform = transform.translatedBy(x: size.width, y: 0.0)
+//            }
+//            transform = transform.scaledBy(x: -1, y: 1)
+//        }
         
         switch orientation {
         case .landscapeLeft:
