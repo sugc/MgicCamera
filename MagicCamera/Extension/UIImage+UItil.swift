@@ -23,7 +23,7 @@ extension UIImage {
         let size = self.size
         var transform = CGAffineTransform.identity
         
-//        if isFront {
+        if isFront {
 //            if orientation == UIDeviceOrientation.landscapeRight ||
 //                orientation == UIDeviceOrientation.landscapeLeft{
 //                transform = transform.scaledBy(x: size.height, y: 0)
@@ -31,7 +31,7 @@ extension UIImage {
 //                transform = transform.translatedBy(x: size.width, y: 0.0)
 //            }
 //            transform = transform.scaledBy(x: -1, y: 1)
-//        }
+        }
         
         switch orientation {
         case .landscapeLeft:
@@ -95,9 +95,7 @@ extension UIImage {
             height = size.width
         }
        
-        
-        var bounds = CGRect.init(x: 0, y: 0, width: width, height: height)
-        
+        var bounds = CGRect.init(x: 0, y: 0, width: size.width, height: size.height)
         let context = CGContext.init(data: nil,
                                      width: Int(width),
                                      height: Int(height),
@@ -108,10 +106,9 @@ extension UIImage {
         
 //        UIGraphicsBeginImageContext(bounds.size);
 //        let context = UIGraphicsGetCurrentContext()
-        
+        context?.concatenate(transform)
         context?.setFillColor(UIColor.white.cgColor)
         context?.fill(bounds)
-        context?.concatenate(transform)
         context?.interpolationQuality = CGInterpolationQuality.low
         
         if self.imageOrientation == .left ||
@@ -120,8 +117,8 @@ extension UIImage {
             self.imageOrientation == .rightMirrored {
             bounds = CGRect.init(x: 0,
                                  y: 0,
-                                 width: height,
-                                 height: width)
+                                 width: size.height,
+                                 height: size.width)
         }
         
 

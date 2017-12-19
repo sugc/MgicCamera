@@ -109,6 +109,8 @@
 		8A8A71A71FD82B93008B214E /* M3.JPG in Resources */ = {isa = PBXBuildFile; fileRef = 8A8A71A31FD82B93008B214E /* M3.JPG */; };
 		8A8A71A81FD82B93008B214E /* M5.JPG in Resources */ = {isa = PBXBuildFile; fileRef = 8A8A71A41FD82B93008B214E /* M5.JPG */; };
 		8A8A71AC1FD835A5008B214E /* M2.JPG in Resources */ = {isa = PBXBuildFile; fileRef = 8A8A71AB1FD835A5008B214E /* M2.JPG */; };
+		8AA601771FE9410100809F64 /* SettingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AA601761FE9410100809F64 /* SettingViewController.swift */; };
+		8AA601791FE9430A00809F64 /* SettingViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AA601781FE9430A00809F64 /* SettingViewCell.swift */; };
 		8ABD14481FD6E05600F1AA64 /* M2 in Resources */ = {isa = PBXBuildFile; fileRef = 8ABD14471FD6E05600F1AA64 /* M2 */; };
 		8ABD14501FD6E11700F1AA64 /* M4 in Resources */ = {isa = PBXBuildFile; fileRef = 8ABD14491FD6E11700F1AA64 /* M4 */; };
 		8ABD14511FD6E11700F1AA64 /* M3 in Resources */ = {isa = PBXBuildFile; fileRef = 8ABD144A1FD6E11700F1AA64 /* M3 */; };
@@ -296,6 +298,8 @@
 		8A8A71A31FD82B93008B214E /* M3.JPG */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = M3.JPG; sourceTree = "<group>"; };
 		8A8A71A41FD82B93008B214E /* M5.JPG */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = M5.JPG; sourceTree = "<group>"; };
 		8A8A71AB1FD835A5008B214E /* M2.JPG */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = M2.JPG; sourceTree = "<group>"; };
+		8AA601761FE9410100809F64 /* SettingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingViewController.swift; sourceTree = "<group>"; };
+		8AA601781FE9430A00809F64 /* SettingViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingViewCell.swift; sourceTree = "<group>"; };
 		8ABD14471FD6E05600F1AA64 /* M2 */ = {isa = PBXFileReference; lastKnownFileType = folder; path = M2; sourceTree = "<group>"; };
 		8ABD14491FD6E11700F1AA64 /* M4 */ = {isa = PBXFileReference; lastKnownFileType = folder; path = M4; sourceTree = "<group>"; };
 		8ABD144A1FD6E11700F1AA64 /* M3 */ = {isa = PBXFileReference; lastKnownFileType = folder; path = M3; sourceTree = "<group>"; };
@@ -403,12 +407,12 @@
 		896A7C791F66DE9700FC369B /* MagicCamera */ = {
 			isa = PBXGroup;
 			children = (
+				8AA601751FE940C500809F64 /* Setting */,
 				898FF8041FC95B2E001987B4 /* PhotoPicker */,
 				898FF7FA1FC95AAA001987B4 /* UItilView */,
 				898FF7F41FC95A39001987B4 /* Template */,
 				898FF7AA1FC9535D001987B4 /* GLES */,
 				898FF77E1FC95195001987B4 /* Journal */,
-				8A22626C1FB85EA7004D2927 /* GPUImage.xcodeproj */,
 				89C871B81FB5EFA0003F8A9D /* LaunchScreen.storyboard */,
 				89E5945E1F930F3D007671A3 /* Extension */,
 				8905D5B71F7BF7D1003F4730 /* Util */,
@@ -418,6 +422,7 @@
 				89C84AC21F6B5518004439DA /* Process */,
 				89C84ABD1F6B5506004439DA /* SaveAndShare */,
 				896A58BE1F6E27E700AEB484 /* Resourse */,
+				8A22626C1FB85EA7004D2927 /* GPUImage.xcodeproj */,
 				896A7C7A1F66DE9700FC369B /* AppDelegate.swift */,
 				896A7C7C1F66DE9700FC369B /* ViewController.swift */,
 				896A7C811F66DE9700FC369B /* Assets.xcassets */,
@@ -725,6 +730,15 @@
 				8A22627A1FB85EA7004D2927 /* GPUImageTests_iOS.xctest */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		8AA601751FE940C500809F64 /* Setting */ = {
+			isa = PBXGroup;
+			children = (
+				8AA601761FE9410100809F64 /* SettingViewController.swift */,
+				8AA601781FE9430A00809F64 /* SettingViewCell.swift */,
+			);
+			path = Setting;
 			sourceTree = "<group>";
 		};
 		8ABD143F1FD6E03000F1AA64 /* jjournalSource */ = {
@@ -1046,6 +1060,7 @@
 				898FF7CF1FC9535D001987B4 /* GLTexture.swift in Sources */,
 				898FF7951FC95195001987B4 /* FilterViewCell.swift in Sources */,
 				898FF7CE1FC9535D001987B4 /* GLProgram.swift in Sources */,
+				8AA601791FE9430A00809F64 /* SettingViewCell.swift in Sources */,
 				8994993F1F71723D009999DA /* LookupFilter16.swift in Sources */,
 				898FF8121FC95D96001987B4 /* JigsawModel.swift in Sources */,
 				898FF7D51FC9535D001987B4 /* LookUpFilter.swift in Sources */,
@@ -1100,6 +1115,7 @@
 				89E594631F9321B8007671A3 /* Vector3.swift in Sources */,
 				898FF7921FC95195001987B4 /* JournalModel.swift in Sources */,
 				898FF8031FC95AAA001987B4 /* WaterFlowView.swift in Sources */,
+				8AA601771FE9410100809F64 /* SettingViewController.swift in Sources */,
 				898FF7971FC95195001987B4 /* TouchTextView.swift in Sources */,
 				891C98111FA8BDFC00991E7F /* UIImage+Save.swift in Sources */,
 				898FF8011FC95AAA001987B4 /* DesignedTextView.swift in Sources */,

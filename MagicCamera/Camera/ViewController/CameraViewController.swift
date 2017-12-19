@@ -119,7 +119,7 @@ UINavigationControllerDelegate{
 //            }
             
             let deviceOrientation = self.positionMonitor?.orientation
-            let finalImage = catureImage?.fixWithDeviceOrientation(orientation: deviceOrientation!, isFront: true)
+            let finalImage = catureImage?.fixWithDeviceOrientation(orientation: deviceOrientation!, isFront: self.camera.position == AVCaptureDevicePosition.front)
             self.goNext(image: finalImage)
         }
     }
