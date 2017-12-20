@@ -9,6 +9,7 @@
 import Foundation
 import UIKit
 
+
 class SettingViewCell : UITableViewCell {
     override init(style: UITableViewCellStyle, reuseIdentifier: String?) {
         super.init(style: style, reuseIdentifier: reuseIdentifier)
@@ -19,14 +20,21 @@ class SettingViewCell : UITableViewCell {
     }
     
     init(type:Int) {
-        super.init(style: UITableViewCellStyle.default, reuseIdentifier: "hahaha")
-        
+        super.init(style: UITableViewCellStyle.default, reuseIdentifier: "settingViewCell")
     }
+    
+    
+    init(frame: CGRect) {
+        super.init(style: UITableViewCellStyle.default, reuseIdentifier: "settingViewCell")
+    }
+    
     
     func layout(type:Int) {
         //
 //        let button
+        
     }
+    
     
     
 }

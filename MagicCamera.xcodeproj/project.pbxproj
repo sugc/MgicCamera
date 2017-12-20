@@ -111,6 +111,7 @@
 		8A8A71AC1FD835A5008B214E /* M2.JPG in Resources */ = {isa = PBXBuildFile; fileRef = 8A8A71AB1FD835A5008B214E /* M2.JPG */; };
 		8AA601771FE9410100809F64 /* SettingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AA601761FE9410100809F64 /* SettingViewController.swift */; };
 		8AA601791FE9430A00809F64 /* SettingViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AA601781FE9430A00809F64 /* SettingViewCell.swift */; };
+		8AA6017B1FE9788500809F64 /* SettingViewManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AA6017A1FE9788500809F64 /* SettingViewManager.swift */; };
 		8ABD14481FD6E05600F1AA64 /* M2 in Resources */ = {isa = PBXBuildFile; fileRef = 8ABD14471FD6E05600F1AA64 /* M2 */; };
 		8ABD14501FD6E11700F1AA64 /* M4 in Resources */ = {isa = PBXBuildFile; fileRef = 8ABD14491FD6E11700F1AA64 /* M4 */; };
 		8ABD14511FD6E11700F1AA64 /* M3 in Resources */ = {isa = PBXBuildFile; fileRef = 8ABD144A1FD6E11700F1AA64 /* M3 */; };
@@ -300,6 +301,7 @@
 		8A8A71AB1FD835A5008B214E /* M2.JPG */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = M2.JPG; sourceTree = "<group>"; };
 		8AA601761FE9410100809F64 /* SettingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingViewController.swift; sourceTree = "<group>"; };
 		8AA601781FE9430A00809F64 /* SettingViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingViewCell.swift; sourceTree = "<group>"; };
+		8AA6017A1FE9788500809F64 /* SettingViewManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingViewManager.swift; sourceTree = "<group>"; };
 		8ABD14471FD6E05600F1AA64 /* M2 */ = {isa = PBXFileReference; lastKnownFileType = folder; path = M2; sourceTree = "<group>"; };
 		8ABD14491FD6E11700F1AA64 /* M4 */ = {isa = PBXFileReference; lastKnownFileType = folder; path = M4; sourceTree = "<group>"; };
 		8ABD144A1FD6E11700F1AA64 /* M3 */ = {isa = PBXFileReference; lastKnownFileType = folder; path = M3; sourceTree = "<group>"; };
@@ -737,6 +739,7 @@
 			children = (
 				8AA601761FE9410100809F64 /* SettingViewController.swift */,
 				8AA601781FE9430A00809F64 /* SettingViewCell.swift */,
+				8AA6017A1FE9788500809F64 /* SettingViewManager.swift */,
 			);
 			path = Setting;
 			sourceTree = "<group>";
@@ -1096,6 +1099,7 @@
 				898FF7D01FC9535D001987B4 /* BeautyGL.swift in Sources */,
 				898FF7941FC95195001987B4 /* CutView.swift in Sources */,
 				896A7C7D1F66DE9700FC369B /* ViewController.swift in Sources */,
+				8AA6017B1FE9788500809F64 /* SettingViewManager.swift in Sources */,
 				898FF7931FC95195001987B4 /* ConfirmTextView.swift in Sources */,
 				898FF8001FC95AAA001987B4 /* AutoScrollView.swift in Sources */,
 				8905D5BC1F7BF7EE003F4730 /* PositionMonitor.swift in Sources */,

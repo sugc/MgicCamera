@@ -49,7 +49,12 @@ class HomeViewController : UIViewController,
     @IBAction func goJournalVC() {
         let VC = JournalTemplateViewController()
         self.navigationController?.pushViewController(VC,
-                                                      animated: false)
+                                                      animated: true)
+    }
+    
+    @IBAction func goSetting() {
+        let settingVC = SettingViewController()
+        self.navigationController?.pushViewController(settingVC, animated: true)
     }
     
     func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [String : Any]) {
