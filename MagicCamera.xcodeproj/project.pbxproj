@@ -100,6 +100,8 @@
 		89E594631F9321B8007671A3 /* Vector3.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89E594621F9321B8007671A3 /* Vector3.swift */; };
 		89F9CF731F7D466800704DF6 /* CameraManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89F9CF721F7D466800704DF6 /* CameraManager.swift */; };
 		89F9CF781F7D4E9D00704DF6 /* StillCamera.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89F9CF771F7D4E9D00704DF6 /* StillCamera.swift */; };
+		8A0192671FEB463E001D040E /* SuggestionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A0192661FEB463E001D040E /* SuggestionViewController.swift */; };
+		8A01926D1FEBF2C2001D040E /* WallPaperViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A01926C1FEBF2C2001D040E /* WallPaperViewController.swift */; };
 		8A20EE201FB85F8E0083E8DC /* GPUImage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8A2262781FB85EA7004D2927 /* GPUImage.framework */; };
 		8A20EE231FB85FBB0083E8DC /* GPUImage.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 8A2262781FB85EA7004D2927 /* GPUImage.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		8A41D4A81FE20A1800F7D39C /* NomalDefinition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A41D4A71FE20A1800F7D39C /* NomalDefinition.swift */; };
@@ -291,6 +293,8 @@
 		89E594621F9321B8007671A3 /* Vector3.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Vector3.swift; sourceTree = "<group>"; };
 		89F9CF721F7D466800704DF6 /* CameraManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CameraManager.swift; sourceTree = "<group>"; };
 		89F9CF771F7D4E9D00704DF6 /* StillCamera.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StillCamera.swift; sourceTree = "<group>"; };
+		8A0192661FEB463E001D040E /* SuggestionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SuggestionViewController.swift; sourceTree = "<group>"; };
+		8A01926C1FEBF2C2001D040E /* WallPaperViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WallPaperViewController.swift; sourceTree = "<group>"; };
 		8A22626C1FB85EA7004D2927 /* GPUImage.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = GPUImage.xcodeproj; path = "GPUImage2-master/framework/GPUImage.xcodeproj"; sourceTree = SOURCE_ROOT; };
 		8A41D4A71FE20A1800F7D39C /* NomalDefinition.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NomalDefinition.swift; sourceTree = "<group>"; };
 		8A8A71921FD82669008B214E /* journalConfig.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = journalConfig.plist; sourceTree = "<group>"; };
@@ -740,6 +744,8 @@
 				8AA601761FE9410100809F64 /* SettingViewController.swift */,
 				8AA601781FE9430A00809F64 /* SettingViewCell.swift */,
 				8AA6017A1FE9788500809F64 /* SettingViewManager.swift */,
+				8A0192661FEB463E001D040E /* SuggestionViewController.swift */,
+				8A01926C1FEBF2C2001D040E /* WallPaperViewController.swift */,
 			);
 			path = Setting;
 			sourceTree = "<group>";
@@ -1020,6 +1026,7 @@
 				"${BUILT_PRODUCTS_DIR}/ReactiveSwift/ReactiveSwift.framework",
 				"${BUILT_PRODUCTS_DIR}/Result/Result.framework",
 				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
+				"${BUILT_PRODUCTS_DIR}/skpsmtpmessage/skpsmtpmessage.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
@@ -1029,6 +1036,7 @@
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ReactiveSwift.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Result.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/skpsmtpmessage.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -1113,7 +1121,9 @@
 				8A41D4A81FE20A1800F7D39C /* NomalDefinition.swift in Sources */,
 				898FF7D71FC9535D001987B4 /* PipFilter.swift in Sources */,
 				898FF7991FC95195001987B4 /* JournalViewController.swift in Sources */,
+				8A01926D1FEBF2C2001D040E /* WallPaperViewController.swift in Sources */,
 				898FF7911FC95195001987B4 /* JournalHandler.swift in Sources */,
+				8A0192671FEB463E001D040E /* SuggestionViewController.swift in Sources */,
 				898FF80D1FC95B2E001987B4 /* PhotoUtil.swift in Sources */,
 				898FF7D81FC9535D001987B4 /* SGLLongPicFilter.swift in Sources */,
 				89E594631F9321B8007671A3 /* Vector3.swift in Sources */,

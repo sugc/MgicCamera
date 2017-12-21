@@ -7,7 +7,7 @@
 //
 
 import Foundation
-import UIKit
+
 
 class SettingViewController: UIViewController, UITableViewDelegate {
     
@@ -33,10 +33,10 @@ class SettingViewController: UIViewController, UITableViewDelegate {
                                          height: ScreenHeight - 45)
         tableView = UITableView.init(frame: tableViewFrame)
 //        tableView.register(UITableViewCell.classForCoder(), forCellReuseIdentifier: "settingViewCell")
-        
         tableView.delegate = manager
         tableView.dataSource = manager
-        tableView.backgroundColor = UIColor.gray
+        tableView.backgroundColor = UIColor.clear
+        tableView.tableFooterView = UIView()
         self.view.addSubview(tableView)
         self.view.addSubview(backBtn)
     }

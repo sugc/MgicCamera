@@ -11,8 +11,10 @@ import UIKit
 
 class SettingViewManager: NSObject, UITableViewDelegate, UITableViewDataSource {
     
-    let dataArray : Array<Dictionary<String,Any>> = [["title":"关于","action":#selector(showAbout)],
-                     ["title":"开屏壁纸","action":#selector(setlaunchImage)]]
+    let dataArray : Array<Dictionary<String,Any>> =
+                    [["title":"关于","action":#selector(showAbout)],
+                     ["title":"开屏壁纸","action":#selector(setlaunchImage)],
+                     ["title":"意见反馈","action":#selector(sendSuggestion)]]
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return dataArray.count
@@ -46,4 +48,11 @@ class SettingViewManager: NSObject, UITableViewDelegate, UITableViewDataSource {
         
     }
     
+    //意见反馈
+    func sendSuggestion() {
+        let suggestVC = SuggestionViewController()
+        let delegate : AppDelegate = UIApplication.shared.delegate as! AppDelegate
+        let nav = delegate.window!.rootViewController as! UINavigationController
+        nav.pushViewController(suggestVC, animated: true)
+    }
 }
