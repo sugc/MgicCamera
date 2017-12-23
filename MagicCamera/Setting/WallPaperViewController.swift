@@ -10,14 +10,15 @@ import Foundation
 
 class WallPaperViewController: UIViewController {
     //
+    var tableView : UITableView!
     override func viewDidLoad() {
         super.viewDidLoad()
-        
         layout()
     }
     
     func layout() {
-        
+        //
+        tableView = UITableView.init(frame: CGRect.zero)
     }
     
     //获取设置的图片

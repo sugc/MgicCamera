@@ -7,11 +7,14 @@
 //
 
 import Foundation
+import skpsmtpmessage
 
-class SuggestionViewController: UIViewController {
+
+class SuggestionViewController: UIViewController, SKPSMTPMessageDelegate {
     
     var textFiled : UITextField!
     var textView : UITextView!
+    let mail = SKPSMTPMessage()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -78,43 +81,40 @@ class SuggestionViewController: UIViewController {
     }
     
     func sendInfo() {
-        
-        var sendInfo = "eamil:"
-        if textFiled.text != nil  {
-            sendInfo = sendInfo + textFiled.text!
+        mail.subject = "蜜柚相机意见反馈"
+        mail.fromEmail = "suguocai_z@163.com"
+        mail.toEmail = "suguocai_z@163.com"
+        mail.relayHost = "smtp.163.com"
+        mail.requiresAuth = true
+        mail.login = "suguocai_z@163.com"
+        mail.pass = "sugchahaha6"
+        mail.wantsSecure = true
+        mail.delegate = self
+        var UserMail = ""
+        var content = ""
+        if self.textFiled.text != nil {
+            UserMail = "发送邮箱 ———— " + self.textFiled.text! + "\n\n\n"
         }
         
-        if textView.text != nil  {
-            sendInfo = sendInfo + "<-->message:"
-            sendInfo = sendInfo + textView.text
+        if textView.text == nil || textView.text == "" {
+            return;
         }
         
-        
-        let attr = ["info":sendInfo]
-        Answers.logCustomEvent(withName: "advise", customAttributes: attr)
-        let maskView = UIView(frame: UIScreen.main.bounds)
-        maskView.backgroundColor = UIColor.color(hex: 0x00000, alpha: 0.8)
-        
-        UIView.animate(withDuration: 0.5,
-                       animations: {
-                        self.view.endEditing(true)
-        }, completion: {(flag : Bool)->Void in
-            let label = UILabel(frame:  CGRect(x: 0,
-                                               y: 160,
-                                               width: UIScreen.main.bounds.width,
-                                               height: 50))
-            label.text = "感谢您的宝贵意见，我们会尽快回复"
-            label.textColor = UIColor.white
-            label.textAlignment = NSTextAlignment.center
-            
-            self.view.addSubview(maskView)
-            maskView.addSubview(label)
-            
-            let t : TimeInterval = 2.0
-            DispatchQueue.main.asyncAfter(deadline: DispatchTime.now() + t, execute: {
-                self.goBack()
-            })
-        })
-        
+        content = UserMail + textView.text
+        let plainpart = [kSKPSMTPPartContentTypeKey:"text/plain; charset=UTF-8",
+                                                      kSKPSMTPPartMessageKey:content,
+                         kSKPSMTPPartContentTransferEncodingKey:"8bit"]
+        mail.parts = [plainpart]
+        DispatchQueue.main.async {
+             self.mail.send()
+        }
+    }
+    
+    func messageSent(_ message: SKPSMTPMessage!) {
+        print("success to send email")
+    }
+    
+    func messageFailed(_ message: SKPSMTPMessage!, error: Error!) {
+        print("failed to send email")
     }
 }
