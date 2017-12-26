@@ -105,6 +105,8 @@
 		8A20EE201FB85F8E0083E8DC /* GPUImage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8A2262781FB85EA7004D2927 /* GPUImage.framework */; };
 		8A20EE231FB85FBB0083E8DC /* GPUImage.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 8A2262781FB85EA7004D2927 /* GPUImage.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		8A41D4A81FE20A1800F7D39C /* NomalDefinition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A41D4A71FE20A1800F7D39C /* NomalDefinition.swift */; };
+		8A62F89D1FF1DFDB00AD9FD0 /* WallPapperCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A62F89C1FF1DFDB00AD9FD0 /* WallPapperCell.swift */; };
+		8A62F8A21FF1E16700AD9FD0 /* WallPapperManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A62F8A11FF1E16700AD9FD0 /* WallPapperManager.swift */; };
 		8A8A71961FD8266A008B214E /* journalConfig.plist in Resources */ = {isa = PBXBuildFile; fileRef = 8A8A71921FD82669008B214E /* journalConfig.plist */; };
 		8A8A71A01FD82B87008B214E /* M1.JPG in Resources */ = {isa = PBXBuildFile; fileRef = 8A8A719F1FD82B87008B214E /* M1.JPG */; };
 		8A8A71A61FD82B93008B214E /* M4.JPG in Resources */ = {isa = PBXBuildFile; fileRef = 8A8A71A21FD82B92008B214E /* M4.JPG */; };
@@ -297,6 +299,8 @@
 		8A01926C1FEBF2C2001D040E /* WallPaperViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WallPaperViewController.swift; sourceTree = "<group>"; };
 		8A22626C1FB85EA7004D2927 /* GPUImage.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = GPUImage.xcodeproj; path = "GPUImage2-master/framework/GPUImage.xcodeproj"; sourceTree = SOURCE_ROOT; };
 		8A41D4A71FE20A1800F7D39C /* NomalDefinition.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NomalDefinition.swift; sourceTree = "<group>"; };
+		8A62F89C1FF1DFDB00AD9FD0 /* WallPapperCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WallPapperCell.swift; sourceTree = "<group>"; };
+		8A62F8A11FF1E16700AD9FD0 /* WallPapperManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WallPapperManager.swift; sourceTree = "<group>"; };
 		8A8A71921FD82669008B214E /* journalConfig.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = journalConfig.plist; sourceTree = "<group>"; };
 		8A8A719F1FD82B87008B214E /* M1.JPG */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = M1.JPG; sourceTree = "<group>"; };
 		8A8A71A21FD82B92008B214E /* M4.JPG */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = M4.JPG; sourceTree = "<group>"; };
@@ -746,6 +750,8 @@
 				8AA6017A1FE9788500809F64 /* SettingViewManager.swift */,
 				8A0192661FEB463E001D040E /* SuggestionViewController.swift */,
 				8A01926C1FEBF2C2001D040E /* WallPaperViewController.swift */,
+				8A62F89C1FF1DFDB00AD9FD0 /* WallPapperCell.swift */,
+				8A62F8A11FF1E16700AD9FD0 /* WallPapperManager.swift */,
 			);
 			path = Setting;
 			sourceTree = "<group>";
@@ -1093,6 +1099,7 @@
 				89C84ABC1F6B54EC004439DA /* CameraViewController.swift in Sources */,
 				89D9F41A1F6C1BA900DB3B57 /* FilterListView.swift in Sources */,
 				898FF7F81FC95A39001987B4 /* JournalTemplateViewController.swift in Sources */,
+				8A62F8A21FF1E16700AD9FD0 /* WallPapperManager.swift in Sources */,
 				898FF7A31FC95291001987B4 /* String+Utils.swift in Sources */,
 				89C84AC51F6B5556004439DA /* ProcessViewController.swift in Sources */,
 				897EBF401FCAB98D00D2AC75 /* DesignedUtils.swift in Sources */,
@@ -1134,6 +1141,7 @@
 				891C98111FA8BDFC00991E7F /* UIImage+Save.swift in Sources */,
 				898FF8011FC95AAA001987B4 /* DesignedTextView.swift in Sources */,
 				89F9CF781F7D4E9D00704DF6 /* StillCamera.swift in Sources */,
+				8A62F89D1FF1DFDB00AD9FD0 /* WallPapperCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
