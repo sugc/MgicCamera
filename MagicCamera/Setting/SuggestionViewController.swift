@@ -49,7 +49,7 @@ class SuggestionViewController: UIViewController, SKPSMTPMessageDelegate {
         
         
         textFiled = UITextField(frame: CGRect(x: 15,
-                                              y: 100,
+                                              y: 60,
                                               width: UIScreen.main.bounds.width - 30,
                                               height: 35))
         textFiled.layer.cornerRadius = 3.0
@@ -63,10 +63,13 @@ class SuggestionViewController: UIViewController, SKPSMTPMessageDelegate {
                                               height: 30 ));
         tipsLabel.textAlignment = NSTextAlignment.center
         tipsLabel.text = "有什么不爽的，尽管吐槽吧"
-        textView = UITextView(frame: CGRect(x: 0,
+        textView = UITextView(frame: CGRect(x: 10,
                                             y: tipsLabel.bottom + 5,
-                                            width: UIScreen.main.bounds.width,
+                                            width: UIScreen.main.bounds.width - 20,
                                             height: UIScreen.main.bounds.height / 3.0))
+        textView.font = UIFont.systemFont(ofSize: 15)
+        textView.layer.cornerRadius = 3.0
+        textView.layer.masksToBounds = true
         
         self.view.addSubview(label)
         self.view.addSubview(leftButton)

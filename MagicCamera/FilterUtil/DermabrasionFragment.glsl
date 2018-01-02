@@ -17,6 +17,7 @@ void main(void)
     for (i = x - 5; i < x + 5; i ++) {
         for (j = y - 5; j < y + 5; j ++) {
             highp vec4 textureColorNew = texture2D(inputImageTexture, vec2(x,y));
+            
         }
     }
 }

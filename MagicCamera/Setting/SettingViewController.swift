@@ -21,7 +21,7 @@ class SettingViewController: UIViewController, UITableViewDelegate {
     
     func layout() {
         self.view.backgroundColor = UIColor.white
-        let frame = CGRect.init(x: 15, y: 20, width: 35, height: 35)
+        let frame = CGRect.init(x: 5, y: 20, width: 35, height: 35)
         let backBtn = UIButton.init(frame: frame)
         backBtn.setImage(UIImage.init(named: "icon_back_normal"), for: UIControlState.normal)
         backBtn.addTarget(self, action: #selector(back), for: UIControlEvents.touchUpInside)

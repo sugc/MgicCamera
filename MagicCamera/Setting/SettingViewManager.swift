@@ -14,7 +14,8 @@ class SettingViewManager: NSObject, UITableViewDelegate, UITableViewDataSource {
     let dataArray : Array<Dictionary<String,Any>> =
                     [["title":"关于","action":#selector(showAbout)],
                      ["title":"开屏壁纸","action":#selector(setlaunchImage)],
-                     ["title":"意见反馈","action":#selector(sendSuggestion)]]
+                     ["title":"意见反馈","action":#selector(sendSuggestion)],
+                     ["title":"给我们好评","action":#selector(goFiveStar)]]
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return dataArray.count
@@ -54,5 +55,11 @@ class SettingViewManager: NSObject, UITableViewDelegate, UITableViewDataSource {
         let delegate : AppDelegate = UIApplication.shared.delegate as! AppDelegate
         let nav = delegate.window!.rootViewController as! UINavigationController
         nav.pushViewController(suggestVC, animated: true)
+    }
+    
+    //去好评
+    func goFiveStar() {
+        let actionStr = "itms-apps://itunes.apple.com/WebObjects/MZStore.woa/wa/viewContentsUserReviews?type=Purple+Software&id=1312628419&pageNumber=0&sortOrdering=2&mt=8"
+        UIApplication.shared.openURL(URL.init(string: actionStr)!)
     }
 }
