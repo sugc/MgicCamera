@@ -8,9 +8,14 @@
 
 import Foundation
 
-class WallPaperViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
+class WallPaperViewController: UIViewController {
     //
-    var tableView : UITableView!
+    @IBOutlet var scrollView : UIScrollView!
+    @IBOutlet var collectionView : UICollectionView!
+    @IBOutlet var flowLayout : UICollectionViewFlowLayout!
+    
+    var manager : WallPapperManager!
+    
     var imageArray : Array<Any>!
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -19,7 +24,18 @@ class WallPaperViewController: UIViewController, UITableViewDelegate, UITableVie
     
     func layout() {
         //
-        tableView = UITableView.init(frame: CGRect.zero)
+        //计算
+        let containerHeight = ScreenHeight - iPhoneXSafeDistance - 35 - 10 - 50 - 60
+        
+        let imageheight = containerHeight - 40
+        let imageWidth = imageheight / ScreenHeight * ScreenWidth
+        
+        
+        manager = WallPapperManager.init()
+        flowLayout.itemSize = CGSize.init(width: imageWidth,
+                                         height: imageheight)
+        collectionView.delegate = manager
+        collectionView.dataSource = manager
     }
     
     //获取设置的图片
@@ -28,25 +44,4 @@ class WallPaperViewController: UIViewController, UITableViewDelegate, UITableVie
         let fileManager = FileManager.init()
     }
     
-    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 3
-    }
-    
-    func numberOfSections(in tableView: UITableView) -> Int {
-        return 1;
-    }
-    
-    //tableView delegate and datasource
-    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        var cell = tableView.dequeueReusableCell(withIdentifier: "wallPapperVCCell")
-        if cell == nil {
-            cell = UITableViewCell.init(style: UITableViewCellStyle.value1, reuseIdentifier: "wallPapperVCCell")
-        }
-        
-        return cell!
-    }
-    
-    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-       
-    }
 }

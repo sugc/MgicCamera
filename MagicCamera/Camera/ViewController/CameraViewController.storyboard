@@ -61,7 +61,7 @@
                                 <rect key="frame" x="0.0" y="20" width="375" height="40"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BQe-ct-Jcw">
-                                        <rect key="frame" x="170.5" y="2.5" width="35" height="35"/>
+                                        <rect key="frame" x="170" y="2.5" width="35" height="35"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="35" id="Bes-Et-TZX"/>
                                             <constraint firstAttribute="width" constant="35" id="QFA-gu-o9e"/>
@@ -121,7 +121,7 @@
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RWR-iG-n5q">
-                                                <rect key="frame" x="74" y="14.5" width="40" height="40"/>
+                                                <rect key="frame" x="74.5" y="14.5" width="40" height="40"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="40" id="ihY-L9-Tse"/>
                                                     <constraint firstAttribute="width" constant="40" id="tTj-fP-4Rx"/>
@@ -132,7 +132,7 @@
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Jp0-C8-9pY">
-                                                <rect key="frame" x="261.5" y="14.5" width="40" height="40"/>
+                                                <rect key="frame" x="262" y="14.5" width="40" height="40"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" constant="40" id="AcD-Ve-jsE"/>
                                                     <constraint firstAttribute="height" constant="40" id="rVX-Sn-1KF"/>
@@ -149,7 +149,7 @@
                                                     <constraint firstAttribute="width" constant="35" id="JmW-aQ-6Ic"/>
                                                     <constraint firstAttribute="height" constant="35" id="fI8-pf-s0d"/>
                                                 </constraints>
-                                                <state key="normal" title="B" image="icon_back_normal"/>
+                                                <state key="normal" image="icon_back_normal"/>
                                                 <state key="highlighted" image="icon_back_highlight"/>
                                                 <connections>
                                                     <action selector="goBack" destination="AQM-cc-0I1" eventType="touchUpInside" id="5ut-2g-RPa"/>

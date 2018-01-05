@@ -42,7 +42,11 @@ class SettingViewManager: NSObject, UITableViewDelegate, UITableViewDataSource {
     }
     
     func setlaunchImage() {
-        
+        let storyboard = UIStoryboard.init(name: "WallPaperViewController", bundle: nil)
+        let launchImageVC = storyboard.instantiateViewController(withIdentifier: "WallPaperViewController")
+        let delegate : AppDelegate = UIApplication.shared.delegate as! AppDelegate
+        let nav = delegate.window!.rootViewController as! UINavigationController
+        nav.pushViewController(launchImageVC, animated: true)
     }
     
     func showAbout() {
