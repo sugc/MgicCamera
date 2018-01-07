@@ -46,4 +46,8 @@ class WallPaperViewController: UIViewController {
         let fileManager = FileManager.init()
     }
     
+    @IBAction func goBack() {
+        self.navigationController?.popViewController(animated: true)
+    }
+    
 }

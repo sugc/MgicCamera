@@ -106,6 +106,7 @@
 		8A20EE231FB85FBB0083E8DC /* GPUImage.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 8A2262781FB85EA7004D2927 /* GPUImage.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		8A2311561FF3C122007EA688 /* DermabrasionFragment.glsl in Resources */ = {isa = PBXBuildFile; fileRef = 8A2311551FF3C122007EA688 /* DermabrasionFragment.glsl */; };
 		8A41D4A81FE20A1800F7D39C /* NomalDefinition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A41D4A71FE20A1800F7D39C /* NomalDefinition.swift */; };
+		8A47D854200235D900F6BE86 /* M6.JPG in Resources */ = {isa = PBXBuildFile; fileRef = 8A47D850200235D800F6BE86 /* M6.JPG */; };
 		8A62F89D1FF1DFDB00AD9FD0 /* WallPapperCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A62F89C1FF1DFDB00AD9FD0 /* WallPapperCell.swift */; };
 		8A62F8A21FF1E16700AD9FD0 /* WallPapperManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A62F8A11FF1E16700AD9FD0 /* WallPapperManager.swift */; };
 		8A636BF01FFDBE8E000830DC /* WallPaperViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8A636BEF1FFDBE8E000830DC /* WallPaperViewController.storyboard */; };
@@ -303,6 +304,7 @@
 		8A22626C1FB85EA7004D2927 /* GPUImage.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = GPUImage.xcodeproj; path = "GPUImage2-master/framework/GPUImage.xcodeproj"; sourceTree = SOURCE_ROOT; };
 		8A2311551FF3C122007EA688 /* DermabrasionFragment.glsl */ = {isa = PBXFileReference; lastKnownFileType = text; path = DermabrasionFragment.glsl; sourceTree = "<group>"; };
 		8A41D4A71FE20A1800F7D39C /* NomalDefinition.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NomalDefinition.swift; sourceTree = "<group>"; };
+		8A47D850200235D800F6BE86 /* M6.JPG */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = M6.JPG; sourceTree = "<group>"; };
 		8A62F89C1FF1DFDB00AD9FD0 /* WallPapperCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WallPapperCell.swift; sourceTree = "<group>"; };
 		8A62F8A11FF1E16700AD9FD0 /* WallPapperManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WallPapperManager.swift; sourceTree = "<group>"; };
 		8A636BEF1FFDBE8E000830DC /* WallPaperViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = WallPaperViewController.storyboard; sourceTree = "<group>"; };
@@ -392,6 +394,7 @@
 				8A8A71A31FD82B93008B214E /* M3.JPG */,
 				8A8A71A21FD82B92008B214E /* M4.JPG */,
 				8A8A71A41FD82B93008B214E /* M5.JPG */,
+				8A47D850200235D800F6BE86 /* M6.JPG */,
 				89C60E831FAE2B1C00FF53E5 /* filterResourse */,
 				89C60E761FAE2B0100FF53E5 /* config.plist */,
 			);
@@ -975,6 +978,7 @@
 				896A7CB41F66E0CD00FC369B /* CameraViewController.storyboard in Resources */,
 				898FF7E41FC9535D001987B4 /* MixVertex.glsl in Resources */,
 				8A8A71A71FD82B93008B214E /* M3.JPG in Resources */,
+				8A47D854200235D900F6BE86 /* M6.JPG in Resources */,
 				8ABD14511FD6E11700F1AA64 /* M3 in Resources */,
 				898FF7DA1FC9535D001987B4 /* CameoVertex.glsl in Resources */,
 				898FF7E21FC9535D001987B4 /* LookupVertex16.glsl in Resources */,

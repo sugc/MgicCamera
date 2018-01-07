@@ -32,5 +32,11 @@
 		<key>TempImageName</key>
 		<string>M5.JPG</string>
 	</dict>
+	<dict>
+		<key>ModeID</key>
+		<string>M6</string>
+		<key>TempImageName</key>
+		<string>M6.JPG</string>
+	</dict>
 </array>
 </plist>

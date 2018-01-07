@@ -3,15 +3,15 @@
 <plist version="1.0">
 <dict>
 	<key>backColor</key>
-	<integer>16777215</integer>
+	<integer>0</integer>
 	<key>sampleImage</key>
 	<string>sampImage.jpg</string>
 	<key>finalSize</key>
-	<string>720,1280</string>
+	<string>1310,922</string>
 	<key>backImage</key>
-	<string></string>
+	<string>backImage.jpg</string>
 	<key>foreImage</key>
-	<string>foreImage.png</string>
+	<string></string>
 	<key>decorateImageArray</key>
 	<array>
 		<dict>
@@ -23,75 +23,9 @@
 	</array>
 	<key>imageArray</key>
 	<array>
-		<string>95,410,270,270</string>
-		<string>355,740,270,270</string>
+		<string>106,103,1098,716</string>
 	</array>
 	<key>textArray</key>
-	<array>
-		<dict>
-			<key>fontAttr</key>
-			<dict/>
-			<key>maxLength</key>
-			<integer>8</integer>
-			<key>textColor</key>
-			<integer>4530335</integer>
-			<key>fontSize</key>
-			<integer>35</integer>
-			<key>fontName</key>
-			<string>AmericanTypewriter-Bold</string>
-			<key>content</key>
-			<string>摄影师</string>
-			<key>position</key>
-			<string>370,514,350,200</string>
-		</dict>
-		<dict>
-			<key>fontAttr</key>
-			<dict/>
-			<key>maxLength</key>
-			<integer>8</integer>
-			<key>textColor</key>
-			<integer>4530335</integer>
-			<key>fontSize</key>
-			<integer>24</integer>
-			<key>fontName</key>
-			<string>AmericanTypewriter-Bold</string>
-			<key>content</key>
-			<string>@毛球</string>
-			<key>position</key>
-			<string>370,574,350,50</string>
-		</dict>
-		<dict>
-			<key>fontAttr</key>
-			<dict/>
-			<key>maxLength</key>
-			<integer>8</integer>
-			<key>textColor</key>
-			<integer>4530335</integer>
-			<key>fontSize</key>
-			<integer>35</integer>
-			<key>fontName</key>
-			<string>AmericanTypewriter-Bold</string>
-			<key>content</key>
-			<string>麻豆</string>
-			<key>position</key>
-			<string>0,860,350,60</string>
-		</dict>
-		<dict>
-			<key>fontAttr</key>
-			<dict/>
-			<key>maxLength</key>
-			<integer>8</integer>
-			<key>textColor</key>
-			<integer>4530335</integer>
-			<key>fontSize</key>
-			<integer>24</integer>
-			<key>fontName</key>
-			<string>AmericanTypewriter-Bold</string>
-			<key>content</key>
-			<string>@小鱼爱生活</string>
-			<key>position</key>
-			<string>0,920,350,50</string>
-		</dict>
-	</array>
+	<array/>
 </dict>
 </plist>
