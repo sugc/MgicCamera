@@ -26,16 +26,18 @@ class WallPaperViewController: UIViewController {
         //
         //计算
         let containerHeight = ScreenHeight - iPhoneXSafeDistance - 35 - 10 - 50 - 60
-        
-        let imageheight = containerHeight - 40
-        let imageWidth = imageheight / ScreenHeight * ScreenWidth
-        
+        let cellHeight = containerHeight - 40
+        let ratio = ScreenHeight / ScreenWidth
+        let imageheight = cellHeight - 35
+        let imageWidth = imageheight / ratio
+        let cellWidth = imageWidth + 35
         
         manager = WallPapperManager.init()
-        flowLayout.itemSize = CGSize.init(width: imageWidth,
-                                         height: imageheight)
+        flowLayout.itemSize = CGSize.init(width: cellWidth,
+                                         height: cellHeight)
         collectionView.delegate = manager
         collectionView.dataSource = manager
+        manager.collectionView = collectionView
     }
     
     //获取设置的图片

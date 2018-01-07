@@ -30,6 +30,7 @@ class WallPapperCell: UICollectionViewCell {
         didSet {
             imageView.image = image
         }
+        
     }
     
     required init?(coder aDecoder: NSCoder) {
@@ -43,6 +44,6 @@ class WallPapperCell: UICollectionViewCell {
     
     @IBAction func deleteImage() {
         //调用代理方法，删除数据源
+        delegate.deleteImageAtIndex(index: index) 
     }
-    
 }

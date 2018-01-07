@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13527"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -78,33 +78,42 @@
                                                     <constraint firstAttribute="height" constant="60" id="cgU-n3-X0B"/>
                                                 </constraints>
                                             </view>
-                                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="Ldy-x6-C5b">
+                                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" contentInsetAdjustmentBehavior="never" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="Ldy-x6-C5b">
                                                 <rect key="frame" x="0.0" y="110" width="375" height="492"/>
                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="10" minimumInteritemSpacing="10" id="QIB-1I-Zyh">
                                                     <size key="itemSize" width="258" height="352"/>
                                                     <size key="headerReferenceSize" width="0.0" height="0.0"/>
                                                     <size key="footerReferenceSize" width="0.0" height="0.0"/>
-                                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                                    <inset key="sectionInset" minX="20" minY="0.0" maxX="20" maxY="0.0"/>
                                                 </collectionViewFlowLayout>
                                                 <cells>
                                                     <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="WallPapperCell" id="kXp-d2-ePw" customClass="WallPapperCell" customModule="MagicCamera" customModuleProvider="target">
-                                                        <rect key="frame" x="0.0" y="70" width="258" height="352"/>
+                                                        <rect key="frame" x="20" y="70" width="258" height="352"/>
                                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                         <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
                                                             <rect key="frame" x="0.0" y="0.0" width="258" height="352"/>
                                                             <autoresizingMask key="autoresizingMask"/>
                                                             <subviews>
-                                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Kpg-qH-QOD">
-                                                                    <rect key="frame" x="0.0" y="0.0" width="258" height="352"/>
+                                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Kpg-qH-QOD">
+                                                                    <rect key="frame" x="17.5" y="17.5" width="223" height="317"/>
+                                                                    <color key="backgroundColor" red="0.89543335081665987" green="1" blue="0.39168081159428914" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                                 </imageView>
-                                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IQM-h4-Lei">
+                                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IQM-h4-Lei">
                                                                     <rect key="frame" x="223" y="0.0" width="35" height="35"/>
+                                                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                                     <constraints>
                                                                         <constraint firstAttribute="height" constant="35" id="WPF-A6-JCa"/>
                                                                         <constraint firstAttribute="width" constant="35" id="yUD-Ce-BsB"/>
                                                                     </constraints>
-                                                                    <state key="normal" title="Button"/>
+                                                                    <state key="normal" image="icon_close_normal"/>
+                                                                    <state key="highlighted" image="icon_close_highlight"/>
+                                                                    <userDefinedRuntimeAttributes>
+                                                                        <userDefinedRuntimeAttribute type="number" keyPath="self.layer.cornerRadius">
+                                                                            <real key="value" value="17.5"/>
+                                                                        </userDefinedRuntimeAttribute>
+                                                                        <userDefinedRuntimeAttribute type="boolean" keyPath="self.layer.maskToBounds" value="YES"/>
+                                                                    </userDefinedRuntimeAttributes>
                                                                     <connections>
                                                                         <action selector="deleteImage" destination="kXp-d2-ePw" eventType="touchUpInside" id="Wkk-eQ-rFG"/>
                                                                     </connections>
@@ -116,8 +125,8 @@
                                                             <constraint firstItem="Kpg-qH-QOD" firstAttribute="centerY" secondItem="kXp-d2-ePw" secondAttribute="centerY" id="PY4-eK-53y"/>
                                                             <constraint firstAttribute="trailing" secondItem="IQM-h4-Lei" secondAttribute="trailing" id="b8I-9a-O4K"/>
                                                             <constraint firstItem="Kpg-qH-QOD" firstAttribute="centerX" secondItem="kXp-d2-ePw" secondAttribute="centerX" id="d9q-U5-OmX"/>
-                                                            <constraint firstItem="Kpg-qH-QOD" firstAttribute="width" secondItem="kXp-d2-ePw" secondAttribute="width" id="fBn-uU-wsC"/>
-                                                            <constraint firstItem="Kpg-qH-QOD" firstAttribute="height" secondItem="kXp-d2-ePw" secondAttribute="height" id="q8R-m5-dVU"/>
+                                                            <constraint firstItem="Kpg-qH-QOD" firstAttribute="width" secondItem="kXp-d2-ePw" secondAttribute="width" constant="-35" id="fBn-uU-wsC"/>
+                                                            <constraint firstItem="Kpg-qH-QOD" firstAttribute="height" secondItem="kXp-d2-ePw" secondAttribute="height" constant="-35" id="q8R-m5-dVU"/>
                                                         </constraints>
                                                         <connections>
                                                             <outlet property="deleteBtn" destination="IQM-h4-Lei" id="9Mz-Qk-qir"/>
@@ -173,5 +182,7 @@
     </scenes>
     <resources>
         <image name="icon_back_normal" width="35" height="35"/>
+        <image name="icon_close_highlight" width="30" height="30"/>
+        <image name="icon_close_normal" width="30" height="30"/>
     </resources>
 </document>
