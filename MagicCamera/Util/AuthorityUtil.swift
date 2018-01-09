@@ -31,6 +31,8 @@ func requestCameraAuthority(completionHandler handler: @escaping (Bool) -> Swift
     
     if authStatus == .restricted || authStatus == .denied {
         //前往设置
+        let settingUrl = "App-Prefs:root=Privacy&path=camera"
+        showSettingAlertView(title: "'蜜柚相机' 需要访问您的相机权限", message: "请前往 设置->隐私->相机 打开权限", settingUrlStr: settingUrl)
         isAuthorized = false
     }
     DispatchQueue.main.async {
@@ -52,7 +54,8 @@ func requestPhotoAuthority(completionHandler handler: @escaping (Bool) -> Swift.
         if authStatus == .authorized {
             isAuthorized = true
         }else {
-            showSettingAlertView(title: "'蜜柚相机'需要访问您的相册权限", message: "请前往 设置->", settingUrlStr: "")
+            let settingUrl = "App-Prefs:root=Privacy&path=photos"
+            showSettingAlertView(title: "'蜜柚相机' 需要访问您的相册权限", message: "请前往 设置->隐私->照片 打开权限", settingUrlStr: settingUrl)
         }
         DispatchQueue.main.async {
             handler(isAuthorized)
@@ -66,7 +69,7 @@ func showSettingAlertView(title:String!, message : String!, settingUrlStr : Stri
         
     }
     
-    let settingAction = UIAlertAction.init(title: "设置", style: UIAlertActionStyle.default) { (action : UIAlertAction) in
+    let settingAction = UIAlertAction.init(title: "去设置", style: UIAlertActionStyle.default) { (action : UIAlertAction) in
         UIApplication.shared.openURL(URL.init(string: UIApplicationOpenSettingsURLString)!)
     }
     
