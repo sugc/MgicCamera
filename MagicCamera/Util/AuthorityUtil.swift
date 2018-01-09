@@ -52,7 +52,7 @@ func requestPhotoAuthority(completionHandler handler: @escaping (Bool) -> Swift.
         if authStatus == .authorized {
             isAuthorized = true
         }else {
-            showSettingAlertView(message: "", settingUrlStr: "")
+            showSettingAlertView(title: "'蜜柚相机'需要访问您的相册权限", message: "请前往 设置->", settingUrlStr: "")
         }
         DispatchQueue.main.async {
             handler(isAuthorized)
@@ -60,8 +60,8 @@ func requestPhotoAuthority(completionHandler handler: @escaping (Bool) -> Swift.
     }
 }
 
-func showSettingAlertView(message : String!, settingUrlStr : String!) {
-    let alert = UIAlertController.init(title: "", message: " iui", preferredStyle: UIAlertControllerStyle.alert)
+func showSettingAlertView(title:String!, message : String!, settingUrlStr : String!) {
+    let alert = UIAlertController.init(title: title, message: message, preferredStyle: UIAlertControllerStyle.alert)
     let cancelAction = UIAlertAction.init(title: "好的", style: UIAlertActionStyle.cancel) { (action : UIAlertAction) in
         
     }
