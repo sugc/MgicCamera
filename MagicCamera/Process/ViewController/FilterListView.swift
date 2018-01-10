@@ -74,6 +74,7 @@ class FilterListView : UIView, UICollectionViewDataSource, UICollectionViewDeleg
     func preprareData() {
         dataArray = [["filterName":"B&W","thumbImage":"imageName"],
                     ["filterName":"B&W","thumbImage":"imageName"]]
+
     }
     
     
