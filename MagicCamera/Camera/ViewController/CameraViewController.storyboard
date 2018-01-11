@@ -121,11 +121,12 @@
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RWR-iG-n5q">
-                                                <rect key="frame" x="74.5" y="14.5" width="40" height="40"/>
+                                                <rect key="frame" x="69.5" y="14.5" width="50" height="40"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="40" id="ihY-L9-Tse"/>
-                                                    <constraint firstAttribute="width" constant="40" id="tTj-fP-4Rx"/>
+                                                    <constraint firstAttribute="width" constant="50" id="tTj-fP-4Rx"/>
                                                 </constraints>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                 <state key="normal" title="相册"/>
                                                 <connections>
                                                     <action selector="actionAlbum" destination="AQM-cc-0I1" eventType="touchUpInside" id="yZR-mQ-seE"/>
@@ -198,6 +199,7 @@
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="albumBtn" destination="RWR-iG-n5q" id="MHK-DY-8ZC"/>
                         <outlet property="bottomMaskView" destination="d4x-pY-vgL" id="rxQ-IO-WnD"/>
                         <outlet property="filterListView" destination="gGy-1b-O5x" id="Pah-lA-arX"/>
                         <outlet property="flashBtn" destination="BQe-ct-Jcw" id="j6x-Ze-z4T"/>

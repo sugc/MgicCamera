@@ -1,0 +1,15 @@
+/* 
+  InfoPlist.strings
+  MagicCamera
+
+  Created by SuGuocai on 2018/1/11.
+  Copyright © 2018年 sugc. All rights reserved.
+*/
+"CFBundleDisplayName" = "Pomelo Cam";
+
+/* (No Commment) */
+"NSCameraUsageDescription" = "Please allow camera access to take a picture";
+
+/* (No Commment) */
+"NSPhotoLibraryUsageDescription" = "Please allow album access to edit pictures";
+

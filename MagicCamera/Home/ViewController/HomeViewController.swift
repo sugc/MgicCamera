@@ -15,6 +15,7 @@ class HomeViewController : UIViewController,
                             UIImagePickerControllerDelegate,
                             UINavigationControllerDelegate{
 
+    @IBOutlet var wallPaperView : UIImageView!
     
     override func awakeFromNib() {
         super.awakeFromNib()
@@ -24,13 +25,27 @@ class HomeViewController : UIViewController,
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        //check is Need show wallpapper
+        self.showWallPaper()
     }
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         UIApplication.shared.setStatusBarHidden(true, with: UIStatusBarAnimation.none)
         self.navigationController?.interactivePopGestureRecognizer?.isEnabled = false
+    }
+    
+    func showWallPaper() {
+        let isNeedShow = checkIsNeedShowWallPaper()
+        if !isNeedShow {
+            return
+        }
+        
+//        wallPaperView.isHidden = false
+        
+        //
+        
+        
     }
     
     //相机页面
@@ -84,4 +99,5 @@ class HomeViewController : UIViewController,
             
         }
     }
+    
 }

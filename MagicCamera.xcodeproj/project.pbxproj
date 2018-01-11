@@ -105,6 +105,8 @@
 		8A20EE201FB85F8E0083E8DC /* GPUImage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8A2262781FB85EA7004D2927 /* GPUImage.framework */; };
 		8A20EE231FB85FBB0083E8DC /* GPUImage.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 8A2262781FB85EA7004D2927 /* GPUImage.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		8A2311561FF3C122007EA688 /* DermabrasionFragment.glsl in Resources */ = {isa = PBXBuildFile; fileRef = 8A2311551FF3C122007EA688 /* DermabrasionFragment.glsl */; };
+		8A3EC7282007923200D96020 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 8A3EC72A2007923200D96020 /* InfoPlist.strings */; };
+		8A3EC72E200792E500D96020 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 8A3EC730200792E500D96020 /* Localizable.strings */; };
 		8A41D4A81FE20A1800F7D39C /* NomalDefinition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A41D4A71FE20A1800F7D39C /* NomalDefinition.swift */; };
 		8A47D85620023F3B00F6BE86 /* M6.JPG in Resources */ = {isa = PBXBuildFile; fileRef = 8A47D85520023F3B00F6BE86 /* M6.JPG */; };
 		8A62F89D1FF1DFDB00AD9FD0 /* WallPapperCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A62F89C1FF1DFDB00AD9FD0 /* WallPapperCell.swift */; };
@@ -129,6 +131,7 @@
 		8ABD14551FD6E11700F1AA64 /* M5 in Resources */ = {isa = PBXBuildFile; fileRef = 8ABD144E1FD6E11700F1AA64 /* M5 */; };
 		8ABD14561FD6E11700F1AA64 /* M6 in Resources */ = {isa = PBXBuildFile; fileRef = 8ABD144F1FD6E11700F1AA64 /* M6 */; };
 		8ABD14581FD6E12D00F1AA64 /* M1 in Resources */ = {isa = PBXBuildFile; fileRef = 8ABD14571FD6E12D00F1AA64 /* M1 */; };
+		8AF10FD420064F4B00D804BF /* StatusUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AF10FD320064F4B00D804BF /* StatusUtil.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -303,6 +306,10 @@
 		8A01926C1FEBF2C2001D040E /* WallPaperViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WallPaperViewController.swift; sourceTree = "<group>"; };
 		8A22626C1FB85EA7004D2927 /* GPUImage.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = GPUImage.xcodeproj; path = "GPUImage2-master/framework/GPUImage.xcodeproj"; sourceTree = SOURCE_ROOT; };
 		8A2311551FF3C122007EA688 /* DermabrasionFragment.glsl */ = {isa = PBXFileReference; lastKnownFileType = text; path = DermabrasionFragment.glsl; sourceTree = "<group>"; };
+		8A3EC7292007923200D96020 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		8A3EC72B2007926700D96020 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/InfoPlist.strings"; sourceTree = "<group>"; };
+		8A3EC72F200792E500D96020 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		8A3EC731200792E600D96020 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Localizable.strings"; sourceTree = "<group>"; };
 		8A41D4A71FE20A1800F7D39C /* NomalDefinition.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NomalDefinition.swift; sourceTree = "<group>"; };
 		8A47D85520023F3B00F6BE86 /* M6.JPG */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = M6.JPG; sourceTree = "<group>"; };
 		8A62F89C1FF1DFDB00AD9FD0 /* WallPapperCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WallPapperCell.swift; sourceTree = "<group>"; };
@@ -327,6 +334,7 @@
 		8ABD144E1FD6E11700F1AA64 /* M5 */ = {isa = PBXFileReference; lastKnownFileType = folder; path = M5; sourceTree = "<group>"; };
 		8ABD144F1FD6E11700F1AA64 /* M6 */ = {isa = PBXFileReference; lastKnownFileType = folder; path = M6; sourceTree = "<group>"; };
 		8ABD14571FD6E12D00F1AA64 /* M1 */ = {isa = PBXFileReference; lastKnownFileType = folder; path = M1; sourceTree = "<group>"; };
+		8AF10FD320064F4B00D804BF /* StatusUtil.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatusUtil.swift; sourceTree = "<group>"; };
 		AC7BC624126B2FF80E13B9E9 /* Pods-MagicCamera.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MagicCamera.release.xcconfig"; path = "Pods/Target Support Files/Pods-MagicCamera/Pods-MagicCamera.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -381,6 +389,7 @@
 				89E594621F9321B8007671A3 /* Vector3.swift */,
 				8A41D4A71FE20A1800F7D39C /* NomalDefinition.swift */,
 				8A9B11231FF32D9700D456DD /* AuthorityUtil.swift */,
+				8AF10FD320064F4B00D804BF /* StatusUtil.swift */,
 			);
 			path = Util;
 			sourceTree = "<group>";
@@ -397,6 +406,8 @@
 				8A47D85520023F3B00F6BE86 /* M6.JPG */,
 				89C60E831FAE2B1C00FF53E5 /* filterResourse */,
 				89C60E761FAE2B0100FF53E5 /* config.plist */,
+				8A3EC72A2007923200D96020 /* InfoPlist.strings */,
+				8A3EC730200792E500D96020 /* Localizable.strings */,
 			);
 			path = Resourse;
 			sourceTree = "<group>";
@@ -883,6 +894,7 @@
 			knownRegions = (
 				en,
 				Base,
+				"zh-Hans",
 			);
 			mainGroup = 896A7C6E1F66DE9700FC369B;
 			productRefGroup = 896A7C781F66DE9700FC369B /* Products */;
@@ -973,6 +985,7 @@
 				8ABD14561FD6E11700F1AA64 /* M6 in Resources */,
 				898FF7E71FC9535D001987B4 /* PipFragment.glsl in Resources */,
 				898FF7E01FC9535D001987B4 /* lookupTestV.glsl in Resources */,
+				8A3EC72E200792E500D96020 /* Localizable.strings in Resources */,
 				89C871B91FB5EFA0003F8A9D /* LaunchScreen.storyboard in Resources */,
 				896A7C821F66DE9700FC369B /* Assets.xcassets in Resources */,
 				896A7CB41F66E0CD00FC369B /* CameraViewController.storyboard in Resources */,
@@ -981,6 +994,7 @@
 				8A47D85620023F3B00F6BE86 /* M6.JPG in Resources */,
 				8ABD14511FD6E11700F1AA64 /* M3 in Resources */,
 				898FF7DA1FC9535D001987B4 /* CameoVertex.glsl in Resources */,
+				8A3EC7282007923200D96020 /* InfoPlist.strings in Resources */,
 				898FF7E21FC9535D001987B4 /* LookupVertex16.glsl in Resources */,
 				89C60E841FAE2B1C00FF53E5 /* filterResourse in Resources */,
 				899499411F7172FC009999DA /* lookup16Fragment.glsl in Resources */,
@@ -1104,6 +1118,7 @@
 				89F9CF731F7D466800704DF6 /* CameraManager.swift in Sources */,
 				89D9F41C1F6C1D3200DB3B57 /* FilterListViewCell.swift in Sources */,
 				898FF7A01FC95291001987B4 /* NSString+Utils.swift in Sources */,
+				8AF10FD420064F4B00D804BF /* StatusUtil.swift in Sources */,
 				898FF7D21FC9535D001987B4 /* File.metal in Sources */,
 				890343E41F7419C700D1FF6A /* FilterManager.swift in Sources */,
 				89C84ABA1F6B54DA004439DA /* HomeViewController.swift in Sources */,
@@ -1197,11 +1212,33 @@
 		};
 /* End PBXTargetDependency section */
 
+/* Begin PBXVariantGroup section */
+		8A3EC72A2007923200D96020 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8A3EC7292007923200D96020 /* en */,
+				8A3EC72B2007926700D96020 /* zh-Hans */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		8A3EC730200792E500D96020 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8A3EC72F200792E500D96020 /* en */,
+				8A3EC731200792E600D96020 /* zh-Hans */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
 /* Begin XCBuildConfiguration section */
 		896A7C9D1F66DE9800FC369B /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
@@ -1254,6 +1291,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";

@@ -1,0 +1,14 @@
+/* 
+  InfoPlist.strings
+  MagicCamera
+
+  Created by SuGuocai on 2018/1/11.
+  Copyright © 2018年 sugc. All rights reserved.
+*/
+"CFBundleDisplayName" = "蜜柚相机";
+
+/* (No Commment) */
+"NSCameraUsageDescription" = "需要允许开启相机才能拍照";
+
+/* (No Commment) */
+"NSPhotoLibraryUsageDescription" = "需要允许打开相册才能编辑照片";

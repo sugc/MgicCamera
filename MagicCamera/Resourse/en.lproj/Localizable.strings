@@ -1,0 +1,21 @@
+/* 
+  Localizable.strings
+  MagicCamera
+
+  Created by SuGuocai on 2018/1/11.
+  Copyright © 2018年 sugc. All rights reserved.
+*/
+
+"相册" = "album";
+
+"好的" = "Ok";
+
+"去设置" = "Settings";
+
+"无法访问相机"  = "Unable to access camera";
+
+"无法访问相册"  = "Unable to access photos";
+
+"请打开设置-蜜柚相机-相机-开启" = "Please go to Settings -> BeautyPlus -> Camera -> Choose \"On\" ";
+
+"请打开设置-蜜柚相机-照片-开启" = "Please go to Settings -> Pomelo Cam -> Photos -> Choose \"On\" ";

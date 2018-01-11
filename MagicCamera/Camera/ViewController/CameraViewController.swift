@@ -33,6 +33,7 @@ UINavigationControllerDelegate{
     var positionMonitor : PositionMonitor?
     
     @IBOutlet var preViewHeight : NSLayoutConstraint!
+    @IBOutlet var albumBtn : UIButton!
     @IBOutlet var renderBackView : UIView!
     @IBOutlet var rationBtn : UIButton!
     @IBOutlet var flashBtn : UIButton!
@@ -42,13 +43,16 @@ UINavigationControllerDelegate{
     @IBOutlet var bottomMaskView : UIView!
     @IBOutlet var topMaskView : UIView!
     
-    override func awakeFromNib() {
-        super.awakeFromNib()
-        filterListView?.filterDelegate = self
-    }
+//    override func awakeFromNib() {
+//        super.awakeFromNib()
+//        
+//        
+//    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        filterListView?.filterDelegate = self
+        albumBtn.setTitle(NSLocalizedString("相册", comment:""), for: UIControlState.normal)
         positionMonitor = PositionMonitor()
         filterListView?.filterDelegate = self
         NotificationCenter.default.addObserver(self,
@@ -144,12 +148,15 @@ UINavigationControllerDelegate{
     
     @IBAction func actionAlbum() {
         //
-        let imagePick = UIImagePickerController.init()
-        imagePick.delegate = self
-        self.present(imagePick, animated: true) {
-            
-        };
-        
+        requestPhotoAuthority { (isAuthority:Bool) in
+            if isAuthority {
+                let imagePick = UIImagePickerController.init()
+                imagePick.delegate = self
+                self.present(imagePick, animated: true) {
+                    
+                };
+            }
+        }
     }
     
     func refreshFlashStatus() {

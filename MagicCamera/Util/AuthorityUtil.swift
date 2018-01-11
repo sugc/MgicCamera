@@ -32,7 +32,9 @@ func requestCameraAuthority(completionHandler handler: @escaping (Bool) -> Swift
     if authStatus == .restricted || authStatus == .denied {
         //前往设置
         let settingUrl = "App-Prefs:root=Privacy&path=camera"
-        showSettingAlertView(title: "'蜜柚相机' 需要访问您的相机权限", message: "请前往 设置->隐私->相机 打开权限", settingUrlStr: settingUrl)
+        let title = NSLocalizedString("无法访问相机", comment: "")
+        let message = NSLocalizedString("请打开设置-蜜柚相机-相机-开启", comment: "")
+        showSettingAlertView(title: title, message: message, settingUrlStr: settingUrl)
         isAuthorized = false
     }
     DispatchQueue.main.async {
@@ -55,7 +57,9 @@ func requestPhotoAuthority(completionHandler handler: @escaping (Bool) -> Swift.
             isAuthorized = true
         }else {
             let settingUrl = "App-Prefs:root=Privacy&path=photos"
-            showSettingAlertView(title: "'蜜柚相机' 需要访问您的相册权限", message: "请前往 设置->隐私->照片 打开权限", settingUrlStr: settingUrl)
+            let title = NSLocalizedString("无法访问相册", comment: "")
+            let message = NSLocalizedString("请打开设置-蜜柚相机-照片-开启", comment:"")
+            showSettingAlertView(title:title, message:message, settingUrlStr: settingUrl)
         }
         DispatchQueue.main.async {
             handler(isAuthorized)
@@ -65,11 +69,11 @@ func requestPhotoAuthority(completionHandler handler: @escaping (Bool) -> Swift.
 
 func showSettingAlertView(title:String!, message : String!, settingUrlStr : String!) {
     let alert = UIAlertController.init(title: title, message: message, preferredStyle: UIAlertControllerStyle.alert)
-    let cancelAction = UIAlertAction.init(title: "好的", style: UIAlertActionStyle.cancel) { (action : UIAlertAction) in
+    let cancelAction = UIAlertAction.init(title: NSLocalizedString("好的", comment: ""), style: UIAlertActionStyle.cancel) { (action : UIAlertAction) in
         
     }
     
-    let settingAction = UIAlertAction.init(title: "去设置", style: UIAlertActionStyle.default) { (action : UIAlertAction) in
+    let settingAction = UIAlertAction.init(title: NSLocalizedString("去设置", comment: ""), style: UIAlertActionStyle.default) { (action : UIAlertAction) in
         UIApplication.shared.openURL(URL.init(string: UIApplicationOpenSettingsURLString)!)
     }
     
