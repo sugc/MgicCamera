@@ -10,10 +10,16 @@ import Foundation
 import UIKit
 import GoogleMobileAds
 
+enum shareFromMudule : NSInteger {
+    case camera = 0
+    case album = 1
+    case pintu = 2
+}
+
 class SaveAndShareViewController : UIViewController {
 
+    var fromType : shareFromMudule!
     
-
     override func viewDidLoad() {
         super.viewDidLoad()
         adView()
@@ -52,7 +58,16 @@ class SaveAndShareViewController : UIViewController {
     }
     
     @IBAction func goOn() {
+        
         let nav = self.navigationController!
+        
+        if fromType == shareFromMudule.pintu {
+            nav.popViewController(animated: false)
+            nav.popViewController(animated: true)
+            return;
+        }
+        
+      
         let vcs = nav.viewControllers
         var cameraVC : UIViewController = vcs.first!
         for vc in vcs {

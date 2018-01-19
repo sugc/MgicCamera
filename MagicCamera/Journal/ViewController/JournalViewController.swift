@@ -157,7 +157,8 @@ class JournalViewController : UIViewController, ConfirmTextViewDelegate, FilterL
         let resultImage = journalView.drawView.renderImage(finalSize: size)
         resultImage?.save(completion: { (url, error) in
             let storyBoard = UIStoryboard.init(name: "SaveAndShareViewController", bundle: nil)
-            let saveVC = storyBoard.instantiateViewController(withIdentifier: "SaveAndShareViewController")
+            let saveVC = storyBoard.instantiateViewController(withIdentifier: "SaveAndShareViewController") as! SaveAndShareViewController
+            saveVC.fromType = shareFromMudule.pintu
             self.navigationController?.pushViewController(saveVC, animated: true)
         }) 
     }

@@ -102,7 +102,8 @@ class ProcessViewController: UIViewController,FilterListViewProtocol {
     
     @IBAction func save() ->Void {
         let storyBoard = UIStoryboard.init(name: "SaveAndShareViewController", bundle: nil)
-        let saveVC = storyBoard.instantiateViewController(withIdentifier: "SaveAndShareViewController")
+        let saveVC = storyBoard.instantiateViewController(withIdentifier: "SaveAndShareViewController") as! SaveAndShareViewController
+        saveVC.fromType = shareFromMudule.camera
         MBProgressHUD.showAdded(to: self.view, animated: true)
         processImage.save { (url, error) in
             MBProgressHUD.hide(for: self.view, animated: true)
