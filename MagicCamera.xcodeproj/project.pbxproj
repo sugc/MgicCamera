@@ -73,7 +73,6 @@
 		898FF8001FC95AAA001987B4 /* AutoScrollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 898FF7FB1FC95AAA001987B4 /* AutoScrollView.swift */; };
 		898FF8011FC95AAA001987B4 /* DesignedTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 898FF7FC1FC95AAA001987B4 /* DesignedTextView.swift */; };
 		898FF8021FC95AAA001987B4 /* WaterFlowLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 898FF7FE1FC95AAA001987B4 /* WaterFlowLayout.swift */; };
-		898FF8031FC95AAA001987B4 /* WaterFlowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 898FF7FF1FC95AAA001987B4 /* WaterFlowView.swift */; };
 		898FF80C1FC95B2E001987B4 /* PhotoPickerHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 898FF8051FC95B2E001987B4 /* PhotoPickerHandler.swift */; };
 		898FF80D1FC95B2E001987B4 /* PhotoUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = 898FF8061FC95B2E001987B4 /* PhotoUtil.swift */; };
 		898FF80E1FC95B2E001987B4 /* SelectViewHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 898FF8071FC95B2E001987B4 /* SelectViewHandler.swift */; };
@@ -105,6 +104,8 @@
 		8A20EE201FB85F8E0083E8DC /* GPUImage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8A2262781FB85EA7004D2927 /* GPUImage.framework */; };
 		8A20EE231FB85FBB0083E8DC /* GPUImage.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 8A2262781FB85EA7004D2927 /* GPUImage.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		8A2311561FF3C122007EA688 /* DermabrasionFragment.glsl in Resources */ = {isa = PBXBuildFile; fileRef = 8A2311551FF3C122007EA688 /* DermabrasionFragment.glsl */; };
+		8A35B522200B071A00D09011 /* HomeCollectionViewManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A35B521200B071A00D09011 /* HomeCollectionViewManager.swift */; };
+		8A35B524200B072D00D09011 /* HomeCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A35B523200B072D00D09011 /* HomeCollectionViewCell.swift */; };
 		8A3EC7282007923200D96020 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 8A3EC72A2007923200D96020 /* InfoPlist.strings */; };
 		8A3EC72E200792E500D96020 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 8A3EC730200792E500D96020 /* Localizable.strings */; };
 		8A41D4A81FE20A1800F7D39C /* NomalDefinition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A41D4A71FE20A1800F7D39C /* NomalDefinition.swift */; };
@@ -131,6 +132,7 @@
 		8ABD14551FD6E11700F1AA64 /* M5 in Resources */ = {isa = PBXBuildFile; fileRef = 8ABD144E1FD6E11700F1AA64 /* M5 */; };
 		8ABD14561FD6E11700F1AA64 /* M6 in Resources */ = {isa = PBXBuildFile; fileRef = 8ABD144F1FD6E11700F1AA64 /* M6 */; };
 		8ABD14581FD6E12D00F1AA64 /* M1 in Resources */ = {isa = PBXBuildFile; fileRef = 8ABD14571FD6E12D00F1AA64 /* M1 */; };
+		8AD7B85B2008E39300042CFC /* model.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 8AD7B8572008E39300042CFC /* model.jpg */; };
 		8AF10FD420064F4B00D804BF /* StatusUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AF10FD320064F4B00D804BF /* StatusUtil.swift */; };
 /* End PBXBuildFile section */
 
@@ -275,7 +277,6 @@
 		898FF7FB1FC95AAA001987B4 /* AutoScrollView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AutoScrollView.swift; sourceTree = "<group>"; };
 		898FF7FC1FC95AAA001987B4 /* DesignedTextView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DesignedTextView.swift; sourceTree = "<group>"; };
 		898FF7FE1FC95AAA001987B4 /* WaterFlowLayout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WaterFlowLayout.swift; sourceTree = "<group>"; };
-		898FF7FF1FC95AAA001987B4 /* WaterFlowView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WaterFlowView.swift; sourceTree = "<group>"; };
 		898FF8051FC95B2E001987B4 /* PhotoPickerHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotoPickerHandler.swift; sourceTree = "<group>"; };
 		898FF8061FC95B2E001987B4 /* PhotoUtil.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotoUtil.swift; sourceTree = "<group>"; };
 		898FF8071FC95B2E001987B4 /* SelectViewHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SelectViewHandler.swift; sourceTree = "<group>"; };
@@ -306,6 +307,8 @@
 		8A01926C1FEBF2C2001D040E /* WallPaperViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WallPaperViewController.swift; sourceTree = "<group>"; };
 		8A22626C1FB85EA7004D2927 /* GPUImage.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = GPUImage.xcodeproj; path = "GPUImage2-master/framework/GPUImage.xcodeproj"; sourceTree = SOURCE_ROOT; };
 		8A2311551FF3C122007EA688 /* DermabrasionFragment.glsl */ = {isa = PBXFileReference; lastKnownFileType = text; path = DermabrasionFragment.glsl; sourceTree = "<group>"; };
+		8A35B521200B071A00D09011 /* HomeCollectionViewManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeCollectionViewManager.swift; sourceTree = "<group>"; };
+		8A35B523200B072D00D09011 /* HomeCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeCollectionViewCell.swift; sourceTree = "<group>"; };
 		8A3EC7292007923200D96020 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		8A3EC72B2007926700D96020 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/InfoPlist.strings"; sourceTree = "<group>"; };
 		8A3EC72F200792E500D96020 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
@@ -334,6 +337,7 @@
 		8ABD144E1FD6E11700F1AA64 /* M5 */ = {isa = PBXFileReference; lastKnownFileType = folder; path = M5; sourceTree = "<group>"; };
 		8ABD144F1FD6E11700F1AA64 /* M6 */ = {isa = PBXFileReference; lastKnownFileType = folder; path = M6; sourceTree = "<group>"; };
 		8ABD14571FD6E12D00F1AA64 /* M1 */ = {isa = PBXFileReference; lastKnownFileType = folder; path = M1; sourceTree = "<group>"; };
+		8AD7B8572008E39300042CFC /* model.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = model.jpg; sourceTree = "<group>"; };
 		8AF10FD320064F4B00D804BF /* StatusUtil.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatusUtil.swift; sourceTree = "<group>"; };
 		AC7BC624126B2FF80E13B9E9 /* Pods-MagicCamera.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MagicCamera.release.xcconfig"; path = "Pods/Target Support Files/Pods-MagicCamera/Pods-MagicCamera.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -397,6 +401,7 @@
 		896A58BE1F6E27E700AEB484 /* Resourse */ = {
 			isa = PBXGroup;
 			children = (
+				8AD7B8572008E39300042CFC /* model.jpg */,
 				8ABD143F1FD6E03000F1AA64 /* jjournalSource */,
 				8A8A719F1FD82B87008B214E /* M1.JPG */,
 				8A8A71AB1FD835A5008B214E /* M2.JPG */,
@@ -512,6 +517,8 @@
 			children = (
 				89C84AB91F6B54DA004439DA /* HomeViewController.swift */,
 				896A7CB51F66E0F200FC369B /* HomeViewController.storyboard */,
+				8A35B521200B071A00D09011 /* HomeCollectionViewManager.swift */,
+				8A35B523200B072D00D09011 /* HomeCollectionViewCell.swift */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -658,7 +665,6 @@
 			isa = PBXGroup;
 			children = (
 				898FF7FE1FC95AAA001987B4 /* WaterFlowLayout.swift */,
-				898FF7FF1FC95AAA001987B4 /* WaterFlowView.swift */,
 			);
 			path = WaterFlow;
 			sourceTree = "<group>";
@@ -997,6 +1003,7 @@
 				8A3EC7282007923200D96020 /* InfoPlist.strings in Resources */,
 				898FF7E21FC9535D001987B4 /* LookupVertex16.glsl in Resources */,
 				89C60E841FAE2B1C00FF53E5 /* filterResourse in Resources */,
+				8AD7B85B2008E39300042CFC /* model.jpg in Resources */,
 				899499411F7172FC009999DA /* lookup16Fragment.glsl in Resources */,
 				898FF7DC1FC9535D001987B4 /* Charactervertex.glsl in Resources */,
 				8ABD14541FD6E11700F1AA64 /* M9 in Resources */,
@@ -1126,6 +1133,7 @@
 				898FF7A51FC952A6001987B4 /* UIImage+CGContext.swift in Sources */,
 				898FF7A91FC952AE001987B4 /* Utils.swift in Sources */,
 				898FF80E1FC95B2E001987B4 /* SelectViewHandler.swift in Sources */,
+				8A35B524200B072D00D09011 /* HomeCollectionViewCell.swift in Sources */,
 				89C84ABC1F6B54EC004439DA /* CameraViewController.swift in Sources */,
 				89D9F41A1F6C1BA900DB3B57 /* FilterListView.swift in Sources */,
 				898FF7F81FC95A39001987B4 /* JournalTemplateViewController.swift in Sources */,
@@ -1152,6 +1160,7 @@
 				898FF7961FC95195001987B4 /* JournalView.swift in Sources */,
 				896A7C7B1F66DE9700FC369B /* AppDelegate.swift in Sources */,
 				89C84AC11F6B5506004439DA /* SaveAndShareViewController.swift in Sources */,
+				8A35B522200B071A00D09011 /* HomeCollectionViewManager.swift in Sources */,
 				898FF7901FC95195001987B4 /* FilterCollectionViewHandler.swift in Sources */,
 				898FF79B1FC95285001987B4 /* CGRect+String.swift in Sources */,
 				898FF8021FC95AAA001987B4 /* WaterFlowLayout.swift in Sources */,
@@ -1166,7 +1175,6 @@
 				898FF7D81FC9535D001987B4 /* SGLLongPicFilter.swift in Sources */,
 				89E594631F9321B8007671A3 /* Vector3.swift in Sources */,
 				898FF7921FC95195001987B4 /* JournalModel.swift in Sources */,
-				898FF8031FC95AAA001987B4 /* WaterFlowView.swift in Sources */,
 				8AA601771FE9410100809F64 /* SettingViewController.swift in Sources */,
 				898FF7971FC95195001987B4 /* TouchTextView.swift in Sources */,
 				891C98111FA8BDFC00991E7F /* UIImage+Save.swift in Sources */,

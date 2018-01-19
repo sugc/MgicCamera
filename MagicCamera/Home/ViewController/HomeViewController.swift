@@ -11,11 +11,16 @@ import UIKit
 import AVFoundation
 import Photos
 
-class HomeViewController : UIViewController,
-                            UIImagePickerControllerDelegate,
-                            UINavigationControllerDelegate{
+class HomeViewController :
+    UIViewController,
+    UIImagePickerControllerDelegate,
+    UINavigationControllerDelegate,
+    UICollectionViewDelegate
+{
 
-    @IBOutlet var wallPaperView : UIImageView!
+    var wallPaperView : UIImageView?
+    var homeManager : HomeCollectionViewManager!
+    @IBOutlet var collectionView : UICollectionView!
     
     override func awakeFromNib() {
         super.awakeFromNib()
@@ -25,28 +30,50 @@ class HomeViewController : UIViewController,
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        //check is Need show wallpapper
+        collectionView.delegate = self
+        homeManager = HomeCollectionViewManager.init(collectionView: collectionView)
         self.showWallPaper()
     }
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         UIApplication.shared.setStatusBarHidden(true, with: UIStatusBarAnimation.none)
+        
         self.navigationController?.interactivePopGestureRecognizer?.isEnabled = false
+    }
+    
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        self.hideWallPaperAnimate()
+   
     }
     
     func showWallPaper() {
         let isNeedShow = checkIsNeedShowWallPaper()
-        if !isNeedShow {
+        if isNeedShow {
+            wallPaperView = UIImageView.init(frame: self.view.bounds)
+            wallPaperView?.contentMode = UIViewContentMode.scaleAspectFill
+            self.view.addSubview(wallPaperView!)
+            wallPaperView?.image = UIImage.init(named:"model.jpg")
+        }
+    }
+    
+    func hideWallPaperAnimate() {
+        if wallPaperView == nil {
             return
         }
         
-//        wallPaperView.isHidden = false
-        
-        //
-        
-        
+        //加载图片, 默认图？
+        DispatchQueue.main.asyncAfter(deadline: .now() + 2) {
+            UIView.animate(withDuration: 0.8, animations: {
+                self.wallPaperView?.alpha = 0
+            }, completion: { (isComplete : Bool) in
+                self.wallPaperView?.removeFromSuperview()
+                self.wallPaperView = nil;
+            })
+        }
     }
+    
     
     //相机页面
     @IBAction func goCamera() {
@@ -60,7 +87,7 @@ class HomeViewController : UIViewController,
     }
     
     //相册页面
-    @IBAction func goLibrary() {
+    func goLibrary() {
         requestPhotoAuthority { (authorized : Bool) in
             if authorized {
                 let imagePick = UIImagePickerController.init()
@@ -70,7 +97,7 @@ class HomeViewController : UIViewController,
         }
     }
 
-    @IBAction func goJournalVC() {
+    func goJournalVC() {
         requestPhotoAuthority { (authorized : Bool) in
             if authorized {
                 let VC = JournalTemplateViewController()
@@ -100,4 +127,13 @@ class HomeViewController : UIViewController,
         }
     }
     
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        if indexPath.row == 0 {
+            self.goLibrary()
+        }
+        
+        if indexPath.row == 1 {
+            self.goJournalVC()
+        }
+    }
 }

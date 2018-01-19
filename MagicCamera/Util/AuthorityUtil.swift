@@ -37,9 +37,8 @@ func requestCameraAuthority(completionHandler handler: @escaping (Bool) -> Swift
         showSettingAlertView(title: title, message: message, settingUrlStr: settingUrl)
         isAuthorized = false
     }
-    DispatchQueue.main.async {
-        handler(isAuthorized)
-    }
+
+    handler(isAuthorized)
 }
 
 //相册权限请求
@@ -61,9 +60,7 @@ func requestPhotoAuthority(completionHandler handler: @escaping (Bool) -> Swift.
             let message = NSLocalizedString("请打开设置-蜜柚相机-照片-开启", comment:"")
             showSettingAlertView(title:title, message:message, settingUrlStr: settingUrl)
         }
-        DispatchQueue.main.async {
-            handler(isAuthorized)
-        }
+        handler(isAuthorized)
     }
 }
 
