@@ -19,7 +19,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="ynn-sr-oxh">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="2.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="ynn-sr-oxh">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aMC-uz-jYS">
@@ -71,6 +71,7 @@
                                                 </label>
                                             </subviews>
                                         </view>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <constraints>
                                             <constraint firstItem="bF5-lO-pTj" firstAttribute="top" secondItem="BKY-CU-zsJ" secondAttribute="top" id="0kd-5v-zNg"/>
                                             <constraint firstAttribute="trailing" secondItem="7iX-I1-ZAV" secondAttribute="trailing" id="BsZ-7o-10E"/>
@@ -97,7 +98,7 @@
                             </view>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageWhenHighlighted="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1Hq-9c-fMh">
                                 <rect key="frame" x="142.5" y="490.5" width="90" height="90"/>
-                                <color key="backgroundColor" red="0.55128971256387937" green="1" blue="0.57016689376473884" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="backgroundColor" red="0.9882352941176471" green="0.396078431372549" blue="0.56862745098039214" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="90" id="KBf-fO-kAJ"/>
                                     <constraint firstAttribute="width" secondItem="1Hq-9c-fMh" secondAttribute="height" id="PgQ-9T-Ggd"/>
@@ -144,6 +145,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="2.jpg" width="768" height="1280"/>
         <image name="btn_setting" width="30" height="30"/>
         <image name="icon_home_selfie" width="55" height="55"/>
     </resources>

@@ -45,10 +45,10 @@ class HomeCollectionViewManager :
     
     func param() -> Array<Dictionary<String,Any>> {
         let param = [
-            ["color":UIColor.red,
+            ["color":UIColor.color(hex: 0x68D4DC, alpha: 1),
              "title":"美化图片",
              "imageName":"icon_home_filter"],
-            ["color":UIColor.blue,
+            ["color":UIColor.color(hex: 0x4677FE, alpha: 1),
              "title":"拼图",
              "imageName":"icon_home_pintu"]
         ]

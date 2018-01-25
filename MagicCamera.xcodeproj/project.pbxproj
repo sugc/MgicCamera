@@ -101,6 +101,7 @@
 		89F9CF781F7D4E9D00704DF6 /* StillCamera.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89F9CF771F7D4E9D00704DF6 /* StillCamera.swift */; };
 		8A0192671FEB463E001D040E /* SuggestionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A0192661FEB463E001D040E /* SuggestionViewController.swift */; };
 		8A01926D1FEBF2C2001D040E /* WallPaperViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A01926C1FEBF2C2001D040E /* WallPaperViewController.swift */; };
+		8A0812FE2019F6EB00908C3B /* 2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 8A0812FA2019F6EB00908C3B /* 2.jpg */; };
 		8A20EE201FB85F8E0083E8DC /* GPUImage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8A2262781FB85EA7004D2927 /* GPUImage.framework */; };
 		8A20EE231FB85FBB0083E8DC /* GPUImage.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 8A2262781FB85EA7004D2927 /* GPUImage.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		8A2311561FF3C122007EA688 /* DermabrasionFragment.glsl in Resources */ = {isa = PBXBuildFile; fileRef = 8A2311551FF3C122007EA688 /* DermabrasionFragment.glsl */; };
@@ -305,6 +306,7 @@
 		89F9CF771F7D4E9D00704DF6 /* StillCamera.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StillCamera.swift; sourceTree = "<group>"; };
 		8A0192661FEB463E001D040E /* SuggestionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SuggestionViewController.swift; sourceTree = "<group>"; };
 		8A01926C1FEBF2C2001D040E /* WallPaperViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WallPaperViewController.swift; sourceTree = "<group>"; };
+		8A0812FA2019F6EB00908C3B /* 2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 2.jpg; sourceTree = "<group>"; };
 		8A22626C1FB85EA7004D2927 /* GPUImage.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = GPUImage.xcodeproj; path = "GPUImage2-master/framework/GPUImage.xcodeproj"; sourceTree = SOURCE_ROOT; };
 		8A2311551FF3C122007EA688 /* DermabrasionFragment.glsl */ = {isa = PBXFileReference; lastKnownFileType = text; path = DermabrasionFragment.glsl; sourceTree = "<group>"; };
 		8A35B521200B071A00D09011 /* HomeCollectionViewManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeCollectionViewManager.swift; sourceTree = "<group>"; };
@@ -401,6 +403,7 @@
 		896A58BE1F6E27E700AEB484 /* Resourse */ = {
 			isa = PBXGroup;
 			children = (
+				8A0812FA2019F6EB00908C3B /* 2.jpg */,
 				8AD7B8572008E39300042CFC /* model.jpg */,
 				8ABD143F1FD6E03000F1AA64 /* jjournalSource */,
 				8A8A719F1FD82B87008B214E /* M1.JPG */,
@@ -978,6 +981,7 @@
 				898FF7D91FC9535D001987B4 /* CameoFragment.glsl in Resources */,
 				8A8A71A01FD82B87008B214E /* M1.JPG in Resources */,
 				898FF7E81FC9535D001987B4 /* PipVertex.glsl in Resources */,
+				8A0812FE2019F6EB00908C3B /* 2.jpg in Resources */,
 				898FF7EA1FC9535D001987B4 /* PMixVertex.glsl in Resources */,
 				898FF7DB1FC9535D001987B4 /* CharacterFragment.glsl in Resources */,
 				8A636BF01FFDBE8E000830DC /* WallPaperViewController.storyboard in Resources */,
