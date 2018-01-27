@@ -21,36 +21,36 @@ enum FlashType : Int {
 class StillCamera {
     
     var  flashType: FlashType!
-    let camera : Camera!
+    let camera : GPUImageStillCamera!
     var position : AVCaptureDevicePosition!
     var stillImageOutPut : AVCaptureStillImageOutput!
+    var  lookupImageSource : GPUImagePicture!
     
-    public init(sessionPreset:String, cameraDevice:AVCaptureDevice? = nil, location:PhysicalCameraLocation = .backFacing, captureAsYUV:Bool = true)  {
-        
+    public init(sessionPreset:String!, cameraPosition:AVCaptureDevicePosition = AVCaptureDevicePosition.back) {
+        camera = GPUImageStillCamera.init(sessionPreset: sessionPreset, cameraPosition: cameraPosition)
+        camera.outputImageOrientation = UIInterfaceOrientation.portrait
         flashType = FlashType.Off
-        position = AVCaptureDevicePosition.back
-        var cameraFacing = location
+        position = cameraPosition
         
-        if !StillCamera.backCameraAvailbel() {
-            cameraFacing = .frontFacing
-            position = AVCaptureDevicePosition.front
+        if !GPUImageStillCamera.isBackFacingCameraPresent() {
+             position = AVCaptureDevicePosition.front
         }
         
-        do {
-             camera = try Camera.init(sessionPreset: sessionPreset, cameraDevice: cameraDevice, location: cameraFacing, captureAsYUV: captureAsYUV)
-        } catch  {
-            fatalError("Could not initialize rendering pipeline: \(error)")
-        }
-        
-        let session = camera.captureSession
-        
+        let session = camera.captureSession!
         stillImageOutPut = AVCaptureStillImageOutput()
-        
         if session.canAddOutput(stillImageOutPut) {
             session.addOutput(stillImageOutPut)
+        }else {
+            
+            for outPut in session.outputs {
+                if outPut is AVCaptureStillImageOutput {
+                    session.removeOutput(outPut as! AVCaptureStillImageOutput)
+                }
+            }
+            session.addOutput(stillImageOutPut)
         }
-        
     }
+    
     
     //返回前后置摄像机
     func device(position : AVCaptureDevicePosition) -> AVCaptureDevice {
@@ -146,7 +146,7 @@ class StillCamera {
         let currentDevice = device(position: position)
         do {
             try currentDevice.lockForConfiguration()
-            if flashType.rawValue < 3 {
+            if newFlashType.rawValue < 3 {
                 if currentDevice.torchMode == AVCaptureTorchMode.on {
                     currentDevice.torchMode = AVCaptureTorchMode.off
                 }
@@ -177,26 +177,23 @@ class StillCamera {
     }
     
     //切换滤镜
-    func applyFiltersWith(filters:Array<BasicOperation>? = nil, renderView:RenderView) {
+    func applyFiltersWith(filters:Array<GPUImageFilter>? = nil, renderView:GPUImageView) {
         //
-        camera.stopCapture()
-        renderView.removeSourceAtIndex(0)
+//        camera.stopCapture()
         camera.removeAllTargets()
         
         if filters?.count == 0 {
-            camera -->  renderView
+            camera.addTarget(renderView)
         }else {
-            var source : ImageSource = camera
+            var source : GPUImageOutput = camera
             if filters != nil {
                 for operation in filters! {
-                    source --> operation
+                    source.addTarget(operation)
                     source = operation
                 }
             }
-            source --> renderView
+            source.addTarget(renderView)
         }
-        
-        camera.startCapture()
     }
 
     //拍照接口
@@ -204,17 +201,18 @@ class StillCamera {
         
         let connection = stillImageOutPut.connection(withMediaType: AVMediaTypeVideo)
         connection?.videoScaleAndCropFactor = 1.0
+        
         stillImageOutPut.captureStillImageAsynchronously(from: connection) { (sampleBuffer, error) in
-            self.camera.stopCapture()
             if error != nil {
                 handler(nil,error)
                 return;
             }
-            
+
             let data = AVCaptureStillImageOutput.jpegStillImageNSDataRepresentation(sampleBuffer)
-            let image  = UIImage.init(data: data!)
+            let image = UIImage.init(data: data!)
             handler(image,error)
         }
+    
     }
 }
 

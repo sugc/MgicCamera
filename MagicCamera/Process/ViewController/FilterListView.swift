@@ -11,7 +11,7 @@ import UIKit
 import GPUImage
 
 protocol FilterListViewProtocol:NSObjectProtocol {
-    func applyFilter(filters:Array<BasicOperation>)
+    func applyFilter(filters:Array<GPUImageFilter>)
     func applyLookUpImage(lookUpImage:UIImage?)
     func didbeganApplyFilter()
     func shoulApplyHeaderAction() -> Bool
@@ -133,7 +133,7 @@ class FilterListView : UIView, UICollectionViewDataSource, UICollectionViewDeleg
         let lastCell = collectionView.cellForItem(at: lastSelectIndex!) as? FilterListViewCell
         lastCell?.isSelect = false
         
-        var filters : Array<BasicOperation> = []
+        var filters : Array<GPUImageFilter> = []
         let cell = collectionView.cellForItem(at: indexPath) as? FilterListViewCell
         var image : UIImage? = nil
         if (lastSelectIndex == indexPath) {
@@ -198,19 +198,21 @@ class FilterListView : UIView, UICollectionViewDataSource, UICollectionViewDeleg
         print("")
     }
     
-    func getFilters(filterInfo:FilterInfo) -> Array<BasicOperation> {
+    func getFilters(filterInfo:FilterInfo) -> Array<GPUImageFilter> {
         let image = UIImage.init(contentsOfFile: filterInfo.lookImageName)!
-//        filter = LookupFilter16()
-        filter.lookupImage = PictureInput.init(image: image )
+        filter = LookupFilter16()
+        let lookupImage = GPUImagePicture.init(image: image)
+        filter.lookupImage = lookupImage;
         return [filter]
     }
     
-    func getCurrentFilters() -> Array<BasicOperation>! {
+    func getCurrentFilters() -> Array<GPUImageFilter>! {
         
         if (currentFilterInfo != nil) {
             let image = UIImage.init(contentsOfFile: currentFilterInfo!.lookImageName)!
             let newFilter = LookupFilter16.init()
-            newFilter.lookupImage = PictureInput.init(image: image )
+            let lookupImage = GPUImagePicture.init(image: image)
+            newFilter.lookupImage = lookupImage;
             return [newFilter]
         }
         return []

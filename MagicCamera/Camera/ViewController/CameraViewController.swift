@@ -26,7 +26,7 @@ UINavigationControllerDelegate{
     
     // 
     var camera : StillCamera!
-    var filter : BasicOperation!
+    var filter : GPUImageFilter!
     var stillImageOutPut : AVCaptureStillImageOutput!
     var originImage : UIImage?
     var preViewType : ImageRatio!
@@ -39,15 +39,10 @@ UINavigationControllerDelegate{
     @IBOutlet var flashBtn : UIButton!
     @IBOutlet weak var reveseBtn: UIButton!
     @IBOutlet var filterListView : FilterListView?
-    @IBOutlet var renderView : RenderView!
+    @IBOutlet var renderView : GPUImageView!
     @IBOutlet var bottomMaskView : UIView!
     @IBOutlet var topMaskView : UIView!
-    
-//    override func awakeFromNib() {
-//        super.awakeFromNib()
-//        
-//        
-//    }
+
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -59,14 +54,13 @@ UINavigationControllerDelegate{
                                                selector: #selector(change(notification:)),
                                                name: NSNotification.Name.UIDeviceOrientationDidChange,
                                                object: nil)
-        renderView.fillMode = GPUImage.FillMode.stretch
         if !DEVICE_IS_SUMILATE {
             camera = StillCamera.init(sessionPreset: AVCaptureSessionPresetPhoto)
-            camera.camera --> renderView
+            camera.camera.addTarget(renderView)
         }
         
         preViewType = ImageRatio.Type1v1
-        
+        refreshFlashStatus()
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -91,7 +85,7 @@ UINavigationControllerDelegate{
     //切换预览尺寸
     func applyLayout(preViewType:ImageRatio) ->Void {
         self.preViewType = preViewType
-       
+
         switch preViewType {
             case ImageRatio.Type1v1:
                 topMaskView.isHidden = false
@@ -211,17 +205,20 @@ UINavigationControllerDelegate{
         var processImage = originImage
         let selectFilters = filterListView!.getCurrentFilters()!
         if selectFilters.count > 0 {
-            let toonFilter  = selectFilters.first!
-            toonFilter.removeSourceAtIndex(0)
+            let toonFilter  = selectFilters.first as! GPUImageFilter
             toonFilter.removeAllTargets()
-            let pictureInput = PictureInput(image: originImage!)
-            let pictureOutput = PictureOutput()
-            pictureInput --> toonFilter --> pictureOutput
-            pictureOutput.imageAvailableCallback = {image in
-                processImage = image
-                self.goNextWith(originImage: originImage, processImage: processImage)
-            }
-            pictureInput.processImage(synchronously:true)
+            
+            let pictureInput = GPUImagePicture.init(image: originImage)
+            pictureInput?.addTarget(toonFilter)
+            toonFilter.useNextFrameForImageCapture()
+            pictureInput?.processImage()
+            let processImage = toonFilter.imageFromCurrentFramebuffer()
+//            pictureInput --> toonFilter --> pictureOutput
+//            pictureOutput.imageAvailableCallback = {image in
+//                processImage = image
+//                self.goNextWith(originImage: originImage, processImage: processImage)
+//            }
+//            pictureInput.processImage(synchronously:true)
         }else {
             self.goNextWith(originImage: originImage, processImage: processImage)
         }
@@ -244,7 +241,7 @@ UINavigationControllerDelegate{
     }
     
     //**************应用滤镜/
-    func applyFilter(filters: Array<BasicOperation>) {
+    func applyFilter(filters: Array<GPUImageFilter>) {
         camera.applyFiltersWith(filters: filters, renderView: renderView)
     }
     

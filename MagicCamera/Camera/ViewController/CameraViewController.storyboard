@@ -26,7 +26,7 @@
                             <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="VUv-Zi-L9o" userLabel="renderBackView">
                                 <rect key="frame" x="0.0" y="20" width="375" height="500"/>
                                 <subviews>
-                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5uy-lH-M93" customClass="RenderView" customModule="GPUImage">
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5uy-lH-M93" customClass="GPUImageView">
                                         <rect key="frame" x="0.0" y="0.0" width="375" height="500"/>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         <constraints>

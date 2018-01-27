@@ -320,7 +320,7 @@ class JournalView: UIView, UITextViewDelegate, TouchTextViewDelegate{
         }
     }
     
-    func setFilter(filters:Array<BasicOperation>) {
+    func setFilter(filters:Array<GPUImageFilter>) {
         //
         if selectIndex == -1 {
             return
@@ -333,28 +333,34 @@ class JournalView: UIView, UITextViewDelegate, TouchTextViewDelegate{
         }
         
         let toonFilter = filters.first!
-        toonFilter.removeSourceAtIndex(0)
+        toonFilter.removeAllTargets()
         let orient = oriImage.imageOrientation.rawValue % 4
-        var imgOrient : ImageOrientation
+        var imgOrient : UIImageOrientation
         switch orient {
         case 0:
-            imgOrient = ImageOrientation.portrait
+//            imgOrient = UIImageOrientation.portrait
             break
         case 1:
-            imgOrient = ImageOrientation.portraitUpsideDown
+//            imgOrient = UIImageOrientation.portraitUpsideDown
             break
         case 2:
-            imgOrient = ImageOrientation.landscapeLeft
+//            imgOrient = UIImageOrientation.landscapeLeft
             break
         case 3:
-            imgOrient = ImageOrientation.landscapeRight
+//            imgOrient = UIImageOrientation.landscapeRight
             break
         default:
-            imgOrient = ImageOrientation.portrait
+//            imgOrient = ImageOrientation.portrait
             break
         }
         
-        let filteredImage = oriImage.filterWithOperation(toonFilter)
+        
+        let inputImage = GPUImagePicture.init(image: oriImage)
+        inputImage?.addTarget(toonFilter)
+        toonFilter.useNextFrameForImageCapture()
+        inputImage?.processImage()
+        let filteredImage = toonFilter.imageFromCurrentFramebuffer()
+        
         self.cutViewArray[self.selectIndex].image = filteredImage
     }
     

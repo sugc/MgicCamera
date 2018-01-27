@@ -79,7 +79,6 @@
 		898FF80F1FC95B2E001987B4 /* PhotoPickerCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 898FF8091FC95B2E001987B4 /* PhotoPickerCell.swift */; };
 		898FF8101FC95B2E001987B4 /* PhotoPickerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 898FF80B1FC95B2E001987B4 /* PhotoPickerViewController.swift */; };
 		898FF8121FC95D96001987B4 /* JigsawModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 898FF8111FC95D96001987B4 /* JigsawModel.swift */; };
-		8994993F1F71723D009999DA /* LookupFilter16.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8994993E1F71723D009999DA /* LookupFilter16.swift */; };
 		899499411F7172FC009999DA /* lookup16Fragment.glsl in Resources */ = {isa = PBXBuildFile; fileRef = 899499401F7172FC009999DA /* lookup16Fragment.glsl */; };
 		89A02A521F6D82910078C6D7 /* FilterListViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 89A02A511F6D82910078C6D7 /* FilterListViewCell.xib */; };
 		89C60E7D1FAE2B0200FF53E5 /* config.plist in Resources */ = {isa = PBXBuildFile; fileRef = 89C60E761FAE2B0100FF53E5 /* config.plist */; };
@@ -102,8 +101,6 @@
 		8A0192671FEB463E001D040E /* SuggestionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A0192661FEB463E001D040E /* SuggestionViewController.swift */; };
 		8A01926D1FEBF2C2001D040E /* WallPaperViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A01926C1FEBF2C2001D040E /* WallPaperViewController.swift */; };
 		8A0812FE2019F6EB00908C3B /* 2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 8A0812FA2019F6EB00908C3B /* 2.jpg */; };
-		8A20EE201FB85F8E0083E8DC /* GPUImage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8A2262781FB85EA7004D2927 /* GPUImage.framework */; };
-		8A20EE231FB85FBB0083E8DC /* GPUImage.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 8A2262781FB85EA7004D2927 /* GPUImage.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		8A2311561FF3C122007EA688 /* DermabrasionFragment.glsl in Resources */ = {isa = PBXBuildFile; fileRef = 8A2311551FF3C122007EA688 /* DermabrasionFragment.glsl */; };
 		8A35B522200B071A00D09011 /* HomeCollectionViewManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A35B521200B071A00D09011 /* HomeCollectionViewManager.swift */; };
 		8A35B524200B072D00D09011 /* HomeCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A35B523200B072D00D09011 /* HomeCollectionViewCell.swift */; };
@@ -124,6 +121,8 @@
 		8AA601771FE9410100809F64 /* SettingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AA601761FE9410100809F64 /* SettingViewController.swift */; };
 		8AA601791FE9430A00809F64 /* SettingViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AA601781FE9430A00809F64 /* SettingViewCell.swift */; };
 		8AA6017B1FE9788500809F64 /* SettingViewManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AA6017A1FE9788500809F64 /* SettingViewManager.swift */; };
+		8AAC401B201C93D400FA0606 /* LookupFilter16.m in Sources */ = {isa = PBXBuildFile; fileRef = 8AAC401A201C93D400FA0606 /* LookupFilter16.m */; };
+		8AAC4021201C9B8700FA0606 /* lookup_amatorka.png in Resources */ = {isa = PBXBuildFile; fileRef = 8AAC4020201C9B8700FA0606 /* lookup_amatorka.png */; };
 		8ABD14481FD6E05600F1AA64 /* M2 in Resources */ = {isa = PBXBuildFile; fileRef = 8ABD14471FD6E05600F1AA64 /* M2 */; };
 		8ABD14501FD6E11700F1AA64 /* M4 in Resources */ = {isa = PBXBuildFile; fileRef = 8ABD14491FD6E11700F1AA64 /* M4 */; };
 		8ABD14511FD6E11700F1AA64 /* M3 in Resources */ = {isa = PBXBuildFile; fileRef = 8ABD144A1FD6E11700F1AA64 /* M3 */; };
@@ -152,41 +151,6 @@
 			remoteGlobalIDString = 896A7C761F66DE9700FC369B;
 			remoteInfo = MagicCamera;
 		};
-		8A20EE211FB85F950083E8DC /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 8A22626C1FB85EA7004D2927 /* GPUImage.xcodeproj */;
-			proxyType = 1;
-			remoteGlobalIDString = BC9E34E81E524A2200B8604F;
-			remoteInfo = GPUImage_iOS;
-		};
-		8A2262731FB85EA7004D2927 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 8A22626C1FB85EA7004D2927 /* GPUImage.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = BC6E7CAB1C39A9D8006DF678;
-			remoteInfo = GPUImage_macOS;
-		};
-		8A2262751FB85EA7004D2927 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 8A22626C1FB85EA7004D2927 /* GPUImage.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = BC6E7CB51C39A9D8006DF678;
-			remoteInfo = GPUImageTests_macOS;
-		};
-		8A2262771FB85EA7004D2927 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 8A22626C1FB85EA7004D2927 /* GPUImage.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = BC9E34E91E524A2200B8604F;
-			remoteInfo = GPUImage_iOS;
-		};
-		8A2262791FB85EA7004D2927 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 8A22626C1FB85EA7004D2927 /* GPUImage.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = BC9E34F11E524A2200B8604F;
-			remoteInfo = GPUImageTests_iOS;
-		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -196,7 +160,6 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				8A20EE231FB85FBB0083E8DC /* GPUImage.framework in CopyFiles */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -284,7 +247,6 @@
 		898FF8091FC95B2E001987B4 /* PhotoPickerCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotoPickerCell.swift; sourceTree = "<group>"; };
 		898FF80B1FC95B2E001987B4 /* PhotoPickerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotoPickerViewController.swift; sourceTree = "<group>"; };
 		898FF8111FC95D96001987B4 /* JigsawModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JigsawModel.swift; sourceTree = "<group>"; };
-		8994993E1F71723D009999DA /* LookupFilter16.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LookupFilter16.swift; sourceTree = "<group>"; };
 		899499401F7172FC009999DA /* lookup16Fragment.glsl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = lookup16Fragment.glsl; sourceTree = "<group>"; };
 		89A02A511F6D82910078C6D7 /* FilterListViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FilterListViewCell.xib; sourceTree = "<group>"; };
 		89C60E761FAE2B0100FF53E5 /* config.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = config.plist; path = filterResourse/config.plist; sourceTree = "<group>"; };
@@ -307,7 +269,6 @@
 		8A0192661FEB463E001D040E /* SuggestionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SuggestionViewController.swift; sourceTree = "<group>"; };
 		8A01926C1FEBF2C2001D040E /* WallPaperViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WallPaperViewController.swift; sourceTree = "<group>"; };
 		8A0812FA2019F6EB00908C3B /* 2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 2.jpg; sourceTree = "<group>"; };
-		8A22626C1FB85EA7004D2927 /* GPUImage.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = GPUImage.xcodeproj; path = "GPUImage2-master/framework/GPUImage.xcodeproj"; sourceTree = SOURCE_ROOT; };
 		8A2311551FF3C122007EA688 /* DermabrasionFragment.glsl */ = {isa = PBXFileReference; lastKnownFileType = text; path = DermabrasionFragment.glsl; sourceTree = "<group>"; };
 		8A35B521200B071A00D09011 /* HomeCollectionViewManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeCollectionViewManager.swift; sourceTree = "<group>"; };
 		8A35B523200B072D00D09011 /* HomeCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeCollectionViewCell.swift; sourceTree = "<group>"; };
@@ -330,6 +291,9 @@
 		8AA601761FE9410100809F64 /* SettingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingViewController.swift; sourceTree = "<group>"; };
 		8AA601781FE9430A00809F64 /* SettingViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingViewCell.swift; sourceTree = "<group>"; };
 		8AA6017A1FE9788500809F64 /* SettingViewManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingViewManager.swift; sourceTree = "<group>"; };
+		8AAC4019201C93C600FA0606 /* LookupFilter16.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LookupFilter16.h; sourceTree = "<group>"; };
+		8AAC401A201C93D400FA0606 /* LookupFilter16.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LookupFilter16.m; sourceTree = "<group>"; };
+		8AAC4020201C9B8700FA0606 /* lookup_amatorka.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = lookup_amatorka.png; sourceTree = "<group>"; };
 		8ABD14471FD6E05600F1AA64 /* M2 */ = {isa = PBXFileReference; lastKnownFileType = folder; path = M2; sourceTree = "<group>"; };
 		8ABD14491FD6E11700F1AA64 /* M4 */ = {isa = PBXFileReference; lastKnownFileType = folder; path = M4; sourceTree = "<group>"; };
 		8ABD144A1FD6E11700F1AA64 /* M3 */ = {isa = PBXFileReference; lastKnownFileType = folder; path = M3; sourceTree = "<group>"; };
@@ -349,7 +313,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8A20EE201FB85F8E0083E8DC /* GPUImage.framework in Frameworks */,
 				4963D1D59FBD942AD726E0CB /* Pods_MagicCamera.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -403,6 +366,7 @@
 		896A58BE1F6E27E700AEB484 /* Resourse */ = {
 			isa = PBXGroup;
 			children = (
+				8AAC4020201C9B8700FA0606 /* lookup_amatorka.png */,
 				8A0812FA2019F6EB00908C3B /* 2.jpg */,
 				8AD7B8572008E39300042CFC /* model.jpg */,
 				8ABD143F1FD6E03000F1AA64 /* jjournalSource */,
@@ -461,7 +425,6 @@
 				89C84AC21F6B5518004439DA /* Process */,
 				89C84ABD1F6B5506004439DA /* SaveAndShare */,
 				896A58BE1F6E27E700AEB484 /* Resourse */,
-				8A22626C1FB85EA7004D2927 /* GPUImage.xcodeproj */,
 				896A7C7A1F66DE9700FC369B /* AppDelegate.swift */,
 				896A7C7C1F66DE9700FC369B /* ViewController.swift */,
 				896A7C811F66DE9700FC369B /* Assets.xcassets */,
@@ -703,9 +666,10 @@
 		8994993D1F717213009999DA /* FilterUtil */ = {
 			isa = PBXGroup;
 			children = (
-				8994993E1F71723D009999DA /* LookupFilter16.swift */,
 				899499401F7172FC009999DA /* lookup16Fragment.glsl */,
 				8A2311551FF3C122007EA688 /* DermabrasionFragment.glsl */,
+				8AAC4019201C93C600FA0606 /* LookupFilter16.h */,
+				8AAC401A201C93D400FA0606 /* LookupFilter16.m */,
 			);
 			path = FilterUtil;
 			sourceTree = "<group>";
@@ -762,17 +726,6 @@
 			path = Extension;
 			sourceTree = "<group>";
 		};
-		8A22626D1FB85EA7004D2927 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				8A2262741FB85EA7004D2927 /* GPUImage.framework */,
-				8A2262761FB85EA7004D2927 /* GPUImageTests_macOS.xctest */,
-				8A2262781FB85EA7004D2927 /* GPUImage.framework */,
-				8A22627A1FB85EA7004D2927 /* GPUImageTests_iOS.xctest */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
 		8AA601751FE940C500809F64 /* Setting */ = {
 			isa = PBXGroup;
 			children = (
@@ -824,7 +777,6 @@
 			buildRules = (
 			);
 			dependencies = (
-				8A20EE221FB85F950083E8DC /* PBXTargetDependency */,
 			);
 			name = MagicCamera;
 			productName = MagicCamera;
@@ -908,12 +860,6 @@
 			mainGroup = 896A7C6E1F66DE9700FC369B;
 			productRefGroup = 896A7C781F66DE9700FC369B /* Products */;
 			projectDirPath = "";
-			projectReferences = (
-				{
-					ProductGroup = 8A22626D1FB85EA7004D2927 /* Products */;
-					ProjectRef = 8A22626C1FB85EA7004D2927 /* GPUImage.xcodeproj */;
-				},
-			);
 			projectRoot = "";
 			targets = (
 				896A7C761F66DE9700FC369B /* MagicCamera */,
@@ -922,37 +868,6 @@
 			);
 		};
 /* End PBXProject section */
-
-/* Begin PBXReferenceProxy section */
-		8A2262741FB85EA7004D2927 /* GPUImage.framework */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.framework;
-			path = GPUImage.framework;
-			remoteRef = 8A2262731FB85EA7004D2927 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		8A2262761FB85EA7004D2927 /* GPUImageTests_macOS.xctest */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.cfbundle;
-			path = GPUImageTests_macOS.xctest;
-			remoteRef = 8A2262751FB85EA7004D2927 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		8A2262781FB85EA7004D2927 /* GPUImage.framework */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.framework;
-			path = GPUImage.framework;
-			remoteRef = 8A2262771FB85EA7004D2927 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		8A22627A1FB85EA7004D2927 /* GPUImageTests_iOS.xctest */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.cfbundle;
-			path = GPUImageTests_iOS.xctest;
-			remoteRef = 8A2262791FB85EA7004D2927 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		896A7C751F66DE9700FC369B /* Resources */ = {
@@ -982,6 +897,7 @@
 				8A8A71A01FD82B87008B214E /* M1.JPG in Resources */,
 				898FF7E81FC9535D001987B4 /* PipVertex.glsl in Resources */,
 				8A0812FE2019F6EB00908C3B /* 2.jpg in Resources */,
+				8AAC4021201C9B8700FA0606 /* lookup_amatorka.png in Resources */,
 				898FF7EA1FC9535D001987B4 /* PMixVertex.glsl in Resources */,
 				898FF7DB1FC9535D001987B4 /* CharacterFragment.glsl in Resources */,
 				8A636BF01FFDBE8E000830DC /* WallPaperViewController.storyboard in Resources */,
@@ -1066,6 +982,7 @@
 			);
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-MagicCamera/Pods-MagicCamera-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/GPUImage/GPUImage.framework",
 				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
 				"${BUILT_PRODUCTS_DIR}/MBProgressHUD/MBProgressHUD.framework",
 				"${BUILT_PRODUCTS_DIR}/ReactiveCocoa/ReactiveCocoa.framework",
@@ -1076,6 +993,7 @@
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GPUImage.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MBProgressHUD.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ReactiveCocoa.framework",
@@ -1118,7 +1036,6 @@
 				898FF7951FC95195001987B4 /* FilterViewCell.swift in Sources */,
 				898FF7CE1FC9535D001987B4 /* GLProgram.swift in Sources */,
 				8AA601791FE9430A00809F64 /* SettingViewCell.swift in Sources */,
-				8994993F1F71723D009999DA /* LookupFilter16.swift in Sources */,
 				898FF8121FC95D96001987B4 /* JigsawModel.swift in Sources */,
 				898FF7D51FC9535D001987B4 /* LookUpFilter.swift in Sources */,
 				898FF7CD1FC9535D001987B4 /* GLFrameBuffer.swift in Sources */,
@@ -1182,6 +1099,7 @@
 				8AA601771FE9410100809F64 /* SettingViewController.swift in Sources */,
 				898FF7971FC95195001987B4 /* TouchTextView.swift in Sources */,
 				891C98111FA8BDFC00991E7F /* UIImage+Save.swift in Sources */,
+				8AAC401B201C93D400FA0606 /* LookupFilter16.m in Sources */,
 				898FF8011FC95AAA001987B4 /* DesignedTextView.swift in Sources */,
 				89F9CF781F7D4E9D00704DF6 /* StillCamera.swift in Sources */,
 				8A62F89D1FF1DFDB00AD9FD0 /* WallPapperCell.swift in Sources */,
@@ -1216,11 +1134,6 @@
 			isa = PBXTargetDependency;
 			target = 896A7C761F66DE9700FC369B /* MagicCamera */;
 			targetProxy = 896A7C971F66DE9800FC369B /* PBXContainerItemProxy */;
-		};
-		8A20EE221FB85F950083E8DC /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = GPUImage_iOS;
-			targetProxy = 8A20EE211FB85F950083E8DC /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 

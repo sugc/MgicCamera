@@ -4,6 +4,8 @@
 
 
 
+#import "GPUImage/GPUImage.h"
+#import "LookupFilter16.h"
 #import "FireBase/FireBase.h"
 #import "FireBaseCore/FireBaseCore.h"
 #import "Fabric/Fabric.h"

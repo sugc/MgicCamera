@@ -250,7 +250,7 @@ class JournalViewController : UIViewController, ConfirmTextViewDelegate, FilterL
         
     }
     
-    func applyFilter(filters: Array<BasicOperation>) {
+    func applyFilter(filters: Array<GPUImageFilter>) {
 //        journalView.setFilter(filters: filters)
     }
     

@@ -31,7 +31,7 @@ class ProcessViewController: UIViewController,FilterListViewProtocol {
         UIApplication.shared.beginIgnoringInteractionEvents()
     }
     
-    func applyFilter(filters: Array<BasicOperation>) {
+    func applyFilter(filters: Array<GPUImageFilter>) {
         
         if filters.count == 0 {
             self.processImage = originImage
@@ -42,40 +42,35 @@ class ProcessViewController: UIViewController,FilterListViewProtocol {
         //
         let toonFilter = filters.first!
         let orient = originImage.imageOrientation.rawValue % 4
-        var imgOrient : ImageOrientation
+//        var imgOrient : ImageOrientation
         switch orient {
         case 0:
-            imgOrient = ImageOrientation.portrait
+//            imgOrient = ImageOrientation.portrait
             break
         case 1:
-            imgOrient = ImageOrientation.portraitUpsideDown
+//            imgOrient = ImageOrientation.portraitUpsideDown
             break
         case 2:
-            imgOrient = ImageOrientation.landscapeLeft
+//            imgOrient = ImageOrientation.landscapeLeft
             break
         case 3:
-            imgOrient = ImageOrientation.landscapeRight
+//            imgOrient = ImageOrientation.landscapeRight
             break
         default:
-            imgOrient = ImageOrientation.portrait
+//            imgOrient = ImageOrientation.portrait
             break
         }
 
-        let pictureInput = PictureInput.init(image: originImage, smoothlyScaleOutput: false, orientation: imgOrient)
         
-        let pictureOutput = PictureOutput()
-        pictureInput --> toonFilter --> pictureOutput
-        pictureOutput.imageAvailableCallback = {image in
-            // Do something with image
-            DispatchQueue.main.asyncAfter(deadline: .now() + 0.3) {
-                self.processImage = image
-                self.showImageView.image = image
-                MBProgressHUD.hide(for: self.showImageView, animated: true)
-                UIApplication.shared.endIgnoringInteractionEvents()
-            }
-        }
-        
-        pictureInput.processImage(synchronously:true)
+        let pictureInput = GPUImagePicture.init(image: originImage)
+        pictureInput?.addTarget(toonFilter)
+        toonFilter.useNextFrameForImageCapture()
+        pictureInput?.processImage()
+        processImage = toonFilter.imageFromCurrentFramebuffer();
+        self.showImageView.image = processImage
+        MBProgressHUD.hide(for: self.showImageView, animated: true)
+        UIApplication.shared.endIgnoringInteractionEvents()
+ 
         
 //        let prImage : UIImage = originImage.copy() as! UIImage
 //

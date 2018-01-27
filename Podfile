@@ -13,6 +13,7 @@ pod 'ReactiveCocoa', '~>6.0'
 use_frameworks!
 pod 'MBProgressHUD'
 pod 'skpsmtpmessage'
+pod 'GPUImage'
 #pod 'libWeChatSDK', '~> 1.7.1'
 
 end
