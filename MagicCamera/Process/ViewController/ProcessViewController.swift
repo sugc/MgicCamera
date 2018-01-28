@@ -18,11 +18,17 @@ class ProcessViewController: UIViewController,FilterListViewProtocol {
     @IBOutlet var filterListView : FilterListView!
     var originImage : UIImage!
     var processImage : UIImage!
+    var lastSelectIndex : IndexPath! = IndexPath.init(row: -1, section: -1)
     
     override func viewDidLoad() {
         super.viewDidLoad()
         filterListView.filterDelegate = self
         showImageView.image = processImage
+    }
+    
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        filterListView.selectItemAtIndexPath(path: lastSelectIndex)
     }
     
     func didbeganApplyFilter() {
@@ -32,7 +38,6 @@ class ProcessViewController: UIViewController,FilterListViewProtocol {
     }
     
     func applyFilter(filters: Array<GPUImageFilter>) {
-        
         if filters.count == 0 {
             self.processImage = originImage
             self.showImageView.image = originImage
@@ -41,27 +46,6 @@ class ProcessViewController: UIViewController,FilterListViewProtocol {
         
         //
         let toonFilter = filters.first!
-        let orient = originImage.imageOrientation.rawValue % 4
-//        var imgOrient : ImageOrientation
-        switch orient {
-        case 0:
-//            imgOrient = ImageOrientation.portrait
-            break
-        case 1:
-//            imgOrient = ImageOrientation.portraitUpsideDown
-            break
-        case 2:
-//            imgOrient = ImageOrientation.landscapeLeft
-            break
-        case 3:
-//            imgOrient = ImageOrientation.landscapeRight
-            break
-        default:
-//            imgOrient = ImageOrientation.portrait
-            break
-        }
-
-        
         let pictureInput = GPUImagePicture.init(image: originImage)
         pictureInput?.addTarget(toonFilter)
         toonFilter.useNextFrameForImageCapture()
@@ -70,16 +54,6 @@ class ProcessViewController: UIViewController,FilterListViewProtocol {
         self.showImageView.image = processImage
         MBProgressHUD.hide(for: self.showImageView, animated: true)
         UIApplication.shared.endIgnoringInteractionEvents()
- 
-        
-//        let prImage : UIImage = originImage.copy() as! UIImage
-//
-//        let processImage =  prImage.filterWithPipeline { (input, output) in
-//            let baseOperation : BasicOperation = filters.first!
-//            input --> baseOperation --> output
-//        }
-        
-       
     }
     
     func applyLookUpImage(lookUpImage: UIImage?) {

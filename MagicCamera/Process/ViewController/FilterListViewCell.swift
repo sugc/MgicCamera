@@ -32,6 +32,6 @@ class FilterListViewCell : UICollectionViewCell {
     
     override func awakeFromNib() {
         super.awakeFromNib()
-        
+        titleLabel.isHidden = false
     }
 }

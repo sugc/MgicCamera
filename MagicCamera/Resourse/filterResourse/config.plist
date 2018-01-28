@@ -32,5 +32,11 @@
 		<key>themeName</key>
 		<string>B&amp;W</string>
 	</dict>
+	<dict>
+		<key>themeID</key>
+		<string>acv</string>
+		<key>themeName</key>
+		<string>acv</string>
+	</dict>
 </array>
 </plist>

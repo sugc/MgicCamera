@@ -35,14 +35,15 @@ struct FilterInfo {
         filterID = dic["filterId"] as! String
         filterPath = path + filterID
         filterName = path + "/" + (dic["filterName"] as! String)
-        lookImageName = path + "/" + filterID + "/lookup.png"
+        let fileName = dic["filterFileName"] as! String
+        filterFileName = path + "/" + filterID + "/" + fileName
         thumderImageName = path + "/" + filterID + "/template.jpg"
     }
     
     var filterID : String!
     var filterPath : String!
     var filterName : String!
-    var lookImageName : String!
+    var filterFileName : String!
     var thumderImageName : String!
 }
 

@@ -32,7 +32,6 @@ UINavigationControllerDelegate{
     var preViewType : ImageRatio!
     var positionMonitor : PositionMonitor?
     
-    @IBOutlet var preViewHeight : NSLayoutConstraint!
     @IBOutlet var albumBtn : UIButton!
     @IBOutlet var renderBackView : UIView!
     @IBOutlet var rationBtn : UIButton!
@@ -42,6 +41,8 @@ UINavigationControllerDelegate{
     @IBOutlet var renderView : GPUImageView!
     @IBOutlet var bottomMaskView : UIView!
     @IBOutlet var topMaskView : UIView!
+    @IBOutlet var topMaskViewHeight : NSLayoutConstraint!
+    @IBOutlet var bottomMaskViewheight : NSLayoutConstraint!
 
     
     override func viewDidLoad() {
@@ -86,19 +87,27 @@ UINavigationControllerDelegate{
     func applyLayout(preViewType:ImageRatio) ->Void {
         self.preViewType = preViewType
 
-        switch preViewType {
+        let preViewHeight = self.view.width / 3.0 * 4.0
+        let ajustY = -preViewHeight * 0.125
+        
+        UIView.animate(withDuration: 0.2) {
+            switch preViewType {
             case ImageRatio.Type1v1:
-                topMaskView.isHidden = false
-                bottomMaskView.isHidden = false
-                rationBtn.setTitle("1:1", for: UIControlState.normal)
+                
+                self.topMaskViewHeight.constant = 0
+                self.bottomMaskViewheight.constant = 0
+                self.rationBtn.setTitle("1:1", for: UIControlState.normal)
                 break
             case ImageRatio.Type4v3:
                 //
-                topMaskView.isHidden = true
-                bottomMaskView.isHidden = true
-                rationBtn.setTitle("4:3", for: UIControlState.normal)
+                self.topMaskViewHeight.constant = ajustY
+                self.bottomMaskViewheight.constant = ajustY
+                self.rationBtn.setTitle("4:3", for: UIControlState.normal)
                 break
+            }
+            self.renderBackView.layoutIfNeeded()
         }
+        
         //
     }
     
@@ -207,21 +216,14 @@ UINavigationControllerDelegate{
         if selectFilters.count > 0 {
             let toonFilter  = selectFilters.first as! GPUImageFilter
             toonFilter.removeAllTargets()
-            
             let pictureInput = GPUImagePicture.init(image: originImage)
             pictureInput?.addTarget(toonFilter)
             toonFilter.useNextFrameForImageCapture()
             pictureInput?.processImage()
-            let processImage = toonFilter.imageFromCurrentFramebuffer()
-//            pictureInput --> toonFilter --> pictureOutput
-//            pictureOutput.imageAvailableCallback = {image in
-//                processImage = image
-//                self.goNextWith(originImage: originImage, processImage: processImage)
-//            }
-//            pictureInput.processImage(synchronously:true)
-        }else {
-            self.goNextWith(originImage: originImage, processImage: processImage)
+            processImage = toonFilter.imageFromCurrentFramebuffer()
         }
+        
+        self.goNextWith(originImage: originImage, processImage: processImage)
     }
 
     func goNextWith(originImage : UIImage!, processImage : UIImage!) {
@@ -229,7 +231,7 @@ UINavigationControllerDelegate{
         let processVC = storyboard.instantiateViewController(withIdentifier: "ProcessViewController") as! ProcessViewController
         processVC.originImage = originImage
         processVC.processImage = processImage
-        
+        processVC.lastSelectIndex = self.filterListView?.lastSelectIndex
         DispatchQueue.main.async {
             MBProgressHUD.hide(for: self.view, animated: true)
             self.navigationController?.pushViewController(processVC, animated: true)

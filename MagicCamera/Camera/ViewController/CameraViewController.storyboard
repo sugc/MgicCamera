@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13527"/>
         <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
         <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -201,6 +201,7 @@
                     <connections>
                         <outlet property="albumBtn" destination="RWR-iG-n5q" id="MHK-DY-8ZC"/>
                         <outlet property="bottomMaskView" destination="d4x-pY-vgL" id="rxQ-IO-WnD"/>
+                        <outlet property="bottomMaskViewheight" destination="KgH-Qd-mir" id="ilp-Qx-gxz"/>
                         <outlet property="filterListView" destination="gGy-1b-O5x" id="Pah-lA-arX"/>
                         <outlet property="flashBtn" destination="BQe-ct-Jcw" id="j6x-Ze-z4T"/>
                         <outlet property="rationBtn" destination="Jp0-C8-9pY" id="bYB-Xu-fDL"/>
@@ -208,6 +209,7 @@
                         <outlet property="renderView" destination="5uy-lH-M93" id="L4v-vj-fre"/>
                         <outlet property="reveseBtn" destination="3EU-iO-X2Z" id="m2z-aJ-ZeH"/>
                         <outlet property="topMaskView" destination="qxP-hX-5Qi" id="4Sh-8n-gBZ"/>
+                        <outlet property="topMaskViewHeight" destination="j3G-SC-4Og" id="ZHv-Hv-YyW"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="LQy-Ux-Sk8" userLabel="First Responder" sceneMemberID="firstResponder"/>

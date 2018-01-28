@@ -332,34 +332,14 @@ class JournalView: UIView, UITextViewDelegate, TouchTextViewDelegate{
             return
         }
         
-        let toonFilter = filters.first!
-        toonFilter.removeAllTargets()
-        let orient = oriImage.imageOrientation.rawValue % 4
-        var imgOrient : UIImageOrientation
-        switch orient {
-        case 0:
-//            imgOrient = UIImageOrientation.portrait
-            break
-        case 1:
-//            imgOrient = UIImageOrientation.portraitUpsideDown
-            break
-        case 2:
-//            imgOrient = UIImageOrientation.landscapeLeft
-            break
-        case 3:
-//            imgOrient = UIImageOrientation.landscapeRight
-            break
-        default:
-//            imgOrient = ImageOrientation.portrait
-            break
-        }
-        
-        
+        let filter = filters.first!
+        filter.removeAllTargets()
+       
         let inputImage = GPUImagePicture.init(image: oriImage)
-        inputImage?.addTarget(toonFilter)
-        toonFilter.useNextFrameForImageCapture()
+        inputImage?.addTarget(filter)
+        filter.useNextFrameForImageCapture()
         inputImage?.processImage()
-        let filteredImage = toonFilter.imageFromCurrentFramebuffer()
+        let filteredImage = filter.imageFromCurrentFramebuffer()
         
         self.cutViewArray[self.selectIndex].image = filteredImage
     }

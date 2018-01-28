@@ -251,7 +251,7 @@ class JournalViewController : UIViewController, ConfirmTextViewDelegate, FilterL
     }
     
     func applyFilter(filters: Array<GPUImageFilter>) {
-//        journalView.setFilter(filters: filters)
+        journalView.setFilter(filters: filters)
     }
     
     func applyLookUpImage(lookUpImage: UIImage?) {

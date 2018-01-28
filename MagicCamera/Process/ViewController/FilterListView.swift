@@ -27,7 +27,6 @@ class FilterListView : UIView, UICollectionViewDataSource, UICollectionViewDeleg
     var lastSelectIndex : IndexPath! = IndexPath.init(row: -1, section: -1)
     var dataArray : Array<Any>!
     var selectedSection : Int!
-    var filter : LookupFilter16 = LookupFilter16.init()
     var currentFilterInfo : FilterInfo?
 
     required init?(coder aDecoder: NSCoder) {
@@ -91,6 +90,10 @@ class FilterListView : UIView, UICollectionViewDataSource, UICollectionViewDeleg
         let filterInfo = filterManager.configArray[indexPath.section].filterInfos[indexPath.row]
         
         cell.imageName = filterInfo.thumderImageName
+        
+        let str = String.init(format: "%ld", indexPath.row)
+        cell.titleLabel.text = str as String
+        
         return cell
     }
     
@@ -145,14 +148,14 @@ class FilterListView : UIView, UICollectionViewDataSource, UICollectionViewDeleg
             cell?.isSelect = true
             let filterInfo = filterManager.configArray[indexPath.section].filterInfos[indexPath.row]
             filters = getFilters(filterInfo: filterInfo)
-            image = UIImage.init(contentsOfFile: filterInfo.lookImageName)!
+//            image = UIImage.init(contentsOfFile: filterInfo.filterFileName)!
             lastSelectIndex = indexPath
             currentFilterInfo = filterInfo
         }
     
         collectionView.scrollToItem(at: indexPath, at: UICollectionViewScrollPosition.centeredHorizontally, animated: true)
         //应用滤镜
-        filterDelegate?.applyLookUpImage(lookUpImage: image)
+//        filterDelegate?.applyLookUpImage(lookUpImage: image)
         filterDelegate?.applyFilter(filters: filters)
     }
     
@@ -199,21 +202,49 @@ class FilterListView : UIView, UICollectionViewDataSource, UICollectionViewDeleg
     }
     
     func getFilters(filterInfo:FilterInfo) -> Array<GPUImageFilter> {
-        let image = UIImage.init(contentsOfFile: filterInfo.lookImageName)!
-        filter = LookupFilter16()
-        let lookupImage = GPUImagePicture.init(image: image)
-        filter.lookupImage = lookupImage;
-        return [filter]
+        
+        let fileName = filterInfo.filterFileName!
+        var filter : GPUImageFilter? = nil
+        
+        if fileName.hasSuffix(".acv") {
+            let url = URL.init(fileURLWithPath: fileName)
+            filter = GPUImageToneCurveFilter.init(acvurl: url)
+        }
+        
+        if fileName.hasSuffix(".png") {
+            let image = UIImage.init(contentsOfFile: filterInfo.filterFileName)!
+            filter = LookupFilter16()
+            let lookupImage = GPUImagePicture.init(image: image)
+            let lookupFilter : LookupFilter16 = filter as! LookupFilter16
+            lookupFilter.lookupImage = lookupImage
+        }
+        
+       
+        return [filter!]
     }
     
     func getCurrentFilters() -> Array<GPUImageFilter>! {
         
         if (currentFilterInfo != nil) {
-            let image = UIImage.init(contentsOfFile: currentFilterInfo!.lookImageName)!
-            let newFilter = LookupFilter16.init()
-            let lookupImage = GPUImagePicture.init(image: image)
-            newFilter.lookupImage = lookupImage;
-            return [newFilter]
+            
+            let fileName = currentFilterInfo!.filterFileName!
+            var filter : GPUImageFilter? = nil
+            
+            if fileName.hasSuffix(".acv") {
+                let url = URL.init(fileURLWithPath: fileName)
+                filter = GPUImageToneCurveFilter.init(acvurl: url)
+            }
+            
+            if fileName.hasSuffix(".png") {
+                let image = UIImage.init(contentsOfFile: currentFilterInfo!.filterFileName)!
+                filter = LookupFilter16()
+                let lookupImage = GPUImagePicture.init(image: image)
+                let lookupFilter : LookupFilter16 = filter as! LookupFilter16
+                lookupFilter.lookupImage = lookupImage
+                lookupFilter.intensity = 0.5
+            }
+            
+            return [filter!]
         }
         return []
     }
