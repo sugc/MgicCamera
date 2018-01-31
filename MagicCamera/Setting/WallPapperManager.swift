@@ -36,12 +36,14 @@ class WallPapperManager: NSObject, UICollectionViewDataSource, UICollectionViewD
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "WallPapperCell", for: indexPath) as! WallPapperCell
-        cell.backgroundColor = UIColor.red
+//        cell.backgroundColor = UIColor.red
         cell.delegate = self
         cell.image = imageArray[indexPath.row]
         cell.index = indexPath.row
         if indexPath.row == (imageArray.count - 1) {
             cell.deleteBtn.isHidden = true
+        }else {
+            cell.deleteBtn.isHidden = false
         }
         
         return cell

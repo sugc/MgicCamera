@@ -25,7 +25,7 @@ class WallPaperViewController: UIViewController {
     func layout() {
         //
         //计算
-        let containerHeight = ScreenHeight - iPhoneXSafeDistance - 35 - 10 - 50 - 60
+        let containerHeight = ScreenHeight - iPhoneXSafeDistance - 35 - 10 - 50 - 60 - 100
         let cellHeight = containerHeight - 40
         let ratio = ScreenHeight / ScreenWidth
         let imageheight = cellHeight - 35

@@ -14,10 +14,11 @@ class SettingViewManager: NSObject, UITableViewDelegate, UITableViewDataSource {
     let dataArray : Array<Dictionary<String,Any>> =
                     [
                      ["title":"意见反馈","action":#selector(sendSuggestion)],
-                     ["title":"给我们好评","action":#selector(goFiveStar)]]
+                     ["title":"给我们好评","action":#selector(goFiveStar)],
+                      ["title":"开屏壁纸","action":#selector(setlaunchImage)]]
     
 //    ["title":"关于","action":#selector(showAbout)],
-//    ["title":"开屏壁纸","action":#selector(setlaunchImage)],
+   
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return dataArray.count
