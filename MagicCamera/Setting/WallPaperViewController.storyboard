@@ -62,6 +62,13 @@
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="88C-Xj-RSk">
                                                 <rect key="frame" x="-0.5" y="50" width="375" height="60"/>
                                                 <subviews>
+                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="NA6-qN-ym1">
+                                                        <rect key="frame" x="-0.5" y="0.0" width="375" height="0.5"/>
+                                                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="0.5" id="Vmr-cL-aBL"/>
+                                                        </constraints>
+                                                    </view>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="开启壁纸" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nOZ-dr-HF0">
                                                         <rect key="frame" x="15" y="10" width="69.5" height="40"/>
                                                         <constraints>
@@ -92,10 +99,13 @@
                                                     <constraint firstItem="nOZ-dr-HF0" firstAttribute="centerY" secondItem="88C-Xj-RSk" secondAttribute="centerY" id="7Wl-fP-HXV"/>
                                                     <constraint firstAttribute="trailing" secondItem="3xB-cu-6mw" secondAttribute="trailing" constant="10" id="DnT-bi-owg"/>
                                                     <constraint firstItem="icH-Fg-mg3" firstAttribute="width" secondItem="88C-Xj-RSk" secondAttribute="width" id="MOP-rV-c9f"/>
+                                                    <constraint firstItem="NA6-qN-ym1" firstAttribute="centerX" secondItem="88C-Xj-RSk" secondAttribute="centerX" id="RF8-M7-4A2"/>
+                                                    <constraint firstItem="NA6-qN-ym1" firstAttribute="width" secondItem="88C-Xj-RSk" secondAttribute="width" id="UTb-sa-oiK"/>
                                                     <constraint firstItem="nOZ-dr-HF0" firstAttribute="leading" secondItem="88C-Xj-RSk" secondAttribute="leading" constant="15" id="Yty-J8-WX0"/>
                                                     <constraint firstAttribute="height" constant="60" id="cgU-n3-X0B"/>
                                                     <constraint firstItem="icH-Fg-mg3" firstAttribute="centerX" secondItem="88C-Xj-RSk" secondAttribute="centerX" id="gZx-a4-MbZ"/>
                                                     <constraint firstAttribute="bottom" secondItem="icH-Fg-mg3" secondAttribute="bottom" id="k3I-uP-ewZ"/>
+                                                    <constraint firstItem="NA6-qN-ym1" firstAttribute="top" secondItem="88C-Xj-RSk" secondAttribute="top" id="rta-9I-nzR"/>
                                                 </constraints>
                                             </view>
                                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" contentInsetAdjustmentBehavior="never" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="Ldy-x6-C5b">
@@ -159,7 +169,7 @@
                                             </collectionView>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="RJ8-qk-RvV">
                                                 <rect key="frame" x="0.0" y="501.5" width="375" height="0.5"/>
-                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="0.5" id="bjw-b8-xd9"/>
                                                 </constraints>
@@ -185,7 +195,7 @@
                                             <constraint firstItem="88C-Xj-RSk" firstAttribute="centerX" secondItem="LdE-9N-Z5X" secondAttribute="centerX" id="c8f-W1-I5x"/>
                                             <constraint firstItem="Ldy-x6-C5b" firstAttribute="centerX" secondItem="LdE-9N-Z5X" secondAttribute="centerX" id="foZ-xz-eQW"/>
                                             <constraint firstItem="hP7-Zq-sC0" firstAttribute="top" secondItem="Ldy-x6-C5b" secondAttribute="bottom" constant="10" id="qgg-OD-SnV"/>
-                                            <constraint firstItem="RJ8-qk-RvV" firstAttribute="bottom" secondItem="Ldy-x6-C5b" secondAttribute="bottom" id="rPL-y5-ZXu"/>
+                                            <constraint firstItem="RJ8-qk-RvV" firstAttribute="bottom" secondItem="Ldy-x6-C5b" secondAttribute="bottom" constant="-0.5" id="rPL-y5-ZXu"/>
                                             <constraint firstAttribute="bottom" secondItem="Ldy-x6-C5b" secondAttribute="bottom" constant="100" id="wDa-Lz-NSI"/>
                                             <constraint firstItem="IAx-xR-X2e" firstAttribute="width" secondItem="LdE-9N-Z5X" secondAttribute="width" id="zA9-Aa-hmh"/>
                                         </constraints>

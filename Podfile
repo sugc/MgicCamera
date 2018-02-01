@@ -14,6 +14,7 @@ use_frameworks!
 pod 'MBProgressHUD'
 pod 'skpsmtpmessage'
 pod 'GPUImage'
+pod 'FMDB'
 #pod 'libWeChatSDK', '~> 1.7.1'
 
 end

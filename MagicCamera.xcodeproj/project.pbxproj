@@ -410,6 +410,7 @@
 		896A7C791F66DE9700FC369B /* MagicCamera */ = {
 			isa = PBXGroup;
 			children = (
+				8A64BE4E202206F70022506D /* Base */,
 				8AA601751FE940C500809F64 /* Setting */,
 				898FF8041FC95B2E001987B4 /* PhotoPicker */,
 				898FF7FA1FC95AAA001987B4 /* UItilView */,
@@ -726,6 +727,21 @@
 			path = Extension;
 			sourceTree = "<group>";
 		};
+		8A64BE4E202206F70022506D /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				8A64BE4F202207130022506D /* FMDB */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		8A64BE4F202207130022506D /* FMDB */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = FMDB;
+			sourceTree = "<group>";
+		};
 		8AA601751FE940C500809F64 /* Setting */ = {
 			isa = PBXGroup;
 			children = (
@@ -982,6 +998,7 @@
 			);
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-MagicCamera/Pods-MagicCamera-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/FMDB/FMDB.framework",
 				"${BUILT_PRODUCTS_DIR}/GPUImage/GPUImage.framework",
 				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
 				"${BUILT_PRODUCTS_DIR}/MBProgressHUD/MBProgressHUD.framework",
@@ -993,6 +1010,7 @@
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FMDB.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GPUImage.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MBProgressHUD.framework",
