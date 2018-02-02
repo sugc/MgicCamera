@@ -108,6 +108,8 @@
 		8A3EC72E200792E500D96020 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 8A3EC730200792E500D96020 /* Localizable.strings */; };
 		8A41D4A81FE20A1800F7D39C /* NomalDefinition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A41D4A71FE20A1800F7D39C /* NomalDefinition.swift */; };
 		8A47D85620023F3B00F6BE86 /* M6.JPG in Resources */ = {isa = PBXBuildFile; fileRef = 8A47D85520023F3B00F6BE86 /* M6.JPG */; };
+		8A4FF6E72023FAA200A4B1D1 /* DBBaseManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A4FF6E62023FAA200A4B1D1 /* DBBaseManager.swift */; };
+		8A4FF6EE2024AE2B00A4B1D1 /* WallPapperDBMananer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A4FF6ED2024AE2B00A4B1D1 /* WallPapperDBMananer.swift */; };
 		8A62F89D1FF1DFDB00AD9FD0 /* WallPapperCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A62F89C1FF1DFDB00AD9FD0 /* WallPapperCell.swift */; };
 		8A62F8A21FF1E16700AD9FD0 /* WallPapperManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A62F8A11FF1E16700AD9FD0 /* WallPapperManager.swift */; };
 		8A636BF01FFDBE8E000830DC /* WallPaperViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8A636BEF1FFDBE8E000830DC /* WallPaperViewController.storyboard */; };
@@ -278,6 +280,8 @@
 		8A3EC731200792E600D96020 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Localizable.strings"; sourceTree = "<group>"; };
 		8A41D4A71FE20A1800F7D39C /* NomalDefinition.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NomalDefinition.swift; sourceTree = "<group>"; };
 		8A47D85520023F3B00F6BE86 /* M6.JPG */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = M6.JPG; sourceTree = "<group>"; };
+		8A4FF6E62023FAA200A4B1D1 /* DBBaseManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DBBaseManager.swift; sourceTree = "<group>"; };
+		8A4FF6ED2024AE2B00A4B1D1 /* WallPapperDBMananer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WallPapperDBMananer.swift; sourceTree = "<group>"; };
 		8A62F89C1FF1DFDB00AD9FD0 /* WallPapperCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WallPapperCell.swift; sourceTree = "<group>"; };
 		8A62F8A11FF1E16700AD9FD0 /* WallPapperManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WallPapperManager.swift; sourceTree = "<group>"; };
 		8A636BEF1FFDBE8E000830DC /* WallPaperViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = WallPaperViewController.storyboard; sourceTree = "<group>"; };
@@ -738,6 +742,8 @@
 		8A64BE4F202207130022506D /* FMDB */ = {
 			isa = PBXGroup;
 			children = (
+				8A4FF6E62023FAA200A4B1D1 /* DBBaseManager.swift */,
+				8A4FF6ED2024AE2B00A4B1D1 /* WallPapperDBMananer.swift */,
 			);
 			path = FMDB;
 			sourceTree = "<group>";
@@ -1050,6 +1056,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8A4FF6EE2024AE2B00A4B1D1 /* WallPapperDBMananer.swift in Sources */,
 				898FF7CF1FC9535D001987B4 /* GLTexture.swift in Sources */,
 				898FF7951FC95195001987B4 /* FilterViewCell.swift in Sources */,
 				898FF7CE1FC9535D001987B4 /* GLProgram.swift in Sources */,
@@ -1084,6 +1091,7 @@
 				89C8C1011F9E3DBE003F8D2D /* UIImage+CGRect.swift in Sources */,
 				898FF7A21FC95291001987B4 /* UIColor+String.swift in Sources */,
 				898FF80F1FC95B2E001987B4 /* PhotoPickerCell.swift in Sources */,
+				8A4FF6E72023FAA200A4B1D1 /* DBBaseManager.swift in Sources */,
 				898FF80C1FC95B2E001987B4 /* PhotoPickerHandler.swift in Sources */,
 				898FF7D41FC9535D001987B4 /* CommonFilter.swift in Sources */,
 				898FF7D61FC9535D001987B4 /* MixFilter.swift in Sources */,
