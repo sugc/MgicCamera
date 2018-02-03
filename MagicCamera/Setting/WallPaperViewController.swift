@@ -8,7 +8,7 @@
 
 import Foundation
 
-class WallPaperViewController: UIViewController {
+class WallPaperViewController: UIViewController{
     //
     @IBOutlet var scrollView : UIScrollView!
     @IBOutlet var collectionView : UICollectionView!
@@ -16,17 +16,10 @@ class WallPaperViewController: UIViewController {
     
     var manager : WallPapperManager!
     
-    var imageArray : Array<Any>!
     override func viewDidLoad() {
         super.viewDidLoad()
         layout()
-        
-        let wallPapperManager = WallPapperDBMananer.init()
-        
-        let image = UIImage.init(named: "model.jpg")
-        wallPapperManager.inserImage(image: image!)
-        
-        wallPapperManager.getAllImage()
+        getData()
     }
     
     func layout() {
@@ -50,11 +43,10 @@ class WallPaperViewController: UIViewController {
     //获取设置的图片
     func getData() {
         //
-        let fileManager = FileManager.init()
+       
     }
     
     @IBAction func goBack() {
         self.navigationController?.popViewController(animated: true)
     }
-    
 }

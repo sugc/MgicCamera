@@ -54,9 +54,12 @@ class HomeViewController :
             wallPaperView = UIImageView.init(frame: self.view.bounds)
             wallPaperView?.contentMode = UIViewContentMode.scaleAspectFill
             self.view.addSubview(wallPaperView!)
-            wallPaperView?.image = UIImage.init(named:"model.jpg")
+            let dbManager = WallPapperDBMananer.init()
+            let allImage = dbManager.getAllImage()
+            wallPaperView?.image = allImage.first
         }
     }
+    
     
     func hideWallPaperAnimate() {
         if wallPaperView == nil {
