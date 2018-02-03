@@ -20,6 +20,13 @@ class WallPaperViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         layout()
+        
+        let wallPapperManager = WallPapperDBMananer.init()
+        
+        let image = UIImage.init(named: "model.jpg")
+        wallPapperManager.inserImage(image: image!)
+        
+        wallPapperManager.getAllImage()
     }
     
     func layout() {
