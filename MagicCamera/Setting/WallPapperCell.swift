@@ -16,6 +16,7 @@ class WallPapperCell: UICollectionViewCell {
     
     @IBOutlet var deleteBtn : UIButton!
     @IBOutlet var imageView : UIImageView!
+    @IBOutlet var addView : UIView!
     
     weak var delegate : WallPapperCellProtocol!
     var index : NSInteger = 0
@@ -45,5 +46,16 @@ class WallPapperCell: UICollectionViewCell {
     @IBAction func deleteImage() {
         //调用代理方法，删除数据源
         delegate.deleteImageAtIndex(index: index) 
+    }
+    
+    //判断有效区域
+    override func hitTest(_ point: CGPoint, with event: UIEvent?) -> UIView? {
+        
+        if self.addView.isHidden {
+            return super.hitTest(point, with: event)
+        }else if self.addView.frame.contains(point) {
+            return self
+        }
+        return nil
     }
 }

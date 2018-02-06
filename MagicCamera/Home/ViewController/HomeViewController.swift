@@ -50,13 +50,18 @@ class HomeViewController :
     
     func showWallPaper() {
         let isNeedShow = checkIsNeedShowWallPaper()
-        if isNeedShow {
-            wallPaperView = UIImageView.init(frame: self.view.bounds)
-            wallPaperView?.contentMode = UIViewContentMode.scaleAspectFill
-            self.view.addSubview(wallPaperView!)
-            let dbManager = WallPapperDBMananer.init()
-            let allImage = dbManager.getAllImage()
-            wallPaperView?.image = allImage.first
+        if !isNeedShow {
+          return
+        }
+        
+        wallPaperView = UIImageView.init(frame: self.view.bounds)
+        wallPaperView?.contentMode = UIViewContentMode.scaleAspectFill
+        self.view.addSubview(wallPaperView!)
+        let dbManager = WallPapperDBMananer.init()
+        let allImage = dbManager.getAllImage()
+        if allImage.count > 0 {
+            let num  = Int(arc4random_uniform(UInt32(allImage.count - 1)))
+            wallPaperView?.image = allImage[num]
         }
     }
     

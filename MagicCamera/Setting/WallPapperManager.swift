@@ -37,7 +37,11 @@ class WallPapperManager: NSObject, UICollectionViewDataSource, UICollectionViewD
         
         if indexPath.row >= (imageArray.count) {
             cell.deleteBtn.isHidden = true
+            cell.imageView.isHidden = true
+            cell.addView.isHidden = false
         }else {
+            cell.addView.isHidden = true
+            cell.imageView.isHidden = false
             cell.image = imageArray[indexPath.row]
             cell.deleteBtn.isHidden = false
         }

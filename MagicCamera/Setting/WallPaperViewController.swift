@@ -13,13 +13,14 @@ class WallPaperViewController: UIViewController{
     @IBOutlet var scrollView : UIScrollView!
     @IBOutlet var collectionView : UICollectionView!
     @IBOutlet var flowLayout : UICollectionViewFlowLayout!
+    @IBOutlet var switcher : UISwitch!
     
     var manager : WallPapperManager!
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        switcher.isOn = checkIsNeedShowWallPaper()
         layout()
-        getData()
     }
     
     func layout() {
@@ -40,10 +41,9 @@ class WallPaperViewController: UIViewController{
         manager.collectionView = collectionView
     }
     
-    //获取设置的图片
-    func getData() {
-        //
-       
+    
+    @IBAction func switchValueChange(_ sender: UISwitch) {
+        setIsNeedShowWallPaper(isNeedShow: sender.isOn)
     }
     
     @IBAction func goBack() {
