@@ -373,7 +373,7 @@
 				8AAC4020201C9B8700FA0606 /* lookup_amatorka.png */,
 				8A0812FA2019F6EB00908C3B /* 2.jpg */,
 				8AD7B8572008E39300042CFC /* model.jpg */,
-				8ABD143F1FD6E03000F1AA64 /* jjournalSource */,
+				8ABD143F1FD6E03000F1AA64 /* journalSource */,
 				8A8A719F1FD82B87008B214E /* M1.JPG */,
 				8A8A71AB1FD835A5008B214E /* M2.JPG */,
 				8A8A71A31FD82B93008B214E /* M3.JPG */,
@@ -763,7 +763,7 @@
 			path = Setting;
 			sourceTree = "<group>";
 		};
-		8ABD143F1FD6E03000F1AA64 /* jjournalSource */ = {
+		8ABD143F1FD6E03000F1AA64 /* journalSource */ = {
 			isa = PBXGroup;
 			children = (
 				8A8A71921FD82669008B214E /* journalConfig.plist */,
@@ -777,7 +777,7 @@
 				8ABD144B1FD6E11700F1AA64 /* M8 */,
 				8ABD144D1FD6E11700F1AA64 /* M9 */,
 			);
-			path = jjournalSource;
+			path = journalSource;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
