@@ -99,6 +99,7 @@ class HomeViewController :
         requestPhotoAuthority { (authorized : Bool) in
             if authorized {
                 let imagePick = UIImagePickerController.init()
+                imagePick.allowsEditing = false;
                 imagePick.delegate = self
                 self.present(imagePick, animated: true) {}
             }
@@ -122,7 +123,10 @@ class HomeViewController :
     
     func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [String : Any]) {
         //
-        let image = info[UIImagePickerControllerOriginalImage] as! UIImage
+        
+        let tempImage = info[UIImagePickerControllerOriginalImage] as! UIImage
+        let image = tempImage.fixOrientation()
+//        let image = tempImage
         
         let storyboard = UIStoryboard.init(name: "ProcessViewController", bundle: nil)
         let processVC = storyboard.instantiateViewController(withIdentifier: "ProcessViewController") as! ProcessViewController
