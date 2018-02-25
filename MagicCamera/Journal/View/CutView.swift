@@ -11,6 +11,7 @@ import Foundation
 class CutView: UIView , UIGestureRecognizerDelegate{
     
     private var panGesture: UIPanGestureRecognizer!
+    private var pinchGesture : UIPinchGestureRecognizer!
     private var lastPoint : CGPoint!
     
     var imageView : UIImageView!
@@ -35,6 +36,10 @@ class CutView: UIView , UIGestureRecognizerDelegate{
                                             action: #selector(pan(gesture:)))
         panGesture.delegate = self
         self.addGestureRecognizer(panGesture)
+        
+        pinchGesture = UIPinchGestureRecognizer.init(target: self, action: #selector(scale(gesture:)))
+        pinchGesture.delegate = self
+        self.addGestureRecognizer(pinchGesture)
     }
    
     
@@ -131,6 +136,10 @@ class CutView: UIView , UIGestureRecognizerDelegate{
         
         }
         
+    }
+    
+    func scale(gesture:UIPinchGestureRecognizer) {
+        //
     }
     
     func getTextCoords() -> Array <GLfloat> {
