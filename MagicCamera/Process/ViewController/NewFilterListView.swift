@@ -136,6 +136,7 @@ class NewFilterListView : UIView, UICollectionViewDataSource, UICollectionViewDe
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         
+        self.isUserInteractionEnabled = false
         //获取滤镜信息
         let lastCell = collectionView.cellForItem(at: lastSelectIndex!) as? FilterListViewCell
         lastCell?.isSelect = false
@@ -151,14 +152,17 @@ class NewFilterListView : UIView, UICollectionViewDataSource, UICollectionViewDe
             cell?.isSelect = true
             let filterInfo = filterManager.configArray[indexPath.section].filterInfos[indexPath.row]
             filters = getFilters(filterInfo: filterInfo)
-            //            image = UIImage.init(contentsOfFile: filterInfo.filterFileName)!
+           
             lastSelectIndex = indexPath
             currentFilterInfo = filterInfo
         }
         
         collectionView.scrollToItem(at: indexPath, at: UICollectionViewScrollPosition.centeredHorizontally, animated: true)
-        //应用滤镜
-        //        filterDelegate?.applyLookUpImage(lookUpImage: image)
+        weak var weakSelf = self
+        DispatchQueue.main.asyncAfter(deadline: .now() + 0.1) {
+            weakSelf?.isUserInteractionEnabled = true
+        }
+ 
         filterDelegate?.applyFilter(filters: filters)
     }
     
@@ -169,6 +173,7 @@ class NewFilterListView : UIView, UICollectionViewDataSource, UICollectionViewDe
             return
         }
         
+        self.isUserInteractionEnabled = false
         var isNeedInsert = true
         var array : Array<IndexPath> = []
         var deleteArray : Array<IndexPath> = []
@@ -199,7 +204,7 @@ class NewFilterListView : UIView, UICollectionViewDataSource, UICollectionViewDe
                 self.listCollectionView.insertItems(at: array)
             }
         }){ (isFinish) in
-            
+            self.isUserInteractionEnabled = true
         }
         print("")
     }
@@ -221,7 +226,6 @@ class NewFilterListView : UIView, UICollectionViewDataSource, UICollectionViewDe
             let lookupFilter : LookupFilter16 = filter as! LookupFilter16
             lookupFilter.lookupImage = lookupImage
         }
-        
         
         return [filter!]
     }
