@@ -8,25 +8,19 @@
 
 import Foundation
 
-class WallPaperViewController: UIViewController {
+class WallPaperViewController: UIViewController{
     //
     @IBOutlet var scrollView : UIScrollView!
     @IBOutlet var collectionView : UICollectionView!
     @IBOutlet var flowLayout : UICollectionViewFlowLayout!
+    @IBOutlet var switcher : UISwitch!
     
     var manager : WallPapperManager!
     
-    var imageArray : Array<Any>!
     override func viewDidLoad() {
         super.viewDidLoad()
+        switcher.isOn = checkIsNeedShowWallPaper()
         layout()
-        
-        let wallPapperManager = WallPapperDBMananer.init()
-        
-        let image = UIImage.init(named: "model.jpg")
-        wallPapperManager.inserImage(image: image!)
-        
-        wallPapperManager.getAllImage()
     }
     
     func layout() {
@@ -47,14 +41,12 @@ class WallPaperViewController: UIViewController {
         manager.collectionView = collectionView
     }
     
-    //获取设置的图片
-    func getData() {
-        //
-        let fileManager = FileManager.init()
+    
+    @IBAction func switchValueChange(_ sender: UISwitch) {
+        setIsNeedShowWallPaper(isNeedShow: sender.isOn)
     }
     
     @IBAction func goBack() {
         self.navigationController?.popViewController(animated: true)
     }
-    
 }

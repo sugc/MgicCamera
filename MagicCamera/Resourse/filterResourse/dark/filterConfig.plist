@@ -36,7 +36,7 @@
 	</dict>
 	<dict>
 		<key>filterFileName</key>
-		<string>lookup.png</string>
+		<string>vivid_curve.acv</string>
 		<key>filterId</key>
 		<string>0003</string>
 		<key>filterName</key>
@@ -55,6 +55,30 @@
 		<string>lookup.png</string>
 		<key>filterId</key>
 		<string>0005</string>
+		<key>filterName</key>
+		<string>B&amp;W</string>
+	</dict>
+	<dict>
+		<key>filterFileName</key>
+		<string>violet_curve.acv</string>
+		<key>filterId</key>
+		<string>0008</string>
+		<key>filterName</key>
+		<string>B&amp;W</string>
+	</dict>
+	<dict>
+		<key>filterFileName</key>
+		<string>violet_curve.acv</string>
+		<key>filterId</key>
+		<string>0009</string>
+		<key>filterName</key>
+		<string>B&amp;W</string>
+	</dict>
+	<dict>
+		<key>filterFileName</key>
+		<string>cerulean_curve.acv</string>
+		<key>filterId</key>
+		<string>0010</string>
 		<key>filterName</key>
 		<string>B&amp;W</string>
 	</dict>

@@ -50,13 +50,21 @@ class HomeViewController :
     
     func showWallPaper() {
         let isNeedShow = checkIsNeedShowWallPaper()
-        if isNeedShow {
-            wallPaperView = UIImageView.init(frame: self.view.bounds)
-            wallPaperView?.contentMode = UIViewContentMode.scaleAspectFill
-            self.view.addSubview(wallPaperView!)
-            wallPaperView?.image = UIImage.init(named:"model.jpg")
+        if !isNeedShow {
+          return
+        }
+        
+        wallPaperView = UIImageView.init(frame: self.view.bounds)
+        wallPaperView?.contentMode = UIViewContentMode.scaleAspectFill
+        self.view.addSubview(wallPaperView!)
+        let dbManager = WallPapperDBMananer.init()
+        let allImage = dbManager.getAllImage()
+        if allImage.count > 0 {
+            let num  = Int(arc4random_uniform(UInt32(allImage.count - 1)))
+            wallPaperView?.image = allImage[num]
         }
     }
+    
     
     func hideWallPaperAnimate() {
         if wallPaperView == nil {
@@ -91,6 +99,7 @@ class HomeViewController :
         requestPhotoAuthority { (authorized : Bool) in
             if authorized {
                 let imagePick = UIImagePickerController.init()
+                imagePick.allowsEditing = false;
                 imagePick.delegate = self
                 self.present(imagePick, animated: true) {}
             }
@@ -114,7 +123,10 @@ class HomeViewController :
     
     func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [String : Any]) {
         //
-        let image = info[UIImagePickerControllerOriginalImage] as! UIImage
+        
+        let tempImage = info[UIImagePickerControllerOriginalImage] as! UIImage
+        let image = tempImage.fixOrientation()
+//        let image = tempImage
         
         let storyboard = UIStoryboard.init(name: "ProcessViewController", bundle: nil)
         let processVC = storyboard.instantiateViewController(withIdentifier: "ProcessViewController") as! ProcessViewController

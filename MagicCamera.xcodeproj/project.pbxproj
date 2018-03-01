@@ -136,6 +136,7 @@
 		8ABD14561FD6E11700F1AA64 /* M6 in Resources */ = {isa = PBXBuildFile; fileRef = 8ABD144F1FD6E11700F1AA64 /* M6 */; };
 		8ABD14581FD6E12D00F1AA64 /* M1 in Resources */ = {isa = PBXBuildFile; fileRef = 8ABD14571FD6E12D00F1AA64 /* M1 */; };
 		8AD7B85B2008E39300042CFC /* model.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 8AD7B8572008E39300042CFC /* model.jpg */; };
+		8ADBDD5C2042D4B50009F57A /* ClipView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8ADBDD5B2042D4B50009F57A /* ClipView.swift */; };
 		8AF10FD420064F4B00D804BF /* StatusUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AF10FD320064F4B00D804BF /* StatusUtil.swift */; };
 /* End PBXBuildFile section */
 
@@ -310,6 +311,7 @@
 		8ABD144F1FD6E11700F1AA64 /* M6 */ = {isa = PBXFileReference; lastKnownFileType = folder; path = M6; sourceTree = "<group>"; };
 		8ABD14571FD6E12D00F1AA64 /* M1 */ = {isa = PBXFileReference; lastKnownFileType = folder; path = M1; sourceTree = "<group>"; };
 		8AD7B8572008E39300042CFC /* model.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = model.jpg; sourceTree = "<group>"; };
+		8ADBDD5B2042D4B50009F57A /* ClipView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClipView.swift; sourceTree = "<group>"; };
 		8AF10FD320064F4B00D804BF /* StatusUtil.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatusUtil.swift; sourceTree = "<group>"; };
 		AC7BC624126B2FF80E13B9E9 /* Pods-MagicCamera.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MagicCamera.release.xcconfig"; path = "Pods/Target Support Files/Pods-MagicCamera/Pods-MagicCamera.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -375,7 +377,7 @@
 				8AAC4020201C9B8700FA0606 /* lookup_amatorka.png */,
 				8A0812FA2019F6EB00908C3B /* 2.jpg */,
 				8AD7B8572008E39300042CFC /* model.jpg */,
-				8ABD143F1FD6E03000F1AA64 /* jjournalSource */,
+				8ABD143F1FD6E03000F1AA64 /* journalSource */,
 				8A8A719F1FD82B87008B214E /* M1.JPG */,
 				8A8A71AB1FD835A5008B214E /* M2.JPG */,
 				8A8A71A31FD82B93008B214E /* M3.JPG */,
@@ -630,6 +632,7 @@
 				898FF7FB1FC95AAA001987B4 /* AutoScrollView.swift */,
 				898FF7FC1FC95AAA001987B4 /* DesignedTextView.swift */,
 				898FF7FD1FC95AAA001987B4 /* WaterFlow */,
+				8ADBDD5B2042D4B50009F57A /* ClipView.swift */,
 			);
 			path = UItilView;
 			sourceTree = "<group>";
@@ -766,7 +769,7 @@
 			path = Setting;
 			sourceTree = "<group>";
 		};
-		8ABD143F1FD6E03000F1AA64 /* jjournalSource */ = {
+		8ABD143F1FD6E03000F1AA64 /* journalSource */ = {
 			isa = PBXGroup;
 			children = (
 				8A8A71921FD82669008B214E /* journalConfig.plist */,
@@ -780,7 +783,7 @@
 				8ABD144B1FD6E11700F1AA64 /* M8 */,
 				8ABD144D1FD6E11700F1AA64 /* M9 */,
 			);
-			path = jjournalSource;
+			path = journalSource;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -1116,6 +1119,7 @@
 				898FF79B1FC95285001987B4 /* CGRect+String.swift in Sources */,
 				898FF8021FC95AAA001987B4 /* WaterFlowLayout.swift in Sources */,
 				8A41D4A81FE20A1800F7D39C /* NomalDefinition.swift in Sources */,
+				8ADBDD5C2042D4B50009F57A /* ClipView.swift in Sources */,
 				898FF7D71FC9535D001987B4 /* PipFilter.swift in Sources */,
 				898FF7991FC95195001987B4 /* JournalViewController.swift in Sources */,
 				8A9B11241FF32D9700D456DD /* AuthorityUtil.swift in Sources */,

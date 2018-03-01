@@ -42,5 +42,21 @@
 		<key>filterName</key>
 		<string>B&amp;W</string>
 	</dict>
+	<dict>
+		<key>filterFileName</key>
+		<string>cool_curve.acv</string>
+		<key>filterId</key>
+		<string>0006</string>
+		<key>filterName</key>
+		<string>B&amp;W</string>
+	</dict>
+	<dict>
+		<key>filterFileName</key>
+		<string>cold_curve.acv</string>
+		<key>filterId</key>
+		<string>0007</string>
+		<key>filterName</key>
+		<string>B&amp;W</string>
+	</dict>
 </array>
 </plist>

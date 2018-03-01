@@ -101,7 +101,15 @@ class DBManager: NSObject {
         
         return array
     }
+    
+    //获取最新的键值
+    func lastRowId() -> NSInteger {
+        return NSInteger(dbHandler.lastInsertRowId)
+    }
    
+    deinit {
+        dbHandler.close()
+    }
 }
 
 
