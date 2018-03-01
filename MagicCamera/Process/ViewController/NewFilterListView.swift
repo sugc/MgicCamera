@@ -1,37 +1,35 @@
 //
-//  FilterListView.swift
+//  NewFilterListView.swift
 //  MagicCamera
 //
-//  Created by sugc on 2017/9/15.
-//  Copyright © 2017年 sugc. All rights reserved.
+//  Created by sugc on 2018/3/1.
+//  Copyright © 2018年 sugc. All rights reserved.
 //
 
 import Foundation
 import UIKit
 import GPUImage
 
-protocol FilterListViewProtocol:NSObjectProtocol {
+protocol newFilterListViewProtocol:NSObjectProtocol {
     func applyFilter(filters:Array<GPUImageFilter>)
     func applyLookUpImage(lookUpImage:UIImage?)
     func didbeganApplyFilter()
     func shoulApplyHeaderAction() -> Bool
 }
 
-class FilterListView : UIView, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout, FilterListViewHeaderDelegate {
-
-    @IBOutlet var listCollectionView : UICollectionView!
-    @IBOutlet var contentView : UIView!
-    @IBOutlet var layout : UICollectionViewFlowLayout!
-    weak var filterDelegate : FilterListViewProtocol?
+class NewFilterListView : UIView, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout, FilterListViewHeaderDelegate {
+    
+    var listCollectionView : UICollectionView!
+    var layout : UICollectionViewFlowLayout!
+    weak var filterDelegate : newFilterListViewProtocol?
     var filterManager : FilterManager!
     var lastSelectIndex : IndexPath! = IndexPath.init(row: -1, section: -1)
     var dataArray : Array<Any>!
     var selectedSection : Int!
     var currentFilterInfo : FilterInfo?
-
+    
     required init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
-        comonInit()
     }
     
     override init(frame: CGRect) {
@@ -40,21 +38,28 @@ class FilterListView : UIView, UICollectionViewDataSource, UICollectionViewDeleg
     }
     
     func comonInit()  {
-        let bundle = Bundle.init(for: type(of: self))
-        let nib = UINib(nibName: "FilterListView", bundle: bundle)
-        contentView = nib.instantiate(withOwner: self, options: nil)[0] as! UIView
-        contentView.frame = bounds
-        self.addSubview(contentView)
+        layout = UICollectionViewFlowLayout.init()
+        layout.itemSize = CGSize.init(width: 60, height: 70)
+        layout.headerReferenceSize = CGSize.init(width: 60, height: 70)
+        layout.scrollDirection = UICollectionViewScrollDirection.horizontal
+        layout.minimumInteritemSpacing = 5
+        layout.sectionInset = UIEdgeInsets.init(top: 0, left: 5, bottom: 0, right: 5)
+        
+        let frame = CGRect.init(x: 0, y: (self.height - 70) / 2, width: self.width, height: 70)
+        listCollectionView = UICollectionView.init(frame: frame, collectionViewLayout: layout)
+        
+        listCollectionView.backgroundColor = UIColor.clear
+        listCollectionView.delegate = self
+        listCollectionView.dataSource = self
+        
         registerNib()
         selectedSection = -1
         let configPath = Bundle.main.path(forResource: "filterResourse", ofType: nil)
         filterManager = FilterManager.init(cofigPath: configPath!)
         self.isExclusiveTouch = true
+        self.addSubview(listCollectionView)
     }
     
-    override func awakeFromNib() {
-        super.awakeFromNib()
-    }
     
     
     func registerNib() {
@@ -66,14 +71,13 @@ class FilterListView : UIView, UICollectionViewDataSource, UICollectionViewDeleg
     
     override func layoutSubviews() {
         super.layoutSubviews()
-        contentView.frame = self.bounds
     }
     
     
     func preprareData() {
         dataArray = [["filterName":"B&W","thumbImage":"imageName"],
-                    ["filterName":"B&W","thumbImage":"imageName"]]
-
+                     ["filterName":"B&W","thumbImage":"imageName"]]
+        
     }
     
     
@@ -99,7 +103,7 @@ class FilterListView : UIView, UICollectionViewDataSource, UICollectionViewDeleg
     
     func collectionView(_ collectionView: UICollectionView, viewForSupplementaryElementOfKind kind: String, at indexPath: IndexPath) -> UICollectionReusableView {
         
-        if kind == UICollectionElementKindSectionHeader {
+        if kind != UICollectionElementKindSectionHeader {
             
         }
         
@@ -138,7 +142,6 @@ class FilterListView : UIView, UICollectionViewDataSource, UICollectionViewDeleg
         
         var filters : Array<GPUImageFilter> = []
         let cell = collectionView.cellForItem(at: indexPath) as? FilterListViewCell
-
         if (lastSelectIndex == indexPath) {
             cell?.isSelect = false
             lastSelectIndex = IndexPath.init(row: -1, section: -1)
@@ -148,14 +151,14 @@ class FilterListView : UIView, UICollectionViewDataSource, UICollectionViewDeleg
             cell?.isSelect = true
             let filterInfo = filterManager.configArray[indexPath.section].filterInfos[indexPath.row]
             filters = getFilters(filterInfo: filterInfo)
-//            image = UIImage.init(contentsOfFile: filterInfo.filterFileName)!
+            //            image = UIImage.init(contentsOfFile: filterInfo.filterFileName)!
             lastSelectIndex = indexPath
             currentFilterInfo = filterInfo
         }
-    
+        
         collectionView.scrollToItem(at: indexPath, at: UICollectionViewScrollPosition.centeredHorizontally, animated: true)
         //应用滤镜
-//        filterDelegate?.applyLookUpImage(lookUpImage: image)
+        //        filterDelegate?.applyLookUpImage(lookUpImage: image)
         filterDelegate?.applyFilter(filters: filters)
     }
     
@@ -172,7 +175,7 @@ class FilterListView : UIView, UICollectionViewDataSource, UICollectionViewDeleg
         for count in 0...(filterManager.configArray[section].filterNumber - 1) {
             array.append(IndexPath.init(row: count, section: section))
         }
-
+        
         if selectedSection != -1 {
             for count in 0...(filterManager.configArray[selectedSection].filterNumber - 1) {
                 deleteArray.append(IndexPath.init(row: count, section: selectedSection))
@@ -185,7 +188,7 @@ class FilterListView : UIView, UICollectionViewDataSource, UICollectionViewDeleg
             selectedSection = section;
         }
         
-    
+        
         self.listCollectionView.performBatchUpdates({
             //self.listCollectionView.insertItems(at: array)
             if deleteArray.count > 0 {
@@ -219,7 +222,7 @@ class FilterListView : UIView, UICollectionViewDataSource, UICollectionViewDeleg
             lookupFilter.lookupImage = lookupImage
         }
         
-       
+        
         return [filter!]
     }
     
@@ -251,7 +254,6 @@ class FilterListView : UIView, UICollectionViewDataSource, UICollectionViewDeleg
     
     //
     func selectItemAtIndexPath(path:IndexPath) {
-        
         if path.section == -1 {
             if selectedSection != -1 {
                 FilterListViewHeader(nil, didSelectItemAt: selectedSection)
@@ -264,8 +266,8 @@ class FilterListView : UIView, UICollectionViewDataSource, UICollectionViewDeleg
         }
         
         if path.section != lastSelectIndex.section ||
-           path.row != lastSelectIndex.row {
-             collectionView(listCollectionView, didSelectItemAt: path)
+            path.row != lastSelectIndex.row {
+            collectionView(listCollectionView, didSelectItemAt: path)
         }else {
             listCollectionView.scrollToItem(at: path, at: UICollectionViewScrollPosition.centeredHorizontally, animated: true)
         }
@@ -276,3 +278,4 @@ class FilterListView : UIView, UICollectionViewDataSource, UICollectionViewDeleg
     }
     
 }
+

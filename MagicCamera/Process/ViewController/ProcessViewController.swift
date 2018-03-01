@@ -12,18 +12,25 @@ import GPUImage
 import MBProgressHUD
 
 
-class ProcessViewController: UIViewController,FilterListViewProtocol {
+class ProcessViewController: UIViewController,FilterListViewProtocol, newFilterListViewProtocol {
     
-    @IBOutlet var showImageView: UIImageView!
-    @IBOutlet var filterListView : FilterListView!
+    @IBOutlet weak var showImageView: UIImageView!
+    @IBOutlet weak var toolView : UIView!
+    
+    
+    var filterListView : NewFilterListView!
     var originImage : UIImage!
     var processImage : UIImage!
     var lastSelectIndex : IndexPath! = IndexPath.init(row: -1, section: -1)
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        let height = ScreenHeight * 0.25 - iPhoneXSafeDistance - 70
+        filterListView = NewFilterListView.init(frame: CGRect.init(x: 0, y: 0, width: ScreenWidth, height: height) )
         filterListView.filterDelegate = self
+        toolView.addSubview(filterListView)
         showImageView.image = processImage
+        
     }
     
     override func viewDidAppear(_ animated: Bool) {

@@ -108,9 +108,7 @@ class SuggestionViewController: UIViewController, SKPSMTPMessageDelegate {
                                                       kSKPSMTPPartMessageKey:content,
                          kSKPSMTPPartContentTransferEncodingKey:"8bit"]
         mail.parts = [plainpart]
-        DispatchQueue.main.async {
-             self.mail.send()
-        }
+        self.mail.send()
     }
     
     func messageSent(_ message: SKPSMTPMessage!) {

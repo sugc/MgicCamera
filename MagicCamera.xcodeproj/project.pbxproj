@@ -79,6 +79,7 @@
 		898FF80F1FC95B2E001987B4 /* PhotoPickerCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 898FF8091FC95B2E001987B4 /* PhotoPickerCell.swift */; };
 		898FF8101FC95B2E001987B4 /* PhotoPickerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 898FF80B1FC95B2E001987B4 /* PhotoPickerViewController.swift */; };
 		898FF8121FC95D96001987B4 /* JigsawModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 898FF8111FC95D96001987B4 /* JigsawModel.swift */; };
+		89945A5B2048309A00B07875 /* NewFilterListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89945A5A2048309A00B07875 /* NewFilterListView.swift */; };
 		899499411F7172FC009999DA /* lookup16Fragment.glsl in Resources */ = {isa = PBXBuildFile; fileRef = 899499401F7172FC009999DA /* lookup16Fragment.glsl */; };
 		89A02A521F6D82910078C6D7 /* FilterListViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 89A02A511F6D82910078C6D7 /* FilterListViewCell.xib */; };
 		89C60E7D1FAE2B0200FF53E5 /* config.plist in Resources */ = {isa = PBXBuildFile; fileRef = 89C60E761FAE2B0100FF53E5 /* config.plist */; };
@@ -249,6 +250,7 @@
 		898FF8091FC95B2E001987B4 /* PhotoPickerCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotoPickerCell.swift; sourceTree = "<group>"; };
 		898FF80B1FC95B2E001987B4 /* PhotoPickerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotoPickerViewController.swift; sourceTree = "<group>"; };
 		898FF8111FC95D96001987B4 /* JigsawModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JigsawModel.swift; sourceTree = "<group>"; };
+		89945A5A2048309A00B07875 /* NewFilterListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewFilterListView.swift; sourceTree = "<group>"; };
 		899499401F7172FC009999DA /* lookup16Fragment.glsl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = lookup16Fragment.glsl; sourceTree = "<group>"; };
 		89A02A511F6D82910078C6D7 /* FilterListViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FilterListViewCell.xib; sourceTree = "<group>"; };
 		89C60E761FAE2B0100FF53E5 /* config.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = config.plist; path = filterResourse/config.plist; sourceTree = "<group>"; };
@@ -708,6 +710,7 @@
 				89A02A511F6D82910078C6D7 /* FilterListViewCell.xib */,
 				890B994F1F6D84DF00E37F9D /* FilterListViewHeader.xib */,
 				89570B791FD2E93200A92942 /* FilterListView.xib */,
+				89945A5A2048309A00B07875 /* NewFilterListView.swift */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -1078,6 +1081,7 @@
 				89D9F41E1F6C1D4300DB3B57 /* FilterListViewHeader.swift in Sources */,
 				898FF7A51FC952A6001987B4 /* UIImage+CGContext.swift in Sources */,
 				898FF7A91FC952AE001987B4 /* Utils.swift in Sources */,
+				89945A5B2048309A00B07875 /* NewFilterListView.swift in Sources */,
 				898FF80E1FC95B2E001987B4 /* SelectViewHandler.swift in Sources */,
 				8A35B524200B072D00D09011 /* HomeCollectionViewCell.swift in Sources */,
 				89C84ABC1F6B54EC004439DA /* CameraViewController.swift in Sources */,

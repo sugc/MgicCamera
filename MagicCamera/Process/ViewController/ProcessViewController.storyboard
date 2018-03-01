@@ -22,7 +22,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bB2-jZ-htC" customClass="FilterListView" customModule="MagicCamera" customModuleProvider="target">
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bB2-jZ-htC">
                                 <rect key="frame" x="0.0" y="520.5" width="375" height="76.5"/>
                                 <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                             </view>
@@ -91,8 +91,8 @@
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="filterListView" destination="bB2-jZ-htC" id="zPW-Hv-SLe"/>
                         <outlet property="showImageView" destination="Zep-N3-dPU" id="AQL-JV-orc"/>
+                        <outlet property="toolView" destination="bB2-jZ-htC" id="0Jz-bw-qym"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="PJQ-TG-qiR" userLabel="First Responder" sceneMemberID="firstResponder"/>
