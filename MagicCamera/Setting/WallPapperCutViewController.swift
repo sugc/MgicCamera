@@ -8,10 +8,15 @@
 
 import Foundation
 
+@objc protocol CutViewControllerProtocol  {
+    @objc func selectImage(image : UIImage?)
+}
+
 class WallPapperCutViewController : UIViewController {
     
     @IBOutlet var bottomViewHeight : NSLayoutConstraint!
     @IBOutlet var backView : UIView!
+    weak var delegate : CutViewControllerProtocol!
     var contentView : CutView!
     var image : UIImage!
     
@@ -30,9 +35,6 @@ class WallPapperCutViewController : UIViewController {
         contentView.clipsToBounds = false
         self.view.insertSubview(contentView, at: 0)
         
-//        let maskView = UIView.init(frame: frame)
-//        maskView.backgroundColor = UIColor.black
-//        backView.mask = maskView
         let layer = CAShapeLayer.init()
         backView.layer.addSublayer(layer)
         let path = CGMutablePath.init()
@@ -48,4 +50,16 @@ class WallPapperCutViewController : UIViewController {
         backView.addSubview(boderView)
         
     }
+    
+    @IBAction func actionOk() {
+        let size = CGSize.init(width: ScreenWidth * 4, height: ScreenHeight * 4)
+        let image = contentView.renderImage(finalSize: size)
+        delegate.selectImage(image: image)
+        self.dismiss(animated: true, completion: nil)
+    }
+    
+    @IBAction func actionCancel() {
+        self.dismiss(animated: true, completion: nil)
+    }
+
 }

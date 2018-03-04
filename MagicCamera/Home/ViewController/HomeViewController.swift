@@ -60,7 +60,7 @@ class HomeViewController :
         let dbManager = WallPapperDBMananer.init()
         let allImage = dbManager.getAllImage()
         if allImage.count > 0 {
-            let num  = Int(arc4random_uniform(UInt32(allImage.count - 1)))
+            let num  = Int(arc4random_uniform(UInt32(allImage.count)))
             wallPaperView?.image = allImage[num]
         }
     }

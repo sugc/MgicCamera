@@ -8,7 +8,14 @@
 
 import Foundation
 
-class WallPapperManager: NSObject, UICollectionViewDataSource, UICollectionViewDelegate, WallPapperCellProtocol,UIImagePickerControllerDelegate, UINavigationControllerDelegate  {
+class WallPapperManager:
+    NSObject,
+    UICollectionViewDataSource,
+    UICollectionViewDelegate,
+    WallPapperCellProtocol,
+    CutViewControllerProtocol,
+    UIImagePickerControllerDelegate,
+    UINavigationControllerDelegate  {
    
     weak var collectionView : UICollectionView?
     var imageArray : Array<UIImage>! = []
@@ -110,17 +117,20 @@ class WallPapperManager: NSObject, UICollectionViewDataSource, UICollectionViewD
             let storyboard = UIStoryboard.init(name: "WallPapperCutViewController", bundle: nil)
             let cutVC = storyboard.instantiateViewController(withIdentifier: "WallPapperCutViewController") as! WallPapperCutViewController
             cutVC.image = image
+            cutVC.delegate = self
             let delegate : AppDelegate = UIApplication.shared.delegate as! AppDelegate
             let nav = delegate.window!.rootViewController as! UINavigationController
             nav.topViewController?.present(cutVC, animated: true, completion: nil)
         }
     }
     
-    func addImage(image:UIImage)  {
-        let isSuccess = self.dbManager.inserImage(image: image)
-        if  isSuccess {
-            self.imageArray.append(image)
-            self.collectionView?.reloadData()
+    func selectImage(image: UIImage?) {
+        if image != nil {
+            let isSuccess = self.dbManager.inserImage(image: image!)
+            if  isSuccess {
+                self.imageArray.append(image!)
+                self.collectionView?.reloadData()
+            }
         }
     }
     
