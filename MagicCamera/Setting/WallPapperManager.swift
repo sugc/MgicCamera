@@ -104,9 +104,15 @@ class WallPapperManager: NSObject, UICollectionViewDataSource, UICollectionViewD
         
         let image = info[UIImagePickerControllerOriginalImage] as! UIImage
         print("")
-        self.addImage(image: image)
-        picker.dismiss(animated: true) {
-            
+        
+//        self.addImage(image: image)
+        picker.dismiss(animated: false) {
+            let storyboard = UIStoryboard.init(name: "WallPapperCutViewController", bundle: nil)
+            let cutVC = storyboard.instantiateViewController(withIdentifier: "WallPapperCutViewController") as! WallPapperCutViewController
+            cutVC.image = image
+            let delegate : AppDelegate = UIApplication.shared.delegate as! AppDelegate
+            let nav = delegate.window!.rootViewController as! UINavigationController
+            nav.topViewController?.present(cutVC, animated: true, completion: nil)
         }
     }
     

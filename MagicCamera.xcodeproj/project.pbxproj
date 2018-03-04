@@ -134,6 +134,8 @@
 		8ABD14551FD6E11700F1AA64 /* M5 in Resources */ = {isa = PBXBuildFile; fileRef = 8ABD144E1FD6E11700F1AA64 /* M5 */; };
 		8ABD14561FD6E11700F1AA64 /* M6 in Resources */ = {isa = PBXBuildFile; fileRef = 8ABD144F1FD6E11700F1AA64 /* M6 */; };
 		8ABD14581FD6E12D00F1AA64 /* M1 in Resources */ = {isa = PBXBuildFile; fileRef = 8ABD14571FD6E12D00F1AA64 /* M1 */; };
+		8AC1815C204C0CE800C60FAA /* WallPapperCutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AC1815B204C0CE800C60FAA /* WallPapperCutViewController.swift */; };
+		8AC1815E204C0CF900C60FAA /* WallPapperCutViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8AC1815D204C0CF900C60FAA /* WallPapperCutViewController.storyboard */; };
 		8AD7B85B2008E39300042CFC /* model.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 8AD7B8572008E39300042CFC /* model.jpg */; };
 		8ADBDD5C2042D4B50009F57A /* ClipView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8ADBDD5B2042D4B50009F57A /* ClipView.swift */; };
 		8AF10FD420064F4B00D804BF /* StatusUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AF10FD320064F4B00D804BF /* StatusUtil.swift */; };
@@ -308,6 +310,8 @@
 		8ABD144E1FD6E11700F1AA64 /* M5 */ = {isa = PBXFileReference; lastKnownFileType = folder; path = M5; sourceTree = "<group>"; };
 		8ABD144F1FD6E11700F1AA64 /* M6 */ = {isa = PBXFileReference; lastKnownFileType = folder; path = M6; sourceTree = "<group>"; };
 		8ABD14571FD6E12D00F1AA64 /* M1 */ = {isa = PBXFileReference; lastKnownFileType = folder; path = M1; sourceTree = "<group>"; };
+		8AC1815B204C0CE800C60FAA /* WallPapperCutViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WallPapperCutViewController.swift; sourceTree = "<group>"; };
+		8AC1815D204C0CF900C60FAA /* WallPapperCutViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = WallPapperCutViewController.storyboard; sourceTree = "<group>"; };
 		8AD7B8572008E39300042CFC /* model.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = model.jpg; sourceTree = "<group>"; };
 		8ADBDD5B2042D4B50009F57A /* ClipView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClipView.swift; sourceTree = "<group>"; };
 		8AF10FD320064F4B00D804BF /* StatusUtil.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatusUtil.swift; sourceTree = "<group>"; };
@@ -762,6 +766,8 @@
 				8A62F89C1FF1DFDB00AD9FD0 /* WallPapperCell.swift */,
 				8A62F8A11FF1E16700AD9FD0 /* WallPapperManager.swift */,
 				8A636BEF1FFDBE8E000830DC /* WallPaperViewController.storyboard */,
+				8AC1815B204C0CE800C60FAA /* WallPapperCutViewController.swift */,
+				8AC1815D204C0CF900C60FAA /* WallPapperCutViewController.storyboard */,
 			);
 			path = Setting;
 			sourceTree = "<group>";
@@ -929,6 +935,7 @@
 				898FF7E51FC9535D001987B4 /* MTShaderFragment.glsl in Resources */,
 				898FF7E11FC9535D001987B4 /* LookupVertex.glsl in Resources */,
 				89D9F4111F6C0A1500DB3B57 /* ProcessViewController.storyboard in Resources */,
+				8AC1815E204C0CF900C60FAA /* WallPapperCutViewController.storyboard in Resources */,
 				8A8A71961FD8266A008B214E /* journalConfig.plist in Resources */,
 				8A8A71AC1FD835A5008B214E /* M2.JPG in Resources */,
 				898FF7DF1FC9535D001987B4 /* lookupTestF.glsl in Resources */,
@@ -1083,6 +1090,7 @@
 				898FF7A91FC952AE001987B4 /* Utils.swift in Sources */,
 				898FF80E1FC95B2E001987B4 /* SelectViewHandler.swift in Sources */,
 				8A35B524200B072D00D09011 /* HomeCollectionViewCell.swift in Sources */,
+				8AC1815C204C0CE800C60FAA /* WallPapperCutViewController.swift in Sources */,
 				89C84ABC1F6B54EC004439DA /* CameraViewController.swift in Sources */,
 				89D9F41A1F6C1BA900DB3B57 /* FilterListView.swift in Sources */,
 				898FF7F81FC95A39001987B4 /* JournalTemplateViewController.swift in Sources */,

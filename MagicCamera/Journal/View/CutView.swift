@@ -171,7 +171,6 @@ class CutView: UIView , UIGestureRecognizerDelegate{
             y = 0
         }
         
-        
         if imageView.right < self.width {
             x = self.width - width
         }
@@ -196,16 +195,14 @@ class CutView: UIView , UIGestureRecognizerDelegate{
         }
     }
     
-    
-    
     func getTextCoords() -> Array <GLfloat> {
+        
         let imageFrame = imageView.frame
         
         let Ileft = (0 - imageFrame.origin.x) / imageFrame.width
         let Iright =  Ileft + frame.width / imageFrame.width
         let Ibottom =  (0 - imageFrame.origin.y) / imageFrame.height
         let Itop = Ibottom + frame.height / imageFrame.height
-        
         
         let texCoords : Array <GLfloat> = [
             Float(Ileft.native), Float(Ibottom.native),
