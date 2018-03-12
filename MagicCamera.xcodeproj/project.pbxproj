@@ -96,6 +96,7 @@
 		89D9F41C1F6C1D3200DB3B57 /* FilterListViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89D9F41B1F6C1D3200DB3B57 /* FilterListViewCell.swift */; };
 		89D9F41E1F6C1D4300DB3B57 /* FilterListViewHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89D9F41D1F6C1D4300DB3B57 /* FilterListViewHeader.swift */; };
 		89E594631F9321B8007671A3 /* Vector3.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89E594621F9321B8007671A3 /* Vector3.swift */; };
+		89EA62022056C9EB0064410F /* TestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89EA62012056C9EB0064410F /* TestViewController.swift */; };
 		89F9CF731F7D466800704DF6 /* CameraManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89F9CF721F7D466800704DF6 /* CameraManager.swift */; };
 		89F9CF781F7D4E9D00704DF6 /* StillCamera.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89F9CF771F7D4E9D00704DF6 /* StillCamera.swift */; };
 		8A0192671FEB463E001D040E /* SuggestionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A0192661FEB463E001D040E /* SuggestionViewController.swift */; };
@@ -270,6 +271,7 @@
 		89D9F41B1F6C1D3200DB3B57 /* FilterListViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FilterListViewCell.swift; sourceTree = "<group>"; };
 		89D9F41D1F6C1D4300DB3B57 /* FilterListViewHeader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FilterListViewHeader.swift; sourceTree = "<group>"; };
 		89E594621F9321B8007671A3 /* Vector3.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Vector3.swift; sourceTree = "<group>"; };
+		89EA62012056C9EB0064410F /* TestViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestViewController.swift; sourceTree = "<group>"; };
 		89F9CF721F7D466800704DF6 /* CameraManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CameraManager.swift; sourceTree = "<group>"; };
 		89F9CF771F7D4E9D00704DF6 /* StillCamera.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StillCamera.swift; sourceTree = "<group>"; };
 		8A0192661FEB463E001D040E /* SuggestionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SuggestionViewController.swift; sourceTree = "<group>"; };
@@ -771,6 +773,7 @@
 				8A636BEF1FFDBE8E000830DC /* WallPaperViewController.storyboard */,
 				8AC1815B204C0CE800C60FAA /* WallPapperCutViewController.swift */,
 				8AC1815D204C0CF900C60FAA /* WallPapperCutViewController.storyboard */,
+				89EA62012056C9EB0064410F /* TestViewController.swift */,
 			);
 			path = Setting;
 			sourceTree = "<group>";
@@ -1089,6 +1092,7 @@
 				890343E41F7419C700D1FF6A /* FilterManager.swift in Sources */,
 				89C84ABA1F6B54DA004439DA /* HomeViewController.swift in Sources */,
 				89D9F41E1F6C1D4300DB3B57 /* FilterListViewHeader.swift in Sources */,
+				89EA62022056C9EB0064410F /* TestViewController.swift in Sources */,
 				898FF7A51FC952A6001987B4 /* UIImage+CGContext.swift in Sources */,
 				898FF7A91FC952AE001987B4 /* Utils.swift in Sources */,
 				8AD1457C204F7B23006BE4C3 /* RotateScaleView.swift in Sources */,
