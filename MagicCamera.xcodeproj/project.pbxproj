@@ -136,6 +136,7 @@
 		8ABD14581FD6E12D00F1AA64 /* M1 in Resources */ = {isa = PBXBuildFile; fileRef = 8ABD14571FD6E12D00F1AA64 /* M1 */; };
 		8AC1815C204C0CE800C60FAA /* WallPapperCutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AC1815B204C0CE800C60FAA /* WallPapperCutViewController.swift */; };
 		8AC1815E204C0CF900C60FAA /* WallPapperCutViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8AC1815D204C0CF900C60FAA /* WallPapperCutViewController.storyboard */; };
+		8AD1457C204F7B23006BE4C3 /* RotateScaleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AD1457B204F7B23006BE4C3 /* RotateScaleView.swift */; };
 		8AD7B85B2008E39300042CFC /* model.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 8AD7B8572008E39300042CFC /* model.jpg */; };
 		8ADBDD5C2042D4B50009F57A /* ClipView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8ADBDD5B2042D4B50009F57A /* ClipView.swift */; };
 		8AF10FD420064F4B00D804BF /* StatusUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AF10FD320064F4B00D804BF /* StatusUtil.swift */; };
@@ -312,6 +313,7 @@
 		8ABD14571FD6E12D00F1AA64 /* M1 */ = {isa = PBXFileReference; lastKnownFileType = folder; path = M1; sourceTree = "<group>"; };
 		8AC1815B204C0CE800C60FAA /* WallPapperCutViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WallPapperCutViewController.swift; sourceTree = "<group>"; };
 		8AC1815D204C0CF900C60FAA /* WallPapperCutViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = WallPapperCutViewController.storyboard; sourceTree = "<group>"; };
+		8AD1457B204F7B23006BE4C3 /* RotateScaleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RotateScaleView.swift; sourceTree = "<group>"; };
 		8AD7B8572008E39300042CFC /* model.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = model.jpg; sourceTree = "<group>"; };
 		8ADBDD5B2042D4B50009F57A /* ClipView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClipView.swift; sourceTree = "<group>"; };
 		8AF10FD320064F4B00D804BF /* StatusUtil.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatusUtil.swift; sourceTree = "<group>"; };
@@ -533,7 +535,6 @@
 			isa = PBXGroup;
 			children = (
 				898FF7851FC95195001987B4 /* ConfirmTextView.swift */,
-				898FF7861FC95195001987B4 /* CutView.swift */,
 				898FF7871FC95195001987B4 /* FilterViewCell.swift */,
 				898FF7881FC95195001987B4 /* JournalView.swift */,
 				898FF7891FC95195001987B4 /* TouchTextView.swift */,
@@ -635,6 +636,8 @@
 				898FF7FC1FC95AAA001987B4 /* DesignedTextView.swift */,
 				898FF7FD1FC95AAA001987B4 /* WaterFlow */,
 				8ADBDD5B2042D4B50009F57A /* ClipView.swift */,
+				8AD1457B204F7B23006BE4C3 /* RotateScaleView.swift */,
+				898FF7861FC95195001987B4 /* CutView.swift */,
 			);
 			path = UItilView;
 			sourceTree = "<group>";
@@ -1088,6 +1091,7 @@
 				89D9F41E1F6C1D4300DB3B57 /* FilterListViewHeader.swift in Sources */,
 				898FF7A51FC952A6001987B4 /* UIImage+CGContext.swift in Sources */,
 				898FF7A91FC952AE001987B4 /* Utils.swift in Sources */,
+				8AD1457C204F7B23006BE4C3 /* RotateScaleView.swift in Sources */,
 				898FF80E1FC95B2E001987B4 /* SelectViewHandler.swift in Sources */,
 				8A35B524200B072D00D09011 /* HomeCollectionViewCell.swift in Sources */,
 				8AC1815C204C0CE800C60FAA /* WallPapperCutViewController.swift in Sources */,
