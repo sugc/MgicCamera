@@ -17,6 +17,8 @@ class RotateScaleView : UIView {
     private var isRotate : Bool!
     private var ratio : CGFloat!  //对角线和宽的比
     private var originSize : CGSize!
+    private var beginPoint : CGPoint!
+    private var originPoint : CGPoint!
     
 //    private var panGesture: UIPanGestureRecognizer!
 //    private var pinchGesture : UIPinchGestureRecognizer!
@@ -88,7 +90,11 @@ class RotateScaleView : UIView {
         
         let point = gesture.location(in: self.superview)
         let center = self.center
-        let length = pow(pow(point.x - center.x, 2) + pow(point.y - center.y, 2), 0.5)
+        
+        let transX = point.x - center.x
+        let transY = point.y - center.y
+        
+        let length = pow(pow(transX, 2) + pow(transY, 2), 0.5) * 2
         
         let width = length / ratio
 //        let scaleRatio = width / originSize.width
@@ -101,39 +107,47 @@ class RotateScaleView : UIView {
         
         ajustUI()
         
-        //旋转角度 计算和（1,0）向量夹角
-        let b = length
-        let add = point.x - center.x
-        let currentAngle = acos(add / b)
+        //和对角线（width, -height）的夹角
+        
+        let b = length * 0.5 * length
+        let add = transX * width - transY * height
+        let result = add / b
+        
+        var currentAngle = acos(result)
         
         //判断在对角线的上方还是下方
+        let supposeY = -(transX * height / width);
+        if (supposeY + center.y) > point.y {
+            currentAngle = -currentAngle
+        }
         
         angle = currentAngle
         self.transform = CGAffineTransform.init(rotationAngle: angle)
-    
+        print("current angle is %ld",angle)
     }
     
     //移动
     func move(gesture:UIPanGestureRecognizer) {
-//        if gesture.state == UIGestureRecognizerState.began {
-//            //判断落点
-//            let point = gesture.location(in: self)
-//            if rotateBtn.frame.contains(point) {
-//                isRotate = true
-//            }
-//        }
-//
-//        let movePoint = gesture.location(in: self.superview)
-//        if isRotate {
-//            //开始计算选择角度
-//
-//        }else {
-//            //计算位移
-//        }
+        self.transform = CGAffineTransform.init(rotationAngle: 0)
+        if gesture.state == UIGestureRecognizerState.began {
+            //判断落点
+            beginPoint = gesture.location(in: self.superview)
+            originPoint = self.frame.origin;
+        }
+
+        let movePoint = gesture.location(in: self.superview)
+        let transX = movePoint.x - beginPoint.x
+        let transY = movePoint.y - beginPoint.y
+        
+        self.frame = CGRect.init(x: originPoint.x + transX,
+                                 y: originPoint.y + transY,
+                                 width: self.width,
+                                 height: self.height)
+        self.transform = CGAffineTransform.init(rotationAngle: angle)
         
     }
     
     func remove() {
-//        self.removeFromSuperview()
+        self.removeFromSuperview()
     }
 }
