@@ -15,11 +15,17 @@ class TestViewController : UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         self.view.backgroundColor = UIColor.white
-        let frame = CGRect.init(x: 100,
-                                y: 100, width: 100,
-                                height: 100)
+        let image = UIImage.init(named: "2.jpg")!
+        
+        let rotateWidth : CGFloat = 100
+        let rotateHeight = rotateWidth / image.size.width * image.size.height
+        let frame = CGRect.init(x: (self.view.width - rotateWidth) / 2,
+                                y: (self.view.height - rotateHeight) / 2,
+                                width: rotateWidth,
+                                height: rotateHeight)
         let rotateView = RotateScaleView.init(frame: frame)
-        rotateView.backgroundColor = UIColor.green
+        rotateView.contentView.image = image
+//        rotateView.backgroundColor = UIColor.green
         self.view.addSubview(rotateView)
     }
 }

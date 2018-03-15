@@ -10,7 +10,7 @@ import Foundation
 
 class RotateScaleView : UIView {
     
-    private var contentView : UIImageView!
+    var contentView : UIImageView!
     private var rotateBtn : UIImageView!
     private var deleteBtn : UIButton!
     private var angle : CGFloat! = 0
@@ -19,6 +19,7 @@ class RotateScaleView : UIView {
     private var originSize : CGSize!
     private var beginPoint : CGPoint!
     private var originPoint : CGPoint!
+    private var btnSize : CGFloat! = 25;
     
 //    private var panGesture: UIPanGestureRecognizer!
 //    private var pinchGesture : UIPinchGestureRecognizer!
@@ -34,6 +35,7 @@ class RotateScaleView : UIView {
         layout()
         addGesture()
     }
+    
     
     //UI布局
     func layout()  {
@@ -54,22 +56,22 @@ class RotateScaleView : UIView {
     }
     
     func ajustUI()  {
-        let contentFrame = CGRect.init(x: 10,
-                                       y: 10,
-                                       width: self.width - 20,
-                                       height: self.height - 20)
+        let contentFrame = CGRect.init(x: btnSize / 2.0,
+                                       y: btnSize / 2.0,
+                                       width: self.width - btnSize,
+                                       height: self.height - btnSize)
         contentView.frame = contentFrame
         
-        let rotateFrame = CGRect.init(x: self.width - 20,
+        let rotateFrame = CGRect.init(x: self.width - btnSize,
                                       y: 0,
-                                      width: 20,
-                                      height: 20)
+                                      width: btnSize,
+                                      height: btnSize)
         rotateBtn.frame = rotateFrame
         
         let deleteFrame = CGRect.init(x: 0,
                                       y: 0,
-                                      width: 20,
-                                      height: 20)
+                                      width: btnSize,
+                                      height: btnSize)
         deleteBtn.frame = deleteFrame
     }
     
