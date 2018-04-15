@@ -72,7 +72,7 @@ class WallPapperDBMananer : NSObject {
         let hasAddImage = UserDefaults.standard.bool(forKey: "hasAddDefaultWallPaper")
         if !hasAddImage {
             UserDefaults.standard.set(true, forKey: "hasAddDefaultWallPaper")
-            let image = UIImage.init(named: "model.jpg")
+            let image = UIImage.init(named: "model1.jpg")
             inserImage(image: image!)
         }
     }

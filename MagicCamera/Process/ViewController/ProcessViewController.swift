@@ -69,7 +69,8 @@ class ProcessViewController: UIViewController,FilterListViewProtocol {
         self.navigationController?.popViewController(animated: true)
     }
     
-    @IBAction func save() ->Void {
+    
+    @IBAction func saveImage(_ sender: UIButton) {
         let storyBoard = UIStoryboard.init(name: "SaveAndShareViewController", bundle: nil)
         let saveVC = storyBoard.instantiateViewController(withIdentifier: "SaveAndShareViewController") as! SaveAndShareViewController
         saveVC.fromType = shareFromMudule.camera
@@ -79,4 +80,5 @@ class ProcessViewController: UIViewController,FilterListViewProtocol {
             self.navigationController?.pushViewController(saveVC, animated: true)
         }
     }
+
 }

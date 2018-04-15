@@ -15,8 +15,7 @@ class SettingViewManager: NSObject, UITableViewDelegate, UITableViewDataSource {
                     [
                      ["title":"意见反馈","action":#selector(sendSuggestion)],
                      ["title":"给我们好评","action":#selector(goFiveStar)],
-                      ["title":"开屏壁纸","action":#selector(setlaunchImage)],
-                      ["title":"测试","action":#selector(test)]]
+                      ["title":"开屏壁纸","action":#selector(setlaunchImage)]]
     
 //    ["title":"关于","action":#selector(showAbout)],
 //   ["title":"测试","action":#selector(test)],
@@ -72,7 +71,7 @@ class SettingViewManager: NSObject, UITableViewDelegate, UITableViewDataSource {
     }
     
     func test()  {
-        let testVC = TestViewController()
+        let testVC = BeautyBaseViewController()
         let delegate : AppDelegate = UIApplication.shared.delegate as! AppDelegate
         let nav = delegate.window!.rootViewController as! UINavigationController
         nav.pushViewController(testVC, animated: true)
