@@ -63,6 +63,7 @@ class SaveAndShareViewController : UIViewController {
         
         if fromType == shareFromMudule.pintu {
             nav.popViewController(animated: false)
+            nav.popViewController(animated: false)
             nav.popViewController(animated: true)
             return;
         }

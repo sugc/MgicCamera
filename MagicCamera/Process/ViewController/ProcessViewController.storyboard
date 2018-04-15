@@ -50,7 +50,7 @@
                                             <userDefinedRuntimeAttribute type="string" keyPath="self.layer.cornerRadius" value="25" localized="YES"/>
                                         </userDefinedRuntimeAttributes>
                                         <connections>
-                                            <action selector="save" destination="4n2-mh-Zu1" eventType="touchUpInside" id="gqO-tG-pE3"/>
+                                            <action selector="saveImage:" destination="4n2-mh-Zu1" eventType="touchUpInside" id="cjz-oP-eR7"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Qol-G0-SCC">

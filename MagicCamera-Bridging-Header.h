@@ -4,6 +4,7 @@
 
 
 
+#import "FMDB/FMDB.h"
 #import "GPUImage/GPUImage.h"
 #import "LookupFilter16.h"
 #import "FireBase/FireBase.h"

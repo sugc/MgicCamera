@@ -258,7 +258,8 @@ UINavigationControllerDelegate{
     //UIImagePickerControllerDelegate
     func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [String : Any]) {
         //
-        let image = info[UIImagePickerControllerOriginalImage] as! UIImage
+        let tempImage = info[UIImagePickerControllerOriginalImage] as! UIImage
+        let image = tempImage.fixOrientation()
         
         let storyboard = UIStoryboard.init(name: "ProcessViewController", bundle: nil)
         let processVC = storyboard.instantiateViewController(withIdentifier: "ProcessViewController") as! ProcessViewController

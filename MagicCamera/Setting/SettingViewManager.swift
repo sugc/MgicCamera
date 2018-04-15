@@ -14,10 +14,11 @@ class SettingViewManager: NSObject, UITableViewDelegate, UITableViewDataSource {
     let dataArray : Array<Dictionary<String,Any>> =
                     [
                      ["title":"意见反馈","action":#selector(sendSuggestion)],
-                     ["title":"给我们好评","action":#selector(goFiveStar)]]
+                     ["title":"给我们好评","action":#selector(goFiveStar)],
+                      ["title":"开屏壁纸","action":#selector(setlaunchImage)]]
     
 //    ["title":"关于","action":#selector(showAbout)],
-//    ["title":"开屏壁纸","action":#selector(setlaunchImage)],
+//   ["title":"测试","action":#selector(test)],
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return dataArray.count
@@ -67,5 +68,13 @@ class SettingViewManager: NSObject, UITableViewDelegate, UITableViewDataSource {
     func goFiveStar() {
         let actionStr = "itms-apps://itunes.apple.com/WebObjects/MZStore.woa/wa/viewContentsUserReviews?type=Purple+Software&id=1312628419&pageNumber=0&sortOrdering=2&mt=8"
         UIApplication.shared.openURL(URL.init(string: actionStr)!)
+    }
+    
+    func test()  {
+        let testVC = BeautyBaseViewController()
+        let delegate : AppDelegate = UIApplication.shared.delegate as! AppDelegate
+        let nav = delegate.window!.rootViewController as! UINavigationController
+        nav.pushViewController(testVC, animated: true)
+//        self.navigationController?.popViewController(animated: true)
     }
 }

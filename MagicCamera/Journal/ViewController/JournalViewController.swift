@@ -8,6 +8,7 @@
 
 import Foundation
 import GPUImage
+import MBProgressHUD
 
 class JournalViewController : UIViewController, ConfirmTextViewDelegate, FilterListViewProtocol, JournalViewDelegate {
     
@@ -24,7 +25,7 @@ class JournalViewController : UIViewController, ConfirmTextViewDelegate, FilterL
     /*******************************************************************/
     var backBtn: UIButton!
     
-    var saveBtn: UIButton!
+    var confirmBtn: UIButton!
     
     var maskView : UIView!
     
@@ -100,7 +101,7 @@ class JournalViewController : UIViewController, ConfirmTextViewDelegate, FilterL
                                                         width: ScreenWidth,
                                                         height: 160))
         bottomView.backgroundColor = UIColor.color(hex: 0xf3f3f3, alpha: 1)
-        let confirmBtn = UIButton.init(frame: CGRect.init(x: (ScreenWidth - 60) / 2.0,
+        confirmBtn = UIButton.init(frame: CGRect.init(x: (ScreenWidth - 60) / 2.0,
                                                           y: bottomView.height - 50 - 10,
                                                           width: 50,
                                                           height: 50))
@@ -147,8 +148,8 @@ class JournalViewController : UIViewController, ConfirmTextViewDelegate, FilterL
     }
     
     func saveImage()  {
+        MBProgressHUD.showAdded(to: self.view, animated: true)
         let ratio = journalView.drawView.height / journalView.drawView.width
-        
         var size = CGSize(width: 1280, height: 1280 * ratio)
         if ratio > 1.0 {
             size = CGSize(width: 1280 / ratio, height: 1280)
@@ -160,7 +161,8 @@ class JournalViewController : UIViewController, ConfirmTextViewDelegate, FilterL
             let saveVC = storyBoard.instantiateViewController(withIdentifier: "SaveAndShareViewController") as! SaveAndShareViewController
             saveVC.fromType = shareFromMudule.pintu
             self.navigationController?.pushViewController(saveVC, animated: true)
-        }) 
+            MBProgressHUD.hide(for: self.view, animated: false)
+        })
     }
     
 

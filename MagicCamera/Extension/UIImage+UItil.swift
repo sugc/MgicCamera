@@ -177,8 +177,21 @@ extension UIImage {
         case UIImageOrientation.right:
             bounds.size.height = CGFloat(width)
             bounds.size.width = CGFloat(height)
-            transform = CGAffineTransform.init(scaleX: CGFloat(height), y: 0.0)
+        
+            //推算过程， 先转换成UIKit坐标
+//            transform = CGAffineTransform.init(rotationAngle: CGFloat( Double.pi))
+//            transform = transform.translatedBy(x: 0, y: CGFloat(width))
+//            transform = transform.scaledBy(x: -1, y: 1)
+//            transform = transform.translatedBy(x: 0, y: CGFloat(-width))
+//            transform = transform.rotated(by: CGFloat(-0.5 * Double.pi))
+//            transform = transform.translatedBy(x: CGFloat(-width), y: 0)
+            
+            
+            transform = CGAffineTransform.init(translationX: CGFloat(width), y: 0.0)
             transform = transform.rotated(by: CGFloat(0.5 * Double.pi))
+            transform = transform.translatedBy(x: 0, y: CGFloat(width))
+            transform = transform.scaledBy(x: 1, y: -1)
+
             break
         case UIImageOrientation.rightMirrored:
             
@@ -194,13 +207,13 @@ extension UIImage {
         UIGraphicsBeginImageContext(bounds.size);
         
         let context = UIGraphicsGetCurrentContext()
-        
-        
+        context?.concatenate(transform)
         context?.setFillColor(UIColor.white.cgColor)
         context?.fill(bounds)
-        context?.concatenate(transform)
+        
         context?.interpolationQuality = CGInterpolationQuality.low
-        context?.draw(imageRef!, in: bounds)
+        context?.draw(imageRef!, in:CGRect.init(x: 0, y: 0, width: width, height: height))
+//        context?.draw(imageRef!, in:bounds)
         let imageCopy = UIGraphicsGetImageFromCurrentImageContext()
         UIGraphicsEndImageContext()
         
@@ -208,4 +221,11 @@ extension UIImage {
         
     }
     
+    func fixOrientation()-> UIImage {
+        if self.imageOrientation == UIImageOrientation.up {
+            return self
+        }
+        
+        return self.fixOrientation(orientation: self.imageOrientation, isFront: false)
+    }
 }

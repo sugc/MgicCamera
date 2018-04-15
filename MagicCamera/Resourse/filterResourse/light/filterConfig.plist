@@ -50,5 +50,45 @@
 		<key>filterName</key>
 		<string>B&amp;W</string>
 	</dict>
+	<dict>
+		<key>filterFileName</key>
+		<string>whitecat_curve.acv</string>
+		<key>filterId</key>
+		<string>0007</string>
+		<key>filterName</key>
+		<string>B&amp;W</string>
+	</dict>
+	<dict>
+		<key>filterFileName</key>
+		<string>vscoc1_2_curve.acv</string>
+		<key>filterId</key>
+		<string>0008</string>
+		<key>filterName</key>
+		<string>B&amp;W</string>
+	</dict>
+	<dict>
+		<key>filterFileName</key>
+		<string>sweetcandy_curve.acv</string>
+		<key>filterId</key>
+		<string>0009</string>
+		<key>filterName</key>
+		<string>B&amp;W</string>
+	</dict>
+	<dict>
+		<key>filterFileName</key>
+		<string>blend03_curve.acv</string>
+		<key>filterId</key>
+		<string>0010</string>
+		<key>filterName</key>
+		<string>B&amp;W</string>
+	</dict>
+	<dict>
+		<key>filterFileName</key>
+		<string>new_bnw.acv</string>
+		<key>filterId</key>
+		<string>0011</string>
+		<key>filterName</key>
+		<string>B&amp;W</string>
+	</dict>
 </array>
 </plist>

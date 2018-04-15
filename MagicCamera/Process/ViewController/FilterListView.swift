@@ -153,7 +153,10 @@ class FilterListView : UIView, UICollectionViewDataSource, UICollectionViewDeleg
             currentFilterInfo = filterInfo
         }
     
-        collectionView.scrollToItem(at: indexPath, at: UICollectionViewScrollPosition.centeredHorizontally, animated: true)
+        if #available(iOS 10.0, *) {
+            collectionView.scrollToItem(at: indexPath, at: UICollectionViewScrollPosition.centeredHorizontally, animated: true)
+        }
+      
         //应用滤镜
 //        filterDelegate?.applyLookUpImage(lookUpImage: image)
         filterDelegate?.applyFilter(filters: filters)
