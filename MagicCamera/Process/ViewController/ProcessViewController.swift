@@ -50,7 +50,7 @@ class ProcessViewController: UIViewController,FilterListViewProtocol {
         pictureInput?.addTarget(toonFilter)
         toonFilter.useNextFrameForImageCapture()
         pictureInput?.processImage()
-        processImage = toonFilter.imageFromCurrentFramebuffer();
+        processImage = toonFilter.imageFromCurrentFramebuffer(with: originImage.imageOrientation)
         self.showImageView.image = processImage
         MBProgressHUD.hide(for: self.showImageView, animated: true)
         UIApplication.shared.endIgnoringInteractionEvents()

@@ -112,7 +112,7 @@ class BaseFilter {
                                           size: length,
                                           releaseData: {info,data,size in
                                         print("aaaaaa%d",size)
-                                            data.deallocate(bytes: size, alignedTo: 1)
+                                            data.deallocate()
         })
         
         let colorSpace = CGColorSpaceCreateDeviceRGB()

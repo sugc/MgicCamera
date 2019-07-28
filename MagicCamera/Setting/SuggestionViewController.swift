@@ -35,17 +35,17 @@ class SuggestionViewController: UIViewController, SKPSMTPMessageDelegate {
                                                 y: iPhoneXSafeDistanceTop,
                                                 width: 40,
                                                 height: 40 ))
-        leftButton.setTitle("返回", for: UIControlState.normal)
+        leftButton.setTitle("返回", for: UIControl.State.normal)
         leftButton.addTarget(self,
                              action: #selector(goBack) ,
-                             for: UIControlEvents.touchUpInside)
+                             for: UIControl.Event.touchUpInside)
         
         let sendBtn = UIButton(frame: CGRect(x: ScreenWidth - 55,
                                              y: iPhoneXSafeDistanceTop,
                                              width: 40,
                                              height: 40))
-        sendBtn.setTitle("发送", for: UIControlState.normal)
-        sendBtn.addTarget(self, action: #selector(sendInfo), for: UIControlEvents.touchUpInside)
+        sendBtn.setTitle("发送", for: UIControl.State.normal)
+        sendBtn.addTarget(self, action: #selector(sendInfo), for: UIControl.Event.touchUpInside)
         
         
         textFiled = UITextField(frame: CGRect(x: 15,
@@ -79,11 +79,11 @@ class SuggestionViewController: UIViewController, SKPSMTPMessageDelegate {
         self.view.addSubview(textView)
     }
     
-    func goBack() {
+    @objc func goBack() {
         _ = self.navigationController?.popViewController(animated: true)
     }
     
-    func sendInfo() {
+    @objc func sendInfo() {
         mail.subject = "蜜柚相机意见反馈"
         mail.fromEmail = "suguocai_z@163.com"
         mail.toEmail = "suguocai_z@163.com"

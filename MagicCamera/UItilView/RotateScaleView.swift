@@ -49,7 +49,7 @@ class RotateScaleView : UIView {
         
         deleteBtn = UIButton.init(frame: CGRect.zero)
         deleteBtn.backgroundColor = UIColor.red
-        deleteBtn.addTarget(self, action: #selector(remove), for: UIControlEvents.touchUpInside)
+        deleteBtn.addTarget(self, action: #selector(remove), for: UIControl.Event.touchUpInside)
         self.addSubview(deleteBtn)
         
         ajustUI()
@@ -86,7 +86,7 @@ class RotateScaleView : UIView {
     }
     
     //旋转
-    func roteteAndScale(gesture:UIPanGestureRecognizer) {
+    @objc func roteteAndScale(gesture:UIPanGestureRecognizer) {
         
         self.transform = CGAffineTransform.init(rotationAngle: 0)
         
@@ -129,9 +129,9 @@ class RotateScaleView : UIView {
     }
     
     //移动
-    func move(gesture:UIPanGestureRecognizer) {
+    @objc func move(gesture:UIPanGestureRecognizer) {
         self.transform = CGAffineTransform.init(rotationAngle: 0)
-        if gesture.state == UIGestureRecognizerState.began {
+        if gesture.state == UIGestureRecognizer.State.began {
             //判断落点
             beginPoint = gesture.location(in: self.superview)
             originPoint = self.frame.origin;
@@ -149,7 +149,7 @@ class RotateScaleView : UIView {
         
     }
     
-    func remove() {
+    @objc func remove() {
         self.removeFromSuperview()
     }
 }

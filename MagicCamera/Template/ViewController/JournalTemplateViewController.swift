@@ -65,11 +65,11 @@ class JournalTemplateViewController : UIViewController,
                                                 y: 0,
                                                 width: 40,
                                                 height: 40 ))
-        leftButton.setImage(UIImage(named:"icon_back_normal"), for: UIControlState.normal)
-        leftButton.setImage(UIImage(named:"icon_back_highlight"), for: UIControlState.highlighted)
+        leftButton.setImage(UIImage(named:"icon_back_normal"), for: UIControl.State.normal)
+        leftButton.setImage(UIImage(named:"icon_back_highlight"), for: UIControl.State.highlighted)
         leftButton.addTarget(self,
                              action: #selector(goBack) ,
-                             for: UIControlEvents.touchUpInside)
+                             for: UIControl.Event.touchUpInside)
         let lineView = UIView.init(frame: CGRect.init(x: 0,
                                                       y: 39,
                                                       width: self.view.width,
@@ -199,10 +199,10 @@ class JournalTemplateViewController : UIViewController,
                 
                 
                 let textAttr: Dictionary<String, Any> = [
-                    NSFontAttributeName :font!,
-                    NSForegroundColorAttributeName : color,
-                    NSKernAttributeName : 5,
-                    NSParagraphStyleAttributeName : paraStyle
+                    NSAttributedString.Key.font.rawValue :font!,
+                    NSAttributedString.Key.foregroundColor.rawValue : color,
+                    NSAttributedString.Key.kern.rawValue : 5,
+                    NSAttributedString.Key.paragraphStyle.rawValue : paraStyle
                 ]
                 
                 
@@ -234,7 +234,7 @@ class JournalTemplateViewController : UIViewController,
         return array
     }
     
-    func goBack() {
+    @objc func goBack() {
         _ = self.navigationController?.popViewController(animated: true)
     }
     

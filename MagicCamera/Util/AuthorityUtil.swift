@@ -14,10 +14,10 @@ import Photos
 //相机权限请求
 func requestCameraAuthority(completionHandler handler: @escaping (Bool) -> Swift.Void) {
     var isAuthorized = false
-    let authStatus = AVCaptureDevice.authorizationStatus(forMediaType: AVMediaTypeVideo)
+    let authStatus = AVCaptureDevice.authorizationStatus(for: AVMediaType.video)
     
     if authStatus == .notDetermined {
-        AVCaptureDevice.requestAccess(forMediaType: AVMediaTypeVideo, completionHandler: { (granted : Bool) in
+        AVCaptureDevice.requestAccess(for: AVMediaType.video, completionHandler: { (granted : Bool) in
             DispatchQueue.main.async {
                 handler(granted)
             }
@@ -65,13 +65,13 @@ func requestPhotoAuthority(completionHandler handler: @escaping (Bool) -> Swift.
 }
 
 func showSettingAlertView(title:String!, message : String!, settingUrlStr : String!) {
-    let alert = UIAlertController.init(title: title, message: message, preferredStyle: UIAlertControllerStyle.alert)
-    let cancelAction = UIAlertAction.init(title: NSLocalizedString("好的", comment: ""), style: UIAlertActionStyle.cancel) { (action : UIAlertAction) in
+    let alert = UIAlertController.init(title: title, message: message, preferredStyle: UIAlertController.Style.alert)
+    let cancelAction = UIAlertAction.init(title: NSLocalizedString("好的", comment: ""), style: UIAlertAction.Style.cancel) { (action : UIAlertAction) in
         
     }
     
-    let settingAction = UIAlertAction.init(title: NSLocalizedString("去设置", comment: ""), style: UIAlertActionStyle.default) { (action : UIAlertAction) in
-        UIApplication.shared.openURL(URL.init(string: UIApplicationOpenSettingsURLString)!)
+    let settingAction = UIAlertAction.init(title: NSLocalizedString("去设置", comment: ""), style: UIAlertAction.Style.default) { (action : UIAlertAction) in
+        UIApplication.shared.openURL(URL.init(string: UIApplication.openSettingsURLString)!)
     }
     
     alert.addAction(cancelAction)

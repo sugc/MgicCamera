@@ -15,7 +15,7 @@ protocol WaterFlowLayoutDelegate : NSObjectProtocol{
 
 class WaterFlowLayout: UICollectionViewLayout {
     
-    var scrollDirection  = UICollectionViewScrollDirection.vertical
+    var scrollDirection  = UICollectionView.ScrollDirection.vertical
     var offSetC : CGFloat = 5.0
     var offSetR : CGFloat = 5.0
     
@@ -36,7 +36,7 @@ class WaterFlowLayout: UICollectionViewLayout {
     
     override func prepare() {
         super.prepare()
-        if scrollDirection == UICollectionViewScrollDirection.vertical {
+        if scrollDirection == UICollectionView.ScrollDirection.vertical {
             self.calculateVertical()
         }else {
             self.calculateHorizontal()

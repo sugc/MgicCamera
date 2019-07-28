@@ -48,15 +48,15 @@ UINavigationControllerDelegate{
     override func viewDidLoad() {
         super.viewDidLoad()
         filterListView?.filterDelegate = self
-        albumBtn.setTitle(NSLocalizedString("相册", comment:""), for: UIControlState.normal)
+        albumBtn.setTitle(NSLocalizedString("相册", comment:""), for: UIControl.State.normal)
         positionMonitor = PositionMonitor()
         filterListView?.filterDelegate = self
         NotificationCenter.default.addObserver(self,
                                                selector: #selector(change(notification:)),
-                                               name: NSNotification.Name.UIDeviceOrientationDidChange,
+                                               name:UIDevice.orientationDidChangeNotification,
                                                object: nil)
         if !DEVICE_IS_SUMILATE {
-            camera = StillCamera.init(sessionPreset: AVCaptureSessionPresetPhoto)
+            camera = StillCamera.init(sessionPreset: AVCaptureSession.Preset.photo.rawValue)
             camera.camera.addTarget(renderView)
         }
         
@@ -96,13 +96,13 @@ UINavigationControllerDelegate{
                 
                 self.topMaskViewHeight.constant = 0
                 self.bottomMaskViewheight.constant = 0
-                self.rationBtn.setTitle("1:1", for: UIControlState.normal)
+                self.rationBtn.setTitle("1:1", for: UIControl.State.normal)
                 break
             case ImageRatio.Type4v3:
                 //
                 self.topMaskViewHeight.constant = ajustY
                 self.bottomMaskViewheight.constant = ajustY
-                self.rationBtn.setTitle("4:3", for: UIControlState.normal)
+                self.rationBtn.setTitle("4:3", for: UIControl.State.normal)
                 break
             }
             self.renderBackView.layoutIfNeeded()
@@ -126,7 +126,7 @@ UINavigationControllerDelegate{
 //            }
             
             let deviceOrientation = self.positionMonitor?.orientation
-            let finalImage = catureImage?.fixWithDeviceOrientation(orientation: deviceOrientation!, isFront: self.camera.position == AVCaptureDevicePosition.front)
+            let finalImage = catureImage?.fixWithDeviceOrientation(orientation: deviceOrientation!, isFront: self.camera.position == AVCaptureDevice.Position.front)
             self.goNext(image: finalImage)
         }
     }
@@ -138,7 +138,7 @@ UINavigationControllerDelegate{
     //摄像头前后置
     @IBAction func reverse() {
         
-        if camera.position == AVCaptureDevicePosition.front {
+        if camera.position == AVCaptureDevice.Position.front {
             self.flashBtn.isHidden = false
         }else {
             self.flashBtn.isHidden = true
@@ -166,19 +166,19 @@ UINavigationControllerDelegate{
         switch camera.flashType! {
         case FlashType.On:
             flashBtn.setImage(UIImage.init(named: "icon_flash_on"),
-                              for: UIControlState.normal)
+                              for: UIControl.State.normal)
             break
         case FlashType.Off:
             flashBtn.setImage(UIImage.init(named: "icon_flash_off"),
-                              for: UIControlState.normal)
+                              for: UIControl.State.normal)
             break
         case FlashType.Auto:
             flashBtn.setImage(UIImage.init(named: "icon_flash_auto"),
-                              for: UIControlState.normal)
+                              for: UIControl.State.normal)
             break
         case FlashType.TorOn:
             flashBtn.setImage(UIImage.init(named: "icon_flash_torch") ,
-                              for: UIControlState.normal)
+                              for: UIControl.State.normal)
             break
         }
     }
@@ -201,7 +201,7 @@ UINavigationControllerDelegate{
         }
     }
     
-    func change(notification : NSNotification)  {
+    @objc func change(notification : NSNotification)  {
         
     }
     
@@ -256,10 +256,9 @@ UINavigationControllerDelegate{
     }
     
     //UIImagePickerControllerDelegate
-    func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [String : Any]) {
+    func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [AnyHashable : Any]) {
         //
-        let tempImage = info[UIImagePickerControllerOriginalImage] as! UIImage
-        let image = tempImage.fixOrientation()
+        let image = info[UIImagePickerController.InfoKey.originalImage] as! UIImage
         
         let storyboard = UIStoryboard.init(name: "ProcessViewController", bundle: nil)
         let processVC = storyboard.instantiateViewController(withIdentifier: "ProcessViewController") as! ProcessViewController

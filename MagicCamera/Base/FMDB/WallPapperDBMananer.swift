@@ -32,7 +32,7 @@ class WallPapperDBMananer : NSObject {
     }
     
     func inserImage(image:UIImage) ->Bool {
-        let data = UIImagePNGRepresentation(image)
+        let data = image.pngData()
         let sql = "insert into wallPapper (image) values (?)"
         let isSuccess = dbMamager.executeUpdate(sql: sql, Arguments: [data!])
         if isSuccess {

@@ -24,7 +24,7 @@ class HomeCollectionViewManager :
         collectionView.dataSource = self
         weakCollectionView = collectionView
         waterLayout = WaterFlowLayout()
-        waterLayout.scrollDirection = UICollectionViewScrollDirection.horizontal
+        waterLayout.scrollDirection = UICollectionView.ScrollDirection.horizontal
         waterLayout.numOfRow = 2
         waterLayout.delegate = self
         weakCollectionView.collectionViewLayout = waterLayout

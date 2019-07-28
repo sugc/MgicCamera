@@ -47,7 +47,7 @@ class AutoScrollView: UIView, UIScrollViewDelegate {
                                                       width: self.width,
                                                       height: self.height))
             
-            imageView.contentMode = UIViewContentMode.scaleAspectFit
+            imageView.contentMode = UIView.ContentMode.scaleAspectFit
             
             self.scrollView.addSubview(imageView)
             imageViewArray.append(imageView)
@@ -95,7 +95,7 @@ class AutoScrollView: UIView, UIScrollViewDelegate {
                                      repeats: true)
     }
     
-    func scroll() {
+    @objc func scroll() {
         UIView.animate(withDuration: 0.5,
                        animations: {
             self.scrollView.contentOffset = CGPoint(x: self.scrollView.width * 2, y: 0)

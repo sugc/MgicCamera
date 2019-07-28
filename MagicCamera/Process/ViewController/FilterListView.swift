@@ -61,7 +61,7 @@ class FilterListView : UIView, UICollectionViewDataSource, UICollectionViewDeleg
         let cellNib = UINib(nibName: "FilterListViewCell", bundle: nil)
         listCollectionView.register(cellNib, forCellWithReuseIdentifier: "FilterListViewCell")
         let hederNib = UINib(nibName: "FilterListViewHeader", bundle: nil)
-        listCollectionView.register(hederNib, forSupplementaryViewOfKind: UICollectionElementKindSectionHeader, withReuseIdentifier: "FilterListViewHeader")
+        listCollectionView.register(hederNib, forSupplementaryViewOfKind: UICollectionView.elementKindSectionHeader, withReuseIdentifier: "FilterListViewHeader")
     }
     
     override func layoutSubviews() {
@@ -99,7 +99,7 @@ class FilterListView : UIView, UICollectionViewDataSource, UICollectionViewDeleg
     
     func collectionView(_ collectionView: UICollectionView, viewForSupplementaryElementOfKind kind: String, at indexPath: IndexPath) -> UICollectionReusableView {
         
-        if kind == UICollectionElementKindSectionHeader {
+        if kind == UICollectionView.elementKindSectionHeader {
             
         }
         
@@ -153,10 +153,7 @@ class FilterListView : UIView, UICollectionViewDataSource, UICollectionViewDeleg
             currentFilterInfo = filterInfo
         }
     
-        if #available(iOS 10.0, *) {
-            collectionView.scrollToItem(at: indexPath, at: UICollectionViewScrollPosition.centeredHorizontally, animated: true)
-        }
-      
+        collectionView.scrollToItem(at: indexPath, at: UICollectionView.ScrollPosition.centeredHorizontally, animated: true)
         //应用滤镜
 //        filterDelegate?.applyLookUpImage(lookUpImage: image)
         filterDelegate?.applyFilter(filters: filters)
@@ -270,7 +267,7 @@ class FilterListView : UIView, UICollectionViewDataSource, UICollectionViewDeleg
            path.row != lastSelectIndex.row {
              collectionView(listCollectionView, didSelectItemAt: path)
         }else {
-            listCollectionView.scrollToItem(at: path, at: UICollectionViewScrollPosition.centeredHorizontally, animated: true)
+            listCollectionView.scrollToItem(at: path, at: UICollectionView.ScrollPosition.centeredHorizontally, animated: true)
         }
     }
     

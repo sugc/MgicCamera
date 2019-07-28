@@ -8,7 +8,6 @@
 
 import Foundation
 import GPUImage
-import MBProgressHUD
 
 class JournalViewController : UIViewController, ConfirmTextViewDelegate, FilterListViewProtocol, JournalViewDelegate {
     
@@ -25,7 +24,7 @@ class JournalViewController : UIViewController, ConfirmTextViewDelegate, FilterL
     /*******************************************************************/
     var backBtn: UIButton!
     
-    var confirmBtn: UIButton!
+    var saveBtn: UIButton!
     
     var maskView : UIView!
     
@@ -101,7 +100,7 @@ class JournalViewController : UIViewController, ConfirmTextViewDelegate, FilterL
                                                         width: ScreenWidth,
                                                         height: 160))
         bottomView.backgroundColor = UIColor.color(hex: 0xf3f3f3, alpha: 1)
-        confirmBtn = UIButton.init(frame: CGRect.init(x: (ScreenWidth - 60) / 2.0,
+        let confirmBtn = UIButton.init(frame: CGRect.init(x: (ScreenWidth - 60) / 2.0,
                                                           y: bottomView.height - 50 - 10,
                                                           width: 50,
                                                           height: 50))
@@ -110,7 +109,7 @@ class JournalViewController : UIViewController, ConfirmTextViewDelegate, FilterL
         confirmBtn.layer.masksToBounds = true
         confirmBtn.addTarget(self,
                             action: #selector(saveImage),
-                            for: UIControlEvents.touchUpInside)
+                            for: UIControl.Event.touchUpInside)
         
         backBtn = UIButton.init(frame: CGRect(x: 15,
                                               y: (bottomView.height - 30) / 2.0,
@@ -119,9 +118,9 @@ class JournalViewController : UIViewController, ConfirmTextViewDelegate, FilterL
         backBtn.center = CGPoint.init(x: 15, y: confirmBtn.center.y) 
         backBtn.addTarget(self,
                           action: #selector(goBack),
-                          for: UIControlEvents.touchUpInside)
+                          for: UIControl.Event.touchUpInside)
         
-        backBtn.setImage(UIImage.init(named: "icon_back_normal"), for: UIControlState.normal)
+        backBtn.setImage(UIImage.init(named: "icon_back_normal"), for: UIControl.State.normal)
         
         bottomView.addSubview(confirmBtn)
         bottomView.addSubview(backBtn)
@@ -139,17 +138,17 @@ class JournalViewController : UIViewController, ConfirmTextViewDelegate, FilterL
     }
     
     
-    func hideKeyBoard() {
+    @objc func hideKeyBoard() {
         self.maskView.isHidden = true
         self.view.endEditing(true)
     }
-    func goBack()  {
+    @objc func goBack()  {
         self.navigationController?.popViewController(animated: true)
     }
     
-    func saveImage()  {
-        MBProgressHUD.showAdded(to: self.view, animated: true)
+    @objc func saveImage()  {
         let ratio = journalView.drawView.height / journalView.drawView.width
+        
         var size = CGSize(width: 1280, height: 1280 * ratio)
         if ratio > 1.0 {
             size = CGSize(width: 1280 / ratio, height: 1280)
@@ -161,8 +160,7 @@ class JournalViewController : UIViewController, ConfirmTextViewDelegate, FilterL
             let saveVC = storyBoard.instantiateViewController(withIdentifier: "SaveAndShareViewController") as! SaveAndShareViewController
             saveVC.fromType = shareFromMudule.pintu
             self.navigationController?.pushViewController(saveVC, animated: true)
-            MBProgressHUD.hide(for: self.view, animated: false)
-        })
+        }) 
     }
     
 
@@ -189,10 +187,10 @@ class JournalViewController : UIViewController, ConfirmTextViewDelegate, FilterL
     }
     
     func addKeyBoardNotification() {
-        NotificationCenter.default.addObserver(self, selector: #selector(keyboardWillShow(notification:)), name: NSNotification.Name.UIKeyboardWillShow, object: nil)
-        NotificationCenter.default.addObserver(self, selector: #selector(keyboardWillHide(notification:)), name: NSNotification.Name.UIKeyboardWillHide, object: nil)
-        NotificationCenter.default.addObserver(self, selector: #selector(keyboardDidHide(notification:)), name: NSNotification.Name.UIKeyboardDidHide, object: nil)
-        NotificationCenter.default.addObserver(self, selector: #selector(keyBoradWillChangeFrame(notification:)), name: NSNotification.Name.UIKeyboardWillChangeFrame, object: nil)
+        NotificationCenter.default.addObserver(self, selector: #selector(keyboardWillShow(notification:)), name:UIResponder.keyboardWillShowNotification, object: nil)
+        NotificationCenter.default.addObserver(self, selector: #selector(keyboardWillHide(notification:)), name: UIResponder.keyboardWillHideNotification, object: nil)
+        NotificationCenter.default.addObserver(self, selector: #selector(keyboardDidHide(notification:)), name: UIResponder.keyboardDidHideNotification, object: nil)
+        NotificationCenter.default.addObserver(self, selector: #selector(keyBoradWillChangeFrame(notification:)), name: UIResponder.keyboardWillChangeFrameNotification, object: nil)
     }
     
     
@@ -200,18 +198,18 @@ class JournalViewController : UIViewController, ConfirmTextViewDelegate, FilterL
         NotificationCenter.default.removeObserver(self)
     }
     
-    func keyboardWillShow(notification:NSNotification) {
+    @objc func keyboardWillShow(notification:NSNotification) {
         self.maskView.isHidden = false
     }
     
-    func keyboardDidHide(notification:NSNotification) {
+    @objc func keyboardDidHide(notification:NSNotification) {
         isShowTextView = false
     }
     
-    func keyboardWillHide(notification:NSNotification) {
+    @objc func keyboardWillHide(notification:NSNotification) {
         self.maskView.isHidden = true
         let userInfo = notification.userInfo!
-        let frame = userInfo[UIKeyboardFrameEndUserInfoKey] as! CGRect
+        let frame = userInfo[UIResponder.keyboardFrameEndUserInfoKey] as! CGRect
         
         UIView.animate(withDuration: 0.1, animations: {
             self.ainputTextView.frame = CGRect(x: 0,
@@ -227,7 +225,7 @@ class JournalViewController : UIViewController, ConfirmTextViewDelegate, FilterL
         }
     }
     
-    func keyBoradWillChangeFrame(notification:NSNotification) {
+    @objc func keyBoradWillChangeFrame(notification:NSNotification) {
         
         if !isShowTextView {
             isShowTextView = true
@@ -237,8 +235,8 @@ class JournalViewController : UIViewController, ConfirmTextViewDelegate, FilterL
         }
         
         let userInfo = notification.userInfo!
-        let frame = userInfo[UIKeyboardFrameEndUserInfoKey] as! CGRect
-        let animateTime = userInfo[UIKeyboardAnimationDurationUserInfoKey] as! Double
+        let frame = userInfo[UIResponder.keyboardFrameEndUserInfoKey] as! CGRect
+        let animateTime = userInfo[UIResponder.keyboardAnimationDurationUserInfoKey] as! Double
         //        inputTextView.becomeFirstResponder()
         UIView.animate(withDuration: animateTime, animations: {
             self.ainputTextView.changeFrame(newFrame: CGRect(x: 0,

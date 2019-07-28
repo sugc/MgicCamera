@@ -11,7 +11,7 @@ import UIKit
 
 
 class SettingViewCell : UITableViewCell {
-    override init(style: UITableViewCellStyle, reuseIdentifier: String?) {
+    override init(style: UITableViewCell.CellStyle, reuseIdentifier: String?) {
         super.init(style: style, reuseIdentifier: reuseIdentifier)
     }
     
@@ -20,12 +20,12 @@ class SettingViewCell : UITableViewCell {
     }
     
     init(type:Int) {
-        super.init(style: UITableViewCellStyle.default, reuseIdentifier: "settingViewCell")
+        super.init(style: UITableViewCell.CellStyle.default, reuseIdentifier: "settingViewCell")
     }
     
     
     init(frame: CGRect) {
-        super.init(style: UITableViewCellStyle.default, reuseIdentifier: "settingViewCell")
+        super.init(style: UITableViewCell.CellStyle.default, reuseIdentifier: "settingViewCell")
     }
     
     

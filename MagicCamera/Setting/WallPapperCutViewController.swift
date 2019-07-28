@@ -40,7 +40,7 @@ class WallPapperCutViewController : UIViewController {
         let path = CGMutablePath.init()
         path.addRect(self.view.bounds)
         path.addRect(frame)
-        layer.fillRule = kCAFillRuleEvenOdd
+        layer.fillRule = CAShapeLayerFillRule.evenOdd
         layer.path = path
         layer.fillColor = UIColor.color(hex: 0x000000, alpha: 0.6).cgColor
         

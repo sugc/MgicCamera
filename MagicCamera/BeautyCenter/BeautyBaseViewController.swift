@@ -31,7 +31,7 @@ class BeautyBaseViewController: UIViewController {
         operationView = UIView.init(frame: operationFrame)
         
         let layout = UICollectionViewFlowLayout.init()
-        layout.scrollDirection = UICollectionViewScrollDirection.horizontal
+        layout.scrollDirection = UICollectionView.ScrollDirection.horizontal
         let bottomViewFrame = CGRect.init(x: 0,
                                           y: ScreenHeight - iPhoneXSafeDistanceBottom - 50,
                                           width: ScreenWidth,

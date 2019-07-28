@@ -22,14 +22,14 @@ class CameraManager  {
     }
     
     func device() -> AVCaptureDevice {
-        let devices = AVCaptureDevice.devices(withMediaType: AVMediaTypeVideo)
+        let devices = AVCaptureDevice.devices(for: AVMediaType.video)
         
-        for case let device as AVCaptureDevice in devices! {
-            if (device.position == AVCaptureDevicePosition.front) {
+        for case let device as AVCaptureDevice in devices {
+            if (device.position == AVCaptureDevice.Position.front) {
                 return device
             }
         }
         
-        return AVCaptureDevice.defaultDevice(withMediaType:AVMediaTypeVideo)
+        return AVCaptureDevice.default(for: AVMediaType.video)!
     }
 }

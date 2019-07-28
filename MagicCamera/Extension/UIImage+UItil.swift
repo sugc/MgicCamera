@@ -130,7 +130,7 @@ extension UIImage {
     }
     
     
-    func fixOrientation(orientation:UIImageOrientation, isFront:Bool)-> UIImage {
+    func fixOrientation(orientation:UIImage.Orientation, isFront:Bool)-> UIImage {
         
         let imageRef = self.cgImage
         let width = imageRef!.width
@@ -222,7 +222,7 @@ extension UIImage {
     }
     
     func fixOrientation()-> UIImage {
-        if self.imageOrientation == UIImageOrientation.up {
+        if self.imageOrientation == UIImage.Orientation.up {
             return self
         }
         

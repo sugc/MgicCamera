@@ -40,7 +40,7 @@ class FilterViewCell : UICollectionViewCell {
         
         imageView = UIImageView(frame: self.bounds)
         imageView.backgroundColor = UIColor.gray
-        imageView.contentMode = UIViewContentMode.scaleAspectFill
+        imageView.contentMode = UIView.ContentMode.scaleAspectFill
         imageView.clipsToBounds = true
         self.contentView.addSubview(imageView)
         self.contentView.addSubview(selectView)

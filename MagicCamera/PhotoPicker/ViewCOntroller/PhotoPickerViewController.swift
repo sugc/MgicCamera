@@ -65,11 +65,11 @@ class PhotoPickerViewController: UIViewController, photoPickerProtocol, selectVi
                                                 y: 0,
                                                 width: 40,
                                                 height: 40 ))
-        leftButton.setImage(UIImage(named:"icon_back_normal"), for: UIControlState.normal)
-        leftButton.setImage(UIImage(named:"icon_back_highlight"), for: UIControlState.highlighted)
+        leftButton.setImage(UIImage(named:"icon_back_normal"), for: UIControl.State.normal)
+        leftButton.setImage(UIImage(named:"icon_back_highlight"), for: UIControl.State.highlighted)
         leftButton.addTarget(self,
                              action: #selector(goBack) ,
-                             for: UIControlEvents.touchUpInside)
+                             for: UIControl.Event.touchUpInside)
         let lineView = UIView.init(frame: CGRect.init(x: 0,
                                                       y: 39,
                                                       width: self.view.width,
@@ -113,7 +113,7 @@ class PhotoPickerViewController: UIViewController, photoPickerProtocol, selectVi
                                                  left: 5,
                                                  bottom: 0,
                                                  right: 0)
-        selectLayout.scrollDirection = UICollectionViewScrollDirection.horizontal
+        selectLayout.scrollDirection = UICollectionView.ScrollDirection.horizontal
         selectedView.backgroundColor = UIColor.black
         selectedView.register(PhotoPickerCell.classForCoder(), forCellWithReuseIdentifier: "selectCell")
         selectedView.delegate = selectHandler
@@ -141,14 +141,14 @@ class PhotoPickerViewController: UIViewController, photoPickerProtocol, selectVi
                                                y: 0,
                                                width: 40,
                                                height: 20))
-        comfirmButton.setImage(UIImage(named:"icon_select_next"), for: UIControlState.normal)
+        comfirmButton.setImage(UIImage(named:"icon_select_next"), for: UIControl.State.normal)
         comfirmButton.addTarget(self,
                                 action: #selector(comfirm),
-                                for: UIControlEvents.touchUpInside)
+                                for: UIControl.Event.touchUpInside)
         comfirmButton.isHidden = true
         
         let tipsText = NSString(string: "已达最大照片数")
-        let tipSize = tipsText.size(attributes: [NSFontAttributeName: UIFont.systemFont(ofSize: 18)])
+        let tipSize = tipsText.size(withAttributes: [NSAttributedString.Key.font: UIFont.systemFont(ofSize: 18)])
         tipsLabel = UILabel(frame: CGRect(x: (UIScreen.main.bounds.width - tipSize.width - 20) / 2.0,
                                           y: (UIScreen.main.bounds.height - tipSize.height) / 2.0,
                                           width: tipSize.width + 20,
@@ -232,7 +232,7 @@ class PhotoPickerViewController: UIViewController, photoPickerProtocol, selectVi
                               height: rect.height)
         UIView.animate(withDuration: 0.3,
                        delay: 0,
-                       options: UIViewAnimationOptions.allowAnimatedContent, animations: {
+                       options: UIView.AnimationOptions.allowAnimatedContent, animations: {
                         imageView.frame = newFrame
                         self.updateImageNum(num: self.selectHandler.data.count)
         }, completion: {(finish:Bool)in
@@ -251,7 +251,7 @@ class PhotoPickerViewController: UIViewController, photoPickerProtocol, selectVi
         }
     }
 
-    func comfirm() {
+    @objc func comfirm() {
         if delegate != nil {
             delegate?.pickImage(images: selectHandler.data)
         }
@@ -266,7 +266,7 @@ class PhotoPickerViewController: UIViewController, photoPickerProtocol, selectVi
         
     }
     
-    func goBack() {
+    @objc func goBack() {
         _ = self.navigationController?.popViewController(animated: true)
     }
 

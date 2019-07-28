@@ -79,39 +79,39 @@ class PositionMonitor  {
     }
     
     
-    func imageOrientationWithCameraPosition(position:AVCaptureDevicePosition) -> UIImageOrientation {
-        return self.imageOrientationFromUIDeviceOrientation(orientation: orientation, isFront: position == AVCaptureDevicePosition.front ? true : false)
+    func imageOrientationWithCameraPosition(position:AVCaptureDevice.Position) -> UIImage.Orientation {
+        return self.imageOrientationFromUIDeviceOrientation(orientation: orientation, isFront: position == AVCaptureDevice.Position.front ? true : false)
     }
-    func imageOrientationFromUIDeviceOrientation(orientation:UIDeviceOrientation, isFront:Bool) ->UIImageOrientation {
+    func imageOrientationFromUIDeviceOrientation(orientation:UIDeviceOrientation, isFront:Bool) ->UIImage.Orientation {
         
-        var imageOrient = UIImageOrientation.leftMirrored
+        var imageOrient = UIImage.Orientation.leftMirrored
         switch orientation {
         case UIDeviceOrientation.portrait:
             if isFront {
-                imageOrient = UIImageOrientation.leftMirrored
+                imageOrient = UIImage.Orientation.leftMirrored
             }else {
-                imageOrient = UIImageOrientation.right
+                imageOrient = UIImage.Orientation.right
             }
             break
         case UIDeviceOrientation.landscapeRight:
             if isFront {
-                imageOrient = UIImageOrientation.upMirrored
+                imageOrient = UIImage.Orientation.upMirrored
             }else {
-                imageOrient = UIImageOrientation.down
+                imageOrient = UIImage.Orientation.down
             }
             break
         case UIDeviceOrientation.landscapeLeft:
             if isFront {
-                imageOrient = UIImageOrientation.downMirrored
+                imageOrient = UIImage.Orientation.downMirrored
             }else {
-                imageOrient = UIImageOrientation.up
+                imageOrient = UIImage.Orientation.up
             }
             break
         case UIDeviceOrientation.portraitUpsideDown:
             if isFront {
-                imageOrient = UIImageOrientation.rightMirrored
+                imageOrient = UIImage.Orientation.rightMirrored
             }else {
-                imageOrient = UIImageOrientation.left
+                imageOrient = UIImage.Orientation.left
             }
             break
         default:

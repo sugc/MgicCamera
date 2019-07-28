@@ -28,7 +28,7 @@ class ConfirmTextView: UIView, UITextViewDelegate {
             let subStr =  text?.components(separatedBy: "\n").first
             
             if subStr != nil {
-                let range = NSRange.init(location: (subStr?.characters.count)!, length: 0)
+                let range = NSRange.init(location: (subStr?.count)!, length: 0)
                 inputTextView.selectedRange = range
                 autoAjust()
             }

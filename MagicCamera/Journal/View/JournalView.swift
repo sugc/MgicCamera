@@ -177,10 +177,10 @@ class JournalView: UIView, UITextViewDelegate, TouchTextViewDelegate{
                                                          height: texStruct.position.height / transRatio ))
             
             var fontAttrDic = texStruct.fontAttrDic!
-            var font = fontAttrDic[NSFontAttributeName] as! UIFont
+            var font = fontAttrDic[NSAttributedString.Key.font] as! UIFont
             font = font.withSize(texStruct.fontSize / transRatio)
-            fontAttrDic[NSFontAttributeName] = font
-            textView.typingAttributes = fontAttrDic
+            fontAttrDic[NSAttributedString.Key.font] = font
+            textView.typingAttributes = fontAttrDic as! [NSAttributedString.Key : Any]
             textView.text = texStruct.content
             textView.textColor = UIColor.color(hex: texStruct.textColor, alpha: 1)
             textView.backgroundColor = UIColor.clear
@@ -226,7 +226,7 @@ class JournalView: UIView, UITextViewDelegate, TouchTextViewDelegate{
         tapGesture.require(toFail: pressGesture)
     }
     
-    func tap(gesture : UITapGestureRecognizer) {
+    @objc func tap(gesture : UITapGestureRecognizer) {
         let point = gesture.location(in: self.backImageView)
         for i in 0...(cutViewArray.count - 1) {  
             let cutView = cutViewArray[i]
@@ -248,7 +248,7 @@ class JournalView: UIView, UITextViewDelegate, TouchTextViewDelegate{
         }
     }
     //交换图片
-    func longPress(gesture : UILongPressGestureRecognizer)  {
+    @objc func longPress(gesture : UILongPressGestureRecognizer)  {
         
         let point = gesture.location(in: self.backImageView)
         var isViewChanged = false
@@ -265,7 +265,7 @@ class JournalView: UIView, UITextViewDelegate, TouchTextViewDelegate{
         }
         
         let selectView = cutViewArray[lastIndex]
-        if gesture.state == UIGestureRecognizerState.began {
+        if gesture.state == UIGestureRecognizer.State.began {
             isAnimate = false
             originIndex = lastIndex
             masksView?.frame = selectView.frame
@@ -274,7 +274,7 @@ class JournalView: UIView, UITextViewDelegate, TouchTextViewDelegate{
         }
         
         
-        if gesture.state == UIGestureRecognizerState.changed {
+        if gesture.state == UIGestureRecognizer.State.changed {
             
             if isAnimate {
                 lastPoint = point
@@ -298,7 +298,7 @@ class JournalView: UIView, UITextViewDelegate, TouchTextViewDelegate{
             }
         }
         
-        if gesture.state == UIGestureRecognizerState.ended {
+        if gesture.state == UIGestureRecognizer.State.ended {
             
             UIView.animate(withDuration: 0.3, animations: {
                 self.masksView?.frame = selectView.frame

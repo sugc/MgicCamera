@@ -43,22 +43,22 @@ struct textStruct {
     
     init(dic:Dictionary<String, Any>) {
         
-        content = dic["content"] as! String
+        content = dic["content"] as? String
         let poisitionStr = dic["position"] as! String
         position = RectFromStr(str: poisitionStr)
-        maxLength = dic["maxLength"] as! Int
+        maxLength = dic["maxLength"] as? Int
         textColor = dic["textColor"] as! Int
         
-        fontSize = dic["fontSize"] as! CGFloat
+        fontSize = dic["fontSize"] as? CGFloat
         let fontName = dic["fontName"] as! String
-        var fontAttr = dic["fontAttr"] as! Dictionary<String, Any>
+        var fontAttr = dic["fontAttr"] as! Dictionary<AnyHashable, AnyObject>
         
         let font = UIFont.init(name: fontName, size: fontSize)
-        fontAttr[NSFontAttributeName] = font
-        fontAttrDic = fontAttr
+        fontAttr[NSAttributedString.Key.font] = font
+        fontAttrDic = (fontAttr as! Dictionary<String, Any>)
     }
     
-    var fontAttrDic : Dictionary<String,Any>!
+    var fontAttrDic : Dictionary<AnyHashable,Any>!
     var content : String!
     var position : CGRect!
     var maxLength : Int!

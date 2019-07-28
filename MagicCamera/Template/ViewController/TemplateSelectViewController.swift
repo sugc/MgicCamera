@@ -57,10 +57,10 @@ class TemplateSelectViewController: UIViewController,
                                                 y: 0,
                                                 width: 40,
                                                 height: 40 ))
-        leftButton.setImage(UIImage(named:"icon_share_goBack"), for: UIControlState.normal)
+        leftButton.setImage(UIImage(named:"icon_share_goBack"), for: UIControl.State.normal)
         leftButton.addTarget(self,
                              action: #selector(goBack) ,
-                             for: UIControlEvents.touchUpInside)
+                             for: UIControl.Event.touchUpInside)
         let leftItem = UIBarButtonItem(customView: leftButton)
         self.navigationItem.leftBarButtonItem = leftItem
         
@@ -175,10 +175,10 @@ class TemplateSelectViewController: UIViewController,
                 
                 
                 let textAttr: Dictionary<String, Any> = [
-                    NSFontAttributeName :font!,
-                    NSForegroundColorAttributeName : color,
-                    NSKernAttributeName : 5,
-                    NSParagraphStyleAttributeName : paraStyle
+                    NSAttributedString.Key.font.rawValue :font!,
+                    NSAttributedString.Key.foregroundColor.rawValue : color,
+                    NSAttributedString.Key.kern.rawValue : 5,
+                    NSAttributedString.Key.paragraphStyle.rawValue : paraStyle
                 ]
 
                 
@@ -210,7 +210,7 @@ class TemplateSelectViewController: UIViewController,
         return array
     }
     
-    func goBack() {
+    @objc func goBack() {
         _ = self.navigationController?.popViewController(animated: true)
     }
 

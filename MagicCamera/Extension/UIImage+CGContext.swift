@@ -15,7 +15,7 @@ extension UIImage {
 //获取添加文字后的图片
     
     
-    func getNewImage(string: NSString, attribute: Dictionary<String, Any>, rect : CGRect ) -> UIImage{
+    func getNewImage(string: NSString, attribute: Dictionary<NSAttributedString.Key, Any>, rect : CGRect ) -> UIImage{
     
         
         UIGraphicsBeginImageContext(self.size)

@@ -32,7 +32,7 @@ class SettingViewManager: NSObject, UITableViewDelegate, UITableViewDataSource {
         var cell = tableView.dequeueReusableCell(withIdentifier: "settingViewCell")
         
         if cell == nil {
-            cell = UITableViewCell.init(style: UITableViewCellStyle.value1, reuseIdentifier: "settingViewCell")
+            cell = UITableViewCell.init(style: UITableViewCell.CellStyle.value1, reuseIdentifier: "settingViewCell")
         }
         
         cell!.textLabel?.text = dataArray[indexPath.row]["title"] as? String
@@ -44,7 +44,7 @@ class SettingViewManager: NSObject, UITableViewDelegate, UITableViewDataSource {
         self.perform(action as! Selector)
     }
     
-    func setlaunchImage() {
+    @objc func setlaunchImage() {
         let storyboard = UIStoryboard.init(name: "WallPaperViewController", bundle: nil)
         let launchImageVC = storyboard.instantiateViewController(withIdentifier: "WallPaperViewController")
         let delegate : AppDelegate = UIApplication.shared.delegate as! AppDelegate
@@ -57,7 +57,7 @@ class SettingViewManager: NSObject, UITableViewDelegate, UITableViewDataSource {
     }
     
     //意见反馈
-    func sendSuggestion() {
+    @objc func sendSuggestion() {
         let suggestVC = SuggestionViewController()
         let delegate : AppDelegate = UIApplication.shared.delegate as! AppDelegate
         let nav = delegate.window!.rootViewController as! UINavigationController
@@ -65,7 +65,7 @@ class SettingViewManager: NSObject, UITableViewDelegate, UITableViewDataSource {
     }
     
     //去好评
-    func goFiveStar() {
+    @objc func goFiveStar() {
         let actionStr = "itms-apps://itunes.apple.com/WebObjects/MZStore.woa/wa/viewContentsUserReviews?type=Purple+Software&id=1312628419&pageNumber=0&sortOrdering=2&mt=8"
         UIApplication.shared.openURL(URL.init(string: actionStr)!)
     }
